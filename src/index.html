@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>cc</title>
+    <base href="/">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <style>
+        html{
+            background-color:#1190d6;
+        }
+        /*加载*/
+        .loaders-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .loaders-container .spinner {
+            box-sizing: border-box;
+            width: 90px;
+            height: 90px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 1;
+            margin-top: -50px;
+            margin-left: -50px;
+        }
+
+        .loaders-container .spinner .circle {
+            box-sizing: border-box;
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            border: 8px solid rgba(255, 255, 255, 0.2);
+            border-top-color: #ffffff;
+            -webkit-animation: spin 1s infinite linear;
+            animation: spin 1s infinite linear;
+        }
+
+
+        .loaders-container .spinner .load-text {
+            width: 80px;
+            height: 80px;
+            font-size: 13px;
+            text-align: center;
+            z-index: 1;
+            margin-top: -49px;
+            color: #ffffff
+        }
+
+
+        @-webkit-keyframes spin {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <app-root>
+        <div class="loaders-container">
+            <div class="spinner">
+                <div class="circle"></div>
+                <div class="load-text">加载中...</div>
+            </div>
+        </div>
+
+    </app-root>
+</body>
+
+</html>

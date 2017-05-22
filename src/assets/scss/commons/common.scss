@@ -28,173 +28,131 @@ $color-gray-light:#fefefe !default;
 //白色
 $color-white:#ffffff !default;
 
-//灰白色
+//白灰色
 $color-white-gray:#f5f6f7 !default;
+
 
 
 
 /*页面统一样式*/
 html,
 body {
-	font-size: 14px;
-	background-color:color-primary;
+  font-size: 14px;
+  background-color: color-primary;
 }
-
 /*添加手形*/
 a[href], input[type='submit'], input[type='image'], label[for], select, button, .c-pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
-
 /*整体部分*/
-
 ::-webkit-scrollbar {
-	width: 10px;
-	height: 10px;
+  width: 10px;
+  height: 10px;
 }
-
-
 /*滑动轨道*/
-
 ::-webkit-scrollbar-track {
-	background: rgba(0, 0, 0, 0.06);
+  background: rgba(0, 0, 0, 0.06);
 }
-
-
 /*滑块*/
-
 ::-webkit-scrollbar-thumb {
-	background: rgba(0, 0, 0, 0.08);
+  background: rgba(0, 0, 0, 0.08);
+  &:hover {
+    background: rgba(0, 0, 0, 0.15);
+  }
 }
-
-
 /*滑块效果*/
-
-::-webkit-scrollbar-thumb:hover {
-	background: rgba(0, 0, 0, 0.15);
-}
-
-
 /**外边距**/
-.c-mt3{
-    margin-top:3px;
+.c-mt3 {
+  margin-top: 3px;
 }
-.c-mt5{
-    margin-top:5px;
+.c-mt5 {
+  margin-top: 5px;
 }
-
-.c-mt10{
-    margin-top:10px;
+.c-mt10 {
+  margin-top: 10px;
 }
-
-.c-mt15{
-    margin-top:15px;
+.c-mt15 {
+  margin-top: 15px;
 }
-
-.c-mt20{
-    margin-top:20px;
+.c-mt20 {
+  margin-top: 20px;
 }
-
-.c-mt25{
-    margin-top:25px;
+.c-mt25 {
+  margin-top: 25px;
 }
-
-.c-mt30{
-    margin-top:30px;
+.c-mt30 {
+  margin-top: 30px;
 }
-
-.c-mt50{
-     margin-top:50px;
+.c-mt50 {
+  margin-top: 50px;
 }
-
-
-.c-mb5{
-    margin-bottom:5px;
+.c-mb5 {
+  margin-bottom: 5px;
 }
-
-.c-mb10{
-    margin-bottom:10px;
+.c-mb10 {
+  margin-bottom: 10px;
 }
-
-.c-mb15{
-    margin-bottom:15px;
+.c-mb15 {
+  margin-bottom: 15px;
 }
-
-.c-ml5{
-    margin-left:5px;
+.c-ml5 {
+  margin-left: 5px;
 }
-
-.c-ml10{
-    margin-left:10px;
+.c-ml10 {
+  margin-left: 10px;
 }
-
-.c-ml15{
-    margin-left:15px;
+.c-ml15 {
+  margin-left: 15px;
 }
-
-.c-mr3{
-    margin-right:3px;
+.c-mr3 {
+  margin-right: 3px;
 }
-
-.c-mr5{
-    margin-right:5px;
+.c-mr5 {
+  margin-right: 5px;
 }
-
-
 /**字号**/
-.c-fs15{
-    font-size: 15px
+.c-fs15 {
+  font-size: 15px;
 }
-
-.c-fs20{
-    font-size: 20px
+.c-fs20 {
+  font-size: 20px;
 }
-
-.c-fs25{
-    font-size: 25px
+.c-fs25 {
+  font-size: 25px;
 }
-
-
-.c-fs30{
-    font-size: 30px
+.c-fs30 {
+  font-size: 30px;
 }
-
-.c-fs50{
-    font-size: 50px
+.c-fs50 {
+  font-size: 50px;
 }
-
-
 /**卡片**/
-.c-card{
-    border:0px;
-    border-radius: 2px;
-     -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
-	box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
+.c-card {
+  border: 0px;
+  border-radius: 2px;
+  -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
 }
-
 /*======line table======*/
-
 .c-line-table {
-	width: 100%;
-	margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  tr {
+    border-bottom: 1px dashed $color-gray-deep;
+    td {
+      padding: 10px;
+    }
+    th {
+      padding: 10px;
+    }
+  }
+  &:first-child {
+    tr {
+      border-top: 1px dashed $color-gray-deep;
+    }
+  }
 }
-
-.c-line-table tr {
-	border-bottom: 1px dashed #d7e0e6;
-}
-
-.c-line-table tr td {
-	padding: 10px;
-}
-
-.c-line-table tr th {
-	padding: 10px
-}
-
-.c-line-table:first-child tr {
-	border-top: 1px dashed #d7e0e6;
-}
-
 /**手式**/
-.c-cursor-pointer{
-    cursor: pointer
+.c-cursor-pointer {
+  cursor: pointer;
 }

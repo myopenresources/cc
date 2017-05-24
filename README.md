@@ -1,5 +1,5 @@
 ## CC admin 
-一个基于Angular4+Bootstrap4+scss的后台管理系统界面
+一个基于Angular4+Bootstrap4+Scss的后台管理系统界面
 
 ## 安装
 1. cd E:\project\cc                            <---- 进入到项目所有的目录

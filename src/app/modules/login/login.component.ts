@@ -14,9 +14,7 @@ export class LoginComponent implements OnInit {
 
   }
 
-  constructor(private router: Router) {
-      
-  }
+  constructor(private router: Router) {}
   
   /**
    * 登录

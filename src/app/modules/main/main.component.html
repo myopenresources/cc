@@ -11,7 +11,8 @@
                     <span ngbDropdownToggle>{{mainData.userData.userName}}</span>
                 </div>
                 <div class="dropdown-menu animated fadeIn">
-                    <button class="dropdown-item"><i class="fa  fa-user fa-fw"></i> 个人资料</button>
+                    <button class="dropdown-item"><i class="fa  fa-user-circle-o fa-fw"></i> 头像更换</button>
+                    <button class="dropdown-item"><i class="fa  fa-vcard  fa-fw"></i> 个人资料</button>
                     <button class="dropdown-item"><i class="fa  fa-key fa-fw"></i> 修改密码</button>
                     <button class="dropdown-item"><i class="fa  fa-sign-out fa-fw"></i> 退出系统</button>
                 </div>
@@ -49,7 +50,7 @@
             </div>
             <div class="c-tools">
                 <ul class="nav nav-pills pull-right">
-                    <li class="c-item">
+                    <li class="c-item" (click)="toHome()">
                         <i class="fa fa-home fa-fw"></i> 首页 
                     </li>
                     <li class="c-user" ngbDropdown>
@@ -58,9 +59,10 @@
                             <span>{{mainData.userData.userName}}</span>
                         </div>
                         <div class="dropdown-menu animated fadeIn">
-                            <button class="dropdown-item"><i class="fa  fa-user fa-fw"></i> 个人资料</button>
-                            <button class="dropdown-item"><i class="fa  fa-key fa-fw"></i> 修改密码</button>
-                            <button class="dropdown-item"><i class="fa  fa-sign-out fa-fw"></i> 退出系统</button>
+                              <button class="dropdown-item"><i class="fa  fa-user-circle-o fa-fw"></i> 头像更换</button>
+                              <button class="dropdown-item"><i class="fa  fa-vcard  fa-fw"></i> 个人资料</button>
+                              <button class="dropdown-item"><i class="fa  fa-key fa-fw"></i> 修改密码</button>
+                              <button class="dropdown-item"><i class="fa  fa-sign-out fa-fw"></i> 退出系统</button>
                         </div>
                     </li>
                 </ul>

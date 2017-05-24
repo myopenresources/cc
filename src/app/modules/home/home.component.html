@@ -1,96 +1,185 @@
 <div class="container-fluid">
-    <div class="row c-mt5"  [hidden]="userTipClose">
-        <div class="col-md-12">         
-             <ngb-alert  (close)="userTipClose=true">
-                <i class="fa fa-bullhorn fa-fw"></i> <strong>欢迎您，百变小咖</strong>  <span class="c-home-login-tip">， 这是您第 <span class="text-success">12708</span>                        次登录，上次登录时间： <span class="text-danger">2017-5-20 21:05:20</span>，如果不是您本人登录，请及时 <a href="javascript:void(0)">修改密码</a>                        。</span>
-             </ngb-alert>        
+    <div class="row c-mt5" [hidden]="userTipClose">
+        <div class="col-md-12">
+            <ngb-alert (close)="userTipClose=true">
+                <i class="fa fa-bullhorn fa-fw"></i> <strong>欢迎您，百变小咖</strong> <span class="c-home-login-tip">， 这是您第 <span class="text-success">12708</span>                次登录，上次登录时间： <span class="text-danger">2017-5-20 21:05:20</span>，如果不是您本人登录，请及时 <a href="javascript:void(0)">修改密码</a>                。</span>
+            </ngb-alert>
         </div>
     </div>
 
     <div class="row c-mt5">
+
         <div class="col-md-6">
-            <div class="card c-card animation-scale-up">
-                <div class="card-block">
-                    <div class="row">
-                        <div class="col-md-9">
-                            <h5 class="card-title c-fs15"><i class="fa fa-bell-o fa-fw"></i> 待办信息</h5>
-                        </div>
-                        <div class="col-md-3 text-right">
-                            <a class="c-cursor-pointer" (click)="isTaskCollapsed = !isTaskCollapsed"><em class="fa fa-minus"></em></a>
-                        </div>
-                    </div>
-                    <div class="row  c-mt15" [ngbCollapse]="isTaskCollapsed">
-                        <div class="col-md-12">
-                            <table class="c-line-table">
-                                <tr>
-                                    <td>
-                                        <span class="text-danger"><i class="fa fa-info fa-fw"></i>您共有{{taskObj.total}}条未处理待办信息</span>
-                                    </td>
-                                    <td class=" text-right">
-                                        <a class="text-danger">查看更多&gt;&gt;</a>
-                                    </td>
-                                </tr>
-                            </table>
-                            <table class="c-line-table  table-hover">
-                                <tbody>
-                                    <tr *ngFor="let task of taskObj.taskList;let i = index">
-                                        <td>{{i+1}}</td>
-                                        <td>
-                                            <span class="badge badge-success">{{task.submitUser}}</span>&nbsp;
-                                            <span>{{task.title}}</span>
-                                        </td>
-                                        <td class="text-right">
-                                            {{task.createDate}}
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card c-card c-home-card">
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h5 class="card-title c-fs15"><i class="fa fa-bell-o fa-fw"></i> 待办信息</h5>
+                                </div>
+                                <div class="col-md-3 text-right">
+                                    <a class="c-cursor-pointer" (click)="isTodoCollapsed = !isTodoCollapsed"><em class="fa fa-minus"></em></a>
+                                </div>
+                            </div>
+                            <div class="row  c-mt15  c-scroll-y-a c-home-card-inner" [ngbCollapse]="isTodoCollapsed">
+                                <div class="col-md-12">
+                                    <table class="c-line-table">
+                                        <tr>
+                                            <td>
+                                                <span class="text-danger"><i class="fa fa-info fa-fw"></i>您共有{{todoObj.total}}条未处理待办信息</span>
+                                            </td>
+                                            <td class=" text-right">
+                                                <a class="text-danger c-cursor-pointer">查看更多&gt;&gt;</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="c-line-table  table-hover">
+                                        <tbody>
+                                            <tr class="c-cursor-pointer" *ngFor="let todo of todoObj.todoList;let i = index">
+                                                <td>{{i+1}}</td>
+                                                <td>
+                                                    <span class="badge badge-success">{{todo.submitUser}}</span>&nbsp;
+                                                    <span>{{todo.title}}</span>
+                                                </td>
+                                                <td class="text-right">
+                                                    {{todo.createDate}}
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="row  c-mt15">
+                <div class="col-md-12">
+                    <div class="card c-card c-home-card">
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h5 class="card-title c-fs15"><i class="fa fa-bullhorn fa-fw"></i> 系统通知</h5>
+                                </div>
+                                <div class="col-md-3 text-right">
+                                    <a class="c-cursor-pointer" (click)="isNoticeCollapsed = !isNoticeCollapsed"><em class="fa fa-minus"></em></a>
+                                </div>
+                            </div>
+                            <div class="row c-mt15  c-scroll-y-a c-home-card-inner" [ngbCollapse]="isNoticeCollapsed">
+                                <div class="col-md-12">
+                                    <table class="c-line-table">
+                                        <tr>
+                                            <td>
+                                                <span class="text-danger"><i class="fa fa-info fa-fw"></i>您共有{{noticeObj.total}}条未查看系统通知</span>
+                                            </td>
+                                            <td class=" text-right">
+                                                <a class="text-danger c-cursor-pointer">查看更多&gt;&gt;</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="c-line-table  table-hover">
+                                        <tbody>
+                                            <tr class="c-cursor-pointer" *ngFor="let notice of noticeObj.noticeList;let i = index">
+                                                <td>{{i+1}}</td>
+                                                <td>
+                                                    <span>{{notice.title}}</span>
+                                                </td>
+                                                <td class="text-right">
+                                                    {{notice.createDate}}
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <div class="col-md-6">
-            <div class="card c-card animation-scale-up">
-                <div class="card-block">
-                    <div class="row">
-                        <div class="col-md-9">
-                            <h5 class="card-title c-fs15"><i class="fa fa-bullhorn fa-fw"></i> 系统通知</h5>
-                        </div>
-                        <div class="col-md-3 text-right">
-                            <a class="c-cursor-pointer" (click)="isNoticeCollapsed = !isNoticeCollapsed"><em class="fa fa-minus"></em></a>
-                        </div>
-                    </div>
-                    <div class="row c-mt15" [ngbCollapse]="isNoticeCollapsed">
-                        <div class="col-md-12">
-                            <table class="c-line-table">
-                                <tr>
-                                    <td>
-                                        <span class="text-danger"><i class="fa fa-info fa-fw"></i>您共有{{noticeObj.total}}条未处理待办信息</span>
-                                    </td>
-                                    <td class=" text-right">
-                                        <a class="text-danger">查看更多&gt;&gt;</a>
-                                    </td>
-                                </tr>
-                            </table>
-                            <table class="c-line-table  table-hover">
-                                <tbody>
-                                    <tr *ngFor="let notice of noticeObj.noticeList;let i = index">
-                                        <td>{{i+1}}</td>
-                                        <td>
-                                            <span>{{notice.title}}</span>
-                                        </td>
-                                        <td class="text-right">
-                                            {{notice.createDate}}
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card c-card c-home-card">
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h5 class="card-title c-fs15"><i class="fa fa-envelope-open-o fa-fw"></i> 待阅信息</h5>
+                                </div>
+                                <div class="col-md-3 text-right">
+                                    <a class="c-cursor-pointer" (click)="isWaitReadCollapsed = !isWaitReadCollapsed"><em class="fa fa-minus"></em></a>
+                                </div>
+                            </div>
+                            <div class="row  c-mt15  c-scroll-y-a c-home-card-inner" [ngbCollapse]="isWaitReadCollapsed">
+                                <div class="col-md-12">
+                                    <table class="c-line-table">
+                                        <tr>
+                                            <td>
+                                                <span class="text-danger"><i class="fa fa-info fa-fw"></i>您共有{{waitReadObj.total}}条未查看待阅信息</span>
+                                            </td>
+                                            <td class=" text-right">
+                                                <a class="text-danger c-cursor-pointer">查看更多&gt;&gt;</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="c-line-table  table-hover">
+                                        <tbody>
+                                            <tr class="c-cursor-pointer" *ngFor="let waitRead of waitReadObj.waitReadList;let i = index">
+                                                <td>{{i+1}}</td>
+                                                <td>
+                                                    <span class="badge badge-warning">{{waitRead.type}}</span>&nbsp;
+                                                    <span>{{waitRead.title}}</span>
+                                                </td>
+                                                <td class="text-right">
+                                                    {{waitRead.createDate}}
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="row  c-mt15">
+                <div class="col-md-12">
+                    <div class="card c-card  c-home-card">
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h5 class="card-title c-fs15"><i class="fa fa-cubes fa-fw"></i> 常用功能</h5>
+                                </div>
+                                <div class="col-md-3 text-right">
+                                    <a class="c-cursor-pointer"><em class="fa fa-cog" placement="bottom" [ngbTooltip]="commonFuncConfigTip"></em></a>                                    &nbsp;
+                                    <a class="c-cursor-pointer" (click)="isCommonFuncCollapsed = !isCommonFuncCollapsed"><em class="fa fa-minus"></em></a>
+                                </div>
+                            </div>
+                            <div class="row c-mt15  c-scroll-y-a c-home-card-inner" [ngbCollapse]="isCommonFuncCollapsed">
+                                <div class="col-md-12">
+                                    <div class="row c-mt10" *ngFor="let commonFunc of commonFuncLit;let i = index">
+                                        <div class="col-md-3" *ngFor="let obj  of commonFuncLit[i]">
+                                            <div class="card card-outline-secondary  text-center">
+                                                <div class="card-block c-home-common-func">
+                                                    <i class="fa " [ngClass]="obj.icon"></i> <span>{{obj.name}}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div>

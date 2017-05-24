@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {  Router } from '@angular/router';
 
 import  { MainData }    from '../main/main-model';
 
@@ -171,7 +172,7 @@ export class MainComponent implements OnInit {
         "parentId": "20",
         "name": "用户管理",
         "keyWord":"yhgl",
-        "icon": "fa-user",
+        "icon": "fa-vcard",
         "isExpend": false,
         "children": [{
           "id": "22",
@@ -256,7 +257,7 @@ export class MainComponent implements OnInit {
   }
 
 
-  constructor() {}
+  constructor(private router: Router) {}
 
 
   /**
@@ -276,6 +277,10 @@ export class MainComponent implements OnInit {
     } else {
       this.toggleDescTip = "点击关闭导航菜单";
     }
+  }
+
+  toHome(){
+     this.router.navigate(['/app/home']);
   }
 
 

@@ -156,3 +156,8 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 .c-cursor-pointer {
   cursor: pointer;
 }
+
+/**自动滚动条**/
+.c-scroll-y-a{
+  overflow-y: auto;
+}

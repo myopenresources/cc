@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TodoObjData, WaitReadObjData, NoticeObjData, CommonFuncData } from '../home/home-model';
+import { TodoObjData, NeedReadObjData, NoticeObjData, CommonFuncData } from '../home/home-model';
 
 @Component({
   selector: 'home',
@@ -37,9 +37,9 @@ export class HomeComponent implements OnInit {
     }]
   }
 
-  private waitReadObj: WaitReadObjData = {
+  private needReadObj: NeedReadObjData = {
     total: 50,
-    waitReadList: [{
+    needReadList: [{
       id: 1,
       title: '采购订单，等待“百变小咖的查看',
       type: '待阅',
@@ -224,6 +224,9 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
 
   }
+
+  constructor(){}
+
 
 
 

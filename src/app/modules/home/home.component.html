@@ -113,15 +113,15 @@
                                     <h5 class="card-title c-fs15"><i class="fa fa-envelope-open-o fa-fw"></i> 待阅信息</h5>
                                 </div>
                                 <div class="col-md-3 text-right">
-                                    <a class="c-cursor-pointer" (click)="isWaitReadCollapsed = !isWaitReadCollapsed"><em class="fa fa-minus"></em></a>
+                                    <a class="c-cursor-pointer" (click)="isNeedReadCollapsed = !isNeedReadCollapsed"><em class="fa fa-minus"></em></a>
                                 </div>
                             </div>
-                            <div class="row  c-mt15  c-scroll-y-a c-home-card-inner" [ngbCollapse]="isWaitReadCollapsed">
+                            <div class="row  c-mt15  c-scroll-y-a c-home-card-inner" [ngbCollapse]="isNeedReadCollapsed">
                                 <div class="col-md-12">
                                     <table class="c-line-table">
                                         <tr>
                                             <td>
-                                                <span class="text-danger"><i class="fa fa-info fa-fw"></i>您共有{{waitReadObj.total}}条未查看待阅信息</span>
+                                                <span class="text-danger"><i class="fa fa-info fa-fw"></i>您共有{{needReadObj.total}}条未查看待阅信息</span>
                                             </td>
                                             <td class=" text-right">
                                                 <a class="text-danger c-cursor-pointer">查看更多&gt;&gt;</a>
@@ -130,14 +130,14 @@
                                     </table>
                                     <table class="c-line-table  table-hover">
                                         <tbody>
-                                            <tr class="c-cursor-pointer" *ngFor="let waitRead of waitReadObj.waitReadList;let i = index">
+                                            <tr class="c-cursor-pointer" *ngFor="let needRead of needReadObj.needReadList;let i = index">
                                                 <td>{{i+1}}</td>
                                                 <td>
-                                                    <span class="badge badge-warning">{{waitRead.type}}</span>&nbsp;
-                                                    <span>{{waitRead.title}}</span>
+                                                    <span class="badge badge-warning">{{needRead.type}}</span>&nbsp;
+                                                    <span>{{needRead.title}}</span>
                                                 </td>
                                                 <td class="text-right">
-                                                    {{waitRead.createDate}}
+                                                    {{needRead.createDate}}
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -166,7 +166,7 @@
                                 <div class="col-md-12">
                                     <div class="row c-mt10" *ngFor="let commonFunc of commonFuncLit;let i = index">
                                         <div class="col-md-3" *ngFor="let obj  of commonFuncLit[i]">
-                                            <div class="card card-outline-secondary  text-center">
+                                            <div class="card card-outline-secondary  text-center c-home-common-func-outline">
                                                 <div class="card-block c-home-common-func">
                                                     <i class="fa " [ngClass]="obj.icon"></i> <span>{{obj.name}}</span>
                                                 </div>

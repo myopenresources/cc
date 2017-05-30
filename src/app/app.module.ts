@@ -10,7 +10,9 @@ import { AppComponent }    from './app.component';
 
 //modules
 import  { LoginModule }      from './modules/login/login.module';
-import  { MainModule }      from './modules/main/main.module';
+import  { MainModule }       from './modules/main/main.module';
+import  { SharedModule }       from './modules/shared/shared.module';
+
 
 
 
@@ -20,7 +22,8 @@ import  { MainModule }      from './modules/main/main.module';
     appRouting,
     NgbModule.forRoot(),
     MainModule,
-    LoginModule
+    LoginModule,
+    SharedModule
   ],
   declarations: [
     AppComponent

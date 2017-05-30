@@ -25,7 +25,7 @@ export class TodoObjData {
 /**
  * 待阅数据
  */
-export class WaitReadData{
+export class NeedReadData{
    //id
    id:number;
    //标题
@@ -39,11 +39,11 @@ export class WaitReadData{
 /**
  * 待阅对象数据
  */
-export class WaitReadObjData {
+export class NeedReadObjData {
     //总条数
    total:number;
    //列表
-   waitReadList:Array<WaitReadData>;
+   needReadList:Array<NeedReadData>;
 }
 
 

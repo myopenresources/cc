@@ -4,8 +4,9 @@ import { FormsModule }        from '@angular/forms';
 import { HttpModule }    from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { HomeComponent }   from './home.component';
-
+import { ModalService } from './modal/modal.service';
+import { ConfirmComponent }   from './modal/confirm.component';
+import { AlertComponent} from './modal/alert.component';
 
 
 @NgModule({
@@ -13,14 +14,13 @@ import { HomeComponent }   from './home.component';
      CommonModule, 
      FormsModule,
      HttpModule,
-     NgbModule,
+     NgbModule
   ],
   declarations: [
-     HomeComponent
+     ConfirmComponent,
+     AlertComponent
   ],
-  exports:      [
-    HomeComponent
-  ],
-  providers:    []
+  providers:    [ModalService],
+  entryComponents : [ConfirmComponent,AlertComponent ]
 })
-export class HomeModule { }
+export class SharedModule { }

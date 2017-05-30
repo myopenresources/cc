@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {  Router } from '@angular/router';
 
 import  { MainData }    from '../main/main-model';
+import  { ModalService } from '../shared/modal/modal.service';
+import  { ConfirmConfig} from '../shared/modal/modal-model';
 
 @Component({
   selector: 'main',
@@ -257,7 +259,7 @@ export class MainComponent implements OnInit {
   }
 
 
-  constructor(private router: Router) {}
+  constructor(private router: Router,private modalService: ModalService) {}
 
 
   /**
@@ -269,7 +271,7 @@ export class MainComponent implements OnInit {
 
   /**
     * 切换导航
-    */
+   */
   toggleNav() {
     this.navClose = !this.navClose;
     if (this.navClose) {
@@ -279,8 +281,23 @@ export class MainComponent implements OnInit {
     }
   }
 
+ /**
+  * 跳转首页
+  */
   toHome(){
      this.router.navigate(['/app/home']);
+  }
+
+  /**
+   * 退出系统
+   */
+  exitSys(){
+       let exitSysCfg=new ConfirmConfig('您确定退出系统吗？');
+       this.modalService.confirm(exitSysCfg).then((result) => {
+          console.info(result);
+       }, (reason) => {
+          console.info(reason);
+       });
   }
 
 

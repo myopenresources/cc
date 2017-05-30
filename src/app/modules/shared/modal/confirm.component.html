@@ -1,0 +1,23 @@
+<div>
+    <div class="modal-body">
+        <div>
+            <button aria-label="Close" class="close" type="button" (click)="close()">
+        <span aria-hidden="true">×</span>
+        </button>
+        </div>
+        <div class="text-primary text-center c-mt10 c-mb5">
+            <div class="c-ml20">
+                <span class="fa-stack fa-5x" aria-hidden="true">
+                    <i class="fa fa-circle-o fa-stack-2x"></i>
+                    <i class="fa fa-question fa-stack-1x"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="text-center c-word-break c-modal-content" [innerHTML]="config.content"></div>
+    </div>
+    <div class="modal-footer c-mt5" style="border:0">
+        <button type="button" class="btn " [ngClass]="config.declineBtnCls" (click)="decline()">{{config.declineBtnTxt}}</button>&nbsp;&nbsp;
+        <button type="button" class="btn " [ngClass]="config.approveBtnCls" (click)="approve()">{{config.approveBtnTxt}}</button>
+    </div>
+</div>

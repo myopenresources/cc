@@ -104,6 +104,9 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 .c-ml15 {
   margin-left: 15px;
 }
+.c-ml20 {
+  margin-left: 20px;
+}
 .c-mr3 {
   margin-right: 3px;
 }
@@ -160,4 +163,8 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 /**自动滚动条**/
 .c-scroll-y-a{
   overflow-y: auto;
+}
+/**内容换行**/
+.c-word-break{
+   word-break:break-all;
 }

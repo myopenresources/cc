@@ -40,16 +40,24 @@ export class ConfirmConfig{
 }
 
 /**
- * 弹出配置
+ * 警告框类型
+ */
+export enum AlertType {
+   INFO, WARNING, ERROR
+}
+
+
+/**
+ * 警告框配置
  */
 export class AlertConfig{
     private title:string;
     private content:string;
-    private type:string;
+    private type:AlertType;
     private approveBtnCls:string;
     private approveBtnTxt:string;
    
-    constructor(type:string='warning',title:string='',content:string='',approveBtnCls:string='btn-primary',approveBtnTxt:string='确定'){
+    constructor(type:AlertType=AlertType.WARNING,title:string='',content:string='',approveBtnCls:string='btn-primary',approveBtnTxt:string='确定'){
         this.title=title;
         this.content=content;
         this.type=type;
@@ -57,7 +65,7 @@ export class AlertConfig{
         this.approveBtnTxt=approveBtnTxt;
     }
     
-    getType(): string {
+    getType(): AlertType {
         return this.type;
     }
 

@@ -16,8 +16,8 @@
 
         <div class="text-center c-word-break c-modal-content" [innerHTML]="config.content"></div>
     </div>
-    <div class="modal-footer c-mt5" style="border:0">
-        <button type="button" class="btn " [ngClass]="config.declineBtnCls" (click)="decline()">{{config.declineBtnTxt}}</button>&nbsp;&nbsp;
-        <button type="button" class="btn " [ngClass]="config.approveBtnCls" (click)="approve()">{{config.approveBtnTxt}}</button>
+    <div class="text-center c-mb20 c-mt10">
+        <button type="button" class="btn" [ngClass]="config.approveBtnCls" (click)="approve()">{{config.approveBtnTxt}}</button>
+        <button type="button" class="btn c-ml20 " [ngClass]="config.declineBtnCls" (click)="decline()">{{config.declineBtnTxt}}</button>
     </div>
 </div>

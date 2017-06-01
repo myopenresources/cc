@@ -1,9 +1,10 @@
 import {Component, Input, ViewEncapsulation} from '@angular/core';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
-import {AlertConfig} from './modal-model';
+import {AlertConfig,AlertType} from './modal-model';
+
 
 /**
- * 确认框
+ * 警告框
  */
 @Component({
     selector : 'alert',
@@ -15,6 +16,30 @@ export class AlertComponent {
     config: AlertConfig;
 
     constructor(public activeModal: NgbActiveModal) {}
+
+    /**
+     * 判断是否信息
+     * @param type 
+     */
+    isInfo(type) {
+        return type === AlertType.INFO;
+    }
+
+    /**
+     * 判断是否警告
+     * @param type 
+     */
+    isWarning(type) {
+        return type === AlertType.WARNING;
+    }
+
+     /**
+     * 判断是否错误
+     * @param type 
+     */
+    isError(type) {
+        return type === AlertType.ERROR;
+    }
 
     /**
      * 关闭

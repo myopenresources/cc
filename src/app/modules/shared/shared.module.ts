@@ -8,6 +8,10 @@ import { ModalService } from './modal/modal.service';
 import { ConfirmComponent }   from './modal/confirm.component';
 import { AlertComponent} from './modal/alert.component';
 
+import {ToastService} from './toast/toast.service';
+import {ToastBoxComponent} from './toast/toast-box.component';
+import {ToastComponent} from './toast/toast.component';
+
 
 @NgModule({
   imports:      [
@@ -18,9 +22,12 @@ import { AlertComponent} from './modal/alert.component';
   ],
   declarations: [
      ConfirmComponent,
-     AlertComponent
+     AlertComponent,
+     ToastBoxComponent,
+     ToastComponent
   ],
-  providers:    [ModalService],
-  entryComponents : [ConfirmComponent,AlertComponent ]
+  providers:    [ModalService,ToastService],
+  entryComponents : [ConfirmComponent,AlertComponent],
+  exports:[ToastBoxComponent]
 })
 export class SharedModule { }

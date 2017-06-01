@@ -1,0 +1,39 @@
+.c-toast-container {
+    position: absolute;
+    z-index: 99999999;
+    margin-top:10px;
+    width:450px;
+    .alert{
+        border:0px;
+        -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.12);
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.c-toast-top-left{
+    left: 10px;
+    top:0;
+}
+
+.c-toast-top-center{
+    top:0;
+    left: -moz-calc( 50% - 225px);
+    left: -webkit-calc( 50% - 225px);
+    left: calc( 50% - 225px);
+}
+
+.c-toast-top-right{
+    top:0;
+    right: 10px
+}
+
+
+.c-toast-bottom-right{
+    right: 10px;
+    bottom:0;
+}
+
+.c-toast-bottom-left{
+    left: 10px;
+    bottom:0;
+}

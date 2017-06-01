@@ -292,12 +292,13 @@ export class MainComponent implements OnInit {
    * 退出系统
    */
   exitSys(){
-       let exitSysCfg=new ConfirmConfig('您确定退出系统吗？');
-       this.modalService.confirm(exitSysCfg).then((result) => {
-          console.info(result);
-       }, (reason) => {
-          console.info(reason);
-       });
+      let exitSysCfg=new ConfirmConfig('您确定退出系统吗？');
+      this.modalService.confirm(exitSysCfg).then((result) => {
+        if(result.status=="approved" ){
+            this.router.navigate(['/login']);
+        }
+      }, (reason) => {
+      });
   }
 
 

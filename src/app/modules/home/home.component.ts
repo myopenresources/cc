@@ -7,6 +7,7 @@ import { TodoObjData, NeedReadObjData, NoticeObjData, CommonFuncData } from '../
 })
 export class HomeComponent implements OnInit {
 
+
   private todoObj: TodoObjData = {
     total: 50,
     todoList: [{

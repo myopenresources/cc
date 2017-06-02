@@ -1,5 +1,5 @@
-<div class="alert" [class.alert-success]="isSuccess()" [class.alert-info]="isInfo()" [class.alert-warning]="isWarning()"
-    [class.alert-danger]="isDanger()">
+<div class="alert text-white" [class.bg-success]="isSuccess()" [class.bg-info]="isInfo()" [class.bg-warning]="isWarning()"
+    [class.bg-danger]="isDanger()">
     <button *ngIf="isDismissEnabled()" type="button" class="close" data-dismiss="config" aria-label="Close" (click)="dismiss()">
         <span aria-hidden="true">&times;</span>
       </button>

@@ -11,6 +11,9 @@ import { TreeviewMenuComponent }   from './treeview-menu.component';
 import { mainRouting } from './main-routing.module';
 import  { HomeModule }      from '../home/home.module';
 
+//demo
+import  { DemoModule }       from '../demo/demo.module';
+
 
 
 @NgModule({
@@ -20,7 +23,8 @@ import  { HomeModule }      from '../home/home.module';
      HttpModule,
      NgbModule,
      mainRouting,
-     HomeModule
+     HomeModule,
+     DemoModule
   ],
   declarations: [
      MainComponent,

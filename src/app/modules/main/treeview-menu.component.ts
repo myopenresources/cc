@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {  Router } from '@angular/router';
 import  { MenuData }    from '../main/main-model';
 
 @Component({
@@ -21,7 +22,7 @@ export class TreeviewMenuComponent {
   @Input() data:Array<MenuData>;
 
 
-  constructor() {}
+  constructor(private router: Router,) {}
 
 
   /**
@@ -40,7 +41,7 @@ export class TreeviewMenuComponent {
     if (!this.isLeaf(item)) {
       item.isExpend = !item.isExpend;
     } else {
-      console.info(item.name);
+       this.router.navigate([item.url]);
     }
   }
 

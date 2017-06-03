@@ -31,30 +31,30 @@ export class MainComponent implements OnInit {
       "id": "1",
       "parentId": "0",
       "name": "经典示例",
-      "keyWord":"jdsl",
+      "keyWord":"toast",
       "icon": 'fa-wrench',
       "isExpend": false,
       "children": [{
         "id": "2",
         "parentId": "1",
-        "name": "模态框",
+        "name": "Toast",
         "keyWord":"mtk",
         "icon": 'fa-columns',
-        "url": 'modal'
+        "url": '/app/toastDemo'
       }, {
         "id": "3",
         "parentId": "1",
-        "name": "分页",
-        "keyWord":"fy",
-        "icon": 'fa-pagelines',
-        "url": 'pagination'
+        "name": "modal",
+        "keyWord":"modal",
+        "icon": 'fa-columns',
+        "url": '/app/modalDemo'
       }, {
         "id": "4",
         "parentId": "1",
-        "name": "数据分页器",
+        "name": "图片裁剪",
         "keyWord":"sjfyq",
         "icon": 'fa-table',
-        "url": 'dataPager'
+        "url": '/app/imgCropperDemo'
       }, {
         "id": "5",
         "parentId": "1",

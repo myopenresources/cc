@@ -2,7 +2,7 @@
  * 类型
  */
 export enum ToastType {
-  SUCCESS, INFO, WARNING, DANGER
+  SUCCESS, INFO, WARNING, ERROR
 }
 
 

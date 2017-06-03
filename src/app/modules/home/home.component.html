@@ -3,7 +3,7 @@
         <div class="col-md-12">
             <div class="card c-card">
                 <div class="card-block">
-                    <i class="fa fa-bullhorn fa-fw text-success"></i> <strong class="text-success">欢迎您，百变小咖</strong> <span class="c-home-login-tip">， 这是您第 <span class="text-danger">12708</span>                    次登录，上次登录时间： <span class="text-danger">2017-5-20 21:05:20</span>，如果不是您本人登录，请及时 <a href="javascript:void(0)">修改密码</a>                    。</span>
+                    <i class="fa fa-bullhorn fa-fw text-danger"></i> <strong class="text-danger">欢迎您，百变小咖</strong> <span class="c-home-login-tip">， 这是您第 <span class="text-danger">12708</span>                    次登录，上次登录时间： <span class="text-danger">2017-5-20 21:05:20</span>，如果不是您本人登录，请及时 <a href="javascript:void(0)">修改密码</a>                    。</span>
                     <button aria-label="Close" class="close" type="button"  (click)="userTipClose=true">
                        <span aria-hidden="true">×</span>
                     </button>
@@ -34,7 +34,7 @@
                                         <table class="c-line-table">
                                             <tr>
                                                 <td>
-                                                    <span class="text-danger"><i class="fa fa-info fa-fw"></i>您共有{{todoObj.total}}条未处理待办信息</span>
+                                                    <span class="c-home-card-tip"><i class="fa fa-info fa-fw"></i>您共有<strong class="text-danger"> {{todoObj.total}} </strong> 条未处理待办信息</span>
                                                 </td>
                                                 <td class=" text-right">
                                                     <a class="text-danger c-cursor-pointer">查看更多&gt;&gt;</a>
@@ -81,7 +81,7 @@
                                         <table class="c-line-table">
                                             <tr>
                                                 <td>
-                                                    <span class="text-danger"><i class="fa fa-info fa-fw"></i>您共有{{noticeObj.total}}条未查看系统通知</span>
+                                                    <span class="c-home-card-tip"><i class="fa fa-info fa-fw"></i>您共有<strong class="text-danger"> {{noticeObj.total}} </strong> 条未查看系统通知</span>
                                                 </td>
                                                 <td class=" text-right">
                                                     <a class="text-danger c-cursor-pointer">查看更多&gt;&gt;</a>
@@ -131,7 +131,7 @@
                                         <table class="c-line-table">
                                             <tr>
                                                 <td>
-                                                    <span class="text-danger"><i class="fa fa-info fa-fw"></i>您共有{{needReadObj.total}}条未查看待阅信息</span>
+                                                    <span class="c-home-card-tip"><i class="fa fa-info fa-fw"></i>您共有<strong class="text-danger"> {{needReadObj.total}} </strong> 条未查看待阅信息</span>
                                                 </td>
                                                 <td class=" text-right">
                                                     <a class="text-danger c-cursor-pointer">查看更多&gt;&gt;</a>

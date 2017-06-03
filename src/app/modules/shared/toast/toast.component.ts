@@ -46,8 +46,8 @@ export class ToastComponent implements OnInit {
   /**
    * 判断是错误
    */
-  isDanger() {
-    return this.config.getToastType() === ToastType.DANGER;
+  isError() {
+    return this.config.getToastType() === ToastType.ERROR;
   }
 
   /**

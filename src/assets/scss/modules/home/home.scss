@@ -4,11 +4,15 @@
 
 .c-home-card{
     max-height: 347px;
+    .c-home-card-inner{
+       max-height: 276px;
+       .c-home-card-tip{
+           color:$color-black-secondary
+       }
+    }
 }
 
-.c-home-card-inner{
-    max-height: 276px;
-}
+
 
 .c-home-common-func-outline{
     border:1px  dashed $color-gray-deep;

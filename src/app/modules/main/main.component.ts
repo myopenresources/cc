@@ -37,24 +37,24 @@ export class MainComponent implements OnInit {
       "children": [{
         "id": "2",
         "parentId": "1",
-        "name": "Toast",
+        "name": "消息框",
         "keyWord":"mtk",
         "icon": 'fa-columns',
         "url": '/app/toastDemo'
       }, {
         "id": "3",
         "parentId": "1",
-        "name": "modal",
+        "name": "模态框",
         "keyWord":"modal",
         "icon": 'fa-columns',
         "url": '/app/modalDemo'
       }, {
         "id": "4",
         "parentId": "1",
-        "name": "图片裁剪",
-        "keyWord":"sjfyq",
-        "icon": 'fa-table',
-        "url": '/app/imgCropperDemo'
+        "name": "图表",
+        "keyWord":"chart",
+        "icon": 'fa-pie-chart',
+        "url": '/app/ngxChartsDemo'
       }, {
         "id": "5",
         "parentId": "1",

@@ -15,3 +15,9 @@
 
 ## 单元测试
 1. npm test                                    <---- 使用npm命令测试，目前的模块中没有加入测试代码，需要自行添加       
+
+## 许可
+[MIT](/LICENSE)
+
+## 许可
+![image](https://github.com/332557712/cc/src/assets/img/cc.jpg)

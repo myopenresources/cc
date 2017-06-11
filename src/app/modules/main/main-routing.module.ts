@@ -6,7 +6,8 @@ import { HomeComponent } from '../home/home.component';
 //demo
 import { ToastDemoComponent } from '../demo/toast-demo.component'
 import { ModalDemoComponent } from '../demo/modal-demo.component'
-import { NgxChartsComponent } from '../demo/ngx-charts.component'
+import { NgxChartsDemoComponent } from '../demo/ngx-charts-demo.component'
+import { MultiSelectDemoComponent } from '../demo/multiselect-dropdown-demo.component'
 
 
 const mainRoutes: Routes = [
@@ -24,7 +25,11 @@ const mainRoutes: Routes = [
       },
       {
             path: 'ngxChartsDemo',
-            component: NgxChartsComponent
+            component: NgxChartsDemoComponent
+      },
+      {
+            path: 'multiselectDropdownDemo',
+            component: MultiSelectDemoComponent
       }
 
 

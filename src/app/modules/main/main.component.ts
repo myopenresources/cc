@@ -58,10 +58,10 @@ export class MainComponent implements OnInit {
       }, {
         "id": "5",
         "parentId": "1",
-        "name": "数据表格",
-        "keyWord":"sjbg",
-        "icon": 'fa-table',
-        "url": 'dataTable'
+        "name": "下拉",
+        "keyWord":"multiselectDropdown",
+        "icon": 'fa-circle',
+        "url": '/app/multiselectDropdownDemo'
       }, {
         "id": "6",
         "parentId": "1",

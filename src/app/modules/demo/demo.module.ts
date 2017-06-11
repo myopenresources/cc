@@ -4,11 +4,12 @@ import { FormsModule }        from '@angular/forms';
 import { HttpModule }    from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {NgxChartsModule} from '@swimlane/ngx-charts';
+import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
 
 import {ToastDemoComponent} from './toast-demo.component'
 import {ModalDemoComponent} from './modal-demo.component'
-import {NgxChartsComponent} from './ngx-charts.component'
-
+import {NgxChartsDemoComponent} from './ngx-charts-demo.component'
+import {MultiSelectDemoComponent} from './multiselect-dropdown-demo.component'
 
 
 
@@ -18,17 +19,21 @@ import {NgxChartsComponent} from './ngx-charts.component'
      FormsModule,
      HttpModule,
      NgbModule,
-     NgxChartsModule
+     NgxChartsModule,
+     MultiselectDropdownModule
   ],
   declarations: [
      ToastDemoComponent,
      ModalDemoComponent,
-     NgxChartsComponent
+     NgxChartsDemoComponent,
+     MultiSelectDemoComponent
+
   ],
   exports:      [
      ToastDemoComponent,
      ModalDemoComponent,
-     NgxChartsComponent
+     NgxChartsDemoComponent,
+     MultiSelectDemoComponent
   ],
   providers:    []
 })

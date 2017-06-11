@@ -92,7 +92,7 @@ export var multi = [
     </div>
   `
 })
-export class NgxChartsComponent {
+export class NgxChartsDemoComponent {
     single: any[];
     multi: any[];
 

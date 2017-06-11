@@ -38,15 +38,18 @@
       }
     }
     .c-nav-search {
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 13px;
+      padding-right: 13px;
       padding-bottom: 15px;
       padding-top: 10px;
       input {
         background-color: $color-secondary;
-        border: 1px solid $color-light;
+        border: 1px solid $color-secondary;
         color: $color-gray-deep;
         font-size: 15px;
+        &:focus{
+           border: 1px solid $color-light;
+        }
         &::-webkit-input-placeholder {
           color: $color-gray-deep !important;
         }
@@ -64,6 +67,10 @@
         color: $color-gray-deep;
         background-color: $color-secondary;
         font-size: 15px;
+        border: 1px solid $color-secondary;
+        &:focus{
+           border: 1px solid $color-light;
+        }
       }
     }
     .c-nav {

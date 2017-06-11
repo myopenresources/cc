@@ -1,6 +1,8 @@
 ## CC admin 
 一个基于Angular4+Bootstrap4+Scss的后台管理系统界面
 
+![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc.png)
+
 ## 安装
 1. cd E:\project\cc                            <---- 进入到项目所有的目录
 2. npm install                                 <---- 安装，如果下载比较慢，可使用淘宝的cnpm
@@ -18,6 +20,3 @@
 
 ## 许可
 [MIT](/LICENSE)
-
-## 许可
-![image](https://github.com/332557712/cc/src/assets/img/cc.jpg)

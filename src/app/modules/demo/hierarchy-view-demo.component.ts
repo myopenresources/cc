@@ -16,7 +16,7 @@ import { HierarchyViewData } from '../shared/hierarchy-view/hierarchy-view-model
           </div>
         </div>
       
-      <hierarchy-view [data]="viewData" (onClicked)="nodeClicked($event)"></hierarchy-view>
+       <hierarchy-view [data]="viewData" (onClicked)="nodeClicked($event)"></hierarchy-view>
        <div class="row">
           <div  class="col-md-12">
             <div class="c-mt15">

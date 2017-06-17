@@ -4,11 +4,12 @@ import { RouterModule, Routes, Router } from '@angular/router';
 import { HomeComponent } from '../home/home.component';
 
 //demo
-import { ToastDemoComponent } from '../demo/toast-demo.component'
-import { ModalDemoComponent } from '../demo/modal-demo.component'
-import { NgxChartsDemoComponent } from '../demo/ngx-charts-demo.component'
-import { MultiSelectDemoComponent } from '../demo/multiselect-dropdown-demo.component'
-import { HierarchyViewDemoComponent } from '../demo/hierarchy-view-demo.component'
+import { ToastDemoComponent } from '../demo/toast-demo.component';
+import { ModalDemoComponent } from '../demo/modal-demo.component';
+import { NgxChartsDemoComponent } from '../demo/ngx-charts-demo.component';
+import { MultiSelectDemoComponent } from '../demo/multiselect-dropdown-demo.component';
+import { HierarchyViewDemoComponent } from '../demo/hierarchy-view-demo.component';
+import { ImgCropperDemoComponent } from '../demo/img-cropper-demo.component';
 
 
 const mainRoutes: Routes = [
@@ -35,6 +36,10 @@ const mainRoutes: Routes = [
       {
             path: 'hierarchyViewDemo',
             component: HierarchyViewDemoComponent
+      },
+      {
+            path: 'imgCropperDemo',
+            component: ImgCropperDemoComponent
       }
 
 

@@ -17,6 +17,7 @@
 6. 添加第三方ng-charts组件
 7. 添加第三方multiselect组件
 8. 添加层次图组件
+9. 添加第三方ng2-img-cropper组件
 
 
 ## 环境

@@ -72,10 +72,10 @@ export class MainComponent implements OnInit {
       }, {
         "id": "7",
         "parentId": "1",
-        "name": "自定义样式",
-        "keyWord":"zdyys",
+        "name": "图片裁剪",
+        "keyWord":"imgCropper",
         "icon": 'fa-css3',
-        "url": 'customCss'
+        "url": '/app/imgCropperDemo'
       }, {
         "id": "8",
         "parentId": "1",

@@ -5,10 +5,10 @@
 @import '../node_modules/font-awesome/css/font-awesome.min.css';
 @import '../node_modules/animate.css/animate.min.css';
 //bootstrap
-@import "./assets/scss/commons/bootstrap-variables";
-@import '../node_modules/bootstrap/scss/bootstrap'; 
-@import '../node_modules/bootstrap/scss/bootstrap-grid'; 
-@import '../node_modules/bootstrap/scss/bootstrap-reboot'; 
+@import "./assets/scss/commons/bootstrap-variables.scss";
+@import '../node_modules/bootstrap/scss/bootstrap.scss'; 
+@import '../node_modules/bootstrap/scss/bootstrap-grid.scss'; 
+@import '../node_modules/bootstrap/scss/bootstrap-reboot.scss'; 
 
 
 
@@ -21,6 +21,7 @@
 @import './assets/scss/modules/home/home.scss';
 @import './assets/scss/modules/shared/modal.scss';
 @import './assets/scss/modules/shared/toast.scss';
+@import './assets/scss/modules/shared/hierarchy-view.scss';
 
 
 

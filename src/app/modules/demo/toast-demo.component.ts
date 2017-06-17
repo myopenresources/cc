@@ -4,7 +4,7 @@ import {ToastService} from '../shared/toast/toast.service';
 import {ToastConfig,ToastType} from '../shared/toast/toast-model';
 
 @Component({
-  selector: 'home',
+  selector: 'toast-demo',
   template: `
     <div class="container-fluid">
         <button type="button" class="btn btn-info" (click)="openInfo()">Info toast</button>

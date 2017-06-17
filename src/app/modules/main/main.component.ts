@@ -65,10 +65,10 @@ export class MainComponent implements OnInit {
       }, {
         "id": "6",
         "parentId": "1",
-        "name": "bootstrap样式",
-        "keyWord":"bootstrapys",
+        "name": "层次图",
+        "keyWord":"hierarchyView",
         "icon": 'fa-css3',
-        "url": 'bootstrapCss'
+        "url": '/app/hierarchyViewDemo'
       }, {
         "id": "7",
         "parentId": "1",

@@ -1,0 +1,50 @@
+<div>
+    <div *ngIf="data.children && data.children.length==1">
+        <div class="c-block">
+            <div class="c-part">
+                <div class="c-line-v">
+                    <span></span>
+                </div>
+                <span class="c-name">{{data.children[0].name}}</span>
+                <div *ngIf="data.children[0].children && data.children[0].children.length>0">
+                    <div class="c-line-v">
+                        <span></span>
+                    </div>
+                    <hierarchy-view-node [data]="data.children[0]"></hierarchy-view-node>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="data.children.length>1">
+		<div class="c-block">
+			<div class="c-part"  *ngFor="let node of data.children;let isFirst=first; let isLast=last;">
+                
+				<div *ngIf="isFirst">
+					<span class="c-line-h c-line-h-r"></span>
+				</div>
+				<div *ngIf="isLast">
+					<span class="c-line-h c-line-h-l"></span>
+				</div>
+				<div  *ngIf="!isLast && !isFirst">
+					<span class="c-line-h c-line-h-c"></span>
+				</div>
+
+				<div class="c-line-v">
+					<span></span>
+				</div>
+			
+				<span  class="c-name">{{node.name}}</span>
+				<div *ngIf="node.children && node.children.length>0">
+					<div class="c-line-v">
+						<span></span>
+					</div>
+                    <hierarchy-view-node [data]="node"></hierarchy-view-node>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+</div>

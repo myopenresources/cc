@@ -8,6 +8,7 @@ import { ToastDemoComponent } from '../demo/toast-demo.component'
 import { ModalDemoComponent } from '../demo/modal-demo.component'
 import { NgxChartsDemoComponent } from '../demo/ngx-charts-demo.component'
 import { MultiSelectDemoComponent } from '../demo/multiselect-dropdown-demo.component'
+import { HierarchyViewDemoComponent } from '../demo/hierarchy-view-demo.component'
 
 
 const mainRoutes: Routes = [
@@ -30,6 +31,10 @@ const mainRoutes: Routes = [
       {
             path: 'multiselectDropdownDemo',
             component: MultiSelectDemoComponent
+      },
+      {
+            path: 'hierarchyViewDemo',
+            component: HierarchyViewDemoComponent
       }
 
 

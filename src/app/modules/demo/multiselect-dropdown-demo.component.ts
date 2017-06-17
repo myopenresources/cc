@@ -4,7 +4,7 @@ import { IMultiSelectOption, IMultiSelectTexts, IMultiSelectSettings } from 'ang
 
 
 @Component({
-    selector: 'home',
+    selector: 'multiselect-dropdown-demo',
     template: `
     <div class="container-fluid">
         <ss-multiselect-dropdown [options]="myOptions" [texts]="myTexts" [settings]="mySettings" [(ngModel)]="optionsModel" (ngModelChange)="onChange($event)"></ss-multiselect-dropdown>

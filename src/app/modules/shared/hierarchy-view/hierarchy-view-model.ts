@@ -1,0 +1,28 @@
+/**
+ * 层次图节点
+ */
+export class HierarchyViewNode{
+    //ID
+    id:string;
+
+    //名称
+    name:string;
+
+    //图标
+    icon?:string;
+
+    //样式
+    cls?:string;
+
+    //子节点
+    children?:Array<HierarchyViewNode>;
+}
+
+/**
+ * 层次图数据
+ */
+export class HierarchyViewData{
+     total:number;
+     rows:Array<HierarchyViewNode>;
+}
+

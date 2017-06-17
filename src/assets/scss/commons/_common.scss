@@ -60,7 +60,6 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
     background: rgba(0, 0, 0, 0.15);
   }
 }
-/*滑块效果*/
 /**外边距**/
 .c-mt3 {
   margin-top: 3px;
@@ -139,6 +138,19 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
   -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
   box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
 }
+/**手式**/
+.c-cursor-pointer {
+  cursor: pointer;
+}
+
+/**自动滚动条**/
+.c-scroll-y-a{
+  overflow-y: auto;
+}
+/**内容换行**/
+.c-word-break{
+   word-break:break-all;
+}
 /*======line table======*/
 .c-line-table {
   width: 100%;
@@ -158,16 +170,4 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
     }
   }
 }
-/**手式**/
-.c-cursor-pointer {
-  cursor: pointer;
-}
 
-/**自动滚动条**/
-.c-scroll-y-a{
-  overflow-y: auto;
-}
-/**内容换行**/
-.c-word-break{
-   word-break:break-all;
-}

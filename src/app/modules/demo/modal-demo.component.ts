@@ -5,7 +5,7 @@ import { ConfirmConfig, AlertType, AlertConfig } from '../shared/modal/modal-mod
 
 
 @Component({
-  selector: 'home',
+  selector: 'modal-demo',
   template: `
     <div class="container-fluid">
         <button type="button" class="btn btn-info" (click)="openInfo()">Info alert</button>

@@ -5,11 +5,15 @@ import { HttpModule }    from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {NgxChartsModule} from '@swimlane/ngx-charts';
 import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
+import  { SharedModule }       from '../shared/shared.module';
 
 import {ToastDemoComponent} from './toast-demo.component'
 import {ModalDemoComponent} from './modal-demo.component'
 import {NgxChartsDemoComponent} from './ngx-charts-demo.component'
 import {MultiSelectDemoComponent} from './multiselect-dropdown-demo.component'
+import {HierarchyViewDemoComponent} from './hierarchy-view-demo.component'
+
+
 
 
 
@@ -20,20 +24,23 @@ import {MultiSelectDemoComponent} from './multiselect-dropdown-demo.component'
      HttpModule,
      NgbModule,
      NgxChartsModule,
-     MultiselectDropdownModule
+     MultiselectDropdownModule,
+     SharedModule
   ],
   declarations: [
      ToastDemoComponent,
      ModalDemoComponent,
      NgxChartsDemoComponent,
-     MultiSelectDemoComponent
+     MultiSelectDemoComponent,
+     HierarchyViewDemoComponent
 
   ],
   exports:      [
      ToastDemoComponent,
      ModalDemoComponent,
      NgxChartsDemoComponent,
-     MultiSelectDemoComponent
+     MultiSelectDemoComponent,
+     HierarchyViewDemoComponent
   ],
   providers:    []
 })

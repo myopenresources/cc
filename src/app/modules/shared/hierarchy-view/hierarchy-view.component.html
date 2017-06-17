@@ -1,0 +1,13 @@
+<div class="c-hierarchy-view-box">
+    <div class="c-hierarchy-view"  [ngStyle]="{'width':boxWidth}">
+        <div class="c-block">
+            <div class="c-part" *ngFor="let node of data.rows">
+                <span class="c-name">{{node.name}}</span>
+                <div class="c-line-v">
+                    <span></span>
+                </div>
+                <hierarchy-view-node [data]="node"></hierarchy-view-node>
+            </div>
+        </div>
+    </div>
+</div>

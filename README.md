@@ -3,6 +3,18 @@
 
 ![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc.png)
 
+
+## 更新
+1. 搭建环境
+2. 登录界面
+3. 主页
+4. 添加alert与confirm组件
+5. 添加toast组件
+6. 添加第三方ng-charts组件
+7. 添加第三方multiselect组件
+8. 添加层次图组件
+
+
 ## 安装
 1. cd E:\project\cc                            <---- 进入到项目所有的目录
 2. npm install                                 <---- 安装，如果下载比较慢，可使用淘宝的cnpm

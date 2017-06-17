@@ -1,5 +1,5 @@
 ## CC admin 
-一个基于Angular4+Bootstrap4+Scss的后台管理系统界面，
+ 一个基于Angular4+Bootstrap4+Scss的后台管理系统界面，
 
 ![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc.png)
 
@@ -20,7 +20,7 @@
 
 
 ## 环境
-您需要安装nodeJS环境，国内使用可使用淘宝 NPM 镜像加速，请参考：https://npm.taobao.org/
+ 您需要安装nodeJS环境，国内可使用淘宝 NPM 镜像加速，请参考：https://npm.taobao.org/
 
 
 ## 安装
@@ -43,11 +43,11 @@
 
 
 ## 特别声明
-如果本界面中使用到了您的产品或是对您造成了影响请及时联系我，我将第一时间去除，QQ：332557712
+ 如果本界面中使用到了您的产品或是对您造成了影响请及时联系我，我将第一时间去除，QQ：332557712
 
 
 ## 贡献
-站在巨人的肩膀上，才能够走得更远，感谢那些默默贡献的人！
+ 站在巨人的肩膀上，才能够走得更远，感谢那些默默贡献的人！
 
 ## 许可
-[MIT](/LICENSE)
+ [MIT](/LICENSE)

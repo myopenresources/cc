@@ -62,3 +62,10 @@ $progress-bg:               $gray-lightest;
 
 $table-bg-accent:           $gray-lightest;
 $table-bg-hover:            $gray-lightest;
+
+
+.btn{
+    -webkit-box-shadow: 1px 1px 3px rgba(100, 100, 100, 0.3);
+	-moz-box-shadow: 1px 1px 3px rgba(100, 100, 100,  0.3);
+	box-shadow: 1px 1px 3px rgba(100, 100, 100,  0.3);
+}

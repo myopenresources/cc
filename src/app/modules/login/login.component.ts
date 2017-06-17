@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
    * 登录
    */
   login(){
-    const toastCfg = new ToastConfig(ToastType.SUCCESS,'百变小咖，登录成功!','', 3000);
+    const toastCfg = new ToastConfig(ToastType.SUCCESS,'百变小咖，登录成功!','', 2000);
     this.toastService.toast(toastCfg);
     this.router.navigate(['/app/home']);
   }

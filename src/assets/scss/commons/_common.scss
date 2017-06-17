@@ -27,9 +27,12 @@ $color-gray-light:#fefefe !default;
 
 //白色
 $color-white:#ffffff !default;
+//灰色
+$color-gary:#dddddd !default;
 
 //白灰色
 $color-white-gray:#f5f6f7 !default;
+
 
 
 
@@ -137,6 +140,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
   border-radius: 1px;
   -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
   box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
+  -moz-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
 }
 /**手式**/
 .c-cursor-pointer {
@@ -151,7 +155,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 .c-word-break{
    word-break:break-all;
 }
-/*======line table======*/
+/*line table*/
 .c-line-table {
   width: 100%;
   margin-bottom: 10px;
@@ -169,5 +173,20 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
       border-top: 1px dashed $color-gray-deep;
     }
   }
+}
+/*去除阴影*/
+.c-not-shadow{
+  -webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow: none;
+}
+/*行标题*/
+.c-line-title {
+	margin-bottom: 15px;
+	padding-bottom: 8px;
+	font-size: 15px;
+	border-bottom: 1px dashed $color-gary;
+	color: $color-black-secondary;
+	font-weight: bold;
 }
 

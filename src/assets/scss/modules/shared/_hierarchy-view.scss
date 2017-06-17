@@ -25,7 +25,7 @@
 
 .c-hierarchy-view-box .c-hierarchy-view .c-part .c-line-v span {
 	display: block;
-	background: #ccc;
+	background: $color-gary;
 	position: absolute;
 	top: 0;
 	font-size: 0;
@@ -38,7 +38,7 @@
 .c-hierarchy-view-box .c-hierarchy-view .c-part .c-line-h {
 	height: 1px;
 	display: block;
-	background: #ccc;
+	background: $color-gary;
 	position: absolute;
 	top: 0;
 	font-size: 0;
@@ -65,14 +65,25 @@
 	width: 30px;
 	height: auto;
 	line-height: 20px;
-	border: 1px solid #ddd;
 	margin: 0 6px;
-	border-radius: 3px;
-	background: #f8f8f8;
-	-webkit-box-shadow: 1px 2px 3px rgba(88, 88, 88, .25);
-	-moz-box-shadow: 1px 2px 3px rgba(88, 88, 88, .25);
-	box-shadow: 1px 2px 3px rgba(88, 88, 88, .25);
-	color: #353535
+	border-radius: 2px;
+	background: $color-gray-secondary;
+	-webkit-box-shadow: 1px 1px 3.6px rgba(100, 100, 100, 0.6);
+	-moz-box-shadow: 1px 1px 3.6px rgba(100, 100, 100,  0.6);
+	box-shadow: 1px 1px 3.6px rgba(100, 100, 100,  0.6);
+	color: $color-black-secondary;
+}
+
+
+.c-hierarchy-view-box .c-hierarchy-view .c-part .c-name:hover {
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+	-moz-transition: 0.2s;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	filter: alpha(opacity=55);
+	-moz-opacity: 0.55;
+	opacity: 0.55;
 }
 
 .c-hierarchy-view-box .c-hierarchy-view .c-block {

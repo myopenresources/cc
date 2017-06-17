@@ -7,14 +7,24 @@ import { ConfirmConfig, AlertType, AlertConfig } from '../shared/modal/modal-mod
 @Component({
   selector: 'modal-demo',
   template: `
-    <div class="container-fluid">
-        <button type="button" class="btn btn-info" (click)="openInfo()">Info alert</button>
-        <button type="button" class="btn btn-warning" (click)="openWarning()">Warning alert</button>
-        <button type="button" class="btn btn-danger" (click)="openError()">Error alert</button>
-        <button type="button" class="btn btn-primary" (click)="openConfirm()">confirm</button>
-        <div class="c-mt15">
-           组件目录:src/app/modules/shared/modal
+     <div class="c-content-inner">
+       <div class="row">
+          <div  class="col-md-12">
+              <p class="c-line-title">示例</p>
+              <button type="button" class="btn btn-info" (click)="openInfo()">Info alert</button>
+              <button type="button" class="btn btn-warning" (click)="openWarning()">Warning alert</button>
+              <button type="button" class="btn btn-danger" (click)="openError()">Error alert</button>
+              <button type="button" class="btn btn-primary" (click)="openConfirm()">confirm</button>
+            </div>
         </div>
+        <div class="row">
+          <div  class="col-md-12">
+            <div class="c-mt15">
+                 <p class="c-line-title">说明</p>
+                 组件目录:src/app/modules/shared/modal
+            </div>
+          </div>
+      </div>
       
     </div>
   `

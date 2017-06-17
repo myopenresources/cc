@@ -8,7 +8,7 @@ import  { MenuData }    from '../main/main-model';
       <div class="input-group">
             <input type="text" class="form-control" placeholder="搜索菜单..." [(ngModel)]="searchTxt">
             <span class="input-group-btn">
-               <button class="btn btn-info" type="button"  (click)="searchMenu();">
+               <button class="btn btn-info c-not-shadow" type="button"  (click)="searchMenu();">
                    <i class="fa  fa-search fa-fw"></i>
                 </button>
             </span>

@@ -16,6 +16,9 @@ export class HierarchyViewNode{
 
     //子节点
     children?:Array<HierarchyViewNode>;
+
+    //单击启用
+    clickEnable?:boolean=true;
 }
 
 /**

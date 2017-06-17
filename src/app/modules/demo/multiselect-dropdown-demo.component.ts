@@ -6,12 +6,21 @@ import { IMultiSelectOption, IMultiSelectTexts, IMultiSelectSettings } from 'ang
 @Component({
     selector: 'multiselect-dropdown-demo',
     template: `
-    <div class="container-fluid">
-        <ss-multiselect-dropdown [options]="myOptions" [texts]="myTexts" [settings]="mySettings" [(ngModel)]="optionsModel" (ngModelChange)="onChange($event)"></ss-multiselect-dropdown>
-        <div class="c-mt15">
-           第三方组件文档:https://github.com/softsimon/angular-2-dropdown-multiselect
+   <div class="c-content-inner">
+       <div class="row">
+          <div  class="col-md-12">
+              <p class="c-line-title">示例</p>
+              <ss-multiselect-dropdown [options]="myOptions" [texts]="myTexts" [settings]="mySettings" [(ngModel)]="optionsModel" (ngModelChange)="onChange($event)"></ss-multiselect-dropdown>
+          </div>
         </div>
-      
+        <div class="row">
+          <div  class="col-md-12">
+           <div class="c-mt15">
+             <p class="c-line-title">说明</p>
+             第三方组件文档:https://github.com/softsimon/angular-2-dropdown-multiselect
+            </div>
+           </div>
+        </div>
     </div>
   `
 })
@@ -25,7 +34,6 @@ export class MultiSelectDemoComponent {
         enableSearch: true,
         checkedStyle: 'fontawesome',
         buttonClasses: 'btn btn-default btn-block',
-        containerClasses: 'col-md-6',
         dynamicTitleMaxItems: 3,
         displayAllSelectedText: true
     };

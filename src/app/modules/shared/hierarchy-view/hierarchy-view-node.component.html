@@ -5,12 +5,12 @@
                 <div class="c-line-v">
                     <span></span>
                 </div>
-                <span class="c-name">{{data.children[0].name}}</span>
+                <span class="c-name c-cursor-pointer " [ngClass]="data.children[0].cls" (click)="nodeClick(data.children[0]);"><i class="fa fa-fw" [ngClass]="data.children[0].icon" [hidden]="!data.children[0].icon"></i> {{data.children[0].name}}</span>
                 <div *ngIf="data.children[0].children && data.children[0].children.length>0">
                     <div class="c-line-v">
                         <span></span>
                     </div>
-                    <hierarchy-view-node [data]="data.children[0]"></hierarchy-view-node>
+                    <hierarchy-view-node [data]="data.children[0]" (onClicked)="nodeClick($event);"></hierarchy-view-node>
                 </div>
             </div>
         </div>
@@ -34,12 +34,12 @@
 					<span></span>
 				</div>
 			
-				<span  class="c-name">{{node.name}}</span>
+				<span  class="c-name c-cursor-pointer " [ngClass]="node.cls"  (click)="nodeClick(node);"><i class="fa fa-fw" [ngClass]="node.icon" [hidden]="!node.icon"></i> {{node.name}}</span>
 				<div *ngIf="node.children && node.children.length>0">
 					<div class="c-line-v">
 						<span></span>
 					</div>
-                    <hierarchy-view-node [data]="node"></hierarchy-view-node>
+                    <hierarchy-view-node [data]="node" (onClicked)="nodeClick($event);"></hierarchy-view-node>
 				</div>
 
 			</div>

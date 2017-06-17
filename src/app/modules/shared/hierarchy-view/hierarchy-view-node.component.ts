@@ -1,4 +1,4 @@
-import {Component,Input} from '@angular/core';
+import {Component,Input,Output,EventEmitter} from '@angular/core';
 
 import {HierarchyViewNode} from './hierarchy-view-model'
 
@@ -15,5 +15,19 @@ export class HierarchyViewNodeComponent {
    
    @Input()
    data: HierarchyViewNode;
+   @Output()
+   onClicked= new EventEmitter();
+
+   /**
+    * 单击事件
+    * @param node 节点
+    */
+   nodeClick(node){
+       if(node.clickEnable===false){
+          return ;
+       }else{
+           this.onClicked.emit(node);
+       }
+   }
 
 }

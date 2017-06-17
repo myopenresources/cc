@@ -9,11 +9,6 @@ import { ModalService } from './modal/modal.service';
 import { ConfirmComponent }   from './modal/confirm.component';
 import { AlertComponent} from './modal/alert.component';
 
-//toast
-import {ToastService} from './toast/toast.service';
-import {ToastBoxComponent} from './toast/toast-box.component';
-import {ToastComponent} from './toast/toast.component';
-
 //hierarchy view
 import {HierarchyViewComponent} from './hierarchy-view/hierarchy-view.component';
 import {HierarchyViewNodeComponent} from './hierarchy-view/hierarchy-view-node.component';
@@ -29,13 +24,11 @@ import {HierarchyViewNodeComponent} from './hierarchy-view/hierarchy-view-node.c
   declarations: [
      ConfirmComponent,
      AlertComponent,
-     ToastBoxComponent,
-     ToastComponent,
      HierarchyViewComponent,
      HierarchyViewNodeComponent
   ],
-  providers:    [ModalService,ToastService],
+  providers:    [ModalService],
   entryComponents : [ConfirmComponent,AlertComponent],
-  exports:[ToastBoxComponent,HierarchyViewComponent]
+  exports:[HierarchyViewComponent]
 })
 export class SharedModule { }

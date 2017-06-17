@@ -11,6 +11,10 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 //components
 import { appRouting } from './app-routing.module';
 import { AppComponent }    from './app.component';
+//toast
+import {ToastService} from './modules/shared/toast/toast.service';
+import {ToastBoxComponent} from './modules/shared/toast/toast-box.component';
+import {ToastComponent} from './modules/shared/toast/toast.component';
 
 //modules
 import  { LoginModule }      from './modules/login/login.module';
@@ -33,9 +37,12 @@ import  { SharedModule }       from './modules/shared/shared.module';
     SharedModule
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+    ToastBoxComponent,
+    ToastComponent,
   ],
-  providers: [],
+  providers: [ToastService],
+  exports:[ToastBoxComponent],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {}

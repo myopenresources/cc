@@ -1,4 +1,4 @@
-import {Component,Input,OnInit} from '@angular/core';
+import {Component,Input,Output,EventEmitter,OnChanges,SimpleChanges } from '@angular/core';
 
 import {HierarchyViewData} from './hierarchy-view-model'
 
@@ -13,27 +13,40 @@ import {HierarchyViewData} from './hierarchy-view-model'
     selector : 'hierarchy-view',
     templateUrl : './hierarchy-view.component.html'
 })
-export class HierarchyViewComponent implements OnInit  {
+export class HierarchyViewComponent implements OnChanges  {
 
    @Input()
    data: HierarchyViewData;
    @Input()
    nodeWidth:number=43;
+   @Output()
+   onClicked= new EventEmitter();
 
+   //盒子宽度
    boxWidth:string;
 
-   constructor(){
-       
-   }
+   constructor(){}
 
 
    /**
-   * 初始化
-   */
-   ngOnInit() {
+    * 改变
+    * @param changes 
+    */
+   ngOnChanges(changes: SimpleChanges) {
       //计算宽度
       this.boxWidth=this.data.total*this.nodeWidth+"px";
    }
 
+   /**
+    * 单击事件
+    * @param node 节点
+    */
+   nodeClick(node){
+       if(node.clickEnable===false){
+          return ;
+       }else{
+           this.onClicked.emit(node);
+       }
+   }
 
 }

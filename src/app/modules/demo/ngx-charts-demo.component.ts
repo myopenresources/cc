@@ -64,9 +64,10 @@ export var multi = [
 @Component({
     selector: 'ngx-charts-demo',
     template: `
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
+     <div class="c-content-inner">
+      <div class="row">
+          <div  class="col-md-12">
+              <p class="c-line-title">示例</p>
                <ngx-charts-bar-vertical
                     [view]="view"
                     [scheme]="colorScheme"
@@ -84,10 +85,13 @@ export var multi = [
                 </ngx-charts-bar-vertical>
             </div>
         </div>
-        <div class="row c-mt15">
-            <div class="col-md-12">
-            第三方组件文档:https://swimlane.gitbooks.io/ngx-charts/content/
+        <div class="row">
+          <div  class="col-md-12">
+           <div class="c-mt15">
+              <p class="c-line-title">说明</p>
+              第三方组件文档:https://swimlane.gitbooks.io/ngx-charts/content/
             </div>
+           </div>
         </div>
     </div>
   `

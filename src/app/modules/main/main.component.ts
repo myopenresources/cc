@@ -1,9 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import {  Router } from '@angular/router';
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+
 
 import  { MainData }    from '../main/main-model';
 import  { ModalService } from '../shared/modal/modal.service';
 import  { ConfirmConfig} from '../shared/modal/modal-model';
+
+import  { AvatarCropperComponent} from './avatar-cropper.component';
+
 
 @Component({
   selector: 'main',
@@ -259,14 +264,16 @@ export class MainComponent implements OnInit {
   }
 
 
-  constructor(private router: Router,private modalService: ModalService) {}
+ 
+
+
+  constructor(private router: Router,private modalService: ModalService,private ngbModalService: NgbModal) {}
 
 
   /**
    * 初始化
    */
   ngOnInit() {
-
   }
 
   /**
@@ -289,6 +296,18 @@ export class MainComponent implements OnInit {
   }
 
   /**
+   * 头像更换
+   */
+  avatarReplacement(){
+      this.ngbModalService.open(AvatarCropperComponent,{size:'lg',backdrop:'static',keyboard:false}).result.then((result) => {
+        
+      }, (reason) => {
+        
+      });
+  }
+ 
+
+  /**
    * 退出系统
    */
   exitSys(){
@@ -300,6 +319,9 @@ export class MainComponent implements OnInit {
       }, (reason) => {
       });
   }
+
+
+ 
 
 
 

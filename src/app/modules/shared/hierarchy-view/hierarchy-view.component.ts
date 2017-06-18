@@ -34,7 +34,7 @@ export class HierarchyViewComponent implements OnChanges  {
     */
    ngOnChanges(changes: SimpleChanges) {
       //计算宽度
-      this.boxWidth=this.data.total*this.nodeWidth+"px";
+      this.boxWidth=this.data.total*this.nodeWidth-this.data.total+"px";
    }
 
    /**

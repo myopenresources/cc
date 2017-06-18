@@ -216,6 +216,21 @@ export class HierarchyViewDemoComponent {
         },
         {
           id: '8',
+          name: '广东',
+          clickEnable: false
+        },
+        {
+          id: '9',
+          name: '海南',
+          clickEnable: false
+        },
+        {
+          id: '10',
+          name: '浙江',
+          clickEnable: false
+        },
+        {
+          id: '11',
           name: '其它省份略',
           cls: 'bg-inverse text-white',
           clickEnable: false

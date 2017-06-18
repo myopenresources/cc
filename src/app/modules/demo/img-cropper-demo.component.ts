@@ -8,14 +8,14 @@ import { ImageCropperComponent, CropperSettings, Bounds } from 'ng2-img-cropper'
        <div class="row">
           <div  class="col-md-12">
               <p class="c-line-title">示例</p>
-               <div class="c-img-cropper-box">
+               <div>
                   <img-cropper #cropper [image]="data1" [settings]="cropperSettings" (onCrop)="cropped($event)"></img-cropper>
                   <div  class="c-file-upload">
                      <button class="btn btn-primary ">浏览图片</button>
                      <input id="image-input" type="file" (change)="fileChangeListener($event)">
                   </div>
                    <div class="c-mt15" *ngIf="data1.image">
-                      <img class="center-block img-responsive" [class.img-circle]="cropperSettings.rounded"  [src]="data1.image" [width]="cropperSettings.croppedWidth" [height]="cropperSettings.croppedHeight">
+                      <img class="center-block rounded-circle"   [src]="data1.image" [width]="cropperSettings.croppedWidth" [height]="cropperSettings.croppedHeight">
                    </div>
                </div>
           </div>

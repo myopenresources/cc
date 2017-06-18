@@ -18,15 +18,16 @@
 7. 添加第三方multiselect组件
 8. 添加层次图组件
 9. 添加第三方ng2-img-cropper组件
+10. 添加头像更换功能
 
 
 ## 环境
- 您需要安装nodeJS环境，国内可使用淘宝 NPM 镜像加速，请参考：https://npm.taobao.org/
+ 您需要安装nodeJS环境
 
 
 ## 安装
 1. cd E:\project\cc                            <---- 进入到项目所有的目录
-2. npm install                                 <---- 安装，如果下载比较慢，可使用淘宝的cnpm
+2. npm install                                 <---- 安装，如果下载比较慢，可使用淘宝的cnpm，请参考：https://npm.taobao.org/
 
 
 ## 开发服务器

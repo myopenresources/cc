@@ -1,7 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {  Router } from '@angular/router';
 import  { MenuData }    from '../main/main-model';
+import  { MainService }   from './main.service';
 
+/**
+ * 菜单树组件
+ */
 @Component({
   selector: 'treeview-menu',
   template: `
@@ -22,7 +26,7 @@ export class TreeviewMenuComponent {
   @Input() data:Array<MenuData>;
 
 
-  constructor(private router: Router,) {}
+  constructor(private router: Router,private mainService:MainService) {}
 
 
   /**
@@ -41,6 +45,7 @@ export class TreeviewMenuComponent {
     if (!this.isLeaf(item)) {
       item.isExpend = !item.isExpend;
     } else {
+       this.mainService.changeTitle.emit(item.name);
        this.router.navigate([item.url]);
     }
   }

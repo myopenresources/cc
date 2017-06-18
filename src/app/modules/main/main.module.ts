@@ -9,6 +9,7 @@ import { MainComponent }   from './main.component';
 import { SidebarMenuComponent }   from './sidebar-menu.component';
 import { TreeviewMenuComponent }   from './treeview-menu.component';
 import { AvatarCropperComponent} from './avatar-cropper.component';
+import { MainService }   from './main.service';
 
 import { mainRouting } from './main-routing.module';
 import  { HomeModule }      from '../home/home.module';
@@ -17,7 +18,9 @@ import  { HomeModule }      from '../home/home.module';
 import  { DemoModule }       from '../demo/demo.module';
 
 
-
+/**
+ * 主体模块
+ */
 @NgModule({
   imports:      [
      CommonModule, 
@@ -39,6 +42,7 @@ import  { DemoModule }       from '../demo/demo.module';
     MainComponent
   ],
   entryComponents:[AvatarCropperComponent],
-  providers:    []
+  providers:    [MainService]
 })
-export class MainModule { }
+export class MainModule {
+}

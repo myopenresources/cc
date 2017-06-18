@@ -4,7 +4,7 @@ import {AlertConfig,AlertType} from './modal-model';
 
 
 /**
- * 警告框
+ * 警告框组件
  */
 @Component({
     selector : 'alert',

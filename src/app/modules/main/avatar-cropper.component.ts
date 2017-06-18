@@ -3,7 +3,7 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { ImageCropperComponent, CropperSettings, Bounds } from 'ng2-img-cropper';
 
 /**
- * 确认框
+ * 头像更换组件
  */
 @Component({
     selector: 'avatar-cropper',
@@ -34,6 +34,7 @@ export class AvatarCropperComponent {
         this.avatarSettings.minHeight = 100;
         this.avatarSettings.cropperDrawSettings.strokeWidth = 2;
         this.avatarSettings.rounded = true;
+        this.avatarSettings.fileType='image/png';
         this.avatar = {};
     }
 

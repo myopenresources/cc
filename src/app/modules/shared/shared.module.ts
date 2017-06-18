@@ -13,7 +13,9 @@ import { AlertComponent} from './modal/alert.component';
 import {HierarchyViewComponent} from './hierarchy-view/hierarchy-view.component';
 import {HierarchyViewNodeComponent} from './hierarchy-view/hierarchy-view-node.component';
 
-
+/**
+ * 公共模块
+ */
 @NgModule({
   imports:      [
      CommonModule, 

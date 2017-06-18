@@ -25,7 +25,9 @@ import  { SharedModule }       from './modules/shared/shared.module';
 
 
 
-
+/**
+ * app模块
+ */
 @NgModule({
   imports: [
     BrowserModule,

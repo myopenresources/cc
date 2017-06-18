@@ -1,6 +1,8 @@
 import { Component }    from '@angular/core';
 
-
+/**
+ * app组件
+ */
 @Component({
   selector: 'app-root',
   template:`

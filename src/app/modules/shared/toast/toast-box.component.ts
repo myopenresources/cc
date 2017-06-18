@@ -2,7 +2,9 @@ import {Component, Input, OnInit,trigger, transition, style, animate, state} fro
 import {ToastService} from './toast.service';
 import {ToastConfig} from './toast-model';
 
-
+/**
+ * toast外层组件
+ */
 @Component({
   selector: 'toast-box',
   templateUrl : './toast-box.component.html',

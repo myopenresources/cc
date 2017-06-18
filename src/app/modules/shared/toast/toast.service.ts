@@ -3,6 +3,9 @@ import {Subject} from 'rxjs/Subject';
 import {Observable} from 'rxjs/Observable';
 import {ToastConfig} from './toast-model';
 
+/**
+ * toast服务
+ */
 @Injectable()
 export class ToastService {
 

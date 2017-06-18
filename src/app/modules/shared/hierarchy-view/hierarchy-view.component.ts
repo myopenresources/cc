@@ -7,7 +7,7 @@ import {HierarchyViewData} from './hierarchy-view-model'
 
 
 /**
- * 层次图
+ * 层次图组件
  */
 @Component({
     selector : 'hierarchy-view',

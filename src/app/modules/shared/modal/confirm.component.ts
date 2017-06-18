@@ -3,7 +3,7 @@ import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import {ConfirmConfig} from './modal-model';
 
 /**
- * 确认框
+ * 确认框组件
  */
 @Component({
     selector : 'confirm',

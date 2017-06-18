@@ -4,7 +4,9 @@ import {ConfirmComponent} from './confirm.component';
 import {AlertComponent} from './alert.component';
 import {ConfirmConfig,AlertConfig} from './modal-model';
 
-
+/**
+ * 模块框服务
+ */
 @Injectable()
 export class ModalService {
 

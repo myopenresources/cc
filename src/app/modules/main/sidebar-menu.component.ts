@@ -1,6 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
 import  { MenuData }    from '../main/main-model';
 
+/**
+ * 左侧菜单组件
+ */
 @Component({
   selector: 'sidebar-menu',
   template: `

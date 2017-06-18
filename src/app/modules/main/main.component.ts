@@ -8,8 +8,11 @@ import  { ModalService } from '../shared/modal/modal.service';
 import  { ConfirmConfig} from '../shared/modal/modal-model';
 
 import  { AvatarCropperComponent} from './avatar-cropper.component';
+import  { MainService }   from './main.service';
 
-
+/**
+ * 主体组件
+ */
 @Component({
   selector: 'main',
   templateUrl: './main.component.html'
@@ -263,11 +266,17 @@ export class MainComponent implements OnInit {
     }]
   }
 
-
+  private title:string="首页";
  
 
 
-  constructor(private router: Router,private modalService: ModalService,private ngbModalService: NgbModal) {}
+  constructor(private router: Router,private modalService: ModalService,private ngbModalService: NgbModal,private mainService:MainService) {
+        this.mainService.changeTitle.subscribe((value:string)=>{
+            if(value){
+               this.title=value;
+            }
+        })
+  }
 
 
   /**

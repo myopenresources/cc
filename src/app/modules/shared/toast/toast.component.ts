@@ -1,6 +1,9 @@
 import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import {ToastConfig,ToastType} from './toast-model';
 
+/**
+ * toast组件
+ */
 @Component({
   selector: 'toast',
   templateUrl : './toast.component.html',

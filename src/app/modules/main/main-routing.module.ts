@@ -11,7 +11,9 @@ import { MultiSelectDemoComponent } from '../demo/multiselect-dropdown-demo.comp
 import { HierarchyViewDemoComponent } from '../demo/hierarchy-view-demo.component';
 import { ImgCropperDemoComponent } from '../demo/img-cropper-demo.component';
 
-
+/**
+ * 主体路由
+ */
 const mainRoutes: Routes = [
       {
             path: 'home',

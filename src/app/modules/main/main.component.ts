@@ -23,8 +23,7 @@ export class MainComponent implements OnInit {
 
   //切换导航标识
   private navClose:boolean=false;
-  //切换用户信息卡标识
-  private userCardClose:boolean=true;
+
 
   //用户数据
   private mainData: MainData = {
@@ -268,7 +267,6 @@ export class MainComponent implements OnInit {
 
   private title:string="首页";
  
-
 
   constructor(private router: Router,private modalService: ModalService,private ngbModalService: NgbModal,private appService:AppService) {
         this.appService.titleEventEmitter.subscribe((value:string)=>{

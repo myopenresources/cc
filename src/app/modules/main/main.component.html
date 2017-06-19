@@ -6,36 +6,19 @@
         </div>
         <div class="c-header-profile">
             <div ngbDropdown>
-                <img alt="image" class="rounded-circle" [src]="mainData.userData.userHeaderImg" (mouseover)="userCardClose=false" (mouseleave)="userCardClose=true" />
+                <img alt="image" class="rounded-circle" [src]="mainData.userData.userHeaderImg" (click)="avatarReplacement()"/>
                 <div class="c-user-profile">
                     <span ngbDropdownToggle>{{mainData.userData.userName}}</span>
                 </div>
                 <div class="dropdown-menu animated fadeIn">
-                    <button class="dropdown-item" (click)="avatarReplacement(avatarReplacementModal)"><i class="fa  fa-user-circle-o fa-fw"></i> 头像更换</button>
-                    <button class="dropdown-item"><i class="fa  fa-vcard  fa-fw"></i> 个人资料</button>
+                    <button class="dropdown-item"><i class="fa  fa-user-circle-o  fa-fw"></i> 个人资料</button>
                     <button class="dropdown-item"><i class="fa  fa-key fa-fw"></i> 修改密码</button>
                     <button class="dropdown-item" (click)="exitSys()"><i class="fa  fa-sign-out fa-fw"></i> 退出系统</button>
                 </div>
             </div>
         </div>
-        
-        <sidebar-menu [data]="mainData.menuData"></sidebar-menu>
-        
-    </div>
-    <div class="c-user-card animated fadeIn" [hidden]="userCardClose">
-        <div class="c-user-card-header">
-            <img alt="image" class="rounded-circle" [src]="mainData.userData.userHeaderImg" />
 
-            <div class="c-user">
-                <span class="user-name text-danger">{{mainData.userData.userName}}</span>
-                <span class="c-position">{{mainData.userData.positions}}</span>
-                <hr/>
-            </div>
-            <div class="c-user-info">
-                <span><i class="fa fa-phone fa-fw" ></i> {{mainData.userData.mobilePhone}} </span>
-                <span><i class="fa  fa-envelope fa-fw" ></i>  {{mainData.userData.email}} </span>
-            </div>
-        </div>
+        <sidebar-menu [data]="mainData.menuData"></sidebar-menu>
 
     </div>
 
@@ -51,18 +34,17 @@
             <div class="c-tools">
                 <ul class="nav nav-pills pull-right">
                     <li class="c-item" (click)="toHome()">
-                        <i class="fa fa-home fa-fw"></i> 首页 
+                        <i class="fa fa-home fa-fw"></i> 首页
                     </li>
                     <li class="c-user" ngbDropdown>
                         <div ngbDropdownToggle class="d-inline-block">
-                            <img class="rounded-circle" [src]="mainData.userData.userHeaderImg" />  
+                            <img class="rounded-circle" [src]="mainData.userData.userHeaderImg" />
                             <span>{{mainData.userData.userName}}</span>
                         </div>
                         <div class="dropdown-menu animated fadeIn">
-                              <button class="dropdown-item" (click)="avatarReplacement(avatarReplacementModal)"><i class="fa  fa-user-circle-o fa-fw"></i> 头像更换</button>
-                              <button class="dropdown-item"><i class="fa  fa-vcard  fa-fw"></i> 个人资料</button>
-                              <button class="dropdown-item"><i class="fa  fa-key fa-fw"></i> 修改密码</button>
-                              <button class="dropdown-item" (click)="exitSys()"><i class="fa  fa-sign-out fa-fw"></i> 退出系统</button>
+                            <button class="dropdown-item"><i class="fa  fa-user-circle-o  fa-fw"></i> 个人资料</button>
+                            <button class="dropdown-item"><i class="fa  fa-key fa-fw"></i> 修改密码</button>
+                            <button class="dropdown-item" (click)="exitSys()"><i class="fa  fa-sign-out fa-fw"></i> 退出系统</button>
                         </div>
                     </li>
                 </ul>

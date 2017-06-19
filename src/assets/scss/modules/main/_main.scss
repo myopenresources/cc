@@ -96,8 +96,9 @@
     display: none;
   }
   .c-header {
-    height: 60px;
+    height: 59px;
     background-color: $color-secondary;
+    border-bottom:1px solid $color-secondary;
     & > img {
       margin-left: 15px;
       border-radius: 50%;
@@ -125,65 +126,6 @@
       font-size: 1.7em;
     }
   }
-  .c-user-card {
-    position: absolute;
-    z-index: 99;
-    left: 230px;
-    top: 0px;
-    width: 280px;
-    min-height: 280px;
-    background-color: $color-gray-light;
-    -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.08);
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.08);
-    border-radius: 1px;
-    .c-user-card-header {
-      background-image: url("./assets/img/user-card-header.png");
-      width: 100%;
-      height: 120px;
-      & > img {
-        width: 88px;
-        height: 88px;
-        margin-top: 15px;
-        margin-left: 15px;
-        -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.03);
-        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.03);
-      }
-      .c-user {
-        height: 35px;
-        margin-top: 10px;
-        margin-bottom: 25px;
-        padding: 23px;
-        .user-name {
-          font-size: 15px;
-          color: $color-black-primary;
-          font-weight: bold;
-          display: block;
-        }
-        .c-position {
-          font-size: 14px;
-          color: $color-black-secondary;
-          display: block;
-          margin-top: 6px;
-          width: 230px;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          -o-text-overflow: ellipsis;
-          overflow: hidden;
-        }
-      }
-      .c-user-info {
-        height: 35px;
-        margin-top: 10px;
-        padding: 23px;
-        span {
-          font-size: 14px;
-          color: $color-black-secondary;
-          display: block;
-          margin-top: 6px;
-        }
-      }
-    }
-  }
   .c-right-wrapper {
     height: 100vh;
     background-color: $color-white-gray;
@@ -191,8 +133,10 @@
       background-color: $color-white;
       height: 60px;
       line-height: 60px;
-      -webkit-box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.05);
-      box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.05);
+      -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
+      box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
+      -moz-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
+      border-bottom:1px solid $color-gray-deep;
       .c-title {
         padding-left: 15px;
         float: left;
@@ -274,6 +218,7 @@
           border-radius: 1px;
           -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
           box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
+          -moz-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
           padding:15px;
       }
     }

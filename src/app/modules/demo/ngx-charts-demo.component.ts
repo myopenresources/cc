@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import  { AppService }   from '../../app.service';
+
 export var single = [
     {
         "name": "某国",
@@ -117,8 +119,10 @@ export class NgxChartsDemoComponent {
         domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
     };
 
-    constructor() {
-        Object.assign(this, { single })
+    constructor(private appService:AppService) {
+        this.appService.titleEventEmitter.emit("图表");
+        Object.assign(this, { single });
+
     }
 
     onSelect(event) {

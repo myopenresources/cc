@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import  { AppService }   from '../../app.service';
+
 import { HierarchyViewData } from '../shared/hierarchy-view/hierarchy-view-model';
 
 
@@ -241,6 +243,11 @@ export class HierarchyViewDemoComponent {
   };
 
   viewData: HierarchyViewData = this.initData;
+
+
+  constructor(private appService:AppService){
+     this.appService.titleEventEmitter.emit("层次图");
+  }
 
   nodeClicked(node) {
     console.info(node);

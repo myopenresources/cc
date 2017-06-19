@@ -8,9 +8,11 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 
-//components
+//app
 import { appRouting } from './app-routing.module';
 import { AppComponent }    from './app.component';
+import { AppService }   from './app.service';
+
 //toast
 import {ToastService} from './modules/shared/toast/toast.service';
 import {ToastBoxComponent} from './modules/shared/toast/toast-box.component';
@@ -20,6 +22,7 @@ import {ToastComponent} from './modules/shared/toast/toast.component';
 import  { LoginModule }      from './modules/login/login.module';
 import  { MainModule }       from './modules/main/main.module';
 import  { SharedModule }       from './modules/shared/shared.module';
+
 
 
 
@@ -43,7 +46,7 @@ import  { SharedModule }       from './modules/shared/shared.module';
     ToastBoxComponent,
     ToastComponent,
   ],
-  providers: [ToastService],
+  providers: [AppService,ToastService],
   exports:[ToastBoxComponent],
   bootstrap: [ AppComponent ]
 })

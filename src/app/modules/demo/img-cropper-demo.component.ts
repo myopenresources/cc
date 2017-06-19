@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ImageCropperComponent, CropperSettings, Bounds } from 'ng2-img-cropper';
 
+import  { AppService }   from '../../app.service';
+
 @Component({
     selector: 'img-cropper-demo',
     template: `
@@ -40,7 +42,9 @@ export class ImgCropperDemoComponent implements OnInit {
 
     @ViewChild('cropper', undefined) cropper: ImageCropperComponent;
 
-    constructor() {
+    constructor(private appService:AppService) {
+        this.appService.titleEventEmitter.emit("图片裁剪");
+
         this.name = 'Angular2';
         this.cropperSettings = new CropperSettings();
 

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { ModalService } from '../shared/modal/modal.service';
 import { ConfirmConfig, AlertType, AlertConfig } from '../shared/modal/modal-model';
+import  { AppService }   from '../../app.service';
 
 
 @Component({
@@ -11,10 +12,10 @@ import { ConfirmConfig, AlertType, AlertConfig } from '../shared/modal/modal-mod
        <div class="row">
           <div  class="col-md-12">
               <p class="c-line-title">示例</p>
-              <button type="button" class="btn btn-info" (click)="openInfo()">Info alert</button>
-              <button type="button" class="btn btn-warning" (click)="openWarning()">Warning alert</button>
-              <button type="button" class="btn btn-danger" (click)="openError()">Error alert</button>
-              <button type="button" class="btn btn-primary" (click)="openConfirm()">confirm</button>
+              <button type="button" class="btn btn-info" (click)="openInfo()">信息消息框</button>
+              <button type="button" class="btn btn-warning" (click)="openWarning()">警告消息框</button>
+              <button type="button" class="btn btn-danger" (click)="openError()">错误消息框</button>
+              <button type="button" class="btn btn-primary" (click)="openConfirm()">确认框</button>
             </div>
         </div>
         <div class="row">
@@ -32,7 +33,9 @@ import { ConfirmConfig, AlertType, AlertConfig } from '../shared/modal/modal-mod
 export class ModalDemoComponent {
 
 
-  constructor(private modalService: ModalService) { }
+  constructor(private modalService: ModalService,private appService:AppService) {
+      this.appService.titleEventEmitter.emit("模态框");
+  }
 
 
 

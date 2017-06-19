@@ -8,7 +8,7 @@ import  { ModalService } from '../shared/modal/modal.service';
 import  { ConfirmConfig} from '../shared/modal/modal-model';
 
 import  { AvatarCropperComponent} from './avatar-cropper.component';
-import  { MainService }   from './main.service';
+import  { AppService }   from '../../app.service';
 
 /**
  * 主体组件
@@ -270,8 +270,8 @@ export class MainComponent implements OnInit {
  
 
 
-  constructor(private router: Router,private modalService: ModalService,private ngbModalService: NgbModal,private mainService:MainService) {
-        this.mainService.changeTitle.subscribe((value:string)=>{
+  constructor(private router: Router,private modalService: ModalService,private ngbModalService: NgbModal,private appService:AppService) {
+        this.appService.titleEventEmitter.subscribe((value:string)=>{
             if(value){
                this.title=value;
             }
@@ -301,6 +301,7 @@ export class MainComponent implements OnInit {
   * 跳转首页
   */
   toHome(){
+     this.title="首页";
      this.router.navigate(['/app/home']);
   }
 

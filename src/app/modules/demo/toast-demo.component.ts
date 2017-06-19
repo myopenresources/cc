@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+import  { AppService }   from '../../app.service';
+
 import {ToastService} from '../shared/toast/toast.service';
 import {ToastConfig,ToastType} from '../shared/toast/toast-model';
+
 
 @Component({
   selector: 'toast-demo',
@@ -10,10 +13,10 @@ import {ToastConfig,ToastType} from '../shared/toast/toast-model';
        <div class="row">
           <div  class="col-md-12">
               <p class="c-line-title">示例</p>
-              <button type="button" class="btn btn-info" (click)="openInfo()">Info toast</button>
-              <button type="button" class="btn btn-warning" (click)="openWarning()">Warning toast</button>
-              <button type="button" class="btn btn-success" (click)="openSuccess()">Success toast</button>
-              <button type="button" class="btn btn-danger" (click)="openError()">Error toast</button>
+              <button type="button" class="btn btn-info" (click)="openInfo()">信息消息</button>
+              <button type="button" class="btn btn-warning" (click)="openWarning()">警告消息</button>
+              <button type="button" class="btn btn-success" (click)="openSuccess()">成功消息</button>
+              <button type="button" class="btn btn-danger" (click)="openError()">错误消息</button>
           </div>
         </div>
         <div class="row">
@@ -29,7 +32,9 @@ import {ToastConfig,ToastType} from '../shared/toast/toast-model';
 })
 export class ToastDemoComponent{
 
-  constructor(private toastService: ToastService){}
+  constructor(private toastService: ToastService,private appService:AppService){
+     this.appService.titleEventEmitter.emit("消息框");
+  }
 
   openInfo(){
      const toastCfg = new ToastConfig(ToastType.INFO,'这是一条INFO消息!','', 3000);

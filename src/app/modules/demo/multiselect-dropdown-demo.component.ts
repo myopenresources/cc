@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { IMultiSelectOption, IMultiSelectTexts, IMultiSelectSettings } from 'angular-2-dropdown-multiselect';
 
+import  { AppService }   from '../../app.service';
+
 
 @Component({
     selector: 'multiselect-dropdown-demo',
@@ -61,7 +63,9 @@ export class MultiSelectDemoComponent {
         { id: 8, name: 'White', parentId: 5 }
     ];
 
-    constructor() { }
+    constructor(private appService:AppService) {
+        this.appService.titleEventEmitter.emit("下拉");
+    }
 
     onChange(e) {
         console.log(e);

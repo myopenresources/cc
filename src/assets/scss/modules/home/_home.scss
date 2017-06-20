@@ -1,5 +1,5 @@
 .c-home-login-tip{
-     color: $color-black-secondary;
+     color: $c-color-black-secondary;
 }
 
 .c-home-card{
@@ -7,7 +7,7 @@
     .c-home-card-inner{
        max-height: 276px;
        .c-home-card-tip{
-           color:$color-black-secondary
+           color: $c-color-black-secondary
        }
     }
 }
@@ -15,11 +15,11 @@
 
 
 .c-home-common-func-outline{
-    border:1px  dashed $color-gray-deep;
+    border:1px  dashed $c-color-gray-deep;
    .c-home-common-func{
         padding:6px;
         &:hover {
-            background: $color-gray-deep;
+            background: $c-color-gray-deep;
             cursor: pointer;
         }
                 

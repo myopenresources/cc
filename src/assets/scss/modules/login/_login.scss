@@ -9,21 +9,22 @@
     & > .c-login-box {
       width: 410px;
       padding: 20px;
-      -webkit-box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.15);
-      box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.15);
+      -webkit-box-shadow:$c-box-shadow;
+        box-shadow:$c-box-shadow;
+        -moz-box-shadow:$c-box-shadow;
       border: 0px;
-      background: $color-white;
+      background: $c-color-white;
       .c-login-header {
         margin-bottom: 25px;
         h3 {
-          color: $color-black-primary;
+          color: $c-color-black-primary;
         }
         img {
           width: 32px;
           height: 32px;
           vertical-align: -7px;
           margin-right: 2px;
-          background-color: $color-deep;
+          background-color: $c-color-deep;
           &:hover {
             -moz-transition: all 0.5s ease-in-out;
             -webkit-transition: all 0.5s ease-in-out;
@@ -56,7 +57,7 @@
         margin-top: 10px;
         height: 10px;
         p {
-          color: $color-black-secondary;
+          color: $c-color-black-secondary;
         }
       }
     }
@@ -66,7 +67,7 @@
     text-align: center;
     font-size: 13px;
     margin-top: 8px;
-    color: $color-gray-light;
+    color: $c-color-gray-light;
     margin-left: auto;
     margin-right: auto;
     filter: alpha(opacity=8);

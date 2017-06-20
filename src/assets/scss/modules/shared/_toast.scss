@@ -5,8 +5,9 @@
     width:450px;
     .alert{
         border:0px;
-        -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.03);
-        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.03);
+       -webkit-box-shadow: $c-box-shadow;
+       box-shadow: $c-box-shadow;
+       -moz-box-shadow: $c-box-shadow;
     }
 }
 

@@ -4,7 +4,7 @@
   height: 100vh;
   .c-left-wrapper {
     height: 100vh;
-    background-color: $color-primary;
+    background-color: $c-color-primary;
     float: left;
     display: block;
     .c-header-profile {
@@ -15,14 +15,15 @@
       img {
         width: 88px;
         height: 88px;
-        -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.03);
-        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.03);
+        -webkit-box-shadow: $c-img-shadow;
+        box-shadow: $c-img-shadow;
+        -moz-box-shadow:$c-img-shadow;
         cursor: pointer;
       }
       .c-user-profile {
         margin-top: 5px;
         & > span {
-          color: $color-gray-primary;
+          color: $c-color-gray-primary;
           font-weight: bold;
           font-size: 15px;
           cursor: pointer;
@@ -43,33 +44,33 @@
       padding-bottom: 15px;
       padding-top: 10px;
       input {
-        background-color: $color-secondary;
-        border: 1px solid $color-secondary;
-        color: $color-gray-deep;
+        background-color: $c-color-secondary;
+        border: 1px solid $c-color-secondary;
+        color: $c-color-gray-deep;
         font-size: 15px;
         &:focus{
-           border: 1px solid $color-light;
+           border: 1px solid $c-color-light;
         }
         &::-webkit-input-placeholder {
-          color: $color-gray-deep !important;
+          color: $c-color-gray-deep !important;
         }
         &:-moz-placeholder {
-          color: $color-gray-deep !important;
+          color: $c-color-gray-deep !important;
         }
         &::-moz-placeholder {
-          color: $color-gray-deep !important;
+          color: $c-color-gray-deep !important;
         }
         &:-ms-input-placeholder {
-          color: $color-gray-deep !important;
+          color: $c-color-gray-deep !important;
         }
       }
       button {
-        color: $color-gray-deep;
-        background-color: $color-secondary;
+        color: $c-color-gray-deep;
+        background-color: $c-color-secondary;
         font-size: 15px;
-        border: 1px solid $color-secondary;
+        border: 1px solid $c-color-secondary;
         &:focus{
-           border: 1px solid $color-light;
+           border: 1px solid $c-color-light;
         }
       }
     }
@@ -83,7 +84,7 @@
       padding-right: 5px;
       font-size: 15px;
       .c-search-msg {
-        color: $color-gray-deep;
+        color: $c-color-gray-deep;
         margin-left: 13px;
       }
     }
@@ -97,14 +98,15 @@
   }
   .c-header {
     height: 59px;
-    background-color: $color-secondary;
-    border-bottom:1px solid $color-secondary;
+    background-color: $c-color-secondary;
+    border-bottom:1px solid $c-color-secondary;
     & > img {
       margin-left: 15px;
       border-radius: 50%;
-      -webkit-box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.05);
-      box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.05);
-      background-color: $color-deep;
+      -webkit-box-shadow: $c-header-shadow;
+      box-shadow: $c-header-shadow;
+      -moz-box-shadow: $c-header-shadow;
+      background-color: $c-color-deep;
       &:hover {
         -moz-transition: all 0.5s ease-in-out;
         -webkit-transition: all 0.5s ease-in-out;
@@ -122,21 +124,21 @@
       display: inline-block;
       vertical-align: -5px;
       margin-top: 15px;
-      color: $color-gray-secondary;
+      color: $c-color-gray-secondary;
       font-size: 1.7em;
     }
   }
   .c-right-wrapper {
     height: 100vh;
-    background-color: $color-white-gray;
+    background-color: $c-color-white-gray;
     .c-header {
-      background-color: $color-white;
+      background-color: $c-color-white;
       height: 60px;
       line-height: 60px;
-      -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
-      box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
-      -moz-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
-      border-bottom:1px solid $color-gray-deep;
+      -webkit-box-shadow: $c-header-shadow;
+      box-shadow: $c-header-shadow;
+      -moz-box-shadow: $c-header-shadow;
+      border-bottom:1px solid $c-color-gray-deep;
       .c-title {
         padding-left: 15px;
         float: left;
@@ -152,7 +154,7 @@
         h3 {
           font-size: 1.2em;
           font-weight: bold;
-          color: $color-black-primary;
+          color: $c-color-black-primary;
           margin-left: 8px;
           vertical-align: -1px;
           display: inline-flex;
@@ -172,7 +174,7 @@
             float: left;
             font-size: 15px;
             &:hover {
-              background: $color-white-gray;
+              background: $c-color-white-gray;
               cursor: pointer;
             }
           }
@@ -213,12 +215,12 @@
           margin-right:15px;
           margin-bottom: 15px;
           margin-top: 5px;
-          background-color: $color-white;
+          background-color: $c-color-white;
           border: 0px;
           border-radius: 1px;
-          -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
-          box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
-          -moz-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
+          -webkit-box-shadow: $c-box-shadow;
+          box-shadow: $c-box-shadow;
+          -moz-box-shadow:  $c-box-shadow;
           padding:15px;
       }
     }
@@ -237,7 +239,7 @@
       margin: 0;
       padding: 0;
       a {
-        color: $color-gray-deep;
+        color: $c-color-gray-deep;
         text-decoration: none;
         border: 0px;
       }
@@ -249,10 +251,10 @@
           padding: 8px 5px 8px 15px;
           display: block;
           border-left: 3px solid transparent;
-          color: $color-gray-deep;
+          color: $c-color-gray-deep;
           border: 0px;
           &:hover {
-            color: $color-white;
+            color: $c-color-white;
             -webkit-transition: 0.3s;
             transition: 0.3s;
             -moz-transition: 0.3s;
@@ -291,12 +293,12 @@
         & > li {
           margin: 0;
           margin-left: 2px;
-          border-left: 1px solid $color-light;
+          border-left: 1px solid $c-color-light;
           padding-left: 5px;
           & > a {
             padding: 5px 5px 8px 15px;
             display: block;
-            color: $color-gray-deep;
+            color: $c-color-gray-deep;
             border: 0px;
             & > .fa {
               width: 20px;
@@ -308,11 +310,11 @@
   }
 }
 .c-left-wrapper  .c-nav .c-sidebar-menu > li:hover > a, .c-sidebar-menu > li.active > a {
-  color: $color-gray-deep;
+  color: $c-color-gray-deep;
   border: 0px;
 }
 .c-left-wrapper  .c-nav .c-sidebar-menu .c-treeview-menu > li.active > a, .c-sidebar-menu .c-treeview-menu > li > a:hover {
-  color: $color-white;
+  color: $c-color-white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -moz-transition: 0.3s;

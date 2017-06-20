@@ -1,37 +1,49 @@
 //主要颜色
-$color-primary:#1190d6 !default;
+$c-color-primary:#1190d6 !default;
 //次要颜色
-$color-secondary:#10a2e9 !default;
+$c-color-secondary:#10a2e9 !default;
 //深色
-$color-deep:#0a7bb9 !default;
+$c-color-deep:#0a7bb9 !default;
 //浅色
-$color-light:#5bc0de !default;
+$c-color-light:#5bc0de !default;
 
 //主要黑色
-$color-black-primary:#333333 !default;
+$c-color-black-primary:#333333 !default;
 //次要黑色
-$color-black-secondary:#555555 !default;
+$c-color-black-secondary:#555555 !default;
 //深黑色
-$color-black-deep:#000000 !default;
+$c-color-black-deep:#000000 !default;
 //浅黑色
-$color-black-light:#888888 !default;
+$c-color-black-light:#888888 !default;
 
 //主要灰色
-$color-gray-primary:#f2f2f2 !default;
+$c-color-gray-primary:#f2f2f2 !default;
 //次要灰色
-$color-gray-secondary:#fafafa !default;
+$c-color-gray-secondary:#fafafa !default;
 //深灰色
-$color-gray-deep:#eeeeee !default;
+$c-color-gray-deep:#eeeeee !default;
 //浅灰色
-$color-gray-light:#fefefe !default;
+$c-color-gray-light:#fefefe !default;
 
 //白色
-$color-white:#ffffff !default;
+$c-color-white:#ffffff !default;
 //灰色
-$color-gary:#dddddd !default;
+$c-color-gary:#dddddd !default;
 
 //白灰色
-$color-white-gray:#f5f6f7 !default;
+$c-color-white-gray:#f6f7f8 !default;
+
+//盒子阴影
+$c-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.02) !default;
+
+//头部阴影
+$c-header-shadow: 1px 2px 6px rgba(0, 0, 0, 0.02) !default;
+
+//图片阴影
+$c-img-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03) !default;
+
+//层次图盒子阴影
+$c-hierarchy-box:1px 1px 3px rgba(100, 100, 100, 0.5) !default;
 
 
 
@@ -138,9 +150,9 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 .c-card {
   border: 0px;
   border-radius: 1px;
-  -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
-  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
-  -moz-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
+  -webkit-box-shadow: $c-box-shadow;
+  box-shadow: $c-box-shadow;
+  -moz-box-shadow:  $c-box-shadow;
 }
 /**手式**/
 .c-cursor-pointer {
@@ -160,7 +172,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
   width: 100%;
   margin-bottom: 10px;
   tr {
-    border-bottom: 1px dashed $color-gray-deep;
+    border-bottom: 1px dashed $c-color-gray-deep;
     td {
       padding: 10px;
     }
@@ -170,7 +182,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
   }
   &:first-child {
     tr {
-      border-top: 1px dashed $color-gray-deep;
+      border-top: 1px dashed $c-color-gray-deep;
     }
   }
 }
@@ -185,8 +197,8 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 	margin-bottom: 15px;
 	padding-bottom: 8px;
 	font-size: 15px;
-	border-bottom: 1px dashed $color-gary;
-	color: $color-black-secondary;
+	border-bottom: 1px dashed $c-color-gary;
+	color: $c-color-black-secondary;
 	font-weight: bold;
 }
 /*图片上传按钮*/

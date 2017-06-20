@@ -17,7 +17,7 @@
         width: 100%;
         span {
           display: block;
-          background: $color-gary;
+          background: $c-color-gary;
           position: absolute;
           top: 0;
           font-size: 0;
@@ -30,7 +30,7 @@
       .c-line-h {
         height: 1px;
         display: block;
-        background: $color-gary;
+        background: $c-color-gary;
         position: absolute;
         top: 0;
         font-size: 0;
@@ -55,11 +55,11 @@
         line-height: 20px;
         margin: 0 6px;
         border-radius: 2px;
-        background: $color-gray-secondary;
-        -webkit-box-shadow: 1px 1px 3.6px rgba(100, 100, 100, 0.6);
-        -moz-box-shadow: 1px 1px 3.6px rgba(100, 100, 100,  0.6);
-        box-shadow: 1px 1px 3.6px rgba(100, 100, 100,  0.6);
-        color: $color-black-secondary;
+        background: $c-color-gray-secondary;
+        -webkit-box-shadow: $c-hierarchy-box;
+        -moz-box-shadow: $c-hierarchy-box;
+        box-shadow:$c-hierarchy-box;
+        color: $c-hierarchy-box;
         &:hover {
           -webkit-transition: 0.2s;
           transition: 0.2s;

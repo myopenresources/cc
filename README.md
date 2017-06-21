@@ -7,6 +7,8 @@
 
 ![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc-3.png)
 
+![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc-4.png)
+
 
 ## 更新
 1. 搭建环境
@@ -18,7 +20,7 @@
 7. 添加第三方multiselect组件
 8. 添加层次图组件
 9. 添加第三方ng2-img-cropper组件
-10. 添加头像更换功能
+10. 添加头像更换功能s
 
 
 ## 环境

@@ -29,7 +29,7 @@ export class MainComponent implements OnInit {
   private mainData: MainData = {
     userData:{
      userName: "百变小咖",
-     userHeaderImg:"./assets/img/user-header.png",
+     userAvatar:"./assets/img/user-header.png",
      mobilePhone:"1895090***2",
      email:"332557712@qq.com",
      positions:"Java工程师、打杂工程师",

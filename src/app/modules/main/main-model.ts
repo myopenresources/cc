@@ -18,7 +18,7 @@ export class UserData {
   userName: string;
 
   //头像
-  userHeaderImg:string;
+  userAvatar:string;
 
   //手机
   mobilePhone:string;

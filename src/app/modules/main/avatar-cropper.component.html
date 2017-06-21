@@ -11,13 +11,25 @@
                 <img-cropper #avatarCropper [image]="avatar" [settings]="avatarSettings" ></img-cropper>
             </div>
             <div class="c-avatar-preview-box c-ml15 text-center">
-                <div *ngIf="avatar.image">
-                    <img class="center-block rounded-circle" [src]="avatar.image" [width]="avatarSettings.croppedWidth" [height]="avatarSettings.croppedHeight">
+                <div class="c-avatar-title">头像预览</div>
+                <div class="c-mt15">
+                    <img class="center-block rounded-circle c-avatar-img-lg" [src]="userAvatar" >
+                    <div class="c-avatar-desc c-mt5">原头像</div>
                 </div>
-                <div *ngIf="avatar.image">
-                    <img class="center-block rounded-circle" [src]="avatar.image" [width]="avatarSettings.croppedWidth" [height]="avatarSettings.croppedHeight">
+                <div class="c-mt20">
+                     <img class="center-block rounded-circle c-avatar-img-lg" *ngIf="avatar.image"  [src]="avatar.image" >
+                     <img class="center-block rounded-circle c-avatar-img-lg" *ngIf="!avatar.image" [src]="userAvatar" >
+                     <div class="c-avatar-desc c-mt5">90*90</div>
+                </div>
+                <div class="c-mt15">
+                    <img class="center-block rounded-circle c-avatar-img-xs" *ngIf="avatar.image"  [src]="avatar.image" >
+                    <img class="center-block rounded-circle c-avatar-img-xs" *ngIf="!avatar.image" [src]="userAvatar" >
+                    <div class="c-avatar-desc c-mt5">36*36</div>
                 </div>
             </div>
+        </div>
+        <div class="row  text-danger c-mt10">
+            注：请上传小于8M的JPG/JPEG、PNG、GIF图片。
         </div>
     </div>
 

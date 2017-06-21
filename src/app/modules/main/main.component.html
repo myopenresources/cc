@@ -6,7 +6,7 @@
         </div>
         <div class="c-header-profile">
             <div ngbDropdown>
-                <img alt="image" class="rounded-circle" [src]="mainData.userData.userHeaderImg" (click)="avatarReplacement()"/>
+                <img alt="image" class="rounded-circle" [src]="mainData.userData.userAvatar" (click)="avatarReplacement()"/>
                 <div class="c-user-profile">
                     <span ngbDropdownToggle>{{mainData.userData.userName}}</span>
                 </div>
@@ -38,7 +38,7 @@
                     </li>
                     <li class="c-user" ngbDropdown>
                         <div ngbDropdownToggle class="d-inline-block">
-                            <img class="rounded-circle" [src]="mainData.userData.userHeaderImg" />
+                            <img class="rounded-circle" [src]="mainData.userData.userAvatar" />
                             <span>{{mainData.userData.userName}}</span>
                         </div>
                         <div class="dropdown-menu animated fadeIn">

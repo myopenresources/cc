@@ -31,7 +31,6 @@ import  { AppService }   from '../../app.service';
           </div>
          </div>
      </div>
-
     `
 })
 export class ImgCropperDemoComponent implements OnInit {

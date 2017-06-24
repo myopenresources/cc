@@ -66,9 +66,9 @@ export class MainComponent implements OnInit {
         "id": "5",
         "parentId": "1",
         "name": "下拉",
-        "keyWord":"multiselectDropdown",
+        "keyWord":"selectDemo",
         "icon": 'fa-circle',
-        "url": '/app/multiselectDropdownDemo'
+        "url": '/app/selectDemo'
       }, {
         "id": "6",
         "parentId": "1",

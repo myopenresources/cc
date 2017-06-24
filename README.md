@@ -14,17 +14,19 @@
 1. 搭建环境
 2. 登录界面
 3. 主页
-4. 添加alert与confirm组件
-5. 添加toast组件
+4. 添加alert与confirm组件(src/app/modules/shared/modal/modal.service.ts)
+5. 添加toast组件(src/app/modules/shared/toast/toast.service.ts)
 6. 添加第三方ng-charts组件
 7. 添加第三方multiselect组件
-8. 添加层次图组件
+8. 添加层次图组件(src/app/modules/shared/hierarchy-view/hierarchy-view.component.ts)
 9. 添加第三方ng2-img-cropper组件
-10. 添加头像更换功能s
+10. 添加头像更换功能
+11. 添加http服务(src/app/core/http.service.ts)
+12. 添加utils工具(src/app/core/utils.ts)
 
 
 ## 环境
- 您需要安装nodeJS环境
+1. 您需要安装nodeJS环境
 
 
 ## 安装
@@ -47,11 +49,11 @@
 
 
 ## 特别声明
- 如果本界面中使用到了您的产品或是对您造成了影响请及时联系我，我将第一时间去除，QQ：332557712
+1. 如果本界面中使用到了您的产品或是对您造成了影响请及时联系我，我将第一时间去除，QQ：332557712
 
 
 ## 贡献
- 站在巨人的肩膀上，才能够走得更远，感谢那些默默贡献的人！
+1. 站在巨人的肩膀上，才能够走得更远，感谢那些默默贡献的人！
 
 ## 许可
- [MIT](/LICENSE)
+1. [MIT](/LICENSE)

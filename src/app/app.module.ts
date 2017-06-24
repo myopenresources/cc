@@ -12,6 +12,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { appRouting } from './app-routing.module';
 import { AppComponent }    from './app.component';
 import { AppService }   from './app.service';
+import { HttpService }   from './core/http.service';
 
 //toast
 import {ToastService} from './modules/shared/toast/toast.service';
@@ -46,7 +47,7 @@ import  { SharedModule }       from './modules/shared/shared.module';
     ToastBoxComponent,
     ToastComponent,
   ],
-  providers: [AppService,ToastService],
+  providers: [AppService,ToastService,HttpService],
   exports:[ToastBoxComponent],
   bootstrap: [ AppComponent ]
 })

@@ -3,11 +3,12 @@
     z-index: 99999999;
     margin-top:10px;
     width:450px;
-    .alert{
-        border:0px;
-       -webkit-box-shadow: $c-box-shadow;
-       box-shadow: $c-box-shadow;
-       -moz-box-shadow: $c-box-shadow;
+    .c-toast{
+       border:0px;
+       -webkit-box-shadow: $c-toast-box;
+       box-shadow: $c-toast-box;
+       -moz-box-shadow: $c-toast-box;
+       border-radius: 20px;
     }
 }
 

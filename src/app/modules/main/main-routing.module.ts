@@ -10,6 +10,7 @@ import { NgxChartsDemoComponent } from '../demo/ngx-charts-demo.component';
 import { MultiSelectDemoComponent } from '../demo/multiselect-dropdown-demo.component';
 import { HierarchyViewDemoComponent } from '../demo/hierarchy-view-demo.component';
 import { ImgCropperDemoComponent } from '../demo/img-cropper-demo.component';
+import { SelectDemoComponent } from '../demo/select-demo.component';
 
 /**
  * 主体路由
@@ -42,6 +43,10 @@ const mainRoutes: Routes = [
       {
             path: 'imgCropperDemo',
             component: ImgCropperDemoComponent
+      },
+      {
+            path: 'selectDemo',
+            component: SelectDemoComponent
       }
 
 

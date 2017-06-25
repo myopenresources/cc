@@ -6,7 +6,7 @@ import {ToastConfig} from './toast-model';
  * toast外层组件
  */
 @Component({
-  selector: 'toast-box',
+  selector: 'c-toast-box',
   templateUrl : './toast-box.component.html',
   animations: [
     trigger('animation', [

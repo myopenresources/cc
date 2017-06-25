@@ -7,7 +7,7 @@ import { HierarchyViewData } from '../shared/hierarchy-view/hierarchy-view-model
 
 
 @Component({
-  selector: 'hierarchy-view-demo',
+  selector: 'c-hierarchy-view-demo',
   template: `
     <div class="c-content-inner">
        <div class="row">
@@ -18,7 +18,7 @@ import { HierarchyViewData } from '../shared/hierarchy-view/hierarchy-view-model
           </div>
         </div>
       
-       <hierarchy-view [data]="viewData" (onClicked)="nodeClicked($event)"></hierarchy-view>
+       <c-hierarchy-view [data]="viewData" (onClicked)="nodeClicked($event)"></c-hierarchy-view>
        <div class="row">
           <div  class="col-md-12">
             <div class="c-mt15">

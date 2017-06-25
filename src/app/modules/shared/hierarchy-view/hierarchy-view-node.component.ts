@@ -8,7 +8,7 @@ import {HierarchyViewNode} from './hierarchy-view-model'
  * 层次图节点组件
  */
 @Component({
-    selector : 'hierarchy-view-node',
+    selector : 'c-hierarchy-view-node',
     templateUrl : './hierarchy-view-node.component.html'
 })
 export class HierarchyViewNodeComponent {

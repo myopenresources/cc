@@ -4,10 +4,10 @@ import { Component }    from '@angular/core';
  * app组件
  */
 @Component({
-  selector: 'app-root',
+  selector: 'c-root',
   template:`
      <router-outlet></router-outlet>
-     <toast-box toastAnimation="fancy"></toast-box>
+     <c-toast-box toastAnimation="fancy"></c-toast-box>
   `
 })
 export class AppComponent {

@@ -17,12 +17,20 @@
 4. 添加alert与confirm组件(src/app/modules/shared/modal/modal.service.ts)
 5. 添加toast组件(src/app/modules/shared/toast/toast.service.ts)
 6. 添加第三方ng-charts组件
-7. 添加第三方multiselect组件
+7. 添加第三方angular-2-dropdown-multiselect组件与angular2-select组件
 8. 添加层次图组件(src/app/modules/shared/hierarchy-view/hierarchy-view.component.ts)
 9. 添加第三方ng2-img-cropper组件
 10. 添加头像更换功能
 11. 添加http服务(src/app/core/http.service.ts)
 12. 添加utils工具(src/app/core/utils.ts)
+
+
+## 规范
+1. 为避免冲突应用css使用c-为前缀
+2. 为避免冲突应用组件selector使用c-为前缀
+3. 目录、文件名命名使用小写字母，多个单词使用-间隔
+4. module结尾的为模块、component结尾的为组件、service结尾的为服务、directive结尾的为指令     
+5. 所有模块放在modules目录下、所有应用级服务以及工具类等放在core目录下、所有资源文件放在assets目录下，所有scss文件所模块区分，放在assets/scss/modules下
 
 
 ## 环境
@@ -45,7 +53,7 @@
 
 
 ## 单元测试
-1. npm test                                    <---- 使用npm命令测试，目前的模块中没有加入测试代码，需要自行添加       
+1. npm test                                    <---- 使用npm命令测试，目前的模块中没有加入测试代码，需要自行添加 
 
 
 ## 特别声明

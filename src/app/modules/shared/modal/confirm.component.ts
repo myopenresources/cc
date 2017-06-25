@@ -6,7 +6,7 @@ import {ConfirmConfig} from './modal-model';
  * 确认框组件
  */
 @Component({
-    selector : 'confirm',
+    selector : 'c-confirm',
     templateUrl : './confirm.component.html',
     encapsulation : ViewEncapsulation.None
 })

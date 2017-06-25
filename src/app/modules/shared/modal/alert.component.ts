@@ -7,7 +7,7 @@ import {AlertConfig,AlertType} from './modal-model';
  * 警告框组件
  */
 @Component({
-    selector : 'alert',
+    selector : 'c-alert',
     templateUrl : './alert.component.html',
     encapsulation : ViewEncapsulation.None
 })

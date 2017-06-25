@@ -8,7 +8,7 @@ import { ToastConfig, ToastType } from '../shared/toast/toast-model';
 
 
 @Component({
-  selector: 'login',
+  selector: 'c-login',
   templateUrl: './login.component.html'
 })
 export class LoginComponent implements OnInit {

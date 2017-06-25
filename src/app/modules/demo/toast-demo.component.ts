@@ -7,7 +7,7 @@ import {ToastConfig,ToastType} from '../shared/toast/toast-model';
 
 
 @Component({
-  selector: 'toast-demo',
+  selector: 'c-toast-demo',
   template: `
     <div class="c-content-inner">
        <div class="row">

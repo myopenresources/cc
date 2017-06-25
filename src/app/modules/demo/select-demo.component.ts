@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
-    selector: 'app-root',
+    selector: 'c-select-demo',
     template: `
      <div class="c-content-inner">
        <div class="row">

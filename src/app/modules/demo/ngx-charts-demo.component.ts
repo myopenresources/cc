@@ -64,7 +64,7 @@ export var multi = [
 
 
 @Component({
-    selector: 'ngx-charts-demo',
+    selector: 'c-ngx-charts-demo',
     template: `
      <div class="c-content-inner">
       <div class="row">

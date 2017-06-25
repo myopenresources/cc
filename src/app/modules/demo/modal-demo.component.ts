@@ -6,7 +6,7 @@ import  { AppService }   from '../../app.service';
 
 
 @Component({
-  selector: 'modal-demo',
+  selector: 'c-modal-demo',
   template: `
      <div class="c-content-inner">
        <div class="row">

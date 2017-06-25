@@ -10,7 +10,7 @@ import {HierarchyViewData} from './hierarchy-view-model'
  * 层次图组件
  */
 @Component({
-    selector : 'hierarchy-view',
+    selector : 'c-hierarchy-view',
     templateUrl : './hierarchy-view.component.html'
 })
 export class HierarchyViewComponent implements OnChanges  {

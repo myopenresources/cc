@@ -5,7 +5,7 @@ import {ToastConfig,ToastType} from './toast-model';
  * toast组件
  */
 @Component({
-  selector: 'toast',
+  selector: 'c-toast',
   templateUrl : './toast.component.html',
  })
 export class ToastComponent implements OnInit {

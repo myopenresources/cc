@@ -1,5 +1,5 @@
 <div class="c-toast-container"  [ngClass]="toastPosition">
     <div *ngFor="let toastCfg of getToastConfigs()" [@animation]="toastAnimation">
-        <toast [config]="toastCfg" (dismissed)="remove(toastCfg)"></toast>
+        <c-toast [config]="toastCfg" (dismissed)="remove(toastCfg)"></c-toast>
     </div>
 </div>

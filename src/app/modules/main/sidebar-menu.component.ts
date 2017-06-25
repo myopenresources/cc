@@ -5,7 +5,7 @@ import  { MenuData }    from '../main/main-model';
  * 左侧菜单组件
  */
 @Component({
-  selector: 'sidebar-menu',
+  selector: 'c-sidebar-menu',
   template: `
   <div class="c-nav-search">
       <div class="input-group">
@@ -25,7 +25,7 @@ import  { MenuData }    from '../main/main-model';
               <i style="margin-top:3px;width:17px" class="fa  pull-right"  [ngClass]="{'fa-angle-down': !isLeaf(item) && item.isExpend, 'fa-angle-left': !isLeaf(item) && !item.isExpend}"></i>
               <i class="fa " [ngClass]="item.icon"></i> <span>{{item.name}}</span>
               </a>
-            <treeview-menu [data]=item></treeview-menu>
+            <c-treeview-menu [data]=item></c-treeview-menu>
         </li>
     </ul>
   </div>

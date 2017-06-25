@@ -6,7 +6,7 @@ import  { AppService }   from '../../app.service';
 
 
 @Component({
-    selector: 'multiselect-dropdown-demo',
+    selector: 'c-multiselect-dropdown-demo',
     template: `
    <div class="c-content-inner">
        <div class="row">

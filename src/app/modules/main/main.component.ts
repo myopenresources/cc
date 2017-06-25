@@ -14,7 +14,7 @@ import  { AppService }   from '../../app.service';
  * 主体组件
  */
 @Component({
-  selector: 'main',
+  selector: 'c-main',
   templateUrl: './main.component.html'
 })
 export class MainComponent implements OnInit {

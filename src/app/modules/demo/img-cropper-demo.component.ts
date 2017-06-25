@@ -4,7 +4,7 @@ import { ImageCropperComponent, CropperSettings, Bounds } from 'ng2-img-cropper'
 import  { AppService }   from '../../app.service';
 
 @Component({
-    selector: 'img-cropper-demo',
+    selector: 'c-img-cropper-demo',
     template: `
      <div class="c-content-inner">
        <div class="row">

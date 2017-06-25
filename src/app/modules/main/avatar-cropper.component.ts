@@ -9,7 +9,7 @@ import { ToastConfig, ToastType } from '../shared/toast/toast-model';
  * 头像更换组件
  */
 @Component({
-    selector: 'avatar-cropper',
+    selector: 'c-avatar-cropper',
     templateUrl: './avatar-cropper.component.html',
     encapsulation: ViewEncapsulation.None
 })

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TodoObjData, NeedReadObjData, NoticeObjData, CommonFuncData } from '../home/home-model';
 
 @Component({
-  selector: 'home',
+  selector: 'c-home',
   templateUrl: './home.component.html'
 })
 export class HomeComponent implements OnInit {

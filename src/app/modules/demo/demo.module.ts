@@ -17,6 +17,7 @@ import {MultiSelectDemoComponent} from './multiselect-dropdown-demo.component'
 import {HierarchyViewDemoComponent} from './hierarchy-view-demo.component'
 import {ImgCropperDemoComponent} from './img-cropper-demo.component'
 import {SelectDemoComponent} from './select-demo.component'
+import {PaginationDemoComponent} from './pagination-demo.component'
 
 
 
@@ -43,7 +44,8 @@ import {SelectDemoComponent} from './select-demo.component'
      MultiSelectDemoComponent,
      HierarchyViewDemoComponent,
      ImgCropperDemoComponent,
-     SelectDemoComponent
+     SelectDemoComponent,
+     PaginationDemoComponent
   ],
   exports:      [
      ToastDemoComponent,
@@ -52,7 +54,8 @@ import {SelectDemoComponent} from './select-demo.component'
      MultiSelectDemoComponent,
      HierarchyViewDemoComponent,
      ImgCropperDemoComponent,
-     SelectDemoComponent
+     SelectDemoComponent,
+     PaginationDemoComponent
   ],
   providers:    []
 })

@@ -86,10 +86,10 @@ export class MainComponent implements OnInit {
       }, {
         "id": "8",
         "parentId": "1",
-        "name": "列表",
-        "keyWord":"lb",
-        "icon": 'fa-list',
-        "url": 'list'
+        "name": "分页",
+        "keyWord":"pagination",
+        "icon": 'fa-pagelines',
+        "url": '/app/paginationDemo'
       }, {
         "id": "9",
         "parentId": "1",

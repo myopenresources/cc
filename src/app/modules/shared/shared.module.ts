@@ -13,6 +13,9 @@ import { AlertComponent} from './modal/alert.component';
 import {HierarchyViewComponent} from './hierarchy-view/hierarchy-view.component';
 import {HierarchyViewNodeComponent} from './hierarchy-view/hierarchy-view-node.component';
 
+//pagination
+import {PaginationComponent} from './pagination/pagination.component';
+
 /**
  * 公共模块
  */
@@ -27,10 +30,11 @@ import {HierarchyViewNodeComponent} from './hierarchy-view/hierarchy-view-node.c
      ConfirmComponent,
      AlertComponent,
      HierarchyViewComponent,
-     HierarchyViewNodeComponent
+     HierarchyViewNodeComponent,
+     PaginationComponent
   ],
   providers:    [ModalService],
   entryComponents : [ConfirmComponent,AlertComponent],
-  exports:[HierarchyViewComponent]
+  exports:[HierarchyViewComponent,PaginationComponent]
 })
 export class SharedModule { }

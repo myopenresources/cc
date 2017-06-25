@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import  { AppService }   from '../../app.service';
 
 @Component({
     selector: 'c-select-demo',
@@ -108,7 +109,8 @@ export class SelectDemoComponent implements OnInit {
     logSingleString: string = '';
     logMultipleString: string = '';
 
-    constructor() {
+    constructor(private appService:AppService) {
+        this.appService.titleEventEmitter.emit("下拉");
 
         this.opts = this.OPTIONS_A;
 

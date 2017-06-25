@@ -1,5 +1,5 @@
 ## CC admin 
- 一个基于Angular4+Bootstrap4+Scss的后台管理系统界面，
+ 一个基于angular4.1.3+ng-bootstrap1.0.0-alpha.25+bootstrap4.0.0-alpha.6+scss的后台管理系统界面
 
 ![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc.png)
 
@@ -11,7 +11,7 @@
 
 
 ## 更新
-1. 搭建环境
+1. 搭建环境，分别加入ng-bootstrap1、bootstrap4、font-awesome4.7、animate.css3.5等
 2. 登录界面
 3. 主页
 4. 添加alert与confirm组件(src/app/modules/shared/modal/modal.service.ts)
@@ -57,11 +57,17 @@
 
 
 ## 特别声明
-1. 如果本界面中使用到了您的产品或是对您造成了影响请及时联系我，我将第一时间去除，QQ：332557712
+1. 如果本界面中使用到了您的产品或是对您造成了影响请及时联系我，我将第一时间去除
+
+
+## 技术交流
+1. 在github进行交流
+3. 技术交流群：168733660
 
 
 ## 贡献
 1. 站在巨人的肩膀上，才能够走得更远，感谢那些默默贡献的人！
+
 
 ## 许可
 1. [MIT](/LICENSE)

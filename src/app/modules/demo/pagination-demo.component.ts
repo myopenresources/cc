@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild } from '@angular/core';
 
-import  { AppService }   from '../../app.service';
+import { AppService } from '../../app.service';
 
-import {ToastService} from '../shared/toast/toast.service';
-import {ToastConfig,ToastType} from '../shared/toast/toast-model';
+import { ToastService } from '../shared/toast/toast.service';
+import { ToastConfig, ToastType } from '../shared/toast/toast-model';
+
 
 
 @Component({
@@ -33,32 +34,38 @@ import {ToastConfig,ToastType} from '../shared/toast/toast-model';
     </div>
   `
 })
-export class PaginationDemoComponent{
+export class PaginationDemoComponent {
 
-  btnCls:string='btn-outline-info';
+  
 
-  options:any={
+  btnCls: string = 'btn-outline-info';
+
+  options: any = {
     total: 60, //总条数
-	  pageList: [15, 25, 35] //每页显示条数
+    pageList: [15, 25, 35] //每页显示条数
   }
 
+  
 
-  constructor(private appService:AppService) {
-     this.appService.titleEventEmitter.emit("分页");
+
+  constructor(private appService: AppService) {
+    this.appService.titleEventEmitter.emit("分页");
   }
 
-  onPageChanged($event){
+  onPageChanged($event) {
     console.info($event);
   }
 
-  changeData(){
-    this.options={
+  changeData() {
+    this.options = {
       total: 10, //总条数
       pageList: [10, 15, 20] //每页显示条数
-     
+
     }
   }
 
   
+
+
 
 }

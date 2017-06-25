@@ -19,21 +19,21 @@ export class ConfirmComponent {
     /**
      * 不同意
      */
-    decline(): void {
+    private  decline(): void {
        this.activeModal.dismiss({ status : 'declined' });
     }
 
     /**
      * 关闭
      */
-    close(): void {
+    private  close(): void {
        this.activeModal.dismiss({ status : 'closed' });
     }
 
     /**
      * 同意
      */
-    approve(): void {
+    private  approve(): void {
         this.activeModal.close({ status : 'approved' });
     }
 }

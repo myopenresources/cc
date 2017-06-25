@@ -24,6 +24,7 @@
 11. 添加http服务(src/app/core/http.service.ts)
 12. 添加utils工具(src/app/core/utils.ts)
 13. 添加pagination组件(src/app/modules/shared/pagination/pagination.component.ts)
+13. 添加http-pagination组件(src/app/modules/shared/pagination/http-pagination.component.ts)
 
 
 ## 规范
@@ -39,12 +40,12 @@
 
 
 ## 安装
-1. cd E:\project\cc                            <---- 进入到项目所有的目录
+1. cd E:\project\cc                            <---- 进入到项目所在的目录
 2. npm install                                 <---- 安装，如果下载比较慢，可使用淘宝的cnpm，请参考：https://npm.taobao.org/
 
 
 ## 开发服务器
-1. cd E:\project\cc                            <---- 进入到项目所有的目录
+1. cd E:\project\cc                            <---- 进入到项目所在的目录
 2. npm start                                   <---- 使用npm命令运行
 3. 浏览器中输入`http://localhost:4200/`         <---- 本机访问
 

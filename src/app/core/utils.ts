@@ -11,7 +11,7 @@ export class Utils {
      * 是否为空
      * @param value 值
      */
-    static isEmpty(value): boolean {
+    static isEmpty(value:any): boolean {
         return value == null || typeof value === 'string' && value.length === 0;
     }
 
@@ -19,8 +19,24 @@ export class Utils {
      * 是否不为空
      * @param value 值
      */
-    static isNotEmpty(value): boolean {
+    static isNotEmpty(value:any): boolean {
         return !Utils.isEmpty(value);
+    }
+
+    /**
+     * 是否数组
+     * @param vaue 值
+     */
+    static isArray(value:any): boolean {
+        return Array.isArray(value);
+    }
+    
+    /**
+     * 是否对象
+     * @param vaue 值
+     */
+    static isObject(value:any): boolean {
+        return typeof value === 'object' && !Utils.isArray(value);
     }
 
     /**

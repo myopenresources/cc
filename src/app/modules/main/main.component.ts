@@ -93,10 +93,10 @@ export class MainComponent implements OnInit {
       }, {
         "id": "9",
         "parentId": "1",
-        "name": "时间选择器",
-        "keyWord":"sjxzq",
-        "icon": 'fa-calendar',
-        "url": 'datepicker'
+        "name": "http分页",
+        "keyWord":"httpPagination",
+        "icon": 'fa-pagelines',
+        "url": '/app/httpPaginationDemo'
       }, {
         "id": "10",
         "parentId": "1",

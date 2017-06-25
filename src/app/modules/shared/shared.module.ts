@@ -15,6 +15,7 @@ import {HierarchyViewNodeComponent} from './hierarchy-view/hierarchy-view-node.c
 
 //pagination
 import {PaginationComponent} from './pagination/pagination.component';
+import {HttpPaginationComponent} from './pagination/http-pagination.component';
 
 /**
  * 公共模块
@@ -31,10 +32,11 @@ import {PaginationComponent} from './pagination/pagination.component';
      AlertComponent,
      HierarchyViewComponent,
      HierarchyViewNodeComponent,
-     PaginationComponent
+     PaginationComponent,
+     HttpPaginationComponent
   ],
   providers:    [ModalService],
   entryComponents : [ConfirmComponent,AlertComponent],
-  exports:[HierarchyViewComponent,PaginationComponent]
+  exports:[HierarchyViewComponent,PaginationComponent,HttpPaginationComponent]
 })
 export class SharedModule { }

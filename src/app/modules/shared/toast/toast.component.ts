@@ -28,42 +28,42 @@ export class ToastComponent implements OnInit {
   /**
    * 判断是成功
    */
-  isSuccess() {
+  private isSuccess() {
     return this.config.getToastType() === ToastType.SUCCESS;
   }
 
   /**
    * 判断是信息
    */
-  isInfo() {
+  private isInfo() {
     return this.config.getToastType() === ToastType.INFO;
   }
 
   /**
    * 判断是警告
    */
-  isWarning() {
+  private isWarning() {
     return this.config.getToastType() === ToastType.WARNING;
   }
 
   /**
    * 判断是错误
    */
-  isError() {
+  private isError() {
     return this.config.getToastType() === ToastType.ERROR;
   }
 
   /**
    * 解除
    */
-  dismiss() {
+  private dismiss() {
     this.dismissed.emit();
   }
 
   /**
    * 是否启用
    */
-  isDismissEnabled() {
+  private  isDismissEnabled() {
     return this.config.isDismissable();
   }
 

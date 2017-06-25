@@ -23,3 +23,12 @@ export class PaginationOptions {
     pageNumber?:number;
 
 }
+
+
+/**
+ * http分页method类型
+ */
+export class HttpPaginationMethod {
+    public static POST: string = "post"
+    public static GET: string = "get"; 
+}

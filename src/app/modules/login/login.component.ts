@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
    * 登录
    */
   login() {
-    let that = this;
+    /*let that = this;
     this.httpService.post("http://192.168.1.107:8080/cjhme/user/login.jhtml", {
       userName: 'admin',
       password: '123456'
@@ -37,18 +37,18 @@ export class LoginComponent implements OnInit {
       console.info(data);
       console.info(res);
       if (successful) {
-        const toastCfg = new ToastConfig(ToastType.SUCCESS, '', '百变小咖，登录成功!', 2000);
+        const toastCfg = new ToastConfig(ToastType.SUCCESS, '', '百变小咖，登录成功!', 3000);
         that.toastService.toast(toastCfg);
         that.router.navigate(['/app/home']);
       }
     }, function (successful, msg, err) {
-       const toastCfg = new ToastConfig(ToastType.ERROR, '', msg, 2000);
+       const toastCfg = new ToastConfig(ToastType.ERROR, '', msg, 3000);
        that.toastService.toast(toastCfg);
-    });
+    });*/
 
-    /*const toastCfg = new ToastConfig(ToastType.SUCCESS, '百变小咖，登录成功!', '', 2000);
+    const toastCfg = new ToastConfig(ToastType.SUCCESS, '', '百变小咖，登录成功!', 2000);
     this.toastService.toast(toastCfg);
-    this.router.navigate(['/app/home']);*/
+    this.router.navigate(['/app/home']);
   }
 
 

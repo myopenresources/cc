@@ -11,7 +11,8 @@ import { MultiSelectDemoComponent } from '../demo/multiselect-dropdown-demo.comp
 import { HierarchyViewDemoComponent } from '../demo/hierarchy-view-demo.component';
 import { ImgCropperDemoComponent } from '../demo/img-cropper-demo.component';
 import { SelectDemoComponent } from '../demo/select-demo.component';
-import {PaginationDemoComponent} from '../demo/pagination-demo.component'
+import {PaginationDemoComponent} from '../demo/pagination-demo.component';
+import {HttpPaginationDemoComponent} from '../demo/http-pagination-demo.component';
 
 /**
  * 主体路由
@@ -52,6 +53,10 @@ const mainRoutes: Routes = [
       {
             path: 'paginationDemo',
             component: PaginationDemoComponent
+      },
+      {
+            path: 'httpPaginationDemo',
+            component: HttpPaginationDemoComponent
       }
 
 

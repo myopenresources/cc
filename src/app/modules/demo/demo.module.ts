@@ -18,6 +18,7 @@ import {HierarchyViewDemoComponent} from './hierarchy-view-demo.component'
 import {ImgCropperDemoComponent} from './img-cropper-demo.component'
 import {SelectDemoComponent} from './select-demo.component'
 import {PaginationDemoComponent} from './pagination-demo.component'
+import {HttpPaginationDemoComponent} from './http-pagination-demo.component'
 
 
 
@@ -45,7 +46,8 @@ import {PaginationDemoComponent} from './pagination-demo.component'
      HierarchyViewDemoComponent,
      ImgCropperDemoComponent,
      SelectDemoComponent,
-     PaginationDemoComponent
+     PaginationDemoComponent,
+     HttpPaginationDemoComponent
   ],
   exports:      [
      ToastDemoComponent,
@@ -55,7 +57,8 @@ import {PaginationDemoComponent} from './pagination-demo.component'
      HierarchyViewDemoComponent,
      ImgCropperDemoComponent,
      SelectDemoComponent,
-     PaginationDemoComponent
+     PaginationDemoComponent,
+     HttpPaginationDemoComponent
   ],
   providers:    []
 })

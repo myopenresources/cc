@@ -1,6 +1,6 @@
 import { Component, OnInit,ViewChild } from '@angular/core';
 
-import { AppService } from '../../app.service';
+import { AppService } from '../app.service';
 
 import { ToastService } from '../shared/toast/toast.service';
 import { ToastConfig, ToastType } from '../shared/toast/toast-model';

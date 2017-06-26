@@ -39,6 +39,15 @@ export class Utils {
         return typeof value === 'object' && !Utils.isArray(value);
     }
 
+     /**
+     * url中如果有双斜杠替换为单斜杠
+     * @param url
+     * @returns {string}
+     */
+    static replaceUrl(url) {
+        return 'http://' + url.substring(7).replace(/\/\//g, '/');
+    }
+
     /**
   * 日期对象转为日期字符串
   * @param date 需要格式化的日期对象

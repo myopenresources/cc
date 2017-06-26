@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import  { AppService }   from '../../app.service';
+import  { AppService }   from '../app.service';
 
 @Component({
     selector: 'c-select-demo',

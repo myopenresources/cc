@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 import {
     Http, Response, Headers, RequestOptions, URLSearchParams, RequestOptionsArgs, RequestMethod
 } from '@angular/http';
-import { Utils } from "./utils";
+import { Utils } from "../util/utils";
 
 /**
  * http服务
@@ -16,7 +16,7 @@ export class HttpService {
     constructor(public http: Http) {}
 
     public request(url: string, options: RequestOptionsArgs, success: Function, error: Function): any {
-        url = HttpService.replaceUrl(url);
+        url = Utils.replaceUrl(url);
         console.info("加载中...");
         //console.log('%c 请求前 %c', 'color:blue', '', 'url', url, 'options', options);
         this.http.request(url, options).subscribe(res => {
@@ -138,12 +138,5 @@ export class HttpService {
 
     }
 
-    /**
-     * url中如果有双斜杠替换为单斜杠
-     * @param url
-     * @returns {string}
-     */
-    private static replaceUrl(url) {
-        return 'http://' + url.substring(7).replace(/\/\//g, '/');
-    }
+   
 }

@@ -1,7 +1,7 @@
 import { Component, Input, Output, OnInit, EventEmitter } from '@angular/core';
 
-import { HttpService } from '../../../core/http.service';
-import { Utils } from '../../../core/utils';
+import { HttpService } from '../http/http.service';
+import { Utils } from '../util/utils';
 import { ToastService } from '../toast/toast.service';
 import { ToastConfig, ToastType } from '../toast/toast-model';
 

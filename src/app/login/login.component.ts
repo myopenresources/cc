@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { HttpService } from '../../core/http.service';
+import { HttpService } from '../shared/http/http.service';
 
 import { ToastService } from '../shared/toast/toast.service';
 import { ToastConfig, ToastType } from '../shared/toast/toast-model';

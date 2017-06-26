@@ -8,7 +8,7 @@ import  { ModalService } from '../shared/modal/modal.service';
 import  { ConfirmConfig} from '../shared/modal/modal-model';
 
 import  { AvatarCropperComponent} from './avatar-cropper.component';
-import  { AppService }   from '../../app.service';
+import  { AppService }   from '../app.service';
 
 /**
  * 主体组件

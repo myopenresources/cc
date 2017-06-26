@@ -1,8 +1,8 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { LoginComponent }      from './modules/login/login.component';
-import { MainComponent }   from './modules/main/main.component';
+import { LoginComponent }      from './login/login.component';
+import { MainComponent }   from './main/main.component';
 
 /**
  * app路由
@@ -16,7 +16,7 @@ const routes: Routes = [
   { 
      path: 'app',  
      component: MainComponent,
-     loadChildren: 'app/modules/main/main.module#MainModule'
+     loadChildren: 'app/main/main.module#MainModule'
   }
 ];
 

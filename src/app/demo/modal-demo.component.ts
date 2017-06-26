@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { ModalService } from '../shared/modal/modal.service';
 import { ConfirmConfig, AlertType, AlertConfig } from '../shared/modal/modal-model';
-import  { AppService }   from '../../app.service';
+import  { AppService }   from '../app.service';
 
 
 @Component({

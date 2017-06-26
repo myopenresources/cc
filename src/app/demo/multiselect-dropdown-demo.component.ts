@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { IMultiSelectOption, IMultiSelectTexts, IMultiSelectSettings } from 'angular-2-dropdown-multiselect';
 
-import  { AppService }   from '../../app.service';
+import  { AppService }   from '../app.service';
 
 
 @Component({

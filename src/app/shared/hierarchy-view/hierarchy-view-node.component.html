@@ -1,0 +1,50 @@
+<div>
+    <div *ngIf="data.children && data.children.length==1">
+        <div class="c-block">
+            <div class="c-part">
+                <div class="c-line-v">
+                    <span></span>
+                </div>
+                <span class="c-name c-cursor-pointer " [ngClass]="data.children[0].cls" (click)="nodeClick(data.children[0]);"><i class="fa fa-fw" [ngClass]="data.children[0].icon" [hidden]="!data.children[0].icon"></i> {{data.children[0].name}}</span>
+                <div *ngIf="data.children[0].children && data.children[0].children.length>0">
+                    <div class="c-line-v">
+                        <span></span>
+                    </div>
+                    <c-hierarchy-view-node [data]="data.children[0]" (onClicked)="nodeClick($event);"></c-hierarchy-view-node>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="data.children.length>1">
+		<div class="c-block">
+			<div class="c-part"  *ngFor="let node of data.children;let isFirst=first; let isLast=last;">
+                
+				<div *ngIf="isFirst">
+					<span class="c-line-h c-line-h-r"></span>
+				</div>
+				<div *ngIf="isLast">
+					<span class="c-line-h c-line-h-l"></span>
+				</div>
+				<div  *ngIf="!isLast && !isFirst">
+					<span class="c-line-h c-line-h-c"></span>
+				</div>
+
+				<div class="c-line-v">
+					<span></span>
+				</div>
+			
+				<span  class="c-name c-cursor-pointer " [ngClass]="node.cls"  (click)="nodeClick(node);"><i class="fa fa-fw" [ngClass]="node.icon" [hidden]="!node.icon"></i> {{node.name}}</span>
+				<div *ngIf="node.children && node.children.length>0">
+					<div class="c-line-v">
+						<span></span>
+					</div>
+                    <c-hierarchy-view-node [data]="node" (onClicked)="nodeClick($event);"></c-hierarchy-view-node>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+</div>

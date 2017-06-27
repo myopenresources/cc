@@ -1,0 +1,77 @@
+/*登录*/
+.c-login-wrapper {
+  background: url("./assets/img/login-bg.png");
+  width: 100vw;
+  height: 100vh;
+  background-size: 100% 100%;
+  & > .c-login-container {
+    padding-top: 11%;
+    & > .c-login-box {
+      width: 410px;
+      padding: 20px;
+      -webkit-box-shadow:$c-box-shadow;
+        box-shadow:$c-box-shadow;
+        -moz-box-shadow:$c-box-shadow;
+      border: 0px;
+      background: $c-color-white;
+      .c-login-header {
+        margin-bottom: 25px;
+        h3 {
+          color: $c-color-black-primary;
+        }
+        img {
+          width: 32px;
+          height: 32px;
+          vertical-align: -7px;
+          margin-right: 2px;
+          background-color: $c-color-deep;
+          &:hover {
+            -moz-transition: all 0.5s ease-in-out;
+            -webkit-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+            -moz-transform: rotateY(-360deg);
+            -webkit-transform: rotateY(-360deg);
+            -o-transform: rotateY(-360deg);
+            -ms-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+          }
+        }
+      }
+      hr {
+        padding-bottom: 5px;
+      }
+      .form-group {
+        margin-top: 28px;
+        input {
+          padding: 10px;
+        }
+        button {
+          width: 100%;
+          padding: 10px;
+          cursor: pointer;
+        }
+      }
+      .c-copy-right {
+        margin-top: 10px;
+        height: 10px;
+        p {
+          color: $c-color-black-secondary;
+        }
+      }
+    }
+  }
+  & > .c-login-desc {
+    width: 410px;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 8px;
+    color: $c-color-gray-light;
+    margin-left: auto;
+    margin-right: auto;
+    filter: alpha(opacity=8);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+  }
+}

@@ -1,11 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 /*你可以添加全局的样式到这个文件中，并且可以引入其它的样式文件*/
 
-/* ======以下是第三方css引入======*/
+/* ======以下是第三方scss与css引入======*/
 @import '../node_modules/font-awesome/css/font-awesome.min.css';
 @import '../node_modules/animate.css/animate.min.css';
 //bootstrap
-@import "./assets/scss/commons/bootstrap-variables.scss";
+@import "./assets/scss/base/bootstrap-variables.scss";
 @import '../node_modules/bootstrap/scss/bootstrap.scss'; 
 @import '../node_modules/bootstrap/scss/bootstrap-grid.scss'; 
 @import '../node_modules/bootstrap/scss/bootstrap-reboot.scss'; 
@@ -14,17 +14,18 @@
 
 /* ======以下是scss引入======*/
 //公共样式
-@import './assets/scss/commons/common.scss';
+@import './assets/scss/base/app-base.scss';
 //模块样式
-@import './assets/scss/modules/login/login.scss';
-@import './assets/scss/modules/main/main.scss';
-@import './assets/scss/modules/home/home.scss';
-@import './assets/scss/modules/shared/modal.scss';
-@import './assets/scss/modules/shared/toast.scss';
-@import './assets/scss/modules/shared/hierarchy-view.scss';
+@import './assets/scss/login/login.scss';
+@import './assets/scss/main/main.scss';
+@import './assets/scss/home/home.scss';
+@import './assets/scss/shared/modal.scss';
+@import './assets/scss/shared/toast.scss';
+@import './assets/scss/shared/hierarchy-view.scss';
+@import './assets/scss/shared/spin.scss';
 
 //示例样式
-@import './assets/scss/modules/demo/demo.scss';
+@import './assets/scss/demo/demo.scss';
 
 
 

@@ -1,0 +1,7 @@
+<div class="alert text-white c-toast" [class.bg-success]="isSuccess()" [class.bg-info]="isInfo()" [class.bg-warning]="isWarning()" [class.bg-danger]="isError()">
+    <button *ngIf="isDismissEnabled()" type="button" class="close" data-dismiss="config" aria-label="Close" (click)="dismiss()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <i class="fa " [class.fa-check-circle]="isSuccess()" [class.fa-info-circle]="isInfo()" [class.fa-warning]="isWarning()" [class.fa-times-circle]="isError()"></i> 
+    <strong>{{config.textStrong}}</strong><span>{{config.text}}</span>
+</div>

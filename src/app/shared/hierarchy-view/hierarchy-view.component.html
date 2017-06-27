@@ -1,0 +1,13 @@
+<div class="c-hierarchy-view-box">
+    <div class="c-hierarchy-view"  [ngStyle]="{'width':boxWidth}">
+        <div class="c-block">
+            <div class="c-part" *ngFor="let node of data.rows">
+                <span class="c-name c-cursor-pointer "  [ngClass]="node.cls" (click)="nodeClick(node);"><i class="fa fa-fw" [ngClass]="node.icon" [hidden]="!node.icon"></i> {{node.name}}</span>
+                <div class="c-line-v">
+                    <span></span>
+                </div>
+                <c-hierarchy-view-node [data]="node" (onClicked)="nodeClick($event);"></c-hierarchy-view-node>
+            </div>
+        </div>
+    </div>
+</div>

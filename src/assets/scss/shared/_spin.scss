@@ -1,0 +1,52 @@
+.c-spin-backdrop{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999999;
+    background-color: $c-color-black-deep;
+    filter: alpha(opacity=3);
+    -moz-opacity: 0.03;
+    opacity: 0.03;
+}
+
+.c-spin-container {
+    width: 100%;
+    height: 100%;
+    z-index: 99999999;
+}
+
+.c-spin-container .c-spin {
+    box-sizing: border-box;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: calc(50% + 10px);
+    top: 40%;
+    z-index: 1;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+.c-spin-container .c-spin .c-circle {
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 10px solid $c-color-gray-deep;
+    border-top-color: $c-color-secondary;
+    -webkit-animation: spin 1s infinite linear;
+    animation: spin 1s infinite linear;
+}
+
+
+.c-spin-container .c-spin .c-spin-text {
+    width: 80px;
+    height: 80px;
+    font-size: 13px;
+    text-align: center;
+    z-index: 1;
+    margin-top: -49px;
+    color: $c-color-secondary;
+}

@@ -1,0 +1,224 @@
+//主要颜色
+$c-color-primary:#1190d6 !default;
+//次要颜色
+$c-color-secondary:#10a2e9 !default;
+//深色
+$c-color-deep:#0a7bb9 !default;
+//浅色
+$c-color-light:#5bc0de !default;
+
+//主要黑色
+$c-color-black-primary:#333333 !default;
+//次要黑色
+$c-color-black-secondary:#555555 !default;
+//深黑色
+$c-color-black-deep:#000000 !default;
+//浅黑色
+$c-color-black-light:#888888 !default;
+
+//主要灰色
+$c-color-gray-primary:#f2f2f2 !default;
+//次要灰色
+$c-color-gray-secondary:#fafafa !default;
+//深灰色
+$c-color-gray-deep:#eeeeee !default;
+//浅灰色
+$c-color-gray-light:#fefefe !default;
+
+//白色
+$c-color-white:#ffffff !default;
+//灰色
+$c-color-gary:#dddddd !default;
+
+//白灰色
+$c-color-white-gray:#f6f7f8 !default;
+
+//盒子阴影
+$c-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03) !default;
+
+//头部阴影
+$c-header-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03) !default;
+
+//图片阴影
+$c-img-shadow: 1px 2px 6px rgba(0, 0, 0, 0.05) !default;
+
+//层次图盒子阴影
+$c-hierarchy-box:1px 1px 3px rgba(100, 100, 100, 0.6) !default;
+
+$c-toast-box:1px 1px 3px rgba(100, 100, 100, 0.3) !default;
+
+
+
+
+/*页面统一样式*/
+html,
+body {
+  font-size: 14px;
+  background-color: color-primary;
+}
+/*添加手形*/
+a[href], input[type='submit'], input[type='image'], label[for], select, button, .c-pointer {
+  cursor: pointer;
+}
+/*整体部分*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+/*滑动轨道*/
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.06);
+}
+/*滑块*/
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.08);
+  &:hover {
+    background: rgba(0, 0, 0, 0.15);
+  }
+}
+/**外边距**/
+.c-mt3 {
+  margin-top: 3px;
+}
+.c-mt5 {
+  margin-top: 5px;
+}
+.c-mt10 {
+  margin-top: 10px;
+}
+.c-mt15 {
+  margin-top: 15px;
+}
+.c-mt20 {
+  margin-top: 20px;
+}
+.c-mt25 {
+  margin-top: 25px;
+}
+.c-mt30 {
+  margin-top: 30px;
+}
+.c-mt50 {
+  margin-top: 50px;
+}
+.c-mb5 {
+  margin-bottom: 5px;
+}
+.c-mb10 {
+  margin-bottom: 10px;
+}
+.c-mb15 {
+  margin-bottom: 15px;
+}
+.c-mb20{
+  margin-bottom: 20px;
+}
+.c-ml5 {
+  margin-left: 5px;
+}
+.c-ml10 {
+  margin-left: 10px;
+}
+.c-ml15 {
+  margin-left: 15px;
+}
+.c-ml20 {
+  margin-left: 20px;
+}
+.c-mr3 {
+  margin-right: 3px;
+}
+.c-mr5 {
+  margin-right: 5px;
+}
+/**字号**/
+.c-fs15 {
+  font-size: 15px;
+}
+.c-fs20 {
+  font-size: 20px;
+}
+.c-fs25 {
+  font-size: 25px;
+}
+.c-fs30 {
+  font-size: 30px;
+}
+.c-fs50 {
+  font-size: 50px;
+}
+/**卡片**/
+.c-card {
+  border: 0px;
+  border-radius: 1px;
+  -webkit-box-shadow: $c-box-shadow;
+  box-shadow: $c-box-shadow;
+  -moz-box-shadow:  $c-box-shadow;
+}
+/**手式**/
+.c-cursor-pointer {
+  cursor: pointer;
+}
+
+/**自动滚动条**/
+.c-scroll-y-a{
+  overflow-y: auto;
+}
+/**内容换行**/
+.c-word-break{
+   word-break:break-all;
+}
+/*line table*/
+.c-line-table {
+  width: 100%;
+  margin-bottom: 10px;
+  tr {
+    border-bottom: 1px dashed $c-color-gray-deep;
+    td {
+      padding: 10px;
+    }
+    th {
+      padding: 10px;
+    }
+  }
+  &:first-child {
+    tr {
+      border-top: 1px dashed $c-color-gray-deep;
+    }
+  }
+}
+/*去除阴影*/
+.c-not-shadow{
+  -webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow: none;
+}
+/*行标题*/
+.c-line-title {
+	margin-bottom: 15px;
+	padding-bottom: 8px;
+	font-size: 15px;
+	border-bottom: 1px dashed $c-color-gary;
+	color: $c-color-black-secondary;
+	font-weight: bold;
+}
+/*图片上传按钮*/
+.c-file-upload {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width:100px;
+    [type=file] {
+        cursor: pointer;
+        display: block;
+        filter: alpha(opacity=0);
+        min-height: 100%;
+        min-width: 100%;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        text-align: right;
+        top: 0;
+    }
+}
+

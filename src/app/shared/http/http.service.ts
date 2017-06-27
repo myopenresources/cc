@@ -8,6 +8,7 @@ import {
 import { Utils } from "../util/utils";
 import { SpinService } from '../spin/spin.service';
 
+
 /**
  * http服务
  */
@@ -18,19 +19,14 @@ export class HttpService {
 
     public request(url: string, options: RequestOptionsArgs, success: Function, error: Function): any {
         url = Utils.replaceUrl(url);
-        console.info("加载中...");
         this.spinService.spin(true);
-        //console.log('%c 请求前 %c', 'color:blue', '', 'url', url, 'options', options);
         this.http.request(url, options).subscribe(res => {
-            console.info("加载结束...");
             this.spinService.spin(false);
-            // console.log('%c 请求成功 %c', 'color:green', '', 'url', url, 'options', options, 'res', res);
-
             success(res.ok, res.json(), res);
         }, err => {
-            console.info("加载结束...");
             this.spinService.spin(false);
-            let msg = this.requestFailed(url, options, err);//处理请求失败
+            //处理请求失败
+            let msg = this.requestFailed(url, options, err);
             error(err.ok, msg, err);
         });
 
@@ -126,7 +122,6 @@ export class HttpService {
      * @param err
      */
     private requestFailed(url: string, options: RequestOptionsArgs, err) {
-        //console.log('%c 请求失败 %c', 'color:red', '', 'url:', url, 'options:', options, 'err:', err);
         let msg = '请求发生异常', status = err.status;
         if (status === 0) {
             msg = '请求失败，请求响应出错';

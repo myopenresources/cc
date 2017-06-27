@@ -17,8 +17,6 @@ import {ToastConfig,ToastType} from '../shared/toast/toast-model';
               <button type="button" class="btn btn-warning" (click)="openWarning()">警告消息</button>
               <button type="button" class="btn btn-success" (click)="openSuccess()">成功消息</button>
               <button type="button" class="btn btn-danger" (click)="openError()">错误消息</button>
-              <button type="button" class="btn btn-danger" (click)="open()">open</button>
-               <button type="button" class="btn btn-danger" (click)="close()">close</button>
           </div>
         </div>
         <div class="row">
@@ -39,23 +37,23 @@ export class ToastDemoComponent{
   }
 
   openInfo(){
-     const toastCfg = new ToastConfig(ToastType.INFO,'这是一条INFO消息!','', 3000);
+     const toastCfg = new ToastConfig(ToastType.INFO,'','这是一条INFO消息!', 3000);
      this.toastService.toast(toastCfg);
   }
 
 
   openWarning(){
-     const toastCfg = new ToastConfig(ToastType.WARNING,'这是一条WARNING消息!','', 3000);
+     const toastCfg = new ToastConfig(ToastType.WARNING,'','这是一条WARNING消息!', 3000);
      this.toastService.toast(toastCfg);
   }
 
   openSuccess(){
-     const toastCfg = new ToastConfig(ToastType.SUCCESS,'这是一条SUCCESS消息!','', 3000);
+     const toastCfg = new ToastConfig(ToastType.SUCCESS,'','这是一条SUCCESS消息!', 3000);
      this.toastService.toast(toastCfg);
   }
 
   openError(){
-     const toastCfg = new ToastConfig(ToastType.ERROR,'这是一条ERROR消息!','', 3000);
+     const toastCfg = new ToastConfig(ToastType.ERROR,'','这是一条ERROR消息!', 3000);
      this.toastService.toast(toastCfg);
   }
 

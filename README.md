@@ -28,6 +28,7 @@
 14. 添加spin组件(src/app/shared/spin/spin.component.ts)
 
 
+
 ## 规范
 1. 为避免冲突，应用css使用c-为前缀
 2. 为避免冲突，应用组件selector使用c-为前缀

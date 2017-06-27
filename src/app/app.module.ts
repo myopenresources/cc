@@ -5,9 +5,6 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 
-
-
-
 //app
 import { appRouting } from './app-routing.module';
 import { AppComponent }    from './app.component';
@@ -22,9 +19,11 @@ import {ToastComponent} from './shared/toast/toast.component';
 //http
 import { HttpService }   from './shared/http/http.service';
 
+
 //spin
 import { SpinComponent} from './shared/spin/spin.component';
 import { SpinService } from './shared/spin/spin.service';
+
 
 //modules
 import  { LoginModule }      from './login/login.module';

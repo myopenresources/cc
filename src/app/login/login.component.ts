@@ -46,7 +46,6 @@ export class LoginComponent implements OnInit {
        that.toastService.toast(toastCfg);
     });*/
 
-    
 
     const toastCfg = new ToastConfig(ToastType.SUCCESS, '', '百变小咖，登录成功!', 2000);
     this.toastService.toast(toastCfg);

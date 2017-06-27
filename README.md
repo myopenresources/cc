@@ -1,19 +1,33 @@
 ## CC admin 
  一个基于angular4.1.3+ng-bootstrap1.0.0-alpha.25+bootstrap4.0.0-alpha.6+scss的后台管理系统界面
 
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc.png)
 
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc-2.png)
+## 界面展示
+1. 登录界面
+![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc1.png)
 
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc-3.png)
+2. 主页界面
+![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-2.png)
 
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc-4.png)
+3. 头像更换
+![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-3.png)
+
+4. 消息框
+![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-4.png)
+
+5. 确认框
+![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-5.png)
+
+6. 层次图
+![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-5.png)
+
+7. 更多略...
 
 
 ## 更新
-1. 搭建环境，分别加入ng-bootstrap1、bootstrap4、font-awesome4.7、animate.css3.5等
+1. 搭建环境，分别加入ng-bootstrap1.0.0-alpha.25、bootstrap4.1.3、font-awesome4.7.0、animate.css3.5.2等
 2. 登录界面
-3. 主页
+3. 主页界面
 4. 添加alert与confirm组件(src/app/shared/modal/modal.service.ts)
 5. 添加toast组件(src/app/shared/toast/toast.service.ts)
 6. 添加第三方ng-charts组件

@@ -24,8 +24,8 @@
 11. 添加http服务(src/app/core/http.service.ts)
 12. 添加utils工具(src/app/core/utils.ts)
 13. 添加pagination组件(src/app/shared/pagination/pagination.component.ts)
-13. 添加http-pagination组件(src/app/shared/pagination/http-pagination.component.ts)
-14. 添加spin组件(src/app/shared/spin/spin.component.ts)
+14. 添加http-pagination组件(src/app/shared/pagination/http-pagination.component.ts)
+15. 添加spin组件(src/app/shared/spin/spin.component.ts)
 
 
 

@@ -4,7 +4,7 @@
 
 ## 界面展示
 1. 登录界面
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc1.png)
+![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-1.png)
 
 2. 主页界面
 ![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-2.png)
@@ -19,7 +19,7 @@
 ![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-5.png)
 
 6. 层次图
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-5.png)
+![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-6.png)
 
 7. 更多略...
 

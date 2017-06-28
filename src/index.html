@@ -17,7 +17,7 @@
                 transform: rotate(1turn)
             }
         }
-        
+
         @-moz-keyframes spin {
             0% {
                 -moz-transform: rotate(0deg)
@@ -26,7 +26,7 @@
                 -moz-transform: rotate(1turn)
             }
         }
-        
+
         @keyframes spin {
             0% {
                 transform: rotate(0deg)
@@ -35,7 +35,7 @@
                 transform: rotate(1turn)
             }
         }
-        
+
         .spin-container {
             position: fixed;
             top: 0;
@@ -45,8 +45,8 @@
             z-index: 1003;
             background: #1190d6
         }
-        
-        .spin-container>div {
+
+        .spin-container .spin1 {
             display: block;
             position: relative;
             left: calc(50% + 15px);
@@ -60,8 +60,8 @@
             transform: translateZ(0);
             animation: spin 2s linear infinite
         }
-        
-        .spin-container>div:before {
+
+        .spin-container .spin2 {
             content: "";
             position: absolute;
             top: 5px;
@@ -74,8 +74,8 @@
             -webkit-animation: spin 3s linear infinite;
             animation: spin 3s linear infinite
         }
-        
-        .spin-container>div:after {
+
+        .spin-container .spin3 {
             content: "";
             position: absolute;
             top: 15px;
@@ -93,7 +93,10 @@
 <body>
     <c-root>
         <div class="spin-container">
-            <div></div>
+            <div class="spin1">
+                <div class="spin2"></div>
+                <div class="spin3"></div>
+            </div>
         </div>
     </c-root>
 </body>

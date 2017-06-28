@@ -21,7 +21,13 @@
 6. 层次图
 ![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-6.png)
 
-7. 更多略...
+7. 时间轴
+![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-7.png)
+
+8. http分页
+![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-8.png)
+
+9. 更多略...
 
 
 ## 更新
@@ -41,6 +47,7 @@
 14. 添加http-pagination组件(src/app/shared/pagination/http-pagination.component.ts)
 15. 添加spin组件(src/app/shared/spin/spin.component.ts)
 16. 添加第三方angular2-ui-switch组件
+17. 添加时间轴样式
 
 
 ## 规范

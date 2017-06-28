@@ -1,0 +1,135 @@
+/**卡片**/
+.c-card {
+  border: 0px;
+  border-radius: 1px;
+  -webkit-box-shadow: $c-box-shadow;
+  box-shadow: $c-box-shadow;
+  -moz-box-shadow:  $c-box-shadow;
+}
+
+/*line table*/
+.c-line-table {
+  width: 100%;
+  margin-bottom: 10px;
+  tr {
+    border-bottom: 0px dashed $c-color-white-gray;
+    td {
+      padding: 10px;
+    }
+    th {
+      padding: 10px;
+    }
+  }
+  &:first-child {
+    tr {
+      border-top: 0px dashed $c-color-white-gray;
+    }
+  }
+}
+
+/*图片上传按钮*/
+.c-file-upload {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width:100px;
+    [type=file] {
+        cursor: pointer;
+        display: block;
+        filter: alpha(opacity=0);
+        min-height: 100%;
+        min-width: 100%;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        text-align: right;
+        top: 0;
+    }
+}
+
+/*行标题*/
+.c-line-title {
+	margin-bottom: 15px;
+	padding-bottom: 8px;
+	font-size: 15px;
+	border-bottom: 1px dashed $c-color-gray-deep;
+	color: $c-color-black-secondary;
+	font-weight: bold;
+}
+
+/*时间轴*/
+.c-timeline {
+  position: relative;
+  padding: 15px 0px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 100%;
+    width: 2px;
+    background: $c-color-gray-primary;
+  }
+}
+.c-timeline-block {
+  position: relative;
+  margin: 15px 0px;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.c-timeline-point {
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $c-color-gray-primary;
+}
+.c-timeline-point-active {
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $c-color-secondary;
+}
+.c-timeline-content {
+  position: relative;
+  display: table;
+  clear: both;
+  margin-left: 36px;
+  width: -moz-calc(100% - 45px);
+  width: -webkit-calc(100% - 45px);
+  width: calc(100% - 45px);
+  border-bottom: 1px solid $c-color-gray-deep;
+  padding-bottom: 20px;
+  .c-title {
+    color: $c-color-black-primary;
+    margin-top: 0px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .c-text {
+    margin: 15px 0;
+    line-height: 1.6;
+    color: $c-color-black-primary;
+  }
+  .c-date {
+    color: $c-color-black-secondary;
+    float: left;
+    padding: 2px 0;
+  }
+}

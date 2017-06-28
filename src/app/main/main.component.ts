@@ -81,7 +81,7 @@ export class MainComponent implements OnInit {
         "parentId": "1",
         "name": "图片裁剪",
         "keyWord":"imgCropper",
-        "icon": 'fa-css3',
+        "icon": 'fa-file-picture-o',
         "url": '/app/imgCropperDemo'
       }, {
         "id": "8",
@@ -101,16 +101,16 @@ export class MainComponent implements OnInit {
         "id": "10",
         "parentId": "1",
         "name": "开关按钮",
-        "keyWord":"kgal",
+        "keyWord":"uiSwitch",
         "icon": 'fa-toggle-on',
         "url": '/app/uiSwitchDemo'
       }, {
         "id": "11",
         "parentId": "1",
-        "name": "图表",
-        "keyWord":"tb",
-        "icon": 'fa-pie-chart',
-        "url": 'chart'
+        "name": "时间轴样式",
+        "keyWord":"timeline",
+        "icon": 'fa-clock-o',
+        "url": '/app/timelineDemo'
       }, {
         "id": "12",
         "parentId": "1",

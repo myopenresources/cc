@@ -9,13 +9,16 @@
        .c-home-card-tip{
            color: $c-color-black-secondary
        }
+       .c-date{
+           color:$c-color-black-secondary;
+       }
     }
 }
 
 
 
 .c-home-common-func-outline{
-    border:1px  dashed $c-color-gray-deep;
+    border:0px  dashed $c-color-gray-deep;
    .c-home-common-func{
         padding:6px;
         &:hover {

@@ -21,6 +21,7 @@ import {SelectDemoComponent} from './select-demo.component'
 import {PaginationDemoComponent} from './pagination-demo.component'
 import {HttpPaginationDemoComponent} from './http-pagination-demo.component'
 import {UiSwitchDemoComponent} from './ui-switch-demo.component'
+import {TimelineDemoComponent} from './timeline-demo.component'
 
 
 
@@ -50,7 +51,8 @@ import {UiSwitchDemoComponent} from './ui-switch-demo.component'
      SelectDemoComponent,
      PaginationDemoComponent,
      HttpPaginationDemoComponent,
-     UiSwitchDemoComponent
+     UiSwitchDemoComponent,
+     TimelineDemoComponent
   ],
   exports:      [
      ToastDemoComponent,
@@ -62,7 +64,8 @@ import {UiSwitchDemoComponent} from './ui-switch-demo.component'
      SelectDemoComponent,
      PaginationDemoComponent,
      HttpPaginationDemoComponent,
-     UiSwitchDemoComponent
+     UiSwitchDemoComponent,
+     TimelineDemoComponent
   ],
   providers:    []
 })

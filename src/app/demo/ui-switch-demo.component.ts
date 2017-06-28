@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
+import { AppService } from '../app.service';
+
 @Component({
   selector: 'c-toast-demo',
   template: `
@@ -26,10 +29,14 @@ import { Component, OnInit } from '@angular/core';
     </div>
   `
 })
-export class UiSwitchDemoComponent{
-    swbtn:boolean=false;
+export class UiSwitchDemoComponent {
+  swbtn: boolean = false;
 
-    onChange($event){
-      this.swbtn=$event;
-    }
+  constructor(private appService: AppService) {
+    this.appService.titleEventEmitter.emit("开关按钮");
+  }
+
+  onChange($event) {
+    this.swbtn = $event;
+  }
 }

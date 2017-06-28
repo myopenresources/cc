@@ -40,7 +40,7 @@
 13. 添加pagination组件(src/app/shared/pagination/pagination.component.ts)
 14. 添加http-pagination组件(src/app/shared/pagination/http-pagination.component.ts)
 15. 添加spin组件(src/app/shared/spin/spin.component.ts)
-
+16. 添加第三方angular2-ui-switch组件
 
 
 ## 规范

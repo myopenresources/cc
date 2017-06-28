@@ -8,6 +8,7 @@ import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
 import  { SharedModule }       from '../shared/shared.module';
 import { ImageCropperModule } from 'ng2-img-cropper';
 import { SelectModule } from 'angular2-select';
+import { UiSwitchModule } from 'angular2-ui-switch'
 
 
 import {ToastDemoComponent} from './toast-demo.component'
@@ -19,7 +20,7 @@ import {ImgCropperDemoComponent} from './img-cropper-demo.component'
 import {SelectDemoComponent} from './select-demo.component'
 import {PaginationDemoComponent} from './pagination-demo.component'
 import {HttpPaginationDemoComponent} from './http-pagination-demo.component'
-
+import {UiSwitchDemoComponent} from './ui-switch-demo.component'
 
 
 
@@ -36,7 +37,8 @@ import {HttpPaginationDemoComponent} from './http-pagination-demo.component'
      MultiselectDropdownModule,
      SharedModule,
      ImageCropperModule,
-     SelectModule
+     SelectModule,
+     UiSwitchModule
   ],
   declarations: [
      ToastDemoComponent,
@@ -47,7 +49,8 @@ import {HttpPaginationDemoComponent} from './http-pagination-demo.component'
      ImgCropperDemoComponent,
      SelectDemoComponent,
      PaginationDemoComponent,
-     HttpPaginationDemoComponent
+     HttpPaginationDemoComponent,
+     UiSwitchDemoComponent
   ],
   exports:      [
      ToastDemoComponent,
@@ -58,7 +61,8 @@ import {HttpPaginationDemoComponent} from './http-pagination-demo.component'
      ImgCropperDemoComponent,
      SelectDemoComponent,
      PaginationDemoComponent,
-     HttpPaginationDemoComponent
+     HttpPaginationDemoComponent,
+     UiSwitchDemoComponent
   ],
   providers:    []
 })

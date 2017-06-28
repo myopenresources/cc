@@ -103,7 +103,7 @@ export class MainComponent implements OnInit {
         "name": "开关按钮",
         "keyWord":"kgal",
         "icon": 'fa-toggle-on',
-        "url": 'switch'
+        "url": '/app/uiSwitchDemo'
       }, {
         "id": "11",
         "parentId": "1",

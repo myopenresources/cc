@@ -13,6 +13,7 @@ import { ImgCropperDemoComponent } from '../demo/img-cropper-demo.component';
 import { SelectDemoComponent } from '../demo/select-demo.component';
 import {PaginationDemoComponent} from '../demo/pagination-demo.component';
 import {HttpPaginationDemoComponent} from '../demo/http-pagination-demo.component';
+import {UiSwitchDemoComponent} from '../demo/ui-switch-demo.component';
 
 /**
  * 主体路由
@@ -57,6 +58,10 @@ const mainRoutes: Routes = [
       {
             path: 'httpPaginationDemo',
             component: HttpPaginationDemoComponent
+      },
+      {
+            path: 'uiSwitchDemo',
+            component: UiSwitchDemoComponent
       }
 
 

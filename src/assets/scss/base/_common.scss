@@ -60,9 +60,7 @@
 /*时间轴*/
 .c-timeline {
   position: relative;
-  padding: 15px 0px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  padding: 0px;
   &::before {
     content: '';
     position: absolute;
@@ -75,7 +73,7 @@
 }
 .c-timeline-block {
   position: relative;
-  margin: 15px 0px;
+  margin: 0px;
   &:after {
     content: "";
     display: table;
@@ -90,16 +88,19 @@
 }
 .c-timeline-point {
   position: absolute;
-  top: 6px;
+  top: 22px;
   left: 5px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background-color: $c-color-gray-primary;
+  &:hover{
+    background-color: $c-color-secondary;
+  }
 }
 .c-timeline-point-active {
   position: absolute;
-  top: 6px;
+  top: 22px;
   left: 5px;
   width: 12px;
   height: 12px;
@@ -110,12 +111,16 @@
   position: relative;
   display: table;
   clear: both;
-  margin-left: 36px;
-  width: -moz-calc(100% - 45px);
-  width: -webkit-calc(100% - 45px);
-  width: calc(100% - 45px);
+  margin-left: 30px;
+  width: -moz-calc(100% - 35px);
+  width: -webkit-calc(100% -35px);
+  width: calc(100% - 35px);
   border-bottom: 1px solid $c-color-gray-deep;
-  padding-bottom: 20px;
+  padding: 15px;
+  &:hover{
+    background-color: $c-color-gray-primary;
+    cursor: pointer;
+  }
   .c-title {
     color: $c-color-black-primary;
     margin-top: 0px;

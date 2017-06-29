@@ -31,13 +31,16 @@
 
 
 ## 更新
-1. 搭建环境，分别加入ng-bootstrap1.0.0-alpha.25、bootstrap4.1.3、font-awesome4.7.0、animate.css3.5.2等(https://ng-bootstrap.github.io/#/home,https://v4-alpha.getbootstrap.com/,http://fontawesome.io/,https://github.com/daneden/animate.css)
+1. 搭建环境，分别加入ng-bootstrap1.0.0-alpha.25、bootstrap4.1.3、font-awesome4.7.0、animate.css3.5.2等(https://ng-bootstrap.github.io/#/home
+   https://v4-alpha.getbootstrap.com/
+   http://fontawesome.io/,https://github.com/daneden/animate.css)
 2. 登录界面(src/login/login.component.ts)
 3. 主页界面(src/main/main.component.ts)
 4. 添加alert与confirm组件(src/app/shared/modal/modal.service.ts)
 5. 添加toast组件(src/app/shared/toast/toast.service.ts)
 6. 添加第三方ng-charts组件(https://github.com/swimlane/ngx-charts)
-7. 添加第三方angular-2-dropdown-multiselect组件与angular2-select组件(https://github.com/softsimon/angular-2-dropdown-multiselect,https://github.com/basvandenberg/ng-select)
+7. 添加第三方angular-2-dropdown-multiselect组件与angular2-select组件(https://github.com/softsimon/angular-2-dropdown-multiselect 
+   https://github.com/basvandenberg/ng-select) 
 8. 添加层次图组件(src/app/shared/hierarchy-view/hierarchy-view.component.ts)
 9. 添加第三方ng2-img-cropper组件(https://github.com/search?q=ng2-img-cropper&type=Code&utf8=%E2%9C%93)
 10. 添加头像更换功能(src/main/avatar-cropper.component.ts)

@@ -31,45 +31,45 @@
 
 
 ## 更新
-1. 搭建环境，分别加入ng-bootstrap1.0.0-alpha.25、bootstrap4.1.3、font-awesome4.7.0、animate.css3.5.2等
-   1.1) https://ng-bootstrap.github.io/#/home
-   1.2) https://v4-alpha.getbootstrap.com/
-   1.3) http://fontawesome.io/
+1. 搭建环境，分别加入ng-bootstrap1.0.0-alpha.25、bootstrap4.1.3、font-awesome4.7.0、animate.css3.5.2等<br/>
+   1.1) https://ng-bootstrap.github.io/#/home<br/>
+   1.2) https://v4-alpha.getbootstrap.com/<br/>
+   1.3) http://fontawesome.io/<br/>
    1.4) https://github.com/daneden/animate.css
-2. 登录界面
+2. 登录界面<br/>
    2.1) src/login/login.component.ts
-3. 主页界面
+3. 主页界面<br/>
    3.1) src/main/main.component.ts
-4. 添加alert与confirm组件
+4. 添加alert与confirm组件<br/>
    4.1) src/app/shared/modal/modal.service.ts
-5. 添加toast组件
+5. 添加toast组件<br/>
    5.1) src/app/shared/toast/toast.service.ts
-6. 添加第三方ng-charts组件
+6. 添加第三方ng-charts组件<br/>
    6.1) https://github.com/swimlane/ngx-charts
-7. 添加第三方angular-2-dropdown-multiselect组件与angular2-select组件
-   7.1) https://github.com/softsimon/angular-2-dropdown-multiselect 
+7. 添加第三方angular-2-dropdown-multiselect组件与angular2-select组件<br/>
+   7.1) https://github.com/softsimon/angular-2-dropdown-multiselect<br/>
    7.2) https://github.com/basvandenberg/ng-select) 
-8. 添加层次图组件
+8. 添加层次图组件<br/>
    8.1) src/app/shared/hierarchy-view/hierarchy-view.component.ts
-9. 添加第三方ng2-img-cropper组件
+9. 添加第三方ng2-img-cropper组件<br/>
    9.1) https://github.com/search?q=ng2-img-cropper&type=Code&utf8=%E2%9C%93
-10. 添加头像更换功能
+10. 添加头像更换功能<br/>
    10.1) src/main/avatar-cropper.component.ts
-11. 添加http服务
+11. 添加http服务<br/>
    11.1) src/app/core/http.service.ts
-12. 添加utils工具
+12. 添加utils工具<br/>
    12.1) src/app/core/utils.ts
-13. 添加pagination组件
+13. 添加pagination组件<br/>
    13.1) src/app/shared/pagination/pagination.component.ts
-14. 添加http-pagination组件
+14. 添加http-pagination组件<br/>
    14.1) src/app/shared/pagination/http-pagination.component.ts
-15. 添加spin组件
+15. 添加spin组件<br/>
    15.1) src/app/shared/spin/spin.component.ts
-16. 添加第三方angular2-ui-switch组件
+16. 添加第三方angular2-ui-switch组件<br/>
    16.1) https://github.com/yuyang041060120/angular2-ui-switch
-17. 添加时间轴样式
+17. 添加时间轴样式<br/>
    17.1) assets/scss/base/_common.scss
-18. 添加日期选择datepickerI18n配置
+18. 添加日期选择datepickerI18n配置<br/>
    18.1) src/app/shared/datepickerI18n/datepickerI18n.ts
 
 

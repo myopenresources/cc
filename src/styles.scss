@@ -16,6 +16,10 @@
 //公共样式
 @import './assets/scss/base/app-base.scss';
 @import './assets/scss/base/common.scss';
+
+//样式重写
+@import './assets/scss/base/ng-bootstrap.scss';
+
 //模块样式
 @import './assets/scss/login/login.scss';
 @import './assets/scss/main/main.scss';

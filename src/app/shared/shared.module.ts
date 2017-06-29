@@ -17,6 +17,9 @@ import {HierarchyViewNodeComponent} from './hierarchy-view/hierarchy-view-node.c
 import {PaginationComponent} from './pagination/pagination.component';
 import {HttpPaginationComponent} from './pagination/http-pagination.component';
 
+//datepickerI18n
+import {DatepickerI18n,DatepickerI18nType} from './datepickerI18n/datepickerI18n';
+
 
 /**
  * 公共模块
@@ -36,7 +39,7 @@ import {HttpPaginationComponent} from './pagination/http-pagination.component';
      PaginationComponent,
      HttpPaginationComponent
   ],
-  providers:    [ModalService],
+  providers:    [ModalService,DatepickerI18n,DatepickerI18nType],
   entryComponents : [ConfirmComponent,AlertComponent],
   exports:[HierarchyViewComponent,PaginationComponent,HttpPaginationComponent]
 })

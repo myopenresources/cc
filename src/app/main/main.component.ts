@@ -114,10 +114,10 @@ export class MainComponent implements OnInit {
       }, {
         "id": "12",
         "parentId": "1",
-        "name": "树与下拉树",
-        "keyWord":"syxls",
-        "icon": 'fa-tree',
-        "url": 'tree'
+        "name": "日期选择",
+        "keyWord":"datepicker",
+        "icon": 'fa-calendar',
+        "url": '/app/datepickerDemo'
       }, {
         "id": "13",
         "parentId": "1",

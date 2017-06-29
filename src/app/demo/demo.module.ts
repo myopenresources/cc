@@ -8,20 +8,21 @@ import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
 import  { SharedModule }       from '../shared/shared.module';
 import { ImageCropperModule } from 'ng2-img-cropper';
 import { SelectModule } from 'angular2-select';
-import { UiSwitchModule } from 'angular2-ui-switch'
+import { UiSwitchModule } from '../../../node_modules/angular2-ui-switch/src/index';
 
 
-import {ToastDemoComponent} from './toast-demo.component'
-import {ModalDemoComponent} from './modal-demo.component'
-import {NgxChartsDemoComponent} from './ngx-charts-demo.component'
-import {MultiSelectDemoComponent} from './multiselect-dropdown-demo.component'
-import {HierarchyViewDemoComponent} from './hierarchy-view-demo.component'
-import {ImgCropperDemoComponent} from './img-cropper-demo.component'
-import {SelectDemoComponent} from './select-demo.component'
-import {PaginationDemoComponent} from './pagination-demo.component'
-import {HttpPaginationDemoComponent} from './http-pagination-demo.component'
-import {UiSwitchDemoComponent} from './ui-switch-demo.component'
-import {TimelineDemoComponent} from './timeline-demo.component'
+import {ToastDemoComponent} from './toast-demo.component';
+import {ModalDemoComponent} from './modal-demo.component';
+import {NgxChartsDemoComponent} from './ngx-charts-demo.component';
+import {MultiSelectDemoComponent} from './multiselect-dropdown-demo.component';
+import {HierarchyViewDemoComponent} from './hierarchy-view-demo.component';
+import {ImgCropperDemoComponent} from './img-cropper-demo.component';
+import {SelectDemoComponent} from './select-demo.component';
+import {PaginationDemoComponent} from './pagination-demo.component';
+import {HttpPaginationDemoComponent} from './http-pagination-demo.component';
+import {UiSwitchDemoComponent} from './ui-switch-demo.component';
+import {TimelineDemoComponent} from './timeline-demo.component';
+import {DatepickerDemoComponent} from './datepicker-demo.component';
 
 
 
@@ -52,7 +53,8 @@ import {TimelineDemoComponent} from './timeline-demo.component'
      PaginationDemoComponent,
      HttpPaginationDemoComponent,
      UiSwitchDemoComponent,
-     TimelineDemoComponent
+     TimelineDemoComponent,
+     DatepickerDemoComponent
   ],
   exports:      [
      ToastDemoComponent,
@@ -65,7 +67,8 @@ import {TimelineDemoComponent} from './timeline-demo.component'
      PaginationDemoComponent,
      HttpPaginationDemoComponent,
      UiSwitchDemoComponent,
-     TimelineDemoComponent
+     TimelineDemoComponent,
+     DatepickerDemoComponent
   ],
   providers:    []
 })

@@ -22,7 +22,7 @@ import { AppService } from '../app.service';
           <div  class="col-md-12">
             <div class="c-mt15">
               <p class="c-line-title">说明</p>
-              组件目录:src/app/modules/shared/toast
+                 第三方组件：angular2-ui-switch
              </div>
            </div>
         </div>

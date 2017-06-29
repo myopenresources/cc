@@ -3,6 +3,7 @@ import { ImageCropperComponent, CropperSettings, Bounds } from 'ng2-img-cropper'
 
 import  { AppService }   from '../app.service';
 
+
 @Component({
     selector: 'c-img-cropper-demo',
     template: `
@@ -14,7 +15,7 @@ import  { AppService }   from '../app.service';
                   <img-cropper #cropper [image]="data1" [settings]="cropperSettings" (onCrop)="cropped($event)"></img-cropper>
                   <div  class="c-file-upload">
                      <button class="btn btn-primary ">浏览图片</button>
-                     <input id="image-input" type="file" (change)="fileChangeListener($event)">
+                     <input id="image-input" type="file" c-img-cropper-select [cropper]="cropper">
                   </div>
                    <div class="c-mt15" *ngIf="data1.image">
                       <img class="center-block rounded-circle"   [src]="data1.image" [width]="cropperSettings.croppedWidth" [height]="cropperSettings.croppedHeight">
@@ -78,18 +79,7 @@ export class ImgCropperDemoComponent implements OnInit {
         console.info(this.data1.image);
     }
 
-    fileChangeListener($event) {
-        let image: any = new Image();
-        let file: File = $event.target.files[0];
-        let myReader: FileReader = new FileReader();
-        let that = this;
-        myReader.onloadend = function(loadEvent: any) {
-            image.src = loadEvent.target.result;
-            that.cropper.setImage(image);
-        };
-
-        myReader.readAsDataURL(file);
-    }
+ 
 
     
 

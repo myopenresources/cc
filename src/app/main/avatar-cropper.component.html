@@ -38,7 +38,7 @@
             <div class="col-md-4 text-left">
                 <div class="c-file-upload">
                     <button class="btn btn-primary "><i class="fa fa-search" aria-hidden="true"></i> 浏览图片</button>
-                    <input type="file" (change)="fileChangeListener($event)">
+                    <input type="file"  c-img-cropper-select [cropper]="avatarCropper">
                 </div>
             </div>
             <div class="col-md-4 text-center">

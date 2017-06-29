@@ -45,29 +45,12 @@ export class AvatarCropperComponent {
     }
 
     /**
-     * 文件选择
-     * @param   
-     */
-    fileChangeListener($event) {
-        let image: any = new Image();
-        let file: File = $event.target.files[0];
-        let myReader: FileReader = new FileReader();
-        let that = this;
-        myReader.onloadend = function (loadEvent: any) {
-            image.src = loadEvent.target.result;
-            that.avatarCropper.setImage(image);
-        };
-
-        myReader.readAsDataURL(file);
-    }
-
-    /**
      * 上传
      */
     upload() {
         console.info(this.avatar.image);
         this.userAvatar=this.avatar.image;
-        const toastCfg = new ToastConfig(ToastType.SUCCESS, '图片上传成功!', '', 2000);
+        const toastCfg = new ToastConfig(ToastType.SUCCESS, '', '图片上传成功!', 2000);
         this.toastService.toast(toastCfg);
     }
 

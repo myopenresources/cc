@@ -4,6 +4,7 @@ import { FormsModule }        from '@angular/forms';
 import { HttpModule }    from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ImageCropperModule } from 'ng2-img-cropper';
+import  { SharedModule }       from '../shared/shared.module';
 
 import { MainComponent }   from './main.component';
 import { SidebarMenuComponent }   from './sidebar-menu.component';
@@ -12,10 +13,10 @@ import { AvatarCropperComponent} from './avatar-cropper.component';
 
 
 import { mainRouting } from './main-routing.module';
-import  { HomeModule }      from '../home/home.module';
+import { HomeModule }      from '../home/home.module';
 
 //demo
-import  { DemoModule }       from '../demo/demo.module';
+import { DemoModule }       from '../demo/demo.module';
 
 
 /**
@@ -30,6 +31,7 @@ import  { DemoModule }       from '../demo/demo.module';
      mainRouting,
      HomeModule,
      ImageCropperModule,
+     SharedModule,
      DemoModule
   ],
   declarations: [

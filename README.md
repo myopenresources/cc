@@ -71,6 +71,8 @@
    17.1) assets/scss/base/_common.scss
 18. 添加日期选择datepickerI18n配置<br/>
    18.1) src/app/shared/datepickerI18n/datepickerI18n.ts
+19. 添加img-cropper-select指令<br/>
+   19.1) src/app/shared/img-cropper-select/img-cropper-select.directive.ts
 
 
 ## 规范

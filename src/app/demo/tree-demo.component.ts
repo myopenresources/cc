@@ -49,7 +49,7 @@ import { SelectTreeComponent } from '../shared/tree/select-tree.component'
               </div>
               <div class="row c-mt15">
                 <div  class="col-md-6">
-                  <c-seelct-tree  #tree2 [data]="data3" [canChecked]="false" [enableSearch]="false" [animatedCls]="'animated fadeIn'" (onClick)="onClick($event);" (onCheckChanged)="onCheckChanged($event)"></c-seelct-tree>
+                  <c-seelct-tree  #tree2 [data]="data3" [canChecked]="false" [enableSearch]="false" [animatedCls]="'animated fadeIn'"  [direction]="'dropup'" (onClick)="onClick($event);" (onCheckChanged)="onCheckChanged($event)"></c-seelct-tree>
                 </div>
               </div>
           </div>

@@ -16,6 +16,7 @@ import {HttpPaginationDemoComponent} from '../demo/http-pagination-demo.componen
 import {UiSwitchDemoComponent} from '../demo/ui-switch-demo.component';
 import {TimelineDemoComponent} from '../demo/timeline-demo.component';
 import {DatepickerDemoComponent} from '../demo/datepicker-demo.component';
+import {TreeDemoComponent} from '../demo/tree-demo.component';
 
 /**
  * 主体路由
@@ -72,7 +73,11 @@ const mainRoutes: Routes = [
       {
             path: 'datepickerDemo',
             component: DatepickerDemoComponent
-      }  
+      },
+      {
+            path: 'treeDemo',
+            component: TreeDemoComponent
+      }   
 ];
 
 export const mainRouting = RouterModule.forChild(mainRoutes);

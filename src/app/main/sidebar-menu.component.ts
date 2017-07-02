@@ -25,7 +25,7 @@ import  { MenuData }    from '../main/main-model';
               <i style="margin-top:3px;width:17px" class="fa  pull-right"  [ngClass]="{'fa-angle-down': !isLeaf(item) && item.isExpend, 'fa-angle-left': !isLeaf(item) && !item.isExpend}"></i>
               <i class="fa " [ngClass]="item.icon"></i> <span>{{item.name}}</span>
               </a>
-            <c-treeview-menu [data]=item></c-treeview-menu>
+            <c-treeview-menu [data]="item"></c-treeview-menu>
         </li>
     </ul>
   </div>

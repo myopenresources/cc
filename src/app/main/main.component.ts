@@ -121,10 +121,10 @@ export class MainComponent implements OnInit {
       }, {
         "id": "13",
         "parentId": "1",
-        "name": "文件上传",
-        "keyWord":"wjsc",
+        "name": "树",
+        "keyWord":"tree",
         "icon": 'fa-upload',
-        "url": 'fileUpload'
+        "url": '/app/treeDemo'
       }, {
         "id": "14",
         "parentId": "1",

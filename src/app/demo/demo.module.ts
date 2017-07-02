@@ -23,6 +23,7 @@ import {HttpPaginationDemoComponent} from './http-pagination-demo.component';
 import {UiSwitchDemoComponent} from './ui-switch-demo.component';
 import {TimelineDemoComponent} from './timeline-demo.component';
 import {DatepickerDemoComponent} from './datepicker-demo.component';
+import {TreeDemoComponent} from './tree-demo.component';
 
 
 
@@ -54,7 +55,8 @@ import {DatepickerDemoComponent} from './datepicker-demo.component';
      HttpPaginationDemoComponent,
      UiSwitchDemoComponent,
      TimelineDemoComponent,
-     DatepickerDemoComponent
+     DatepickerDemoComponent,
+     TreeDemoComponent
   ],
   exports:      [
      ToastDemoComponent,
@@ -68,7 +70,8 @@ import {DatepickerDemoComponent} from './datepicker-demo.component';
      HttpPaginationDemoComponent,
      UiSwitchDemoComponent,
      TimelineDemoComponent,
-     DatepickerDemoComponent
+     DatepickerDemoComponent,
+     TreeDemoComponent
   ],
   providers:    []
 })

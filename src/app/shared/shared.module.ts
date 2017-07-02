@@ -20,8 +20,12 @@ import {HttpPaginationComponent} from './pagination/http-pagination.component';
 //datepickerI18n
 import {DatepickerI18n,DatepickerI18nType} from './datepickerI18n/datepickerI18n';
 
+//imgCropperSelect
 import {ImgCropperSelectDirective} from './img-cropper-select/img-cropper-select.directive';
 
+
+import {TreeComponent} from './tree/tree.component';
+import {TreeNodeComponent} from './tree/tree-node.component';
 
 /**
  * 公共模块
@@ -40,10 +44,12 @@ import {ImgCropperSelectDirective} from './img-cropper-select/img-cropper-select
      HierarchyViewNodeComponent,
      PaginationComponent,
      HttpPaginationComponent,
-     ImgCropperSelectDirective
+     ImgCropperSelectDirective,
+     TreeNodeComponent,
+     TreeComponent
   ],
   providers:    [ModalService,DatepickerI18n,DatepickerI18nType],
-  entryComponents : [ConfirmComponent,AlertComponent],
-  exports:[HierarchyViewComponent,PaginationComponent,HttpPaginationComponent,ImgCropperSelectDirective]
+  entryComponents : [ConfirmComponent,AlertComponent,TreeComponent,TreeNodeComponent],
+  exports:[HierarchyViewComponent,PaginationComponent,HttpPaginationComponent,ImgCropperSelectDirective,TreeComponent,TreeNodeComponent]
 })
 export class SharedModule { }

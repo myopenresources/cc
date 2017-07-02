@@ -1,0 +1,14 @@
+<i style="margin-top:-8px;width:17px" class="fa c-cursor-pointer " (click)="nodeExpended(data)" [ngClass]="{'fa-angle-down': !isLeaf(data) && data.isExpend, 'fa-angle-right': !isLeaf(data) && !data.isExpend}"></i>
+<input type="checkbox"  *ngIf="canChecked && !(hideParentCheckBox && !isLeaf(data))" [checked]="data.isChecked"  class="c-check-box" (change)="onCheckboxChanged(data)">  
+<span class="c-text-field" (click)="itemClicked(data);"><i class="fa c-icon "  [ngClass]="data.icon"></i> {{data.name}}</span>
+
+<ul [hidden]="!data.isExpend" *ngIf="!isLeaf(data)"  [ngClass]="animatedCls">
+    <li *ngFor="let item of data.children">
+        <c-tree-node [data]="item" [canChecked]="canChecked" [singleChecked]="singleChecked" [cascadeChecked]="cascadeChecked" [hideParentCheckBox]="hideParentCheckBox" [singleCheckedNodeId]="singleCheckedNodeId" [animatedCls]="animatedCls" (onCheckChanged)="onCheckboxChanged($event)" (onClick)="itemClicked($event);"></c-tree-node>
+    </li>
+</ul>
+
+
+
+
+

@@ -73,6 +73,8 @@
    18.1) src/app/shared/datepickerI18n/datepickerI18n.ts
 19. 添加img-cropper-select指令<br/>
    19.1) src/app/shared/img-cropper-select/img-cropper-select.directive.ts
+20. 添加tree组件<br/>
+   20.1) src/app/shared/tree/tree.component.ts
 
 
 ## 规范

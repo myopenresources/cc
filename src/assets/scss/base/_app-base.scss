@@ -84,7 +84,14 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
     background: rgba(0, 0, 0, 0.15);
   }
 }
+/**内边距**/
+.c-p5{
+  padding:5px
+}
 /**外边距**/
+.c-m5{
+  margin:5px;
+}
 .c-mt3 {
   margin-top: 3px;
 }

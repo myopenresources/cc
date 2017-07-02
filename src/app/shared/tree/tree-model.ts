@@ -24,8 +24,8 @@ export class TreeData{
    //是否选中
    isChecked?:boolean=false;
 
-   //URL
-   url?:string;
+   //属性
+   attr?:any;
 
    //子节点
    children?:Array<TreeData>;

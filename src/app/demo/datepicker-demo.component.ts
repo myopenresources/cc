@@ -16,9 +16,11 @@ import { AppService } from '../app.service';
               <div  class="col-md-6">
                 <div class="input-group">
                   <input class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
-                  <div class="input-group-addon c-cursor-pointer" (click)="d.toggle()" >
-                      <i class="fa fa-calendar"></i>
-                  </div>
+                  <span class="input-group-btn">
+                      <button class="btn btn-info c-not-shadow" type="button"  (click)="d.toggle()">
+                         <i class="fa fa-calendar"></i>
+                      </button>
+                  </span>
                 </div>
               </div>
           </div>

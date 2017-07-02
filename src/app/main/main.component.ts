@@ -38,7 +38,7 @@ export class MainComponent implements OnInit {
       "id": "1",
       "parentId": "0",
       "name": "经典示例",
-      "keyWord":"toast",
+      "keyWord":"demo",
       "icon": 'fa-wrench',
       "isExpend": false,
       "children": [{
@@ -121,9 +121,9 @@ export class MainComponent implements OnInit {
       }, {
         "id": "13",
         "parentId": "1",
-        "name": "树",
+        "name": "树与下拉树",
         "keyWord":"tree",
-        "icon": 'fa-upload',
+        "icon": 'fa-tree',
         "url": '/app/treeDemo'
       }, {
         "id": "14",

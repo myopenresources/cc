@@ -75,6 +75,8 @@
    19.1) src/app/shared/img-cropper-select/img-cropper-select.directive.ts
 20. 添加tree组件<br/>
    20.1) src/app/shared/tree/tree.component.ts
+21. 添加select-tree组件<br/>
+   21.1) src/app/shared/tree/select-tree.component.ts
 
 
 ## 规范

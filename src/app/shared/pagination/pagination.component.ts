@@ -103,7 +103,7 @@ export class PaginationComponent implements OnChanges {
      * @param type  操作类型
      */
     private pageOperation(type) {
-        var pageParam = {
+        let pageParam = {
             pageNumber: this.options.pageNumber,
             pageSize: this.options.pageSize,
             pageTotal: this.options.pageTotal,

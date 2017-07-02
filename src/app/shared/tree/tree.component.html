@@ -1,4 +1,4 @@
-<div [hidden]="searchMsgHidden">搜索的数据不存在...</div>
+<div [hidden]="searchMsgHidden" class="c-tree-search-box">搜索的数据不存在...</div>
 <ul class="c-tree" [hidden]="!searchMsgHidden">
     <li *ngFor="let item of data">
           <c-tree-node [data]="item" [canChecked]="canChecked" [singleChecked]="singleChecked" [cascadeChecked]="cascadeChecked" [hideParentCheckBox]="hideParentCheckBox"  [singleCheckedNodeId]="singleCheckedNodeId"  [animatedCls]="animatedCls" (onCheckChanged)="onCheckboxChanged($event)" (onClick)="itemClicked($event);"></c-tree-node>

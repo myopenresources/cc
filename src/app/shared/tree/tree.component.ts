@@ -82,6 +82,10 @@ export class TreeComponent implements OnInit {
     return this.data;
   }
 
+  /**
+   * 设置数据
+   * @param data 
+   */
   setData(data:Array<TreeData>){
     this.data=data;
     this.allData=data;
@@ -91,8 +95,8 @@ export class TreeComponent implements OnInit {
    * 获得选中的数据
    */
   getCheckedData(): Array<TreeData> {
-    var ckList = new Array<TreeData>();
-    for (var i = 0; i < this.data.length; i++) {
+    let ckList = new Array<TreeData>();
+    for (let i = 0; i < this.data.length; i++) {
       if (this.data[i].isChecked) {
         ckList.push(this.data[i]);
       }
@@ -105,8 +109,8 @@ export class TreeComponent implements OnInit {
    * 根据ids与状态选中节点
    */
   checkedByIds(ids: Array<string>, state: boolean = true) {
-    var ckList = new Array<TreeData>();
-    for (var i = 0; i < this.data.length; i++) {
+    let ckList = new Array<TreeData>();
+    for (let i = 0; i < this.data.length; i++) {
       this.checkedByStateAndIds(this.data[i], ids, state, ckList);
     }
 
@@ -184,9 +188,9 @@ export class TreeComponent implements OnInit {
    * @param ckList 
    */
   private getCheckedItem(item: TreeData, ckList: Array<TreeData>) {
-    var nodes = item.children;
+    let nodes = item.children;
     if (nodes && null != nodes && undefined != nodes) {
-      for (var i = 0; i < nodes.length; i++) {
+      for (let i = 0; i < nodes.length; i++) {
         if (nodes[i].isChecked) {
           ckList.push(nodes[i]);
         }
@@ -203,7 +207,7 @@ export class TreeComponent implements OnInit {
    */
   private checkedAllByState(item: Array<TreeData>, state: boolean) {
 
-    for (var i = 0; i < item.length; i++) {
+    for (let i = 0; i < item.length; i++) {
       item[i].isChecked = state;
       if (item[i].children) {
         this.checkedAllByState(item[i].children, state);
@@ -218,9 +222,9 @@ export class TreeComponent implements OnInit {
    */
   private checkedChildrenNodes(item: TreeData, id: string, checkedState: boolean) {
 
-    var items = item.children;
+    let items = item.children;
     if (items && null != items && undefined != items) {
-      for (var i = 0; i < items.length; i++) {
+      for (let i = 0; i < items.length; i++) {
 
         if (items[i].parentId == id) {
           items[i].isChecked = checkedState;
@@ -238,16 +242,16 @@ export class TreeComponent implements OnInit {
    * @param item 
    */
   private checkedParentNode(item: TreeData) {
-    var nodeList = new Array<TreeData>();
+    let nodeList = new Array<TreeData>();
     //查询到当前节点的父节点
-    for (var i = 0; i < this.data.length; i++) {
+    for (let i = 0; i < this.data.length; i++) {
       this.searchParentNode(this.data[i], item.parentId, nodeList);
     }
 
     if (nodeList && nodeList.length > 0) {
-      var parentNode = nodeList[0];
-      var checkedCount = 0;
-      for (var j = 0; j < parentNode.children.length; j++) {
+      let parentNode = nodeList[0];
+      let checkedCount = 0;
+      for (let j = 0; j < parentNode.children.length; j++) {
         if (parentNode.children[j].isChecked) {
           checkedCount += 1;
         }
@@ -277,9 +281,9 @@ export class TreeComponent implements OnInit {
       return;
     }
 
-    var nodes = item.children;
+    let nodes = item.children;
     if (nodes && null != nodes && undefined != nodes) {
-      for (var i = 0; i < nodes.length; i++) {
+      for (let i = 0; i < nodes.length; i++) {
         this.searchParentNode(nodes[i], parentId, nodeList);
       }
     }
@@ -292,9 +296,9 @@ export class TreeComponent implements OnInit {
    * @param state 
    */
   private checkedByStateAndIds(item: TreeData, ids: Array<string>, state: boolean, ckList: Array<TreeData>) {
-    var curId = '';
-    var index;
-    for (var i = 0; i < ids.length; i++) {
+    let curId = '';
+    let index;
+    for (let i = 0; i < ids.length; i++) {
       if (item.id == ids[i]) {
         curId = item.id;
         index = i;
@@ -311,9 +315,9 @@ export class TreeComponent implements OnInit {
     }
 
 
-    var nodes = item.children;
+    let nodes = item.children;
     if (nodes && null != nodes && undefined != nodes) {
-      for (var i = 0; i < nodes.length; i++) {
+      for (let i = 0; i < nodes.length; i++) {
         this.checkedByStateAndIds(nodes[i], ids, state, ckList);
       }
     }

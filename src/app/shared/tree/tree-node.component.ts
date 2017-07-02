@@ -116,9 +116,9 @@ export class TreeNodeComponent implements OnInit {
   */
   private checkedChildrenNodes(item: TreeData, id: string, checkedState: boolean) {
 
-    var items = item.children;
+    let items = item.children;
     if (items && null != items && undefined != items) {
-      for (var i = 0; i < items.length; i++) {
+      for (let i = 0; i < items.length; i++) {
 
         if (items[i].parentId == id) {
           items[i].isChecked = checkedState;

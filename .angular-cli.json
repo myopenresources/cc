@@ -21,7 +21,10 @@
       "styles": [
         "styles.scss"
       ],
-      "scripts": [],
+      "scripts": [
+        "assets/lib/jquery/dist/jquery.min.js",
+        "assets/lib/ztree/js/jquery.ztree.core.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

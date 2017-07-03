@@ -1,0 +1,94 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "ztree",
+        "scope": null,
+        "escapedName": "ztree",
+        "name": "ztree",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "E:\\Workspaces\\VSCodeProject\\cc"
+    ]
+  ],
+  "_cnpm_publish_time": 1462502950251,
+  "_from": "ztree@latest",
+  "_hasShrinkwrap": false,
+  "_id": "ztree@3.5.24",
+  "_inCache": true,
+  "_location": "/ztree",
+  "_nodeVersion": "5.7.1",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/ztree-3.5.24.tgz_1462502949773_0.6275180282536894"
+  },
+  "_npmUser": {
+    "name": "luqin",
+    "email": "luqinx@gmail.com"
+  },
+  "_npmVersion": "3.8.7",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "ztree",
+    "scope": null,
+    "escapedName": "ztree",
+    "name": "ztree",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/ztree/download/ztree-3.5.24.tgz",
+  "_shasum": "b63fe52981fdf2c329675cfd2772f0d147521ff1",
+  "_shrinkwrap": null,
+  "_spec": "ztree",
+  "_where": "E:\\Workspaces\\VSCodeProject\\cc",
+  "bugs": {
+    "url": "https://github.com/uibox/ztree/issues"
+  },
+  "dependencies": {
+    "jquery": ">=1.4.4"
+  },
+  "description": "jquery tree plugin",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "b63fe52981fdf2c329675cfd2772f0d147521ff1",
+    "size": 465694,
+    "noattachment": false,
+    "tarball": "http://registry.npm.taobao.org/ztree/download/ztree-3.5.24.tgz"
+  },
+  "homepage": "http://www.ztree.me/",
+  "keywords": [
+    "tree",
+    "ui"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.ztree.me/v3/main.php#_license"
+    }
+  ],
+  "main": "js/jquery.ztree.all.js",
+  "maintainers": [
+    {
+      "name": "luqin",
+      "email": "luqinx@gmail.com"
+    }
+  ],
+  "name": "ztree",
+  "optionalDependencies": {},
+  "publish_time": 1462502950251,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uibox/ztree.git"
+  },
+  "scripts": {},
+  "version": "3.5.24"
+}

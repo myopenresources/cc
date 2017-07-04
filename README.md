@@ -83,6 +83,8 @@
 22. 添加jquery
 23. 添加ztree组件<br/>
    23.1) src/app/shared/ztree/ztree.component.ts
+24. 添加select-ztree组件<br/>
+   24.1) src/app/shared/ztree/select-ztree.component.ts
 
 
 

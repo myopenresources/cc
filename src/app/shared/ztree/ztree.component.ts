@@ -1,47 +1,76 @@
-import { Component, OnInit, ViewChild, ElementRef,AfterViewInit,OnDestroy,Input } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, OnDestroy, Input, Output, EventEmitter } from '@angular/core';
+import { Utils } from '../util/utils';
 
 declare var $: any;
 
 @Component({
     selector: 'c-ztree',
     template: `
-       <ul #ztree   class="ztree"></ul>
+       <div #ztree></div>
   `
 })
-export class ZtreeComponent implements AfterViewInit,OnDestroy {
+export class ZtreeComponent implements AfterViewInit, OnDestroy, OnInit {
 
     @ViewChild('ztree') ztree: ElementRef;
 
-    //输入数据
-    @Input() setting:any={};
+    //配置
+    @Input() setting: any = {};
 
     //输入数据
-    @Input() zNodes:any=[];
+    @Input() zNodes: any = [];
 
     //实例
-    private ztreeInstance:any;
+    private ztreeInstance: any;
+
+    @Output()
+    onViewInit = new EventEmitter();
 
 
     constructor() {
 
     }
 
-    ngAfterViewInit() {
-      this.ztreeInstance= $.fn.zTree.init($(this.ztree.nativeElement), this.setting, this.zNodes);
+    ngOnInit() {
+
     }
 
-    ngOnDestroy(){
-         if (this.ztreeInstance) {
-             $.fn.zTree.destroy(this.ztreeInstance);
-         }
+    ngAfterViewInit() {
+        let result = this.createTree();
+        if (result) {
+            setTimeout(() => {
+                this.onViewInit.emit();
+            }, 6)
+        }
+
+
+    }
+
+    ngOnDestroy() {
+        if (this.ztreeInstance) {
+            $.fn.zTree.destroy(this.ztreeInstance);
+        }
+    }
+
+    /**
+     * 创建树
+     */
+    private createTree() {
+        //防止一个页面中多个id冲突
+        let ztreeId = "ztree" + Utils.shortUUID();
+        let ztreeUL = document.createElement('ul');
+        ztreeUL.id = ztreeId;
+        ztreeUL.className = "ztree";
+        this.ztree.nativeElement.appendChild(ztreeUL);
+        this.ztreeInstance = $.fn.zTree.init($('#' + ztreeId), this.setting, this.zNodes);
+        return true;
     }
 
     /**
      * 获得ztree实例
      */
-    getZtreeInstance(){
-         return this.ztreeInstance;
+    getZtreeInstance() {
+        return this.ztreeInstance;
     }
 
-  
+
 }

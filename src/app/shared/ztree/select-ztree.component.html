@@ -1,0 +1,30 @@
+<div class="input-group" [ngClass]="direction">
+    <input type="text" class="form-control" [ngModel]="names" placeholder="{{placeholder}}" readonly="readonly" style="background:#fff"/>
+    <span class="input-group-btn">
+        <button class="btn btn-info c-not-shadow" type="button"  (click)="isCollapsed = !isCollapsed">
+            <i class="fa  fa-fw" [ngClass]="{'fa-chevron-left':isCollapsed,'fa-chevron-down':!isCollapsed}"></i>
+        </button>
+    </span>
+    <div class="dropdown-menu" style="width:100%" [ngbCollapse]="isCollapsed">
+        <div class="c-m5" [hidden]="!enableSearch">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="搜索..." [(ngModel)]="searchTxt">
+                <span class="input-group-btn">
+                    <button class="btn btn-info c-not-shadow" type="button"  (click)="searchTree();">
+                        <i class="fa  fa-search fa-fw"></i>
+                    </button>
+                </span>
+            </div>
+        </div>
+        <div class="c-select-ztree-dropdown">
+             <c-ztree #selectZtree [setting]="setting" [zNodes]="zNodes" (onViewInit)="treeViewInit($event)"></c-ztree> 
+        </div>
+        <div>
+            <hr class="c-mt5">
+            <div class="text-center c-mb10">
+                <button type="button" class="btn btn-primary" [hidden]="!canChecked" (click)="approve()">确定</button>
+                <button type="button" class="btn btn-secondary c-ml15" (click)="isCollapsed = true">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>

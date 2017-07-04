@@ -30,6 +30,7 @@ import {SelectTreeComponent} from './tree/select-tree.component';
 
 //ztree
 import {ZtreeComponent} from './ztree/ztree.component';
+import {SelectZtreeComponent} from './ztree/select-ztree.component';
 
 
 
@@ -54,7 +55,8 @@ import {ZtreeComponent} from './ztree/ztree.component';
      TreeNodeComponent,
      TreeComponent,
      SelectTreeComponent,
-     ZtreeComponent
+     ZtreeComponent,
+     SelectZtreeComponent
   ],
   providers:    [ModalService,DatepickerI18n,DatepickerI18nType],
   entryComponents : [ConfirmComponent,AlertComponent],
@@ -66,7 +68,8 @@ import {ZtreeComponent} from './ztree/ztree.component';
      TreeComponent,
      TreeNodeComponent,
      SelectTreeComponent,
-     ZtreeComponent
+     ZtreeComponent,
+     SelectZtreeComponent
   ]
 })
 export class SharedModule { }

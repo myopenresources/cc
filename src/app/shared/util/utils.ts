@@ -5,13 +5,13 @@ import { Injectable } from '@angular/core';
  */
 @Injectable()
 export class Utils {
-    constructor() {}
+    constructor() { }
 
     /**
      * 是否为空
      * @param value 值
      */
-    static isEmpty(value:any): boolean {
+    static isEmpty(value: any): boolean {
         return value == null || typeof value === 'string' && value.length === 0;
     }
 
@@ -19,7 +19,7 @@ export class Utils {
      * 是否不为空
      * @param value 值
      */
-    static isNotEmpty(value:any): boolean {
+    static isNotEmpty(value: any): boolean {
         return !Utils.isEmpty(value);
     }
 
@@ -27,23 +27,23 @@ export class Utils {
      * 是否数组
      * @param vaue 值
      */
-    static isArray(value:any): boolean {
+    static isArray(value: any): boolean {
         return Array.isArray(value);
     }
-    
+
     /**
      * 是否对象
      * @param vaue 值
      */
-    static isObject(value:any): boolean {
+    static isObject(value: any): boolean {
         return typeof value === 'object' && !Utils.isArray(value);
     }
 
-     /**
-     * url中如果有双斜杠替换为单斜杠
-     * @param url
-     * @returns {string}
-     */
+    /**
+    * url中如果有双斜杠替换为单斜杠
+    * @param url
+    * @returns {string}
+    */
     static replaceUrl(url) {
         return 'http://' + url.substring(7).replace(/\/\//g, '/');
     }
@@ -111,5 +111,32 @@ export class Utils {
             .replace(/s/ig, String(time.Second))
             .replace(/fff/ig, String(time.Millisecond))
     }
+
+    /**
+     *  UUID生成
+     *  @returns {string}
+     */
+    static UUID(): string {
+        return 'xxxxxxxx-xxxx-6xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+            var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+            return v.toString(16);
+        });
+    }
+
+    /**
+     *  短UUID生成
+     *  @returns {string}
+     */
+    static shortUUID(): string {
+        return 'xx-6xy'.replace(/[xy]/g, function (c) {
+            var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+            return v.toString(6);
+        });
+    }
+
+  
+
+
+
 
 }

@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { AppService } from '../app.service';
 
 @Component({
-  selector: 'c-toast-demo',
+  selector: 'c-ui-switch-demo',
   template: `
     <div class="c-content-inner">
        <div class="row">

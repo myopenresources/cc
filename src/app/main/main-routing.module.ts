@@ -17,6 +17,7 @@ import {UiSwitchDemoComponent} from '../demo/ui-switch-demo.component';
 import {TimelineDemoComponent} from '../demo/timeline-demo.component';
 import {DatepickerDemoComponent} from '../demo/datepicker-demo.component';
 import {TreeDemoComponent} from '../demo/tree-demo.component';
+import {ZtreeDemoComponent} from '../demo/ztree-demo.component';
 
 /**
  * 主体路由
@@ -77,7 +78,11 @@ const mainRoutes: Routes = [
       {
             path: 'treeDemo',
             component: TreeDemoComponent
-      }   
+      },
+      {
+            path: 'ztreeDemo',
+            component: ZtreeDemoComponent
+      }  
 ];
 
 export const mainRouting = RouterModule.forChild(mainRoutes);

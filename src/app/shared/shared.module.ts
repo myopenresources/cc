@@ -28,6 +28,9 @@ import {TreeComponent} from './tree/tree.component';
 import {TreeNodeComponent} from './tree/tree-node.component';
 import {SelectTreeComponent} from './tree/select-tree.component';
 
+//ztree
+import {ZtreeComponent} from './ztree/ztree.component';
+
 
 
 /**
@@ -50,10 +53,20 @@ import {SelectTreeComponent} from './tree/select-tree.component';
      ImgCropperSelectDirective,
      TreeNodeComponent,
      TreeComponent,
-     SelectTreeComponent
+     SelectTreeComponent,
+     ZtreeComponent
   ],
   providers:    [ModalService,DatepickerI18n,DatepickerI18nType],
   entryComponents : [ConfirmComponent,AlertComponent],
-  exports:[HierarchyViewComponent,PaginationComponent,HttpPaginationComponent,ImgCropperSelectDirective,TreeComponent,TreeNodeComponent,SelectTreeComponent]
+  exports:[
+     HierarchyViewComponent,
+     PaginationComponent,
+     HttpPaginationComponent,
+     ImgCropperSelectDirective,
+     TreeComponent,
+     TreeNodeComponent,
+     SelectTreeComponent,
+     ZtreeComponent
+  ]
 })
 export class SharedModule { }

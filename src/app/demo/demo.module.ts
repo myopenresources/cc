@@ -24,6 +24,7 @@ import {UiSwitchDemoComponent} from './ui-switch-demo.component';
 import {TimelineDemoComponent} from './timeline-demo.component';
 import {DatepickerDemoComponent} from './datepicker-demo.component';
 import {TreeDemoComponent} from './tree-demo.component';
+import {ZtreeDemoComponent} from './ztree-demo.component';
 
 
 
@@ -56,7 +57,8 @@ import {TreeDemoComponent} from './tree-demo.component';
      UiSwitchDemoComponent,
      TimelineDemoComponent,
      DatepickerDemoComponent,
-     TreeDemoComponent
+     TreeDemoComponent,
+     ZtreeDemoComponent
   ],
   exports:      [
      ToastDemoComponent,
@@ -71,7 +73,8 @@ import {TreeDemoComponent} from './tree-demo.component';
      UiSwitchDemoComponent,
      TimelineDemoComponent,
      DatepickerDemoComponent,
-     TreeDemoComponent
+     TreeDemoComponent,
+     ZtreeDemoComponent
   ],
   providers:    []
 })

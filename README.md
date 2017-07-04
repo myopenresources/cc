@@ -80,6 +80,10 @@
    20.1) src/app/shared/tree/tree.component.ts
 21. 添加select-tree组件<br/>
    21.1) src/app/shared/tree/select-tree.component.ts
+22. 添加jquery
+23. 添加ztree组件<br/>
+   21.1) src/app/shared/ztree/ztree.component.ts
+
 
 
 ## 规范

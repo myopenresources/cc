@@ -126,6 +126,13 @@ export class MainComponent implements OnInit {
         "icon": 'fa-tree',
         "url": '/app/treeDemo'
       }, {
+        "id": "13",
+        "parentId": "1",
+        "name": "ztree",
+        "keyWord":"ztree",
+        "icon": 'fa-tree',
+        "url": '/app/ztreeDemo'
+      }, {
         "id": "14",
         "parentId": "1",
         "name": "富文本编辑器",

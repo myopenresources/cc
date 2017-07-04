@@ -45,10 +45,11 @@ export class ZtreeComponent implements AfterViewInit, OnDestroy, OnInit {
 
     }
 
+    /**
+     * 销毁
+     */
     ngOnDestroy() {
-        if (this.ztreeInstance) {
-            $.fn.zTree.destroy(this.ztreeInstance);
-        }
+        this.destroyTree();
     }
 
     /**
@@ -70,6 +71,13 @@ export class ZtreeComponent implements AfterViewInit, OnDestroy, OnInit {
      */
     getZtreeInstance() {
         return this.ztreeInstance;
+    }
+
+    //销毁树
+    destroyTree() {
+        if (this.ztreeInstance) {
+            $.fn.zTree.destroy(this.ztreeInstance);
+        }
     }
 
 

@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, OnDestroy, Input } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, OnDestroy, Input,Output,EventEmitter} from '@angular/core';
 import { ZtreeComponent } from './ztree.component';
 declare var $: any;
 @Component({
@@ -18,18 +18,29 @@ export class SelectZtreeComponent implements AfterViewInit, OnDestroy, OnInit {
     //方向
     @Input() direction: string = 'dropdown';
 
+    //placeholder
+    @Input() placeholder: string = '请选择...';
+
+     //是否开启搜索
+    @Input() enableSearch: boolean=true;
+
+    //确认事件
+    @Output()
+    onApprove = new EventEmitter();
+
     //是否关闭
     isCollapsed: boolean = true;
 
+    //显示checked
     showChecked: boolean;
 
     //名称
     names: string;
 
-    //placeholder
-    @Input() placeholder: string = '请选择...';
+    //搜索文本
+    searchTxt:string;
 
-
+    
 
     constructor() {
 
@@ -83,9 +94,9 @@ export class SelectZtreeComponent implements AfterViewInit, OnDestroy, OnInit {
         } else {
             //判断自定义属性selected是否为true,多个时取最后一个
             this.names = '';
-            let nodes = this.selectZtree.getZtreeInstance().getNodes();
+            let nodes = this.selectZtree.getTreeInstance().getNodes();
             if (nodes && nodes.length > 0) {
-                let nodeArray = this.selectZtree.getZtreeInstance().transformToArray(nodes);
+                let nodeArray = this.selectZtree.getTreeInstance().transformToArray(nodes);
                 for (let i = nodeArray.length-1; i >= 0; i--) {
                     if (nodeArray[i].selected) {
                         this.names = nodeArray[i].name;
@@ -101,21 +112,31 @@ export class SelectZtreeComponent implements AfterViewInit, OnDestroy, OnInit {
      * 确定
      */
     private approve() {
-        this.setCheckedNames();
+        let nodeArray=this.setCheckedNames();
+        this.selectZtree.checkedNodes(nodeArray);
         this.isCollapsed = true;
+        this.onApprove.emit(nodeArray);
     }
 
     //设置选中的值
-    private setCheckedNames() {
+    private setCheckedNames():Array<any> {
         let nameArray = new Array<string>();
-        for (let node of this.selectZtree.getZtreeInstance().getCheckedNodes(true)) {
+        let nodeArray = new Array<any>();
+        for (let node of this.selectZtree.getTreeInstance().getCheckedNodes(true)) {
             nameArray.push(node.name);
+            nodeArray.push(node);
         }
         this.names = nameArray.join(",");
+        return nodeArray;
     }
 
 
-
+   /**
+    * 查询树
+    */
+   private  searchTree() {
+         this.selectZtree.searchTree(this.searchTxt);
+   }
 
 
 

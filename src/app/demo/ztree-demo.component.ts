@@ -23,7 +23,7 @@ import { ZtreeComponent } from '../shared/ztree/ztree.component'
                </div>
                <div class="row c-mt15">
                     <div  class="col-md-6">
-                         <c-select-ztree  [setting]="setting2" [zNodes]="nodes2"></c-select-ztree> 
+                         <c-select-ztree  [setting]="setting2" [zNodes]="nodes2" (onApprove)="onApprove($event)"></c-select-ztree> 
                     </div>
                </div>
                <div class="row c-mt15">
@@ -33,7 +33,7 @@ import { ZtreeComponent } from '../shared/ztree/ztree.component'
                </div>  
                <div class="row c-mt15">
                     <div  class="col-md-6">
-                          <c-select-ztree  [setting]="setting4" ></c-select-ztree> 
+                          <c-select-ztree  [setting]="setting4" [enableSearch]="false"></c-select-ztree> 
                     </div>
                </div>  
           </div>
@@ -105,15 +105,15 @@ export class ZtreeDemoComponent {
             checked: true,
             name: "父节点1", children: [
                 { id: "2", name: "子节点1", checked: true },
-                { id: "3", name: "子节点2" },
+                { id: "3", name: "子节点2",keyWord:'子节点2'  },
                 { id: "4", name: "子节点3" },
                 { id: "5", name: "子节点4" },
                 { id: "6", name: "子节点5" },
                 { id: "7", name: "子节点6" },
                 { id: "8", name: "子节点7" },
-                { id: "9", name: "子节点8" },
+                { id: "9", name: "子节点8",keyWord:'zjd8'  },
                 { id: "10", name: "子节点9" },
-                { id: "11", name: "子节点10" }
+                { id: "11", name: "子节点10",keyWord:'zjd10' }
             ]
         }
     ];
@@ -171,7 +171,12 @@ export class ZtreeDemoComponent {
 
     getCheckedData() {
         //通过ZtreeComponent抛出来的getZtreeInstance()方法访问ztree函数
-        console.info(this.ztreeInstance.getZtreeInstance().getCheckedNodes(true));
+        console.info(this.ztreeInstance.getTreeInstance().getCheckedNodes(true));
+    }
+
+
+    onApprove(nodes){
+        console.info(nodes);
     }
 
 

@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import  { AppService }   from '../app.service';
+import { AppService } from '../app.service';
+import { Select2OptionData } from 'ng2-select2';
 
 @Component({
     selector: 'c-select-demo',
@@ -62,6 +63,18 @@ import  { AppService }   from '../app.service';
                 <button class="btn btn-danger" (click)="onMultipleResetClick()">重置</button>
         
                 <button class="btn btn-primary" (click)="onMultipleSetOptions1Click()">设置</button>
+
+                <div class="row c-mt15">
+                    <div  class="col-md-6">
+                        <select2  class="col-md-12" [data]="exampleData" [options]="options" ></select2>
+                     </div>
+                 </div>
+                 <div class="row c-mt15">
+                    <div  class="col-md-6">
+                         <select2 class="col-md-12" style="height:50px" [data]="exampleData" [value]="'basic3'" [options]="options2" ></select2>
+                     </div>
+                 </div>
+              
           </div>
         </div>
       
@@ -109,7 +122,7 @@ export class SelectDemoComponent implements OnInit {
     logSingleString: string = '';
     logMultipleString: string = '';
 
-    constructor(private appService:AppService) {
+    constructor(private appService: AppService) {
         this.appService.titleEventEmitter.emit("下拉");
 
         this.opts = this.OPTIONS_A;
@@ -354,4 +367,47 @@ export class SelectDemoComponent implements OnInit {
     ];
 
     OPTIONS_B = [];
+
+
+
+    private options: Select2Options = {
+        placeholder: '请选择...',
+        multiple: true,
+        width: '100%',
+        language: {
+            "noResults": function () {
+                return "搜索不到数据..";
+            }
+        }
+    };
+
+    private options2: Select2Options = {
+        placeholder: '请选择...',
+        width: '100%',
+        language: {
+            "noResults": function () {
+                return "搜索不到数据..";
+            }
+        }
+    };
+
+    public exampleData: Array<Select2OptionData> = [
+        {
+            id: 'basic1',
+            text: 'Basic 1'
+        },
+        {
+            id: 'basic2',
+            disabled: true,
+            text: 'Basic 2'
+        },
+        {
+            id: 'basic3',
+            text: 'Basic 3'
+        },
+        {
+            id: 'basic4',
+            text: 'Basic 4'
+        }
+    ];
 }

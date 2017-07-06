@@ -9,6 +9,7 @@ import  { SharedModule }       from '../shared/shared.module';
 import { ImageCropperModule } from 'ng2-img-cropper';
 import { SelectModule } from 'angular2-select';
 import { UiSwitchModule } from '../../../node_modules/angular2-ui-switch/src/index';
+import { Select2Module } from 'ng2-select2';
 
 
 import {ToastDemoComponent} from './toast-demo.component';
@@ -42,7 +43,8 @@ import {ZtreeDemoComponent} from './ztree-demo.component';
      SharedModule,
      ImageCropperModule,
      SelectModule,
-     UiSwitchModule
+     UiSwitchModule,
+     Select2Module
   ],
   declarations: [
      ToastDemoComponent,

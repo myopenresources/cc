@@ -10,6 +10,18 @@ import { Select2OptionData } from 'ng2-select2';
        <div class="row">
           <div  class="col-md-12">
               <p class="c-line-title">示例</p>
+                 <div class="row c-mt15">
+                    <div  class="col-md-6">
+                        <select2   [data]="exampleData" [options]="options" ></select2>
+                     </div>
+                 </div>
+                 <div class="row c-mt15">
+                    <div  class="col-md-6">
+                         <select2  style="height:50px" [data]="exampleData" [value]="'basic3'" [options]="options2" ></select2>
+                     </div>
+                 </div>
+
+
                 <form style="padding:18px;max-width:800px;"
                     [formGroup]="formSingle">
 
@@ -64,16 +76,6 @@ import { Select2OptionData } from 'ng2-select2';
         
                 <button class="btn btn-primary" (click)="onMultipleSetOptions1Click()">设置</button>
 
-                <div class="row c-mt15">
-                    <div  class="col-md-6">
-                        <select2  class="col-md-12" [data]="exampleData" [options]="options" ></select2>
-                     </div>
-                 </div>
-                 <div class="row c-mt15">
-                    <div  class="col-md-6">
-                         <select2 class="col-md-12" style="height:50px" [data]="exampleData" [value]="'basic3'" [options]="options2" ></select2>
-                     </div>
-                 </div>
               
           </div>
         </div>
@@ -373,6 +375,7 @@ export class SelectDemoComponent implements OnInit {
     private options: Select2Options = {
         placeholder: '请选择...',
         multiple: true,
+        theme: "bootstrap",
         width: '100%',
         language: {
             "noResults": function () {
@@ -384,6 +387,7 @@ export class SelectDemoComponent implements OnInit {
     private options2: Select2Options = {
         placeholder: '请选择...',
         width: '100%',
+        theme: "bootstrap",
         language: {
             "noResults": function () {
                 return "搜索不到数据..";
@@ -394,20 +398,20 @@ export class SelectDemoComponent implements OnInit {
     public exampleData: Array<Select2OptionData> = [
         {
             id: 'basic1',
-            text: 'Basic 1'
+            text: '选项1'
         },
         {
             id: 'basic2',
             disabled: true,
-            text: 'Basic 2'
+            text: '选项2'
         },
         {
             id: 'basic3',
-            text: 'Basic 3'
+            text: '选项3'
         },
         {
             id: 'basic4',
-            text: 'Basic 4'
+            text: '选项4'
         }
     ];
 }

@@ -1,10 +1,5 @@
 <div class="input-group" [ngClass]="direction">
-    <input type="text" class="form-control" [ngModel]="names" placeholder="{{placeholder}}" readonly="readonly" style="background:#fff"/>
-    <span class="input-group-btn">
-        <button class="btn btn-info c-not-shadow" type="button"  (click)="isCollapsed = !isCollapsed">
-            <i class="fa  fa-fw" [ngClass]="{'fa-chevron-left':isCollapsed,'fa-chevron-down':!isCollapsed}"></i>
-        </button>
-    </span>
+    <input type="text" class="form-control" [ngModel]="names" placeholder="{{placeholder}}" readonly="readonly" style="background:#fff" (click)="isCollapsed = !isCollapsed"/>
     <div class="dropdown-menu" style="width:100%" [ngbCollapse]="isCollapsed">
         <div class="c-m5" [hidden]="!enableSearch">
             <div class="input-group">

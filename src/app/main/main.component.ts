@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ElementRef,ViewChild} from '@angular/core';
 import {  Router } from '@angular/router';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 
@@ -18,11 +18,17 @@ import  { AppService }   from '../app.service';
   templateUrl: './main.component.html'
 })
 export class MainComponent implements OnInit {
+
+  @ViewChild('contentScroll') private contentScroll: ElementRef;
+
   //切换导航
   private toggleDescTip: string="点击关闭导航菜单";
 
   //切换导航标识
   private navClose:boolean=false;
+
+  //回到顶部按钮隐藏
+  private toTopHidden:boolean=true;
 
 
   //用户数据
@@ -335,7 +341,25 @@ export class MainComponent implements OnInit {
       });
   }
 
+  /**
+   * 滚动事件
+   */
+  onScroll(){
+    let scrollTop=this.contentScroll.nativeElement.scrollTop;
+    if(scrollTop>=768){
+         this.toTopHidden=false;
+    }else{
+         this.toTopHidden=true;
+    }
+  }
 
+  /**
+   * 回到顶部事件
+   */
+  onBackToTop(){
+    this.contentScroll.nativeElement.scrollTop=0;
+       
+  }
  
 
 

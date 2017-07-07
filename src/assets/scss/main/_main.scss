@@ -355,3 +355,19 @@
 }
 
 
+.c-back-to-top{
+  position:absolute;
+  bottom:50px;
+  right:30px;
+  z-index:666;
+  font-size: 15px;
+  width:35px;
+  height:35px;
+  padding:6px;
+  padding-top:5px;
+  border-radius: 35px;
+  -webkit-box-shadow: $c-img-shadow;
+  box-shadow: $c-img-shadow;
+  -moz-box-shadow:$c-img-shadow;
+}
+

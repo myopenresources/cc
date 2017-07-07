@@ -50,8 +50,12 @@
                 </ul>
             </div>
         </div>
-        <div class="c-content">
+        <div class="c-content" #contentScroll  (scroll)="onScroll()">
             <router-outlet></router-outlet>
         </div>
     </div>
 </div>
+
+<button type="button" class="btn btn-primary  animated fadeIn c-back-to-top" [hidden]="toTopHidden" (click)="onBackToTop();">
+    <i class="fa fa-arrow-up"></i>
+</button>

@@ -198,10 +198,9 @@
 }
 
 .select2-container--bootstrap .select2-selection--single {
-  min-height: 33px;
+  min-height: 32px;
   line-height: 32px;
   padding: 0;
-  height: auto;
   font-size: 13px;
 }
 
@@ -237,10 +236,8 @@
 }
 
 .select2-container--bootstrap .select2-selection--multiple {
-  height: 11px;
-  line-height: 11px;
+  height: 6px;
   padding: 0;
-  height: auto;
   font-size: 13px;
 
 }
@@ -281,7 +278,7 @@
 .select2-container--bootstrap .select2-selection--multiple .select2-search--inline .select2-search__field {
   background: transparent;
   padding: 0 0px;
-  height: 32px;
+  height: 28px;
   line-height: 1.42857143;
   margin-top: 0;
   min-width: 5em;

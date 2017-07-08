@@ -139,19 +139,19 @@ export class MainComponent implements OnInit {
         "icon": 'fa-tree',
         "url": '/app/ztreeDemo'
       }, {
+        "id": "15",
+        "parentId": "1",
+        "name": "图片转换成base64",
+        "keyWord":"imgSelectToBase",
+        "icon": 'fa-upload',
+        "url": '/app/imgSelectToBaseDemo'
+      }, {
         "id": "14",
         "parentId": "1",
         "name": "富文本编辑器",
         "keyWord":"hwbbjq",
         "icon": 'fa-file-o',
         "url": 'editor'
-      }, {
-        "id": "15",
-        "parentId": "1",
-        "name": "下拉框",
-        "keyWord":"xlk",
-        "icon": 'fa-circle',
-        "url": 'select'
       }]
 
     }, {

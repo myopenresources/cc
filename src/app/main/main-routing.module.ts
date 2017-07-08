@@ -11,13 +11,14 @@ import { MultiSelectDemoComponent } from '../demo/multiselect-dropdown-demo.comp
 import { HierarchyViewDemoComponent } from '../demo/hierarchy-view-demo.component';
 import { ImgCropperDemoComponent } from '../demo/img-cropper-demo.component';
 import { SelectDemoComponent } from '../demo/select-demo.component';
-import {PaginationDemoComponent} from '../demo/pagination-demo.component';
-import {HttpPaginationDemoComponent} from '../demo/http-pagination-demo.component';
-import {UiSwitchDemoComponent} from '../demo/ui-switch-demo.component';
-import {TimelineDemoComponent} from '../demo/timeline-demo.component';
-import {DatepickerDemoComponent} from '../demo/datepicker-demo.component';
-import {TreeDemoComponent} from '../demo/tree-demo.component';
-import {ZtreeDemoComponent} from '../demo/ztree-demo.component';
+import { PaginationDemoComponent } from '../demo/pagination-demo.component';
+import { HttpPaginationDemoComponent } from '../demo/http-pagination-demo.component';
+import { UiSwitchDemoComponent } from '../demo/ui-switch-demo.component';
+import { TimelineDemoComponent } from '../demo/timeline-demo.component';
+import { DatepickerDemoComponent } from '../demo/datepicker-demo.component';
+import { TreeDemoComponent } from '../demo/tree-demo.component';
+import { ZtreeDemoComponent } from '../demo/ztree-demo.component';
+import { ImgSelectToBaseDemoComponent } from '../demo/img-select-to-base-demo.component';
 
 /**
  * 主体路由
@@ -82,7 +83,11 @@ const mainRoutes: Routes = [
       {
             path: 'ztreeDemo',
             component: ZtreeDemoComponent
-      }  
+      },
+      {
+            path: 'imgSelectToBaseDemo',
+            component: ImgSelectToBaseDemoComponent
+      }
 ];
 
 export const mainRouting = RouterModule.forChild(mainRoutes);

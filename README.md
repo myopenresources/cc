@@ -85,6 +85,8 @@
    23.1) src/app/shared/ztree/ztree.component.ts
 24. 添加select-ztree组件<br/>
    24.1) src/app/shared/ztree/select-ztree.component.ts
+25. 添加img-select-to-base指令<br/>
+   25.1) src/app/shared/img-select/img-select-to-base.directive.ts
 
 
 

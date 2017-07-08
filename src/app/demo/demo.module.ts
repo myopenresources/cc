@@ -26,6 +26,7 @@ import {TimelineDemoComponent} from './timeline-demo.component';
 import {DatepickerDemoComponent} from './datepicker-demo.component';
 import {TreeDemoComponent} from './tree-demo.component';
 import {ZtreeDemoComponent} from './ztree-demo.component';
+import {ImgSelectToBaseDemoComponent} from './img-select-to-base-demo.component';
 
 
 
@@ -60,7 +61,8 @@ import {ZtreeDemoComponent} from './ztree-demo.component';
      TimelineDemoComponent,
      DatepickerDemoComponent,
      TreeDemoComponent,
-     ZtreeDemoComponent
+     ZtreeDemoComponent,
+     ImgSelectToBaseDemoComponent
   ],
   exports:      [
      ToastDemoComponent,
@@ -76,7 +78,8 @@ import {ZtreeDemoComponent} from './ztree-demo.component';
      TimelineDemoComponent,
      DatepickerDemoComponent,
      TreeDemoComponent,
-     ZtreeDemoComponent
+     ZtreeDemoComponent,
+     ImgSelectToBaseDemoComponent
   ],
   providers:    []
 })

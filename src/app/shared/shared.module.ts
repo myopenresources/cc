@@ -35,6 +35,9 @@ import {SelectZtreeComponent} from './ztree/select-ztree.component';
 //imgSelect
 import {ImgSelectToBaseDirective} from './img-select/img-select-to-base.directive';
 
+//imgSelect
+import {SwitchComponent} from './switch/switch.component';
+
 
 
 /**
@@ -60,7 +63,8 @@ import {ImgSelectToBaseDirective} from './img-select/img-select-to-base.directiv
      SelectTreeComponent,
      ZtreeComponent,
      SelectZtreeComponent,
-     ImgSelectToBaseDirective
+     ImgSelectToBaseDirective,
+     SwitchComponent
   ],
   providers:    [ModalService,DatepickerI18n,DatepickerI18nType],
   entryComponents : [ConfirmComponent,AlertComponent],
@@ -74,7 +78,8 @@ import {ImgSelectToBaseDirective} from './img-select/img-select-to-base.directiv
      SelectTreeComponent,
      ZtreeComponent,
      SelectZtreeComponent,
-     ImgSelectToBaseDirective
+     ImgSelectToBaseDirective,
+     SwitchComponent
   ]
 })
 export class SharedModule { }

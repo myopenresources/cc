@@ -1,0 +1,94 @@
+.c-switch {
+  background: $c-color-white;
+  border: 1px solid $c-color-gary;
+  position: relative;
+  display: inline-block;
+  box-sizing: content-box;
+  overflow: visible;
+  width: 100%;
+  height: 30px;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-out all;
+  -webkit-transition: 0.3s ease-out all;
+  top: -1px;
+  small {
+    background: $c-color-white;
+    border-radius: 100%;
+    box-shadow: $c-switch-small;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: 0.3s ease-out all;
+    -webkit-transition: 0.3s ease-out all;
+  }
+  &.checked {
+    small {
+      left: calc(100% - 30px);
+    }
+    .off {
+      display: none;
+    }
+    .on {
+      display: block;
+    }
+  }
+  .c-switch-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+  }
+  .off {
+    display: block;
+    position: absolute;
+    right: 12px;
+    top: 20%;
+    z-index: 0;
+    color: $c-color-black-light;
+  }
+  .on {
+    display: none;
+    z-index: 0;
+    color: $c-color-white;
+    position: absolute;
+    top: 20%;
+    left: 12px;
+  }
+  &.disabled {
+    opacity: .50;
+    cursor: not-allowed;
+  }
+}
+.c-switch-primary {
+  &.checked {
+    background: $c-bootstrap-primary;
+    border-color: $c-bootstrap-primary;
+  }
+}
+.c-switch-success {
+  &.checked {
+    background: $c-bootstrap-success;
+    border-color: $c-bootstrap-success;
+  }
+}
+.c-switch-info {
+  &.checked {
+    background: $c-bootstrap-info;
+    border-color: $c-bootstrap-info;
+  }
+}
+.c-switch-warning {
+  &.checked {
+    background: $c-bootstrap-warning;
+    border-color: $c-bootstrap-warning;
+  }
+}
+.c-switch-danger {
+  &.checked {
+    background: $c-bootstrap-danger;
+    border-color: $c-bootstrap-danger;
+  }
+}

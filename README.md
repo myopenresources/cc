@@ -87,6 +87,12 @@
    24.1) src/app/shared/ztree/select-ztree.component.ts
 25. 添加img-select-to-base指令<br/>
    25.1) src/app/shared/img-select/img-select-to-base.directive.ts
+26. 添加switch组件<br/>
+   26.1) src/app/shared/switch/switche.component.ts
+27. 移除第三方angular2-ui-switch组件<br/>
+28. 升级版本为0.0.2<br/>
+
+
 
 
 

@@ -13,7 +13,7 @@ import { ImgCropperDemoComponent } from '../demo/img-cropper-demo.component';
 import { SelectDemoComponent } from '../demo/select-demo.component';
 import { PaginationDemoComponent } from '../demo/pagination-demo.component';
 import { HttpPaginationDemoComponent } from '../demo/http-pagination-demo.component';
-import { UiSwitchDemoComponent } from '../demo/ui-switch-demo.component';
+import { SwitchDemoComponent } from '../demo/switch-demo.component';
 import { TimelineDemoComponent } from '../demo/timeline-demo.component';
 import { DatepickerDemoComponent } from '../demo/datepicker-demo.component';
 import { TreeDemoComponent } from '../demo/tree-demo.component';
@@ -65,8 +65,8 @@ const mainRoutes: Routes = [
             component: HttpPaginationDemoComponent
       },
       {
-            path: 'uiSwitchDemo',
-            component: UiSwitchDemoComponent
+            path: 'switchDemo',
+            component: SwitchDemoComponent
       },
       {
             path: 'timelineDemo',

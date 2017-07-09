@@ -8,7 +8,6 @@ import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
 import  { SharedModule }       from '../shared/shared.module';
 import { ImageCropperModule } from 'ng2-img-cropper';
 import { SelectModule } from 'angular2-select';
-import { UiSwitchModule } from '../../../node_modules/angular2-ui-switch/src/index';
 import { Select2Module } from 'ng2-select2';
 
 
@@ -21,7 +20,7 @@ import {ImgCropperDemoComponent} from './img-cropper-demo.component';
 import {SelectDemoComponent} from './select-demo.component';
 import {PaginationDemoComponent} from './pagination-demo.component';
 import {HttpPaginationDemoComponent} from './http-pagination-demo.component';
-import {UiSwitchDemoComponent} from './ui-switch-demo.component';
+import {SwitchDemoComponent} from './switch-demo.component';
 import {TimelineDemoComponent} from './timeline-demo.component';
 import {DatepickerDemoComponent} from './datepicker-demo.component';
 import {TreeDemoComponent} from './tree-demo.component';
@@ -44,7 +43,6 @@ import {ImgSelectToBaseDemoComponent} from './img-select-to-base-demo.component'
      SharedModule,
      ImageCropperModule,
      SelectModule,
-     UiSwitchModule,
      Select2Module
   ],
   declarations: [
@@ -57,7 +55,7 @@ import {ImgSelectToBaseDemoComponent} from './img-select-to-base-demo.component'
      SelectDemoComponent,
      PaginationDemoComponent,
      HttpPaginationDemoComponent,
-     UiSwitchDemoComponent,
+     SwitchDemoComponent,
      TimelineDemoComponent,
      DatepickerDemoComponent,
      TreeDemoComponent,
@@ -74,7 +72,7 @@ import {ImgSelectToBaseDemoComponent} from './img-select-to-base-demo.component'
      SelectDemoComponent,
      PaginationDemoComponent,
      HttpPaginationDemoComponent,
-     UiSwitchDemoComponent,
+     SwitchDemoComponent,
      TimelineDemoComponent,
      DatepickerDemoComponent,
      TreeDemoComponent,

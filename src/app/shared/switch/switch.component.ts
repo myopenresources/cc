@@ -2,7 +2,7 @@ import { Component, forwardRef, Input, Output, EventEmitter } from '@angular/cor
 
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
 
-import { SwutchTheme } from './switch-model';
+import { SwitchTheme } from './switch-model';
 
 const C_SWITCH_CONTROL_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,
@@ -43,7 +43,7 @@ export class SwitchComponent implements ControlValueAccessor {
     offLabel: string = '';
 
     @Input()
-    theme: string=SwutchTheme.THTME_PRIMARY;
+    theme: string=SwitchTheme.THTME_PRIMARY;
 
     @Output() onChange = new EventEmitter<boolean>();
 

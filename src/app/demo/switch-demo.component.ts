@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { AppService } from '../app.service';
 
-import { SwutchTheme } from '../shared/switch/switch-model';
+import { SwitchTheme } from '../shared/switch/switch-model';
 
 
 @Component({
@@ -51,8 +51,8 @@ import { SwutchTheme } from '../shared/switch/switch-model';
 })
 export class SwitchDemoComponent {
   swbtn: boolean = true;
-  theme:string=SwutchTheme.THTME_WARNING;
-  theme2:string=SwutchTheme.THTME_SUCCESS;
+  theme:string=SwitchTheme.THTME_WARNING;
+  theme2:string=SwitchTheme.THTME_SUCCESS;
 
   constructor(private appService: AppService) {
     this.appService.titleEventEmitter.emit("开关按钮");

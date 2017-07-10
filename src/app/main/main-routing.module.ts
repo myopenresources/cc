@@ -19,6 +19,7 @@ import { DatepickerDemoComponent } from '../demo/datepicker-demo.component';
 import { TreeDemoComponent } from '../demo/tree-demo.component';
 import { ZtreeDemoComponent } from '../demo/ztree-demo.component';
 import { ImgSelectToBaseDemoComponent } from '../demo/img-select-to-base-demo.component';
+import {FileUploadDemoComponent} from '../demo/file-upload-demo.component';
 
 /**
  * 主体路由
@@ -87,6 +88,10 @@ const mainRoutes: Routes = [
       {
             path: 'imgSelectToBaseDemo',
             component: ImgSelectToBaseDemoComponent
+      },
+      {
+            path: 'fileUploadDemo',
+            component: FileUploadDemoComponent
       }
 ];
 

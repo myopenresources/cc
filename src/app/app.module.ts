@@ -28,7 +28,6 @@ import { SpinService } from './shared/spin/spin.service';
 //modules
 import  { LoginModule }      from './login/login.module';
 import  { MainModule }       from './main/main.module';
-import  { SharedModule }       from './shared/shared.module';
 
 
 
@@ -45,8 +44,7 @@ import  { SharedModule }       from './shared/shared.module';
     appRouting,
     NgbModule.forRoot(),
     MainModule,
-    LoginModule,
-    SharedModule
+    LoginModule
   ],
   declarations: [
     AppComponent,

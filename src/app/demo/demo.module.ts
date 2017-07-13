@@ -9,7 +9,6 @@ import  { SharedModule }       from '../shared/shared.module';
 import { ImageCropperModule } from 'ng2-img-cropper';
 import { SelectModule } from 'angular2-select';
 import { Select2Module } from 'ng2-select2';
-import {FileUploadModule } from 'ng2-file-upload';
 
 
 import {ToastDemoComponent} from './toast-demo.component';
@@ -27,7 +26,6 @@ import {DatepickerDemoComponent} from './datepicker-demo.component';
 import {TreeDemoComponent} from './tree-demo.component';
 import {ZtreeDemoComponent} from './ztree-demo.component';
 import {ImgSelectToBaseDemoComponent} from './img-select-to-base-demo.component';
-import {FileUploadDemoComponent} from './file-upload-demo.component';
 
 
 
@@ -45,8 +43,7 @@ import {FileUploadDemoComponent} from './file-upload-demo.component';
      SharedModule,
      ImageCropperModule,
      SelectModule,
-     Select2Module,
-     FileUploadModule
+     Select2Module
   ],
   declarations: [
      ToastDemoComponent,
@@ -63,8 +60,7 @@ import {FileUploadDemoComponent} from './file-upload-demo.component';
      DatepickerDemoComponent,
      TreeDemoComponent,
      ZtreeDemoComponent,
-     ImgSelectToBaseDemoComponent,
-     FileUploadDemoComponent
+     ImgSelectToBaseDemoComponent
   ],
   exports:      [
      ToastDemoComponent,
@@ -81,8 +77,7 @@ import {FileUploadDemoComponent} from './file-upload-demo.component';
      DatepickerDemoComponent,
      TreeDemoComponent,
      ZtreeDemoComponent,
-     ImgSelectToBaseDemoComponent,
-     FileUploadDemoComponent
+     ImgSelectToBaseDemoComponent
   ],
   providers:    []
 })

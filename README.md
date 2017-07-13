@@ -91,8 +91,6 @@
    26.1) src/app/shared/switch/switche.component.ts
 27. 移除第三方angular2-ui-switch组件<br/>
 28. 升级版本为0.0.2<br/>
-29. 添加第三方ng2-file-upload组件<br/>
-   29.1) http://valor-software.com/ng2-file-upload/
 
 
 

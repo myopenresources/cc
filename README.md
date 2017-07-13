@@ -118,11 +118,11 @@
 ## 开发服务器
 1. cd E:\project\cc                            <---- 进入到项目所在的目录
 2. npm start                                   <---- 使用npm命令运行
-3. 浏览器中输入`http://localhost:4200/`         <---- 本机访问
+3. 浏览器中输入`http://localhost:4200/`        <---- 本机访问
 
 
 ## 构建
-1. npm build                                   <---- 使用npm命令构建，构建完成后会在dist目录中
+1. npm build或ng build                         <---- 使用npm命令构建，构建完成后会在dist目录中
 
 
 ## 单元测试

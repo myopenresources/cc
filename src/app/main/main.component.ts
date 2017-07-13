@@ -148,10 +148,10 @@ export class MainComponent implements OnInit {
       }, {
         "id": "14",
         "parentId": "1",
-        "name": "富文本编辑器",
-        "keyWord":"hwbbjq",
-        "icon": 'fa-file-o',
-        "url": 'editor'
+        "name": "文件上传",
+        "keyWord":"fileUpload",
+        "icon": 'fa-upload',
+        "url": '/app/fileUploadDemo'
       }]
 
     }, {

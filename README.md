@@ -34,7 +34,7 @@
 
 
 ## 更新
-1. 搭建环境，分别加入ng-bootstrap1.0.0-alpha.25、bootstrap4.1.3、font-awesome4.7.0、animate.css3.5.2等<br/> 
+1. 搭建环境，分别加入ng-bootstrap1.0.0-alpha.25、bootstrap4.1.3、font-awesome4.7.0、animate.css3.5.2等<br/>
    1.1) https://ng-bootstrap.github.io/#/home<br/>
    1.2) https://v4-alpha.getbootstrap.com/<br/>
    1.3) http://fontawesome.io/<br/>
@@ -91,6 +91,8 @@
    26.1) src/app/shared/switch/switche.component.ts
 27. 移除第三方angular2-ui-switch组件<br/>
 28. 升级版本为0.0.2<br/>
+29. 添加第三方ng2-file-upload组件<br/>
+   29.1) http://valor-software.com/ng2-file-upload/
 
 
 

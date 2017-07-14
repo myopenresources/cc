@@ -72,7 +72,7 @@ $c-bootstrap-danger:#f86c6b;
 html,
 body {
   font-size: 14px;
-  background-color: color-primary;
+  background-color: $c-color-primary;
 }
 /*添加手形*/
 a[href], input[type='submit'], input[type='image'], label[for], select, button, .c-pointer {

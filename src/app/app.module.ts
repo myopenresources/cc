@@ -6,7 +6,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 //app
-import { appRouting } from './app-routing.module';
+import { appRoutes } from './app.routes';
 import { AppComponent }    from './app.component';
 import { AppService }   from './app.service';
 
@@ -41,7 +41,7 @@ import  { MainModule }       from './main/main.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    appRouting,
+    appRoutes,
     NgbModule.forRoot(),
     MainModule,
     LoginModule

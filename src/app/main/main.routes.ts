@@ -1,9 +1,6 @@
 import { NgModule, OnInit } from '@angular/core';
 import { RouterModule, Routes, Router } from '@angular/router';
 
-import { HomeComponent } from '../home/home.component';
-
-//demo
 import { ToastDemoComponent } from '../demo/toast-demo.component';
 import { ModalDemoComponent } from '../demo/modal-demo.component';
 import { NgxChartsDemoComponent } from '../demo/ngx-charts-demo.component';
@@ -19,15 +16,15 @@ import { DatepickerDemoComponent } from '../demo/datepicker-demo.component';
 import { TreeDemoComponent } from '../demo/tree-demo.component';
 import { ZtreeDemoComponent } from '../demo/ztree-demo.component';
 import { ImgSelectToBaseDemoComponent } from '../demo/img-select-to-base-demo.component';
-import {FileUploadDemoComponent} from '../demo/file-upload-demo.component';
+import { FileUploadDemoComponent } from '../demo/file-upload-demo.component';
 
 /**
  * 主体路由
  */
-const mainRoutes: Routes = [
+const routes: Routes = [
       {
             path: 'home',
-            component: HomeComponent
+            loadChildren: 'app/home/home.module#HomeModule'
       },
       {
             path: 'toastDemo',
@@ -95,4 +92,4 @@ const mainRoutes: Routes = [
       }
 ];
 
-export const mainRouting = RouterModule.forChild(mainRoutes);
+export const mainRoutes = RouterModule.forChild(routes);

@@ -5,7 +5,7 @@ import { HttpModule }    from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { HomeComponent }   from './home.component';
-
+import { homeRoutes  } from './home.routes';
 
 
 @NgModule({
@@ -14,6 +14,7 @@ import { HomeComponent }   from './home.component';
      FormsModule,
      HttpModule,
      NgbModule,
+     homeRoutes
   ],
   declarations: [
      HomeComponent

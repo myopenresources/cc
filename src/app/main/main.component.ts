@@ -358,7 +358,7 @@ export class MainComponent implements OnInit {
    */
   onBackToTop(){
     this.contentScroll.nativeElement.scrollTop=0;
-       
+    this.toTopHidden=true;   
   }
  
 

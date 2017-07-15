@@ -20,7 +20,6 @@ import { homeRoutes  } from './home.routes';
      HomeComponent
   ],
   exports:      [
-    HomeComponent
   ],
   providers:    []
 })

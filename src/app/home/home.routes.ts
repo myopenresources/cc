@@ -1,5 +1,4 @@
-import { NgModule, OnInit } from '@angular/core';
-import { RouterModule, Routes, Router } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home.component';
 

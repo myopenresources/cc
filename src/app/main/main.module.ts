@@ -36,7 +36,6 @@ import { mainRoutes } from './main.routes';
      AvatarCropperComponent
   ],
   exports:      [
-    RouterModule,
     MainComponent
   ],
   entryComponents:[AvatarCropperComponent],

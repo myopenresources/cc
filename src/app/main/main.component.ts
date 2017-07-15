@@ -202,14 +202,14 @@ export class MainComponent implements OnInit {
           "name": "用户添加",
           "keyWord":"yhtj",
           "icon": "fa-plus-circle",
-          "url": "userAdd"
+          "url": "/app/user/userAdd"
         }, {
           "id": "23",
           "parentId": "21",
-          "name": "用户查询",
-          "keyWord":"yhcx",
-          "icon": "fa-search",
-          "url": "userList"
+          "name": "用户列表",
+          "keyWord":"yhlb",
+          "icon": "fa-list",
+          "url": "/app/user/userList"
         }]
       }, {
         "id": "24",

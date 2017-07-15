@@ -71,23 +71,7 @@ import { demoRoutes  } from './demo.routes';
      ImgSelectToBaseDemoComponent,
      FileUploadDemoComponent
   ],
-  exports:      [
-     ToastDemoComponent,
-     ModalDemoComponent,
-     NgxChartsDemoComponent,
-     MultiSelectDemoComponent,
-     HierarchyViewDemoComponent,
-     ImgCropperDemoComponent,
-     SelectDemoComponent,
-     PaginationDemoComponent,
-     HttpPaginationDemoComponent,
-     SwitchDemoComponent,
-     TimelineDemoComponent,
-     DatepickerDemoComponent,
-     TreeDemoComponent,
-     ZtreeDemoComponent,
-     ImgSelectToBaseDemoComponent,
-     FileUploadDemoComponent
+  exports:      [ 
   ],
   providers:    []
 })

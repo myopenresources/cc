@@ -29,6 +29,8 @@ import { SpinService } from './shared/spin/spin.service';
 import  { LoginModule }      from './login/login.module';
 import  { MainModule }       from './main/main.module';
 
+import {SelectivePreloadingStrategy} from "./selective-preloading-strategy";
+
 
 
 
@@ -39,9 +41,9 @@ import  { MainModule }       from './main/main.module';
  */
 @NgModule({
   imports: [
+    appRoutes,
     BrowserModule,
     BrowserAnimationsModule,
-    appRoutes,
     NgbModule.forRoot(),
     MainModule,
     LoginModule
@@ -52,7 +54,7 @@ import  { MainModule }       from './main/main.module';
     ToastComponent,
     SpinComponent
   ],
-  providers: [AppService,ToastService,HttpService,SpinService],
+  providers: [AppService,ToastService,HttpService,SpinService,SelectivePreloadingStrategy],
   exports:[ToastBoxComponent,SpinComponent],
   bootstrap: [ AppComponent ]
 })

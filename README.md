@@ -93,6 +93,8 @@
 28. 升级版本为0.0.2<br/>
 29. 添加第三方ng2-file-upload组件<br/>
    29.1) http://valor-software.com/ng2-file-upload/
+30.  添加路由预加载策略，解决懒加载时首次使用卡顿问题<br/>
+   30.1) 可参考博客http://blog.csdn.net/rotating_windmill/article/details/75142648
 
 
 

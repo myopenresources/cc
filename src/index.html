@@ -43,7 +43,8 @@
             width: 100%;
             height: 100%;
             z-index: 1003;
-            background: #1190d6
+            background: #1190d6;
+            display: none;
         }
 
         .spin-container .spin1 {
@@ -91,13 +92,26 @@
 </head>
 
 <body>
-    <c-root>
-        <div class="spin-container">
-            <div class="spin1">
-                <div class="spin2"></div>
-                <div class="spin3"></div>
-            </div>
+    <div class="spin-container" id="pageSpin">
+        <div class="spin1">
+            <div class="spin2"></div>
+            <div class="spin3"></div>
         </div>
+    </div>
+    <script type="text/javascript">
+        const initialize = function () {
+            let pageSpin = document.getElementById("pageSpin");
+            pageSpin.style.display = 'block';
+            document.onreadystatechange = function () {
+                if (document.readyState == "complete") {
+                    pageSpin.style.display = 'none';
+                }
+            }
+        }
+        initialize();
+    </script>
+
+    <c-root>
     </c-root>
 </body>
 

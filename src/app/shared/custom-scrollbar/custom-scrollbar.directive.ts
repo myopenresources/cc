@@ -12,7 +12,8 @@ export class CustomScrollbarDirective implements AfterViewInit,OnDestroy{
     @Input() options: any = {
          axis: 'y',
          theme: 'minimal-dark',
-         autoDraggerLength:true
+         autoDraggerLength:true,
+         scrollInertia:500
     };
 
     private scrollbarInstance: any;

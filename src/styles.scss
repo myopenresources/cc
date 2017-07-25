@@ -22,7 +22,8 @@
 //样式重写
 @import './assets/scss/base/bootstrap.scss';
 @import './assets/scss/base/ztree.scss';
-@import './assets/scss/base/select2-bootstrap';
+@import './assets/scss/base/select2-bootstrap.scss';
+@import './assets/scss/base/_mCustomScrollbar.scss';
 
 //模块样式
 @import './assets/scss/login/login.scss';
@@ -39,8 +40,6 @@
 
 //示例样式
 @import './assets/scss/demo/demo.scss';
-
-
 
 
 

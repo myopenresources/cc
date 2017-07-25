@@ -17,7 +17,7 @@ import  { MenuData }    from '../main/main-model';
             </span>
        </div>
   </div>
-  <div class="c-nav">
+  <div class="c-nav" c-custom-scrollbar>
     <span  class="c-search-msg" [hidden]="searchMsgHidden">搜索的菜单不存在...</span>
     <ul  class="c-sidebar-menu" [hidden]="!searchMsgHidden">
         <li  *ngFor="let item of data">

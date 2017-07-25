@@ -19,6 +19,8 @@ import { TreeDemoComponent } from './tree-demo.component';
 import { ZtreeDemoComponent } from './ztree-demo.component';
 import { ImgSelectToBaseDemoComponent } from './img-select-to-base-demo.component';
 import { FileUploadDemoComponent } from './file-upload-demo.component';
+import { CustomScrollbarDemoComponent } from './custom-scrollbar-demo.component';
+
 
 /**
  * demo路由
@@ -91,6 +93,10 @@ const routes: Routes = [
             {
                 path: 'fileUploadDemo',
                 component: FileUploadDemoComponent
+            },
+            {
+                path: 'customScrollbarDemo',
+                component: CustomScrollbarDemoComponent
             }
         ]
     }

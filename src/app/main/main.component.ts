@@ -19,16 +19,13 @@ import  { AppService }   from '../app.service';
 })
 export class MainComponent implements OnInit {
 
-  @ViewChild('contentScroll') private contentScroll: ElementRef;
-
   //切换导航
   private toggleDescTip: string="点击关闭导航菜单";
 
   //切换导航标识
   private navClose:boolean=false;
 
-  //回到顶部按钮隐藏
-  private toTopHidden:boolean=true;
+
 
 
   //用户数据
@@ -152,6 +149,13 @@ export class MainComponent implements OnInit {
         "keyWord":"fileUpload",
         "icon": 'fa-upload',
         "url": '/app/demo/fileUploadDemo'
+      }, {
+        "id": "15",
+        "parentId": "1",
+        "name": "模拟滚动条",
+        "keyWord":"customScrollbarDemo",
+        "icon": 'fa-sliders',
+        "url": '/app/demo/customScrollbarDemo'
       }]
 
     }, {
@@ -341,26 +345,7 @@ export class MainComponent implements OnInit {
       });
   }
 
-  /**
-   * 滚动事件
-   */
-  onScroll(){
-    let scrollTop=this.contentScroll.nativeElement.scrollTop;
-    if(scrollTop>=768){
-         this.toTopHidden=false;
-    }else{
-         this.toTopHidden=true;
-    }
-  }
 
-  /**
-   * 回到顶部事件
-   */
-  onBackToTop(){
-    this.contentScroll.nativeElement.scrollTop=0;
-    this.toTopHidden=true;   
-  }
- 
 
 
 

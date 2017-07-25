@@ -25,6 +25,12 @@ export class HierarchyViewComponent implements OnChanges  {
    //盒子宽度
    boxWidth:string;
 
+   options: any = {
+         axis: 'x',
+         theme: 'minimal-dark',
+         autoDraggerLength:true
+    };
+
    constructor(){}
 
 

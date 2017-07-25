@@ -4,7 +4,7 @@ import { Directive, Input, ElementRef, HostListener,Output,EventEmitter} from '@
  * 图片选择转换成base64
  */
 @Directive({
-    selector: '[c-img-select-to-base]',
+    selector: '[c-img-select-to-base]'
 })
 export class ImgSelectToBaseDirective {
 

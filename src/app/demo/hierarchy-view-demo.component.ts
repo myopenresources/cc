@@ -9,7 +9,7 @@ import { HierarchyViewData } from '../shared/hierarchy-view/hierarchy-view-model
 @Component({
   selector: 'c-hierarchy-view-demo',
   template: `
-    <div class="c-content-inner" style="height:1980px">
+    <div class="c-content-inner">
        <div class="row">
           <div  class="col-md-12">
               <p class="c-line-title">示例</p>
@@ -31,6 +31,8 @@ import { HierarchyViewData } from '../shared/hierarchy-view/hierarchy-view-model
   `
 })
 export class HierarchyViewDemoComponent {
+
+ 
 
 
   initData: HierarchyViewData = {

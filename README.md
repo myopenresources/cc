@@ -95,6 +95,8 @@
    29.1) http://valor-software.com/ng2-file-upload/
 30.  添加路由预加载策略，解决懒加载时首次使用卡顿问题<br/>
    30.1) 可参考博客http://blog.csdn.net/rotating_windmill/article/details/75142648
+31. 添加custom-scrollbar.directive指令<br/>
+   31.1) 配置参考：http://manos.malihu.gr/jquery-custom-content-scroller/
 
 
 

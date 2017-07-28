@@ -1,6 +1,6 @@
 <div class="c-hierarchy-view-box" c-custom-scrollbar [options]="options">
     <div class="c-hierarchy-view"  [ngStyle]="{'width':boxWidth}">
-        <div class="c-block">
+        <div class="c-block c-mb15">
             <div class="c-part" *ngFor="let node of data.rows">
                 <span class="c-name c-cursor-pointer "  [ngClass]="node.cls" (click)="nodeClick(node);"><i class="fa fa-fw" [ngClass]="node.icon" [hidden]="!node.icon"></i> {{node.name}}</span>
                 <div class="c-line-v">

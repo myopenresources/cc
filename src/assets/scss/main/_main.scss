@@ -200,26 +200,31 @@
         }
       }
     }
-    .c-content {
+    .c-content-wrapper {
       width: 100%;
-      padding-top: 10px;
-      padding-bottom: 10px;
       height: calc(100vh-61px);
       height: -moz-calc(100vh - 61px);
       height: -webkit-calc(100vh - 61px);
       height: calc(100vh - 61px);
-      .c-content-inner{
-          margin-left:15px;
-          margin-right:15px;
-          margin-bottom: 15px;
-          margin-top: 5px;
-          background-color: $c-color-white;
-          border: 0px;
-          border-radius: 1px;
-          -webkit-box-shadow: $c-box-shadow;
-          box-shadow: $c-box-shadow;
-          -moz-box-shadow:  $c-box-shadow;
+      .c-content{
+          width:100%;
+          height:100%;
           padding:15px;
+          .c-content-inner{
+            background-color: $c-color-white;
+            border: 0px;
+            border-radius: 1px;
+            -webkit-box-shadow: $c-box-shadow;
+            box-shadow: $c-box-shadow;
+            -moz-box-shadow:  $c-box-shadow;
+            padding:15px;
+          }
+          .c-content-inner-not-bg{
+              border: 0px;
+              padding:0px;
+              width:100%;
+              height: 100%;
+          }
       }
     }
   }

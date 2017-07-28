@@ -22,6 +22,7 @@ import { AppService } from '../app.service';
                       </button>
                   </span>
                 </div>
+                <ngb-timepicker [(ngModel)]="time" [size]="'small'"></ngb-timepicker>
               </div>
           </div>
         </div>
@@ -39,6 +40,7 @@ import { AppService } from '../app.service';
 })
 export class DatepickerDemoComponent {
   model;
+  time;
 
   constructor(private appService: AppService) {
     this.appService.titleEventEmitter.emit("日期选择");

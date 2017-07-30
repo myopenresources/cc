@@ -17,7 +17,7 @@ export class CustomScrollbarDirective implements AfterViewInit,OnDestroy{
     };
 
     @Output()
-    instance = new EventEmitter();
+    onViewInit = new EventEmitter();
 
     private scrollbarInstance: any;
 
@@ -37,7 +37,7 @@ export class CustomScrollbarDirective implements AfterViewInit,OnDestroy{
      */
     private createScrollbar() {
         this.scrollbarInstance=$(this.elementRef.nativeElement).mCustomScrollbar(this.options);
-        this.instance.emit(this.scrollbarInstance);
+        this.onViewInit.emit(this.scrollbarInstance);
     }
 
      /**

@@ -13,7 +13,7 @@ import { AppService } from '../app.service';
               <button type="button" class="btn btn-danger c-mb15" (click)="toggle()">切换</button>
               <div class="row c-mb15">
                     <div  class="col-md-12">
-                        <div class="card-deck"  c-image-viewer (instance)="getInstance($event)">
+                        <div class="card-deck"  c-image-viewer (onViewInit)="onViewInit($event)">
                                 <div class="card">
                                     <img class="card-img-top" src="../../assets/img/cc/cc-1.png"  style="width:100%;height:60%">
                                     <div class="card-block">
@@ -73,7 +73,7 @@ export class ImageViewerDemoComponent {
     this.appService.titleEventEmitter.emit("图片查看器");
   }
 
-  getInstance(instance){
+  onViewInit(instance){
         this.instance=instance;
   }
     

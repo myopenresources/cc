@@ -15,7 +15,7 @@ export class ImageViewerDirective  implements AfterViewInit,OnDestroy{
     @Input() options: any = {};
 
     @Output()
-    instance = new EventEmitter();
+    onViewInit = new EventEmitter();
 
     private imageViewerInstance: any;
 
@@ -27,7 +27,7 @@ export class ImageViewerDirective  implements AfterViewInit,OnDestroy{
 
     private createImageViewer(){
          this.imageViewerInstance=$(this.elementRef.nativeElement).viewer(this.options);
-         this.instance.emit(this.imageViewerInstance);
+         this.onViewInit.emit(this.imageViewerInstance);
     }
 
 

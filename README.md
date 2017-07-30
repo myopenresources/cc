@@ -98,7 +98,8 @@
 31. 添加custom-scrollbar.directive指令<br/>
    31.1) 配置参考：http://manos.malihu.gr/jquery-custom-content-scroller/
 32. 添加image-viewer.directive指令<br/>
-   32.1) 配置参考：https://github.com/fengyuanchen/viewer#methods或http://www.cnblogs.com/yi0921/p/7080284.html
+   32.1) 配置参考：https://github.com/fengyuanchen/viewer#methods
+   32.2) 配置参考：http://www.cnblogs.com/yi0921/p/7080284.html
 33. 添加spin.component组件<br/>
    33.1) src/app/shared/spin/spin.component.ts与src/app/shared/spin/spin.service.ts
 

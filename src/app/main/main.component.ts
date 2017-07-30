@@ -156,6 +156,20 @@ export class MainComponent implements OnInit {
         "keyWord":"customScrollbarDemo",
         "icon": 'fa-sliders',
         "url": '/app/demo/customScrollbarDemo'
+      }, {
+        "id": "16",
+        "parentId": "1",
+        "name": "图片查看器",
+        "keyWord":"imageViewerDemo",
+        "icon": 'fa-image',
+        "url": '/app/demo/imageViewerDemo'
+      }, {
+        "id": "17",
+        "parentId": "1",
+        "name": "旋转动画",
+        "keyWord":"spinDemo",
+        "icon": 'fa-spinner',
+        "url": '/app/demo/spinDemo'
       }]
 
     }, {

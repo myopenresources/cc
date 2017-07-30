@@ -29,6 +29,8 @@ import {ZtreeDemoComponent} from './ztree-demo.component';
 import {ImgSelectToBaseDemoComponent} from './img-select-to-base-demo.component';
 import {FileUploadDemoComponent} from './file-upload-demo.component';
 import { CustomScrollbarDemoComponent } from './custom-scrollbar-demo.component';
+import { ImageViewerDemoComponent } from './image-viewer-demo.component';
+import { SpinDemoComponent } from './spin-demo.component';
 
 
 import { demoRoutes  } from './demo.routes';
@@ -71,7 +73,9 @@ import { demoRoutes  } from './demo.routes';
      ZtreeDemoComponent,
      ImgSelectToBaseDemoComponent,
      FileUploadDemoComponent,
-     CustomScrollbarDemoComponent
+     CustomScrollbarDemoComponent,
+     ImageViewerDemoComponent,
+     SpinDemoComponent
   ],
   exports:      [ 
   ],

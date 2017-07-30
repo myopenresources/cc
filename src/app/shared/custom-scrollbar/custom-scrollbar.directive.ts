@@ -1,4 +1,4 @@
-import { Directive, Input, ElementRef, HostListener,AfterViewInit,OnDestroy} from '@angular/core';
+import { Directive, Input,Output,EventEmitter, ElementRef, HostListener,AfterViewInit,OnDestroy} from '@angular/core';
 declare var $: any;
 
 /**
@@ -16,6 +16,9 @@ export class CustomScrollbarDirective implements AfterViewInit,OnDestroy{
          scrollInertia:500
     };
 
+    @Output()
+    instance = new EventEmitter();
+
     private scrollbarInstance: any;
 
     constructor(private elementRef: ElementRef) { }
@@ -28,18 +31,20 @@ export class CustomScrollbarDirective implements AfterViewInit,OnDestroy{
          this.createScrollbar();
      }
 
-     /**
-     * 销毁
-     */
-    ngOnDestroy() {
-       this.scrollbarInstance.mCustomScrollbar("destroy");
-    }
 
      /**
      * 创建树
      */
     private createScrollbar() {
         this.scrollbarInstance=$(this.elementRef.nativeElement).mCustomScrollbar(this.options);
+        this.instance.emit(this.scrollbarInstance);
+    }
+
+     /**
+     * 销毁
+     */
+    ngOnDestroy() {
+       this.scrollbarInstance.mCustomScrollbar("destroy");
     }
 
     /**

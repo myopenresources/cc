@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild } from '@angular/core';
 
 import { AppService } from '../app.service';
 
@@ -42,7 +42,7 @@ import { SwitchTheme } from '../shared/switch/switch-model';
           <div  class="col-md-12">
             <div class="c-mt15">
               <p class="c-line-title">说明</p>
-                  组件目录:src/app/modules/switch/switch
+                  组件目录:src/app/modules/shared/switch
              </div>
            </div>
         </div>
@@ -55,8 +55,11 @@ export class SwitchDemoComponent {
   theme2:string=SwitchTheme.THTME_SUCCESS;
 
   constructor(private appService: AppService) {
+    
     this.appService.titleEventEmitter.emit("开关按钮");
   }
+
+ 
 
   change($event){
     console.info(this.swbtn);

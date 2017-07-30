@@ -25,7 +25,8 @@
         "../node_modules/jquery/dist/jquery.min.js",
         "../node_modules/ztree/js/jquery.ztree.all.min.js",
         "../node_modules/select2/dist/js/select2.full.js",
-        "../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"
+        "../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js",
+        "../node_modules/imageviewer/dist/viewer.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

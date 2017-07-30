@@ -35,11 +35,14 @@ import {SelectZtreeComponent} from './ztree/select-ztree.component';
 //imgSelect
 import {ImgSelectToBaseDirective} from './img-select/img-select-to-base.directive';
 
-//imgSelect
+//switch
 import {SwitchComponent} from './switch/switch.component';
 
 //customScrollbar
 import {CustomScrollbarDirective} from './custom-scrollbar/custom-scrollbar.directive';
+
+//imageViewer
+import {ImageViewerDirective} from './image-viewer/image-viewer.directive';
 
 
 
@@ -68,7 +71,8 @@ import {CustomScrollbarDirective} from './custom-scrollbar/custom-scrollbar.dire
      SelectZtreeComponent,
      ImgSelectToBaseDirective,
      SwitchComponent,
-     CustomScrollbarDirective
+     CustomScrollbarDirective,
+     ImageViewerDirective
   ],
   providers:    [ModalService,DatepickerI18n,DatepickerI18nType],
   entryComponents : [ConfirmComponent,AlertComponent],
@@ -84,7 +88,8 @@ import {CustomScrollbarDirective} from './custom-scrollbar/custom-scrollbar.dire
      SelectZtreeComponent,
      ImgSelectToBaseDirective,
      SwitchComponent,
-     CustomScrollbarDirective
+     CustomScrollbarDirective,
+     ImageViewerDirective
   ]
 })
 export class SharedModule { }

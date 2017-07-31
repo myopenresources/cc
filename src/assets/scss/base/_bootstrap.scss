@@ -1,9 +1,9 @@
 //=================bootstrap================
 //btn
 .btn {
-	-webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
-	box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
-	-moz-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03);
+	-webkit-box-shadow: $c-btn-shadow;
+	box-shadow: $c-btn-shadow;
+	-moz-box-shadow: $c-btn-shadow;
 	text-transform: uppercase;
 	-webkit-transition: all 0.4s;
 	-o-transition: all 0.4s;
@@ -17,11 +17,11 @@
 }
 
 .btn-secondary:active {
-	background-color: #e6e6e6;
-	border-color: #e6e6e6;
-	background-image: -webkit-radial-gradient(circle, #e6e6e6 10%, #ffffff 11%);
-	background-image: -o-radial-gradient(circle, #e6e6e6 10%, #ffffff 11%);
-	background-image: radial-gradient(circle, #e6e6e6 10%, #ffffff 11%);
+	background-color: $c-bootstrap-secondary-deep;
+	border-color: $c-bootstrap-secondary-deep;
+	background-image: -webkit-radial-gradient(circle, $c-bootstrap-secondary-deep 10%, $c-bootstrap-secondary 11%);
+	background-image: -o-radial-gradient(circle, $c-bootstrap-secondary-deep 10%, $c-bootstrap-secondary 11%);
+	background-image: radial-gradient(circle, $c-bootstrap-secondary-deep 10%, $c-bootstrap-secondary 11%);
 	background-repeat: no-repeat;
 	-webkit-background-size: 1000% 1000%;
 	background-size: 1000% 1000%;
@@ -34,11 +34,11 @@
 }
 
 .btn-primary:active {
-	background-color: #1985ac;
-	border-color: #1985ac;
-	background-image: -webkit-radial-gradient(circle, #1985ac 10%, #20a8d8 11%);
-	background-image: -o-radial-gradient(circle, #1985ac 10%, #20a8d8 11%);
-	background-image: radial-gradient(circle, #1985ac 10%, #20a8d8 11%);
+	background-color: $c-bootstrap-primary-deep;
+	border-color: $c-bootstrap-primary-deep;
+	background-image: -webkit-radial-gradient(circle, $c-bootstrap-primary-deep 10%, $c-bootstrap-primary 11%);
+	background-image: -o-radial-gradient(circle, $c-bootstrap-primary-deep 10%, $c-bootstrap-primary 11%);
+	background-image: radial-gradient(circle, $c-bootstrap-primary-deep 10%, $c-bootstrap-primary 11%);
 	background-repeat: no-repeat;
 	-webkit-background-size: 1000% 1000%;
 	background-size: 1000% 1000%;
@@ -51,11 +51,11 @@
 }
 
 .btn-success:active {
-	background-color: #369759;
-	border-color: #369759;
-	background-image: -webkit-radial-gradient(circle, #369759 10%, #4dbd74 11%);
-	background-image: -o-radial-gradient(circle, #369759 10%, #4dbd74 11%);
-	background-image: radial-gradient(circle, #369759 10%, #4dbd74 11%);
+	background-color: $c-bootstrap-success-deep;
+	border-color: $c-bootstrap-success-deep;
+	background-image: -webkit-radial-gradient(circle, $c-bootstrap-success-deep 10%, $c-bootstrap-success 11%);
+	background-image: -o-radial-gradient(circle, $c-bootstrap-success-deep 10%, $c-bootstrap-success 11%);
+	background-image: radial-gradient(circle, $c-bootstrap-success-deep 10%, $c-bootstrap-success 11%);
 	background-repeat: no-repeat;
 	-webkit-background-size: 1000% 1000%;
 	background-size: 1000% 1000%;
@@ -68,11 +68,11 @@
 }
 
 .btn-info:active {
-	background-color: #32add3;
-	border-color: #32add3;
-	background-image: -webkit-radial-gradient(circle, #32add3 10%, #6acae6 11%);
-	background-image: -o-radial-gradient(circle, #32add3 10%, #6acae6 11%);
-	background-image: radial-gradient(circle, #32add3 10%, #6acae6 11%);
+	background-color: $c-bootstrap-info-deep;
+	border-color: $c-bootstrap-info-deep;
+	background-image: -webkit-radial-gradient(circle, $c-bootstrap-info-deep 10%, $c-bootstrap-info 11%);
+	background-image: -o-radial-gradient(circle, $c-bootstrap-info-deep 10%, $c-bootstrap-info 11%);
+	background-image: radial-gradient(circle, $c-bootstrap-info-deep 10%, $c-bootstrap-info 11%);
 	background-repeat: no-repeat;
 	-webkit-background-size: 1000% 1000%;
 	background-size: 1000% 1000%;
@@ -85,11 +85,11 @@
 }
 
 .btn-warning:active {
-	background-color: #bf9608;
-	border-color: #bf9608;
-	background-image: -webkit-radial-gradient(circle, #bf9608 10%, #f0bd0a 11%);
-	background-image: -o-radial-gradient(circle, #bf9608 10%, #f0bd0a 11%);
-	background-image: radial-gradient(circle, #bf9608 10%, #f0bd0a 11%);
+	background-color: $c-bootstrap-warning-deep;
+	border-color: $c-bootstrap-warning-deep;
+	background-image: -webkit-radial-gradient(circle, $c-bootstrap-warning-deep 10%, $c-bootstrap-warning 11%);
+	background-image: -o-radial-gradient(circle, $c-bootstrap-warning-deep 10%, $c-bootstrap-warning 11%);
+	background-image: radial-gradient(circle, $c-bootstrap-warning-deep 10%, $c-bootstrap-warning 11%);
 	background-repeat: no-repeat;
 	-webkit-background-size: 1000% 1000%;
 	background-size: 1000% 1000%;
@@ -102,11 +102,11 @@
 }
 
 .btn-danger:active {
-	background-color: #e23533;
-	border-color: #e23533;
-	background-image: -webkit-radial-gradient(circle, #e23533 10%, #f86c6b 11%);
-	background-image: -o-radial-gradient(circle, #e23533 10%, #f86c6b 11%);
-	background-image: radial-gradient(circle, #e23533 10%, #f86c6b 11%);
+	background-color: $c-bootstrap-danger-deep;
+	border-color: $c-bootstrap-danger-deep;
+	background-image: -webkit-radial-gradient(circle, $c-bootstrap-danger-deep 10%, $c-bootstrap-danger 11%);
+	background-image: -o-radial-gradient(circle, $c-bootstrap-danger-deep 10%, $c-bootstrap-danger 11%);
+	background-image: radial-gradient(circle, $c-bootstrap-danger-deep  10%, $c-bootstrap-danger 11%);
 	background-repeat: no-repeat;
 	-webkit-background-size: 1000% 1000%;
 	background-size: 1000% 1000%;

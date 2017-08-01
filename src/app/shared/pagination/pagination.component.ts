@@ -20,7 +20,7 @@ export class PaginationComponent implements OnChanges {
     pageList: Array<number> = [10, 20, 30, 50, 100, 150, 200];
 
     @Input()
-    btnCls: string = 'btn-primary';
+    btnCls: string = 'btn-secondary';
 
     @Output()
     onPageChanged = new EventEmitter();

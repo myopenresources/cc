@@ -172,7 +172,7 @@ export class MainComponent implements OnInit {
         "url": '/app/demo/spinDemo'
       }]
 
-    }, {
+     },  /*{
       "id": "16",
       "parentId": "0",
       "name": "个人中心",
@@ -200,7 +200,7 @@ export class MainComponent implements OnInit {
         "icon": "fa-tag",
         "url": "task"
       }]
-    }, {
+    },*/ {
       "id": "20",
       "parentId": "0",
       "name": "权限管理",
@@ -212,21 +212,21 @@ export class MainComponent implements OnInit {
         "parentId": "20",
         "name": "用户管理",
         "keyWord":"yhgl",
-        "icon": "fa-vcard",
+        "icon": "fa-user-circle-o",
         "isExpend": false,
         "children": [{
           "id": "22",
           "parentId": "21",
           "name": "用户添加",
           "keyWord":"yhtj",
-          "icon": "fa-plus-circle",
+          "icon": "fa-pencil-square-o",
           "url": "/app/user/userAdd"
         }, {
           "id": "23",
           "parentId": "21",
           "name": "用户列表",
           "keyWord":"yhlb",
-          "icon": "fa-list",
+          "icon": "fa-list-alt",
           "url": "/app/user/userList"
         }]
       }, {

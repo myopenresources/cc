@@ -23,7 +23,6 @@ import { mainRoutes } from './main.routes';
   imports:      [
      CommonModule, 
      FormsModule,
-     HttpModule,
      NgbModule,
      mainRoutes,
      ImageCropperModule,

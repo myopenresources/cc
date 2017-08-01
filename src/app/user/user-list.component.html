@@ -4,4 +4,38 @@
             <p class="c-line-title">用户列表</p>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-12">
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="text-center col-md-1">序号</th>
+                        <th class="text-center col-md-2">用户名</th>
+                        <th class="text-center col-md-2">姓名</th>
+                        <th class="text-center col-md-1">状态</th>
+                        <th class="text-center col-md-2">创建时间</th>
+                        <th class="text-center col-md-2">修改时间</th>
+                        <th class="text-center col-md-2">操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let data of dataList;let i = index">
+                        <td class="text-center">{{i+1}}</td>
+                        <td class="text-center">{{data.userName}}</td>
+                        <td class="text-center">{{data.realName}}</td>
+                        <td class="text-center">{{data.status}}</td>
+                        <td class="text-center">{{data.createDate}}</td>
+                        <td class="text-center">{{data.updateDate}}</td>
+                        <td class="text-center">
+                            <button class="btn btn-info btn-sm"><i class="fa fa-search fa-fw"></i> 查看</button>
+                            <button class="btn btn-success btn-sm"><i class="fa fa-pencil fa-fw"></i> 编辑</button>
+                            <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o fa-fw"></i> 删除</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <c-http-pagination #hp [url]="url" method="post" [param]="param"  [pageList]="pageList" (onDataChanged)="onDataChanged($event)"></c-http-pagination>
+        </div>
+    </div>
 </div>

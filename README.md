@@ -102,6 +102,8 @@
    32.2) 配置参考：http://www.cnblogs.com/yi0921/p/7080284.html
 33. 添加spin.component组件<br/>
    33.1) src/app/shared/spin/spin.component.ts与src/app/shared/spin/spin.service.ts
+34. 添加部署Tomcat的方法<br/>
+   34.1)参考下面的`部署到Tomcat`章节说明
 
 
 
@@ -127,11 +129,18 @@
 ## 开发服务器
 1. cd E:\project\cc                            <---- 进入到项目所在的目录
 2. npm start                                   <---- 使用npm命令运行
-3. 浏览器中输入`http://localhost:4200/`        <---- 本机访问
+3. 浏览器中输入`http://localhost:4200/`         <---- 本机访问
 
 
 ## 构建
-1. npm build或ng build                         <---- 使用npm命令构建，构建完成后会在dist目录中
+1. npm run  build或ng build                         <---- 使用npm命令构建，构建完成后会在dist目录中
+
+
+## 部署到Tomcat
+1. 首先使用构建命令(npm run  build或ng build)打包，打包完成后项目中会出现一个dist的目录，这个目录就是我们最终要部署的包了，把它命名为cc-client(关于打包后的base路径修改，参考后面的备 注)就可以了。
+2. 将命名好的cc-client整个目录复制到Tomcat的webapps目录下。
+3. 运行tomcat，在浏览器中输入`http://localhost:8080/cc-client/#/login`。
+4. 注：想将默认的cc-client修改成你自己的base路径，打开package.json，修改构建命令"build": "ng build --base-href /你的应用名称/"，例如"build": "ng build --base-href /demo/",这里的base路径要和你的项目名称一样。
 
 
 ## 单元测试

@@ -24,6 +24,6 @@ const routes: Routes = [
   }
 ];
 
-export const appRoutes=RouterModule.forRoot(routes,{preloadingStrategy: SelectivePreloadingStrategy});
+export const appRoutes=RouterModule.forRoot(routes,{preloadingStrategy: SelectivePreloadingStrategy,useHash:true});
 
 

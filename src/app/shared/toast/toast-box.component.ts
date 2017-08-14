@@ -49,7 +49,7 @@ export class ToastBoxComponent implements OnInit {
   /**
    * 获得所有toast配置
    */
-  private  getToastConfigs(): Array<ToastConfig>  {
+   getToastConfigs(): Array<ToastConfig>  {
     return this.toastConfigs;
   }
 
@@ -57,7 +57,7 @@ export class ToastBoxComponent implements OnInit {
    * 移除
    * @param toastCfg 
    */
-  private  remove(toastCfg: ToastConfig) {
+  remove(toastCfg: ToastConfig) {
     if(this.toastConfigs.indexOf(toastCfg) >= 0) {
       this.toastConfigs.splice(this.toastConfigs.indexOf(toastCfg), 1);
     }

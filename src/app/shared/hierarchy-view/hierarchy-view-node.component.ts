@@ -22,7 +22,7 @@ export class HierarchyViewNodeComponent {
     * 单击事件
     * @param node 节点
     */
-   private nodeClick(node){
+    nodeClick(node){
        if(node.clickEnable===false){
           return ;
        }else{

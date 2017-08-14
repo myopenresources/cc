@@ -21,7 +21,7 @@ import  { MenuData }    from '../main/main-model';
 
 export class TreeviewMenuComponent {
 
-  @Input() data:Array<MenuData>;
+  @Input() data:MenuData;
 
 
   constructor(private router: Router) {}

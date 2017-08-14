@@ -41,10 +41,10 @@ export class SidebarMenuComponent implements OnInit {
   private  allData:Array<MenuData>;
 
   //搜索文本
-  private searchTxt:string='';
+  searchTxt:string='';
 
   //搜索隐藏
-  private searchMsgHidden:boolean=true;
+  searchMsgHidden:boolean=true;
 
   /**
    * 构造方法

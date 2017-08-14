@@ -28,7 +28,7 @@ export class ZtreeComponent implements AfterViewInit, OnDestroy, OnInit {
     private ztreeInstance: any;
 
     //搜索隐藏
-    private searchMsgHidden: boolean = true;
+    searchMsgHidden: boolean = true;
 
 
     constructor() {

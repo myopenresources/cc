@@ -25,7 +25,7 @@ export class ImageViewerDirective  implements AfterViewInit,OnDestroy{
          this.createImageViewer();
     }
 
-    private createImageViewer(){
+    createImageViewer(){
          this.imageViewerInstance=$(this.elementRef.nativeElement).viewer(this.options);
          this.onViewInit.emit(this.imageViewerInstance);
     }

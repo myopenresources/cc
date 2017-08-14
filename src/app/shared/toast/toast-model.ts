@@ -10,11 +10,11 @@ export enum ToastType {
  * 配置
  */
 export class ToastConfig {
-  private toastType: ToastType;
-  private text: string;
-  private textStrong: string;
-  private autoDismissTime: number;
-  private dismissable: boolean;
+   toastType: ToastType;
+   text: string;
+   textStrong: string;
+   autoDismissTime: number;
+   dismissable: boolean;
 
 
   constructor(toastType: ToastType, textStrong: string = '', text: string = '', autoDismissTime = 0, dismissable = true) {

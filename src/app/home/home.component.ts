@@ -7,8 +7,14 @@ import { TodoObjData, NeedReadObjData, NoticeObjData, CommonFuncData } from '../
 })
 export class HomeComponent implements OnInit {
 
+  userTipClose:boolean=false;
+  isTodoCollapsed:boolean=false;
+  isNoticeCollapsed:boolean=false;
+  isNeedReadCollapsed:boolean=false;
+  isCommonFuncCollapsed:boolean=false;
 
-  private todoObj: TodoObjData = {
+
+  todoObj: TodoObjData = {
     total: 50,
     todoList: [{
       id: 1,
@@ -38,7 +44,7 @@ export class HomeComponent implements OnInit {
     }]
   }
 
-  private needReadObj: NeedReadObjData = {
+  needReadObj: NeedReadObjData = {
     total: 50,
     needReadList: [{
       id: 1,
@@ -68,7 +74,7 @@ export class HomeComponent implements OnInit {
     }]
   }
 
-  private noticeObj: NoticeObjData = {
+  noticeObj: NoticeObjData = {
     total: 60,
     noticeList: [{
       id: 1,
@@ -93,7 +99,7 @@ export class HomeComponent implements OnInit {
     }]
   }
 
-  private commonFuncLit: CommonFuncData[][] = [
+  commonFuncLit: CommonFuncData[][] = [
     [{
       "id": "2",
       "name": "模态框",
@@ -217,7 +223,7 @@ export class HomeComponent implements OnInit {
     }]
   ]
 
-  private commonFuncConfigTip: string = "配置常用功能";
+  commonFuncConfigTip: string = "配置常用功能";
 
   /**
    * 初始化

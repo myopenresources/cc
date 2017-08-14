@@ -2,11 +2,11 @@
  * 确认框配置
  */
 export class ConfirmConfig{
-    private content:string;
-    private declineBtnCls:string;
-    private declineBtnTxt:string;
-    private approveBtnCls:string;
-    private approveBtnTxt:string;
+     content:string;
+     declineBtnCls:string;
+     declineBtnTxt:string;
+     approveBtnCls:string;
+     approveBtnTxt:string;
    
     constructor(content:string='',declineBtnCls:string='btn-secondary',declineBtnTxt:string='取消',approveBtnCls:string='btn-primary',approveBtnTxt:string='确定'){
         this.content=content;
@@ -51,11 +51,11 @@ export enum AlertType {
  * 警告框配置
  */
 export class AlertConfig{
-    private title:string;
-    private content:string;
-    private type:AlertType;
-    private approveBtnCls:string;
-    private approveBtnTxt:string;
+     title:string;
+     content:string;
+     type:AlertType;
+     approveBtnCls:string;
+     approveBtnTxt:string;
    
     constructor(type:AlertType=AlertType.WARNING,title:string='',content:string='',approveBtnCls:string='btn-primary',approveBtnTxt:string='确定'){
         this.title=title;

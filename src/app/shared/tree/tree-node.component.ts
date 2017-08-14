@@ -81,14 +81,14 @@ export class TreeNodeComponent implements OnInit {
    * 是否有子节点
    * @param item 
    */
-  private isLeaf(item: TreeData) {
+  isLeaf(item: TreeData) {
     return !item.children || !item.children.length;
   }
 
   /**
    * 展开节点
    */
-  private nodeExpended(item: TreeData) {
+  nodeExpended(item: TreeData) {
     if (!this.isLeaf(item)) {
       item.isExpend = !item.isExpend;
     }
@@ -99,7 +99,7 @@ export class TreeNodeComponent implements OnInit {
    * 点击
    * @param item 
    */
-  private itemClicked(item: TreeData) {
+  itemClicked(item: TreeData) {
     this.onClick.emit(item);
   }
 
@@ -107,7 +107,7 @@ export class TreeNodeComponent implements OnInit {
   /**
    * 选择框改变
    */
-  private onCheckboxChanged(item: TreeData) {
+  onCheckboxChanged(item: TreeData) {
     this.onCheckChanged.emit(item);
   }
 

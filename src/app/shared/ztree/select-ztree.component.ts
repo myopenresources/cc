@@ -88,7 +88,7 @@ export class SelectZtreeComponent implements AfterViewInit, OnDestroy, OnInit {
     /**
      * 树初始化
      */
-    private treeViewInit() {
+    treeViewInit() {
         if (this.showChecked) {
             this.setCheckedNames();
         } else {
@@ -111,7 +111,7 @@ export class SelectZtreeComponent implements AfterViewInit, OnDestroy, OnInit {
     /**
      * 确定
      */
-    private approve() {
+    approve() {
         let nodeArray=this.setCheckedNames();
         this.selectZtree.checkedNodes(nodeArray);
         this.isCollapsed = true;
@@ -134,7 +134,7 @@ export class SelectZtreeComponent implements AfterViewInit, OnDestroy, OnInit {
    /**
     * 查询树
     */
-   private  searchTree() {
+    searchTree() {
          this.selectZtree.searchTree(this.searchTxt);
    }
 

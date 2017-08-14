@@ -47,7 +47,7 @@ export class PaginationComponent implements OnChanges {
     /**
      * 刷新分页
      */
-    private refreshPage() {
+     refreshPage() {
         this.options.pageTotal = 0;
         if (Number.parseInt(this.options.total) % Number.parseInt(this.options.pageSize) == 0) {
             this.options.pageTotal = Number.parseInt(this.options.total) / Number.parseInt(this.options.pageSize);
@@ -67,7 +67,7 @@ export class PaginationComponent implements OnChanges {
     /**
      * 下一页
      */
-    private nextPage() {
+    nextPage() {
         this.options.pageNumber++;
         if (this.options.pageNumber > this.options.pageTotal) {
             this.options.pageNumber = this.options.pageTotal;
@@ -77,7 +77,7 @@ export class PaginationComponent implements OnChanges {
     /**
      * 上一页
      */
-    private previousPage() {
+    previousPage() {
         this.options.pageNumber--;
         if (this.options.pageNumber <= 0) {
             this.options.pageNumber = 1
@@ -87,14 +87,14 @@ export class PaginationComponent implements OnChanges {
     /**
      * 最后一页
      */
-    private lastPage() {
+    lastPage() {
         this.options.pageNumber = this.options.pageTotal;
     }
 
     /**
      * 第一页
      */
-    private fristPage() {
+    fristPage() {
         this.options.pageNumber = 1;
     }
 
@@ -102,7 +102,7 @@ export class PaginationComponent implements OnChanges {
      * 分页操作
      * @param type  操作类型
      */
-    private pageOperation(type) {
+    pageOperation(type) {
         let pageParam = {
             pageNumber: this.options.pageNumber,
             pageSize: this.options.pageSize,
@@ -117,7 +117,7 @@ export class PaginationComponent implements OnChanges {
      * 分页改变
      * @param type 操作类型 
      */
-    private pageChanged(type) {
+    pageChanged(type) {
         switch (type) {
             case PaginationType.NEXT_PAGE:
                 this.nextPage();
@@ -139,7 +139,7 @@ export class PaginationComponent implements OnChanges {
      * 页数改变
      * @param $event  当前条件
      */
-    private pageSizeChanged($event) {
+     pageSizeChanged($event) {
         this.options.pageSize = Number.parseInt($event);
         this.refreshPage();
         this.pageOperation(PaginationType.PAGE_SIZE_CHANGE);

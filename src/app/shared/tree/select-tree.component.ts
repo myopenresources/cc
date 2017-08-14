@@ -122,7 +122,7 @@ export class SelectTreeComponent implements OnInit {
     /**
      * 查询树
      */
-    private searchTree(){
+    searchTree(){
         this.selectTree.searchTree(this.searchTxt);
     }
 
@@ -132,7 +132,7 @@ export class SelectTreeComponent implements OnInit {
      * 点击
      * @param item 
      */
-    private itemClicked(item: TreeData) {
+    itemClicked(item: TreeData) {
         if (!this.canChecked) {
             this.isCollapsed = true;
             this.names = item.name;
@@ -144,7 +144,7 @@ export class SelectTreeComponent implements OnInit {
      * 改变
      * @param item 
      */
-    private onCheckboxChanged(item: TreeData) {
+    onCheckboxChanged(item: TreeData) {
         this.onCheckChanged.emit(item);
     }
 
@@ -152,7 +152,7 @@ export class SelectTreeComponent implements OnInit {
      * 同意
      * @param item 
      */
-    private approve() {
+    approve() {
         this.isCollapsed = true;
         this.names = this.setNames().join(",");
         this.onApprove.emit(this.selectTree.getCheckedData());

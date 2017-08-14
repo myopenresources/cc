@@ -21,7 +21,7 @@ export class AlertComponent {
      * 判断是否信息
      * @param type 
      */
-    private isInfo(type) {
+    isInfo(type) {
         return type === AlertType.INFO;
     }
 
@@ -29,7 +29,7 @@ export class AlertComponent {
      * 判断是否警告
      * @param type 
      */
-    private isWarning(type) {
+    isWarning(type) {
         return type === AlertType.WARNING;
     }
 
@@ -37,21 +37,21 @@ export class AlertComponent {
      * 判断是否错误
      * @param type 
      */
-    private isError(type) {
+    isError(type) {
         return type === AlertType.ERROR;
     }
 
     /**
      * 关闭
      */
-    private  close(): void {
+    close(): void {
        this.activeModal.dismiss({ status : 'closed' });
     }
 
     /**
      * 同意
      */
-   private  approve(): void {
+    approve(): void {
         this.activeModal.close({ status : 'approved' });
     }
 }

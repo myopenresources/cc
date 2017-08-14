@@ -132,7 +132,7 @@ export class HttpPaginationComponent implements OnInit {
      * 分页改变事件
      * @param event 
      */
-    private onPageChanged($event) {
+     onPageChanged($event) {
         if ($event.type != PaginationType.PAGE_INIT) {
             this.pageSize = $event.pageSize;
             this.pageNumber = $event.pageNumber;

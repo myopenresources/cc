@@ -205,7 +205,7 @@ export class SelectDemoComponent implements OnInit {
         this.optionsMultiple = this.alternativeOpts.slice(0);
     }
 
-    private logSingle(msg: string) {
+     logSingle(msg: string) {
         this.logSingleString += msg + '\n';
 
         // Let change detection do its work before scrolling to div bottom.
@@ -214,7 +214,7 @@ export class SelectDemoComponent implements OnInit {
         });
     }
 
-    private logMultiple(msg: string) {
+     logMultiple(msg: string) {
         this.logMultipleString += msg + '\n';
 
         // Let change detection do its work before scrolling to div bottom.
@@ -223,7 +223,7 @@ export class SelectDemoComponent implements OnInit {
         });
     }
 
-    private scrollToBottom(elem) {
+     scrollToBottom(elem) {
         elem.scrollTop = elem.scrollHeight;
     }
 
@@ -372,7 +372,7 @@ export class SelectDemoComponent implements OnInit {
 
 
 
-    private options: Select2Options = {
+     options: Select2Options = {
         placeholder: '请选择...',
         multiple: true,
         theme: "bootstrap",
@@ -384,7 +384,7 @@ export class SelectDemoComponent implements OnInit {
         }
     };
 
-    private options2: Select2Options = {
+     options2: Select2Options = {
         placeholder: '请选择...',
         width: '100%',
         theme: "bootstrap",

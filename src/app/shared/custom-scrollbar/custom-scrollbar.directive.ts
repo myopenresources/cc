@@ -35,7 +35,7 @@ export class CustomScrollbarDirective implements AfterViewInit,OnDestroy{
      /**
      * 创建树
      */
-    private createScrollbar() {
+     createScrollbar() {
         this.scrollbarInstance=$(this.elementRef.nativeElement).mCustomScrollbar(this.options);
         this.onViewInit.emit(this.scrollbarInstance);
     }

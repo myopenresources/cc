@@ -47,7 +47,7 @@ export class TreeComponent implements OnInit {
   private allData: Array<TreeData>;
 
   //搜索隐藏
-  private searchMsgHidden: boolean = true;
+   searchMsgHidden: boolean = true;
 
 
 

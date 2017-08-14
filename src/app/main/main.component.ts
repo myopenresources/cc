@@ -20,16 +20,16 @@ import  { AppService }   from '../app.service';
 export class MainComponent implements OnInit {
 
   //切换导航
-  private toggleDescTip: string="点击关闭导航菜单";
+  toggleDescTip: string="点击关闭导航菜单";
 
   //切换导航标识
-  private navClose:boolean=false;
+  navClose:boolean=false;
 
 
 
 
   //用户数据
-  private mainData: MainData = {
+   mainData: MainData = {
     userData:{
      userName: "百变小咖",
      userAvatar:"./assets/img/user-header.png",
@@ -296,7 +296,7 @@ export class MainComponent implements OnInit {
     }]
   }
 
-  private title:string="首页";
+  title:string="首页";
  
 
   constructor(private router: Router,private modalService: ModalService,private ngbModalService: NgbModal,private appService:AppService) {

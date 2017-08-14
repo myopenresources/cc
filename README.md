@@ -141,8 +141,8 @@
 1. 首先使用构建命令(npm run build)打包，打包完成后项目中会出现一个cc-client的目录，这个目录就是我们最终要部署的包了。
 2. 将cc-client整个目录复制到Tomcat的webapps目录下。
 3. 运行tomcat，在浏览器中输入`http://localhost:8080/cc-client/#/login`。
-4. 注：
-   4.1 想将默认的cc-client修改成你自己的base路径，打开package.json，修改构建命令build，将cc-client修改成你自己的base路径。
+4. 注：<br/>
+   4.1 想将默认的cc-client修改成你自己的base路径，打开package.json，修改构建命令build，将cc-client修改成你自己的base路径。<br/>
    4.2 想将打包生成的目录cc-client修改成你自己的名称，打开.angular-cli.json，修改配置outDir，将cc-client修改成你自己的名称。
        
 

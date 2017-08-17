@@ -241,14 +241,14 @@ export class MainComponent implements OnInit {
           "name": "角色添加",
           "keyWord":"jstj",
           "icon": "fa-plus-circle",
-          "url": "roleAdd"
+          "url": "/app/role/roleAdd"
         }, {
           "id": "26",
           "parentId": "24",
           "name": "角色查询",
           "keyWord":"jscx",
           "icon": "fa-search",
-          "url": "roleList"
+          "url": "/app/role/roleList"
         }, {
           "id": "27",
           "parentId": "24",

@@ -1,0 +1,14 @@
+<div class="c-content-inner">
+    <div class="row">
+        <div class="col-md-12">
+            <p class="c-line-title">角色列表</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+
+            
+            <c-http-pagination #hp [url]="url" method="post" [param]="param"  [pageList]="pageList" (onDataChanged)="onDataChanged($event)"></c-http-pagination>
+        </div>
+    </div>
+</div>

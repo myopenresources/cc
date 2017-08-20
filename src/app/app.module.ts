@@ -9,6 +9,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { appRoutes } from './app.routes';
 import { AppComponent }    from './app.component';
 import { AppService }   from './app.service';
+import { PageNotFoundComponent } from './errorpage/page-not-found.component';
 
 
 //toast
@@ -52,7 +53,8 @@ import {SelectivePreloadingStrategy} from "./selective-preloading-strategy";
     AppComponent,
     ToastBoxComponent,
     ToastComponent,
-    SpinComponent
+    SpinComponent,
+    PageNotFoundComponent
   ],
   providers: [AppService,ToastService,HttpService,SpinService,SelectivePreloadingStrategy],
   exports:[ToastBoxComponent,SpinComponent],

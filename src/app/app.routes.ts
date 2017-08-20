@@ -5,6 +5,7 @@ import {SelectivePreloadingStrategy} from "./selective-preloading-strategy";
 
 import { LoginComponent }      from './login/login.component';
 import { MainComponent }   from './main/main.component';
+import { PageNotFoundComponent } from './errorpage/page-not-found.component';
 
 
 
@@ -21,6 +22,9 @@ const routes: Routes = [
      path: 'app',  
      component: MainComponent,
      loadChildren: 'app/main/main.module#MainModule'
+  },{
+     path:'**',
+      component: PageNotFoundComponent
   }
 ];
 

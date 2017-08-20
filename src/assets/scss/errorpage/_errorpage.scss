@@ -1,0 +1,40 @@
+.c-pnf-box{
+    padding-top: 11%;
+    .c-pnf-title{
+        width:200px;
+        margin-left:auto;
+        margin-right:auto;
+        ul{
+            list-style:none; 
+            margin: 0px; 
+            padding: 0px; 
+            width: auto; 
+            li{
+                float:left; 
+                font-size: 100px;
+                &.c-pnf-red{
+                    color: $c-pnf-color-red;
+                    margin-right:10px;
+                }
+                &.c-pnf-blue{
+                     color: $c-pnf-color-blue;
+                     margin-right:10px;
+                }
+                &.c-pnf-yellow{
+                     color: $c-pnf-color-yellow;
+                }    
+            }
+        }
+    }
+    .c-pnf-desc{
+        color: $c-color-gray-light;
+        margin-left: auto;
+        margin-right: auto;
+        filter: alpha(opacity=8);
+        -moz-opacity: 0.8;
+        opacity: 0.8;
+        clear: both;
+        width:200px;
+        text-align: center;
+    }
+}

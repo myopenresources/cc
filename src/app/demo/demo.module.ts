@@ -33,7 +33,7 @@ import { ImageViewerDemoComponent } from './image-viewer-demo.component';
 import { SpinDemoComponent } from './spin-demo.component';
 
 
-import { demoRoutes  } from './demo.routes';
+import { DemoRoutingModule  } from './demo-routing.module';
 
 
 
@@ -53,7 +53,7 @@ import { demoRoutes  } from './demo.routes';
      SelectModule,
      Select2Module,
      FileUploadModule,
-     demoRoutes
+     DemoRoutingModule
   ],
   declarations: [
      DemoComponent,

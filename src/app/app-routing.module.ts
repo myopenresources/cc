@@ -12,7 +12,7 @@ import { PageNotFoundComponent } from './errorpage/page-not-found.component';
 /**
  * app路由
  */
-const routes: Routes = [
+const appRoutes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { 
      path: 'login',  
@@ -28,6 +28,14 @@ const routes: Routes = [
   }
 ];
 
-export const appRoutes=RouterModule.forRoot(routes,{preloadingStrategy: SelectivePreloadingStrategy,useHash:true});
+@NgModule({
+  imports: [
+   RouterModule.forRoot(appRoutes,{preloadingStrategy: SelectivePreloadingStrategy,useHash:true})
+  ],
+  exports: [
+    RouterModule
+  ]
+})
+export class AppRoutingModule {}
 
 

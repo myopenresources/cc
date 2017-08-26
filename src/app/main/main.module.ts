@@ -13,7 +13,7 @@ import { TreeviewMenuComponent }   from './treeview-menu.component';
 import { AvatarCropperComponent} from './avatar-cropper.component';
 
 
-import { mainRoutes } from './main.routes';
+import { MainRoutingModule } from './main-routing.module';
 
 
 /**
@@ -24,7 +24,7 @@ import { mainRoutes } from './main.routes';
      CommonModule, 
      FormsModule,
      NgbModule,
-     mainRoutes,
+     MainRoutingModule,
      ImageCropperModule,
      SharedModule
   ],

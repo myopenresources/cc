@@ -6,7 +6,6 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 //app
-import { appRoutes } from './app.routes';
 import { AppComponent }    from './app.component';
 import { AppService }   from './app.service';
 import { PageNotFoundComponent } from './errorpage/page-not-found.component';
@@ -29,6 +28,7 @@ import { SpinService } from './shared/spin/spin.service';
 //modules
 import  { LoginModule }      from './login/login.module';
 import  { MainModule }       from './main/main.module';
+import  { AppRoutingModule } from './app-routing.module';
 
 import {SelectivePreloadingStrategy} from "./selective-preloading-strategy";
 
@@ -42,7 +42,7 @@ import {SelectivePreloadingStrategy} from "./selective-preloading-strategy";
  */
 @NgModule({
   imports: [
-    appRoutes,
+    AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
     NgbModule.forRoot(),

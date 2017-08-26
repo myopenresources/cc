@@ -27,7 +27,7 @@ import { SpinDemoComponent } from './spin-demo.component';
 /**
  * demo路由
  */
-const routes: Routes = [
+const demoRoutes: Routes = [
     {
         path: '', 
         component: DemoComponent,
@@ -113,4 +113,12 @@ const routes: Routes = [
 ]
 
 
-export const demoRoutes = RouterModule.forChild(routes);
+@NgModule({
+  imports: [
+    RouterModule.forChild(demoRoutes)
+  ],
+  exports: [
+    RouterModule
+  ]
+})
+export class DemoRoutingModule { }

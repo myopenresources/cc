@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import  { SharedModule }       from '../shared/shared.module';
 
-import { userRoutes } from './user.routes';
+import { UserRoutingModule } from './user-routing.module';
 import { UserComponent } from './user.component';
 import { UserAddComponent } from './user-add.component';
 import { UserListComponent } from './user-list.component';
@@ -14,7 +14,7 @@ import { UserListComponent } from './user-list.component';
   imports: [
     CommonModule,
     FormsModule,
-    userRoutes,
+    UserRoutingModule,
     SharedModule
   ],
   declarations: [

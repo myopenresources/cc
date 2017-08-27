@@ -1,8 +1,7 @@
 import { NgModule }   from '@angular/core';
 import { CommonModule }       from '@angular/common';
 import { FormsModule }        from '@angular/forms';
-import { HttpModule }    from '@angular/http';
-import {Routes, RouterModule} from "@angular/router";
+import { Routes, RouterModule} from "@angular/router";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ImageCropperModule } from 'ng2-img-cropper';
 import  { SharedModule }       from '../shared/shared.module';
@@ -34,9 +33,7 @@ import { MainRoutingModule } from './main-routing.module';
      TreeviewMenuComponent,
      AvatarCropperComponent
   ],
-  exports:      [
-    MainComponent
-  ],
+  exports:      [],
   entryComponents:[AvatarCropperComponent],
   providers:    []
 })

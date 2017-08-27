@@ -3,8 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 import {SelectivePreloadingStrategy} from "./selective-preloading-strategy";
 
-import { LoginComponent }      from './login/login.component';
-import { MainComponent }   from './main/main.component';
 import { PageNotFoundComponent } from './errorpage/page-not-found.component';
 
 
@@ -16,11 +14,10 @@ const appRoutes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { 
      path: 'login',  
-     component: LoginComponent
+     loadChildren: 'app/login/login.module#LoginModule'
   },
   { 
      path: 'app',  
-     component: MainComponent,
      loadChildren: 'app/main/main.module#MainModule'
   },{
      path:'**',

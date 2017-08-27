@@ -1,7 +1,8 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule} from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { HttpModule }    from '@angular/http';
 
 
 
@@ -19,17 +20,14 @@ import {ToastComponent} from './shared/toast/toast.component';
 //http
 import { HttpService }   from './shared/http/http.service';
 
-
 //spin
 import { SpinComponent} from './shared/spin/spin.component';
 import { SpinService } from './shared/spin/spin.service';
 
-
 //modules
-import  { LoginModule }      from './login/login.module';
-import  { MainModule }       from './main/main.module';
 import  { AppRoutingModule } from './app-routing.module';
 
+//strategy
 import {SelectivePreloadingStrategy} from "./selective-preloading-strategy";
 
 
@@ -45,9 +43,8 @@ import {SelectivePreloadingStrategy} from "./selective-preloading-strategy";
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
-    NgbModule.forRoot(),
-    MainModule,
-    LoginModule
+    HttpModule,
+    NgbModule.forRoot()
   ],
   declarations: [
     AppComponent,

@@ -33,7 +33,7 @@
 10. 更多略...
 
 
-## 更新
+## 重大更新
 1. 搭建环境，分别加入ng-bootstrap1.0.0-alpha.25、bootstrap4.1.3、font-awesome4.7.0、animate.css3.5.2等<br/>
    1.1 https://ng-bootstrap.github.io/#/home<br/>
    1.2 https://v4-alpha.getbootstrap.com/<br/>

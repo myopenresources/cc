@@ -8,6 +8,7 @@ import  { ModalService } from '../shared/modal/modal.service';
 import  { ConfirmConfig} from '../shared/modal/modal-model';
 
 import  { AvatarCropperComponent} from './avatar-cropper.component';
+import  { PasswordEditComponent} from './password-edit.component';
 import  { AppService }   from '../app.service';
 
 /**
@@ -339,6 +340,17 @@ export class MainComponent implements OnInit {
    */
   avatarReplacement(){
       this.ngbModalService.open(AvatarCropperComponent,{size:'lg',backdrop:'static',keyboard:false}).result.then((result) => {
+        
+      }, (reason) => {
+        
+      });
+  }
+
+  /**
+   * 修改密码
+   */
+  passwordEdit(){
+      this.ngbModalService.open(PasswordEditComponent,{size:'lg'}).result.then((result) => {
         
       }, (reason) => {
         

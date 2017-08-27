@@ -10,6 +10,7 @@ import { MainComponent }   from './main.component';
 import { SidebarMenuComponent }   from './sidebar-menu.component';
 import { TreeviewMenuComponent }   from './treeview-menu.component';
 import { AvatarCropperComponent} from './avatar-cropper.component';
+import { PasswordEditComponent} from './password-edit.component';
 
 
 import { MainRoutingModule } from './main-routing.module';
@@ -31,10 +32,11 @@ import { MainRoutingModule } from './main-routing.module';
      MainComponent,
      SidebarMenuComponent,
      TreeviewMenuComponent,
-     AvatarCropperComponent
+     AvatarCropperComponent,
+     PasswordEditComponent
   ],
   exports:      [],
-  entryComponents:[AvatarCropperComponent],
+  entryComponents:[AvatarCropperComponent,PasswordEditComponent],
   providers:    []
 })
 export class MainModule {

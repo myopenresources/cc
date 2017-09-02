@@ -1,14 +1,14 @@
 import { Component, OnInit,ElementRef,ViewChild} from '@angular/core';
 import {  Router } from '@angular/router';
-import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {  NgbModal} from '@ng-bootstrap/ng-bootstrap';
 
 
 import  { MainData }    from '../main/main-model';
 import  { ModalService } from '../shared/modal/modal.service';
 import  { ConfirmConfig} from '../shared/modal/modal-model';
 
-import  { AvatarCropperComponent} from './avatar-cropper.component';
-import  { PasswordEditComponent} from './password-edit.component';
+import  { AvatarCropperComponent} from '../business-shared/user/avatar-cropper.component';
+import  { PasswordEditComponent} from '../business-shared/user/password-edit.component';
 import  { AppService }   from '../app.service';
 
 /**
@@ -333,6 +333,13 @@ export class MainComponent implements OnInit {
   toHome(){
      this.title="首页";
      this.router.navigate(['/app/home']);
+  }
+
+  /**
+   * 个人资料
+   */
+  userInfo(){
+      this.router.navigate(['/app/user/userInfo']);
   }
 
   /**

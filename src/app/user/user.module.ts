@@ -8,6 +8,7 @@ import { UserRoutingModule } from './user-routing.module';
 import { UserComponent } from './user.component';
 import { UserAddComponent } from './user-add.component';
 import { UserListComponent } from './user-list.component';
+import { UserInfoComponent} from './user-info.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { UserListComponent } from './user-list.component';
   declarations: [
     UserComponent,
     UserAddComponent,
-    UserListComponent
+    UserListComponent,
+    UserInfoComponent
   ],
   exports: [
   ],

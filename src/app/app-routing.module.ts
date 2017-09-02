@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import {SelectivePreloadingStrategy} from "./selective-preloading-strategy";
 
-import { PageNotFoundComponent } from './errorpage/page-not-found.component';
+import { PageNotFoundComponent } from './error-page/page-not-found.component';
 
 
 

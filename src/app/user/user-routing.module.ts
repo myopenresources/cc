@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { UserComponent } from './user.component';
 import { UserAddComponent } from './user-add.component';
 import { UserListComponent } from './user-list.component';
+import { UserInfoComponent} from './user-info.component';
 
 const userRoutes: Routes = [
     {
@@ -16,6 +17,10 @@ const userRoutes: Routes = [
             {
                 path:'userList',
                 component:UserListComponent
+            },
+            {
+                path:'userInfo',
+                component:UserInfoComponent
             }
         ]
     }

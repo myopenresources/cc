@@ -11,7 +11,7 @@
                     <span ngbDropdownToggle>{{mainData.userData.userName}}</span>
                 </div>
                 <div class="dropdown-menu animated fadeIn">
-                    <button class="dropdown-item"><i class="fa  fa-user-circle-o  fa-fw"></i> 个人资料</button>
+                    <button class="dropdown-item" (click)="userInfo()"><i class="fa  fa-user-circle-o  fa-fw"></i> 个人资料</button>
                     <button class="dropdown-item" (click)="passwordEdit()"><i class="fa  fa-key fa-fw"></i> 修改密码</button>
                     <button class="dropdown-item" (click)="exitSys()"><i class="fa  fa-sign-out fa-fw"></i> 退出系统</button>
                 </div>
@@ -42,9 +42,9 @@
                             <span>{{mainData.userData.userName}}</span>
                         </div>
                         <div class="dropdown-menu animated fadeIn">
-                            <button class="dropdown-item"><i class="fa  fa-user-circle-o  fa-fw"></i> 个人资料</button>
+                            <button class="dropdown-item"  (click)="userInfo()"><i class="fa  fa-user-circle-o  fa-fw"></i> 个人资料</button>
                             <button class="dropdown-item"  (click)="passwordEdit()"><i class="fa  fa-key fa-fw"></i> 修改密码</button>
-                            <button class="dropdown-item" (click)="exitSys()"><i class="fa  fa-sign-out fa-fw"></i> 退出系统</button>
+                            <button class="dropdown-item"  (click)="exitSys()"><i class="fa  fa-sign-out fa-fw"></i> 退出系统</button>
                         </div>
                     </li>
                 </ul>

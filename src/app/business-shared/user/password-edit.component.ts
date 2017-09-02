@@ -1,8 +1,8 @@
 import { Component, Input, ViewEncapsulation, ViewChild } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
-import { ToastService } from '../shared/toast/toast.service';
-import { ToastConfig, ToastType } from '../shared/toast/toast-model';
+import { ToastService } from '../../shared/toast/toast.service';
+import { ToastConfig, ToastType } from '../../shared/toast/toast-model';
 
 /**
  * 修改密码组件

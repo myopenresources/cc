@@ -9,7 +9,7 @@ import { HttpModule }    from '@angular/http';
 //app
 import { AppComponent }    from './app.component';
 import { AppService }   from './app.service';
-import { PageNotFoundComponent } from './errorpage/page-not-found.component';
+import { PageNotFoundComponent } from './error-page/page-not-found.component';
 
 
 //toast

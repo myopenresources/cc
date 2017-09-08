@@ -105,7 +105,7 @@
 34. 添加部署Tomcat的方法<br/>
    34.1 参考下面的`部署到Tomcat`章节说明
 35. 解决构建时使用--prod参数的报错问题,使用--prod --aot可提升性能
-36. 升级angular版本，使用yarn进行版本管理
+36. 升级angular版本，使用yarn进行包版本管理
 
 
 
@@ -121,9 +121,9 @@
 
 ## 环境
 1. 下载并安装nodeJS环境
-2. 安装与配置yarn（参考：https://yarnpkg.com/zh-Hans/）
-   2.1 使用cnpm i -g yarn 或 npm i -g yarn安装yarn
-   2.2 配置registry地址：yarn config set registry http://registry.npm.taobao.org
+2. 安装与配置yarn（参考：https://yarnpkg.com/zh-Hans/）<br/>
+   2.1 使用cnpm i -g yarn 或 npm i -g yarn安装yarn<br/>
+   2.2 配置registry地址：yarn config set registry http://registry.npm.taobao.org<br/>
    2.3 配置sass-binary-site地址：yarn config set sass-binary-site http://npm.taobao.org/mirrors/node-sass
 
 

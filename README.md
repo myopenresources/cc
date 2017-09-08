@@ -1,5 +1,5 @@
 ## CC admin 
- 一个基于angular4.1.3+ng-bootstrap1.0.0-alpha.25+bootstrap4.0.0-alpha.6+scss的后台管理系统界面
+ 一个基于angular4.2.4+ng-bootstrap1.0.0-alpha.25+bootstrap4.0.0-alpha.6+scss的后台管理系统界面
 
 
 ## 界面展示
@@ -105,6 +105,7 @@
 34. 添加部署Tomcat的方法<br/>
    34.1 参考下面的`部署到Tomcat`章节说明
 35. 解决构建时使用--prod参数的报错问题,使用--prod --aot可提升性能
+36. 升级angular版本，使用yarn进行版本管理
 
 
 
@@ -119,12 +120,16 @@
 
 
 ## 环境
-1. 您需要安装nodeJS环境
+1. 下载并安装nodeJS环境
+2. 安装与配置yarn（参考：https://yarnpkg.com/zh-Hans/）
+   2.1 使用cnpm i -g yarn 或 npm i -g yarn安装yarn
+   2.2 配置registry地址：yarn config set registry http://registry.npm.taobao.org
+   2.3 配置sass-binary-site地址：yarn config set sass-binary-site http://npm.taobao.org/mirrors/node-sass
 
 
 ## 安装
 1. cd E:\project\cc                            <---- 进入到项目所在的目录
-2. npm install                                 <---- 安装，如果下载比较慢，可使用淘宝的cnpm，请参考：https://npm.taobao.org/
+2. yarn install                                <---- 安装
 
 
 ## 开发服务器

@@ -1,0 +1,170 @@
+<div class="c-content-inner">
+    <div class="row">
+        <div class="col-md-12">
+            <p class="c-line-title">更多请自行查看ng-bootstrap官网：https://ng-bootstrap.github.io/#/components/accordion/examples</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p class="c-line-title">Accordion</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                <ngb-panel title="标题一">
+                    <ng-template ngbPanelContent>
+                        内容一
+                    </ng-template>
+                </ngb-panel>
+                <ngb-panel>
+                    <ng-template ngbPanelTitle>
+                        <span>&#9733; <b>标题二</b> title &#9733;</span>
+                    </ng-template>
+                    <ng-template ngbPanelContent>
+                        内容二
+                    </ng-template>
+                </ngb-panel>
+                <ngb-panel title="标题三" [disabled]="true">
+                    <ng-template ngbPanelContent>
+                        内容三
+                    </ng-template>
+                </ngb-panel>
+            </ngb-accordion>
+        </div>
+    </div>
+
+    <div class="row c-mt15">
+        <div class="col-md-12">
+            <p class="c-line-title">Tabset</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <ngb-tabset>
+                <ngb-tab title="Simple">
+                    <ng-template ngbTabContent>
+                        <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua,
+                            retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit
+                            butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson
+                            ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel,
+                            butcher voluptate nisi qui.</p>
+                    </ng-template>
+                </ngb-tab>
+                <ngb-tab>
+                    <ng-template ngbTabTitle><b>Fancy</b> title</ng-template>
+                    <ng-template ngbTabContent>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                        <p>Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko
+                            farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip
+                            jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna
+                            delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown.
+                            Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical
+                            culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui
+                            sapiente accusamus tattooed echo park.</p>
+                    </ng-template>
+                </ngb-tab>
+                <ngb-tab title="Disabled" [disabled]="true">
+                    <ng-template ngbTabContent>
+                        <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua,
+                            retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit
+                            butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson
+                            ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel,
+                            butcher voluptate nisi qui.</p>
+                    </ng-template>
+                </ngb-tab>
+            </ngb-tabset>
+        </div>
+    </div>
+
+    <div class="row c-mt15">
+        <div class="col-md-12">
+            <p class="c-line-title">Alert</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <ngb-alert [dismissible]="false">
+                <strong>警告!</strong> 这是一个警告
+            </ngb-alert>
+            <ngb-alert [dismissible]="true" [type]="'success'">
+                <strong>成功!</strong> 这是一个成功
+            </ngb-alert>
+        </div>
+    </div>
+
+    <div class="row c-mt15">
+        <div class="col-md-12">
+            <p class="c-line-title">Carousel</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <ngb-carousel>
+                <ng-template ngbSlide>
+                    <img src="https://lorempixel.com/900/500?r=1" alt="Random first slide">
+                    <div class="carousel-caption">
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <img src="https://lorempixel.com/900/500?r=2" alt="Random second slide">
+                    <div class="carousel-caption">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <img src="https://lorempixel.com/900/500?r=3" alt="Random third slide">
+                    <div class="carousel-caption">
+                        <h3>Third slide label</h3>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+        </div>
+    </div>
+
+    <div class="row c-mt15">
+        <div class="col-md-12">
+            <p class="c-line-title">Collapse</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <button type="button" class="btn btn-outline-primary" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+                aria-controls="collapseExample">
+                Toggle
+            </button>
+            <div id="collapseExample" [ngbCollapse]="isCollapsed">
+                <div class="card">
+                    <div class="card-body">
+                        You can collapse this card by clicking Toggle
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row c-mt15">
+        <div class="col-md-12">
+            <p class="c-line-title">Progressbar</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                <ngb-progressbar type="success" [value]="25" [striped]="true"></ngb-progressbar>
+            </p>
+            <p>
+                <ngb-progressbar type="info" [value]="50" [striped]="true"></ngb-progressbar>
+            </p>
+            <p>
+                <ngb-progressbar type="warning" [value]="75" [striped]="true"></ngb-progressbar>
+            </p>
+            <p>
+                <ngb-progressbar type="danger" [value]="100" [striped]="true"></ngb-progressbar>
+            </p>
+        </div>
+    </div>
+</div>

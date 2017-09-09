@@ -171,6 +171,13 @@ export class MainComponent implements OnInit {
         "keyWord":"spinDemo",
         "icon": 'fa-spinner',
         "url": '/app/demo/spinDemo'
+      }, {
+        "id": "18",
+        "parentId": "1",
+        "name": "ng-bootstrap示例",
+        "keyWord":"ngBootstrapDemo",
+        "icon": 'fa-cubes',
+        "url": '/app/demo/ngBootstrapDemo'
       }]
 
      },  /*{

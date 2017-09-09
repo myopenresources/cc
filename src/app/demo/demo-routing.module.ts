@@ -22,7 +22,7 @@ import { FileUploadDemoComponent } from './file-upload-demo.component';
 import { CustomScrollbarDemoComponent } from './custom-scrollbar-demo.component';
 import { ImageViewerDemoComponent } from './image-viewer-demo.component';
 import { SpinDemoComponent } from './spin-demo.component';
-
+import { NgBootstrapComponent } from './ng-bootstrap-demo.component';
 
 /**
  * demo路由
@@ -107,6 +107,10 @@ const demoRoutes: Routes = [
             {
                 path: 'spinDemo',
                 component: SpinDemoComponent
+            },
+            {
+                path: 'ngBootstrapDemo',
+                component: NgBootstrapComponent
             }
         ]
     }

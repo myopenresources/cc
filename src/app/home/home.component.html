@@ -2,7 +2,7 @@
     <div class="row  c-mb15" [hidden]="userTipClose">
         <div class="col-md-12">
             <div class="card c-card">
-                <div class="card-block">
+                <div class="card-body">
                     <i class="fa fa-bullhorn fa-fw text-danger"></i> <strong class="text-danger">欢迎您，百变小咖</strong> <span class="c-home-login-tip">， 这是您第 <span class="text-danger">12708</span>                    次登录，上次登录时间： <span class="text-danger">2017-5-20 21:05:20</span>，如果不是您本人登录，请及时 <a href="javascript:void(0)" (click)="passwordEdit()">修改密码</a>                    。</span>
                     <button aria-label="Close" class="close" type="button"  (click)="userTipClose=true">
                        <span aria-hidden="true">×</span>
@@ -19,7 +19,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card c-card c-home-card">
-                        <div class="card-block">
+                        <div class="card-body">
                             <div class="row">
                                 <div class="col-md-9">
                                     <h5 class="card-title c-fs15"><i class="fa fa-bell-o fa-fw"></i> 待办信息</h5>
@@ -66,7 +66,7 @@
             <div class="row  c-mt15">
                 <div class="col-md-12">
                     <div class="card c-card c-home-card">
-                        <div class="card-block">
+                        <div class="card-body">
                             <div class="row">
                                 <div class="col-md-9">
                                     <h5 class="card-title c-fs15"><i class="fa fa-bullhorn fa-fw"></i> 系统通知</h5>
@@ -116,7 +116,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card c-card c-home-card">
-                        <div class="card-block">
+                        <div class="card-body">
                             <div class="row">
                                 <div class="col-md-9">
                                     <h5 class="card-title c-fs15"><i class="fa fa-envelope-open-o fa-fw"></i> 待阅信息</h5>
@@ -163,7 +163,7 @@
             <div class="row  c-mt15">
                 <div class="col-md-12">
                     <div class="card c-card  c-home-card">
-                        <div class="card-block">
+                        <div class="card-body">
                             <div class="row">
                                 <div class="col-md-9">
                                     <h5 class="card-title c-fs15"><i class="fa fa-cubes fa-fw"></i> 常用功能</h5>
@@ -179,7 +179,7 @@
                                         <div class="row c-mt10" *ngFor="let commonFunc of commonFuncLit;let i = index">
                                             <div class="col-md-3" *ngFor="let obj  of commonFuncLit[i]">
                                                 <div class="card card-outline-secondary  text-center c-home-common-func-outline">
-                                                    <div class="card-block c-home-common-func">
+                                                    <div class="card-body c-home-common-func">
                                                         <i class="fa " [ngClass]="obj.icon"></i> <span>{{obj.name}}</span>
                                                     </div>
                                                 </div>

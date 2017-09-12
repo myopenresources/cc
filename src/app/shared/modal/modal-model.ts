@@ -8,7 +8,7 @@ export class ConfirmConfig{
      approveBtnCls:string;
      approveBtnTxt:string;
    
-    constructor(content:string='',declineBtnCls:string='btn-secondary',declineBtnTxt:string='取消',approveBtnCls:string='btn-primary',approveBtnTxt:string='确定'){
+    constructor(content:string='',declineBtnCls:string='btn-light',declineBtnTxt:string='取消',approveBtnCls:string='btn-primary',approveBtnTxt:string='确定'){
         this.content=content;
         this.declineBtnCls=declineBtnCls;
         this.declineBtnTxt=declineBtnTxt;

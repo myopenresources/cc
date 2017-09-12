@@ -23,6 +23,7 @@ import { CustomScrollbarDemoComponent } from './custom-scrollbar-demo.component'
 import { ImageViewerDemoComponent } from './image-viewer-demo.component';
 import { SpinDemoComponent } from './spin-demo.component';
 import { NgBootstrapComponent } from './ng-bootstrap-demo.component';
+import { BootstrapComponent } from './bootstrap-demo.component';
 
 /**
  * demo路由
@@ -111,6 +112,10 @@ const demoRoutes: Routes = [
             {
                 path: 'ngBootstrapDemo',
                 component: NgBootstrapComponent
+            },
+            {
+                path: 'bootstrapDemo',
+                component: BootstrapComponent
             }
         ]
     }

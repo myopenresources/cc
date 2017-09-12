@@ -236,7 +236,6 @@ export class HierarchyViewDemoComponent {
         {
           id: '11',
           name: '其它省份略',
-          cls: 'bg-inverse text-white',
           clickEnable: false
         }
       ]

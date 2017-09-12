@@ -10,21 +10,27 @@
 	transition: all 0.4s;
 }
 
-.btn-secondary {
+.btn-light {
 	-webkit-background-size: 200% 200%;
 	background-size: 200% 200%;
 	background-position: 50%;
+	border:1px solid $c-color-gary
 }
 
-.btn-secondary:active {
-	background-color: $c-bootstrap-secondary-deep;
-	border-color: $c-bootstrap-secondary-deep;
-	background-image: -webkit-radial-gradient(circle, $c-bootstrap-secondary-deep 10%, $c-bootstrap-secondary 11%);
-	background-image: -o-radial-gradient(circle, $c-bootstrap-secondary-deep 10%, $c-bootstrap-secondary 11%);
-	background-image: radial-gradient(circle, $c-bootstrap-secondary-deep 10%, $c-bootstrap-secondary 11%);
+.btn-light:active {
+	border-color: $c-bootstrap-light-deep;
+	border-color: $c-bootstrap-light-deep;
+	background-image: -webkit-radial-gradient(circle, $c-bootstrap-light-deep 10%, $c-bootstrap-light 11%);
+	background-image: -o-radial-gradient(circle, $c-bootstrap-light-deep 10%, $c-bootstrap-light 11%);
+	background-image: radial-gradient(circle, $c-bootstrap-light-deep 10%, $c-bootstrap-light 11%);
 	background-repeat: no-repeat;
 	-webkit-background-size: 1000% 1000%;
 	background-size: 1000% 1000%;
+}
+
+.btn-light.disabled, .btn-light:disabled {
+   border-color: $c-bootstrap-light-deep;
+   border-color: $c-bootstrap-light-deep;
 }
 
 .btn-primary {
@@ -65,6 +71,11 @@
 	-webkit-background-size: 200% 200%;
 	background-size: 200% 200%;
 	background-position: 50%;
+	color:$c-color-white;
+}
+
+.btn-info:hover{
+	color:$c-color-white;
 }
 
 .btn-info:active {
@@ -76,12 +87,18 @@
 	background-repeat: no-repeat;
 	-webkit-background-size: 1000% 1000%;
 	background-size: 1000% 1000%;
+	color:$c-color-white;
 }
 
 .btn-warning {
 	-webkit-background-size: 200% 200%;
 	background-size: 200% 200%;
 	background-position: 50%;
+	color:$c-color-white;
+}
+
+.btn-warning:hover{
+	color:$c-color-white;
 }
 
 .btn-warning:active {
@@ -93,12 +110,18 @@
 	background-repeat: no-repeat;
 	-webkit-background-size: 1000% 1000%;
 	background-size: 1000% 1000%;
+	color:$c-color-white;
 }
 
 .btn-danger {
 	-webkit-background-size: 200% 200%;
 	background-size: 200% 200%;
 	background-position: 50%;
+	color:$c-color-white;
+}
+
+.btn-danger:hover{
+	color:$c-color-white;
 }
 
 .btn-danger:active {
@@ -110,7 +133,46 @@
 	background-repeat: no-repeat;
 	-webkit-background-size: 1000% 1000%;
 	background-size: 1000% 1000%;
+	color:$c-color-white;
 }
+
+.btn-secondary{
+	-webkit-background-size: 200% 200%;
+	background-size: 200% 200%;
+	background-position: 50%;
+}
+
+.btn-secondary:active {
+	background-color: $c-bootstrap-secondary-deep;
+	border-color: $c-bootstrap-secondary-deep;
+	background-image: -webkit-radial-gradient(circle, $c-bootstrap-secondary-deep 10%, $c-bootstrap-secondary 11%);
+	background-image: -o-radial-gradient(circle, $c-bootstrap-secondary-deep 10%, $c-bootstrap-secondary 11%);
+	background-image: radial-gradient(circle, $c-bootstrap-secondary-deep  10%, $c-bootstrap-secondary 11%);
+	background-repeat: no-repeat;
+	-webkit-background-size: 1000% 1000%;
+	background-size: 1000% 1000%;
+	color:$c-color-white;
+}
+
+.btn-dark{
+	-webkit-background-size: 200% 200%;
+	background-size: 200% 200%;
+	background-position: 50%;
+}
+
+.btn-dark:active {
+	background-color: $c-bootstrap-dark-deep;
+	border-color: $c-bootstrap-dark-deep;
+	background-image: -webkit-radial-gradient(circle, $c-bootstrap-dark-deep 10%, $c-bootstrap-dark 11%);
+	background-image: -o-radial-gradient(circle, $c-bootstrap-dark-deep 10%, $c-bootstrap-dark 11%);
+	background-image: radial-gradient(circle, $c-bootstrap-dark-deep  10%, $c-bootstrap-dark 11%);
+	background-repeat: no-repeat;
+	-webkit-background-size: 1000% 1000%;
+	background-size: 1000% 1000%;
+	color:$c-color-white;
+}
+
+//=================table=======================
 
 .table> thead>tr> th {
 	border-bottom: 0px;
@@ -121,6 +183,32 @@
 .table> tbody>tr> td {
 	padding: 5px;
 	line-height: 30px;
+}
+
+//=================alert=======================
+.alert-light{
+	border:1px solid $c-color-gary
+}
+
+
+//=================badge-warning=======================
+.badge-warning{
+  color:$c-color-white;
+}
+
+.badge-light{
+	border:1px solid $c-color-gary;
+}
+
+.badge-info{
+  color:$c-color-white;
+}
+
+//=================datepicker=======================
+.ngb-dp-day{
+	.btn-light{
+		border:0px
+	}
 }
 
 //=================ng-bootstrap================

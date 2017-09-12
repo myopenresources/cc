@@ -178,6 +178,13 @@ export class MainComponent implements OnInit {
         "keyWord":"ngBootstrapDemo",
         "icon": 'fa-cubes',
         "url": '/app/demo/ngBootstrapDemo'
+      }, {
+        "id": "19",
+        "parentId": "1",
+        "name": "bootstrap示例",
+        "keyWord":"bootstrapDemo",
+        "icon": 'fa-cubes',
+        "url": '/app/demo/bootstrapDemo'
       }]
 
      },  /*{

@@ -1,5 +1,5 @@
 ## CC admin 
- 一个基于angular4.2.4+ng-bootstrap1.0.0-alpha.25+bootstrap4.0.0-alpha.6+scss的后台管理系统界面
+ 一个基于angular4.2.4+ng-bootstrap1.0.0-beta.4+bootstrap4.0.0-beta+scss的后台管理系统界面
 
 
 ## 界面展示
@@ -34,7 +34,7 @@
 
 
 ## 重大更新
-1. 搭建环境，分别加入ng-bootstrap1.0.0-alpha.25、bootstrap4.1.3、font-awesome4.7.0、animate.css3.5.2等<br/>
+1. 搭建环境，分别加入ng-bootstrap1.0.0-alpha.25、bootstrap4.1.3、font-awesome4.7.0、animate.css3.5.2等，cc版本为0.0.1<br/>
    1.1 https://ng-bootstrap.github.io/#/home<br/>
    1.2 https://v4-alpha.getbootstrap.com/<br/>
    1.3 http://fontawesome.io/<br/>
@@ -104,8 +104,9 @@
    33.1 src/app/shared/spin/spin.component.ts与src/app/shared/spin/spin.service.ts
 34. 添加部署Tomcat的方法<br/>
    34.1 参考下面的`部署到Tomcat`章节说明
-35. 解决构建时使用--prod参数的报错问题,使用--prod --aot可提升性能
-36. 升级angular版本，使用yarn进行包版本管理
+35. 解决构建时使用--prod参数的报错问题,使用--prod --aot可提升性能，升级cc版本为0.0.3
+36. 升级angular版本，使用yarn进行包版本管理，升级cc版本为0.0.4
+37. 升级ng-bootstrap1.0.0-beta.4与bootstrap4.0.0-beta+scss版本，升级cc版本为0.0.5
 
 
 

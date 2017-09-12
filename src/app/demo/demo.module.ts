@@ -32,6 +32,7 @@ import { CustomScrollbarDemoComponent } from './custom-scrollbar-demo.component'
 import { ImageViewerDemoComponent } from './image-viewer-demo.component';
 import { SpinDemoComponent } from './spin-demo.component';
 import { NgBootstrapComponent } from './ng-bootstrap-demo.component';
+import { BootstrapComponent } from './bootstrap-demo.component';
 
 import { DemoRoutingModule  } from './demo-routing.module';
 
@@ -76,7 +77,8 @@ import { DemoRoutingModule  } from './demo-routing.module';
      CustomScrollbarDemoComponent,
      ImageViewerDemoComponent,
      SpinDemoComponent,
-     NgBootstrapComponent
+     NgBootstrapComponent,
+     BootstrapComponent
   ],
   exports:      [ 
   ],

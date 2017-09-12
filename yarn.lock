@@ -158,9 +158,9 @@
   dependencies:
     tsickle "^0.21.0"
 
-"@ng-bootstrap/ng-bootstrap@1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "http://registry.npm.taobao.org/@ng-bootstrap/ng-bootstrap/download/@ng-bootstrap/ng-bootstrap-1.0.0-alpha.25.tgz#68cc2afa17fb5bdd2d775b7f82cffa86ef21b0ed"
+"@ng-bootstrap/ng-bootstrap@^1.0.0-beta.4":
+  version "1.0.0-beta.4"
+  resolved "http://registry.npm.taobao.org/@ng-bootstrap/ng-bootstrap/download/@ng-bootstrap/ng-bootstrap-1.0.0-beta.4.tgz#18ffd662a4c77305213e76f6ae47b0ffda03bb7c"
 
 "@ngtools/json-schema@1.1.0", "@ngtools/json-schema@^1.1.0":
   version "1.1.0"
@@ -688,12 +688,9 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
-bootstrap@4.0.0-alpha.6:
-  version "4.0.0-alpha.6"
-  resolved "http://registry.npm.taobao.org/bootstrap/download/bootstrap-4.0.0-alpha.6.tgz#4f54dd33ac0deac3b28407bc2df7ec608869c9c8"
-  dependencies:
-    jquery ">=1.9.1"
-    tether "^1.4.0"
+bootstrap@4.0.0-beta:
+  version "4.0.0-beta"
+  resolved "http://registry.npm.taobao.org/bootstrap/download/bootstrap-4.0.0-beta.tgz#dc5928175d2e71310bc668cf9e05a907211b72a6"
 
 brace-expansion@^1.1.7:
   version "1.1.8"
@@ -3121,7 +3118,7 @@ jquery-mousewheel@>=3.0.6, jquery-mousewheel@~3.1.13:
   version "3.1.13"
   resolved "http://registry.npm.taobao.org/jquery-mousewheel/download/jquery-mousewheel-3.1.13.tgz#06f0335f16e353a695e7206bf50503cb523a6ee5"
 
-jquery@3.2.1, "jquery@>= 1.9.1", jquery@>=1.4.4, jquery@>=1.9.1:
+jquery@3.2.1, "jquery@>= 1.9.1", jquery@>=1.4.4:
   version "3.2.1"
   resolved "http://registry.npm.taobao.org/jquery/download/jquery-3.2.1.tgz#5c4d9de652af6cd0a770154a631bba12b015c787"
 
@@ -5425,10 +5422,6 @@ tar@^2.0.0, tar@^2.2.1:
     block-stream "*"
     fstream "^1.0.2"
     inherits "2"
-
-tether@^1.4.0:
-  version "1.4.0"
-  resolved "http://registry.npm.taobao.org/tether/download/tether-1.4.0.tgz#0f9fa171f75bf58485d8149e94799d7ae74d1c1a"
 
 through@X.X.X, through@~2.3.4, through@~2.3.8:
   version "2.3.8"

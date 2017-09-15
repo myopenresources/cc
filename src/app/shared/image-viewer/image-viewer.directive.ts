@@ -6,8 +6,7 @@ declare var $: any;
  * 图片查看器
  */
 @Directive({
-    selector: '[c-image-viewer]',
-    exportAs: 'viewer'
+    selector: '[c-image-viewer]'
 })
 export class ImageViewerDirective  implements AfterViewInit,OnDestroy{
     

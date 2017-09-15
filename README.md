@@ -133,7 +133,7 @@
 2. yarn install                                <---- 安装
 
 
-## 开发服务器
+## 启动
 1. cd E:\project\cc                            <---- 进入到项目所在的目录
 2. npm start                                   <---- 使用npm命令运行
 3. 浏览器中输入`http://localhost:4200/`         <---- 本机访问

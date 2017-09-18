@@ -10,6 +10,7 @@ import { ImageCropperModule } from 'ng2-img-cropper';
 import { SelectModule } from 'angular2-select';
 import { Select2Module } from 'ng2-select2';
 import {FileUploadModule } from 'ng2-file-upload';
+import {DpDatePickerModule} from 'ng2-date-picker';
 
 import {DemoComponent} from './demo.component';
 import {ToastDemoComponent} from './toast-demo.component';
@@ -40,6 +41,7 @@ import { DemoRoutingModule  } from './demo-routing.module';
 
 
 
+
 @NgModule({
   imports:      [
      CommonModule, 
@@ -54,7 +56,8 @@ import { DemoRoutingModule  } from './demo-routing.module';
      SelectModule,
      Select2Module,
      FileUploadModule,
-     DemoRoutingModule
+     DemoRoutingModule,
+     DpDatePickerModule
   ],
   declarations: [
      DemoComponent,

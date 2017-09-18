@@ -23,6 +23,7 @@ import { AppService } from '../app.service';
                   </span>
                 </div>
                 <ngb-timepicker [(ngModel)]="time" [size]="'small'"></ngb-timepicker>
+                <input [(ngModel)]="selectedDate" [dpDayPicker]="datePickerConfig" [theme]="'dp-material'" [mode]="'daytime'"  class="form-control" placeholder="yyyy-mm-dd" />
               </div>
           </div>
         </div>
@@ -41,6 +42,11 @@ import { AppService } from '../app.service';
 export class DatepickerDemoComponent {
   model;
   time;
+  selectedDate;
+  datePickerConfig={
+    locale:'zh-CN'
+  }
+
 
   constructor(private appService: AppService) {
     this.appService.titleEventEmitter.emit("日期选择");

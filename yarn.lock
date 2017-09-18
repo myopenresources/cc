@@ -3643,6 +3643,10 @@ mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkd
   dependencies:
     minimist "0.0.8"
 
+moment@^2.17.1:
+  version "2.18.1"
+  resolved "http://registry.npm.taobao.org/moment/download/moment-2.18.1.tgz#c36193dd3ce1c2eed2adb7c802dbbc77a81b1c0f"
+
 ms@0.7.1:
   version "0.7.1"
   resolved "http://registry.npm.taobao.org/ms/download/ms-0.7.1.tgz#9cd13c03adbff25b65effde7ce864ee952017098"
@@ -3679,6 +3683,12 @@ ncname@1.0.x:
 negotiator@0.6.1:
   version "0.6.1"
   resolved "http://registry.npm.taobao.org/negotiator/download/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
+
+ng2-date-picker@^2.3.2:
+  version "2.3.2"
+  resolved "http://registry.npm.taobao.org/ng2-date-picker/download/ng2-date-picker-2.3.2.tgz#0f7b146e01bb818bbd6b3e6c3667b265bffc3314"
+  dependencies:
+    moment "^2.17.1"
 
 ng2-file-upload@1.2.1:
   version "1.2.1"

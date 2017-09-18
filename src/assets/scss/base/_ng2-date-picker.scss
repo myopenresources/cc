@@ -1,28 +1,60 @@
-
-.dp-material  .dp-popup {
-  box-shadow: none !important;
-  border-left: 0px  !important;;
-  border-right: 0px  !important;;
-  border-bottom: 0px  !important;;
-}
-
-.dp-calendar-nav-container{
-  border-bottom: 0px  !important;
-}
-
-
-.dp-calendar-day{
-  border-radius: 0px !important;
-}
-
-.dp-calendar-month{
-  border-radius: 0px !important;
-}
-
-.dp-time-select-control-up{
-  border-radius: 0px !important;
-}
-
-.dp-time-select-control-down{
-  border-radius: 0px !important;
+.dp-material {
+   border: 0px  !important;
+  .dp-popup {
+    box-shadow: none !important;
+    border: 1px solid $c-color-gary !important;
+    border-bottom: 0px  !important;
+  }
+  .dp-calendar-nav-container {
+    border: 0px  !important;
+  }
+  .dp-calendar-day {
+    border-radius: 0px !important;
+  }
+  .dp-calendar-month {
+    border-radius: 0px !important;
+  }
+  .dp-time-select-control-up {
+    border-radius: 0px !important;
+  }
+  .dp-time-select-control-down {
+    border-radius: 0px !important;
+  }
+  .dp-calendar-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border-left: 0px  !important;
+    border-right: 0px  !important;
+    border-bottom: 1px solid $c-color-gary !important;
+  }
+  .dp-selected {
+    background: $c-color-secondary !important;
+    &:hover {
+      background: $c-color-secondary !important;
+    }
+  }
+  .dp-calendar-weekday {
+    font-size: 14px  !important;
+    color: $c-color-light  !important;
+  }
+  .dp-calendar-day,.dp-calendar-weekday{
+    margin:2px;
+  }
+  .dp-current-day {
+    border: 1px solid $c-color-secondary !important;
+  }
+  .dp-months-row {
+    .dp-current-month {
+      border: 1px solid $c-color-secondary !important;
+    }
+  }
+  .dp-time-select-control{
+    margin:2px;
+  }
+  .dp-time-select-controls{
+   border:0px !important;
+   border-bottom:1px solid $c-color-gary !important;
+  }
 }

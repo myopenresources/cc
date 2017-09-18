@@ -107,6 +107,8 @@
 35. 解决构建时使用--prod参数的报错问题,使用--prod --aot可提升性能，升级cc版本为0.0.3
 36. 升级angular版本，使用yarn进行包版本管理，升级cc版本为0.0.4
 37. 升级ng-bootstrap1.0.0-beta.4与bootstrap4.0.0-beta+scss版本，升级cc版本为0.0.5
+38. 添加ng2-date-picker组件<br/>
+    38.1 配置参考：https://github.com/vlio20/angular-datepicker
 
 
 

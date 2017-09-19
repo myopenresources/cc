@@ -35,8 +35,7 @@
 
 ## 鼓励
 1. 您的鼓励是我多大的动力，欢迎您的鼓励，谢谢！
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/zf/zfb.jpg)
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/zf/wx.jpg)
+![image](https://github.com/332557712/cc/blob/master/src/assets/img/zf/zf.png)
 
 ## 重大更新
 1. 搭建环境，分别加入ng-bootstrap1.0.0-alpha.25、bootstrap4.1.3、font-awesome4.7.0、animate.css3.5.2等，cc版本为0.0.1<br/>

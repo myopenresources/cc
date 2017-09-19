@@ -34,7 +34,7 @@
 
 
 ## 鼓励
-1. 您的鼓励是我多大的动力，欢迎您的鼓励，谢谢！<br/>
+1. 您的鼓励是我最大的动力，欢迎您的鼓励，谢谢！<br/>
 ![image](https://github.com/332557712/cc/blob/master/src/assets/img/zf/zf.png)
 
 ## 重大更新

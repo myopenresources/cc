@@ -185,6 +185,13 @@ export class MainComponent implements OnInit {
         "keyWord":"bootstrapDemo",
         "icon": 'fa-cubes',
         "url": '/app/demo/bootstrapDemo'
+      }, {
+        "id": "20",
+        "parentId": "1",
+        "name": "本地存储服务",
+        "keyWord":"storageDemo",
+        "icon": 'fa-database',
+        "url": '/app/demo/storageDemo'
       }]
 
      },  /*{

@@ -13,14 +13,15 @@ import { ToastConfig, ToastType } from '../shared/toast/toast-model';
 })
 export class LoginComponent implements OnInit {
 
-  /**
+ 
+  constructor(private router: Router, private toastService: ToastService, private httpService: HttpService) { }
+
+   /**
    * 初始化
    */
   ngOnInit() {
 
   }
-
-  constructor(private router: Router, private toastService: ToastService, private httpService: HttpService) { }
 
 
 

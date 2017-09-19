@@ -20,6 +20,10 @@ import {ToastComponent} from './shared/toast/toast.component';
 //http
 import { HttpService }   from './shared/http/http.service';
 
+//storage
+import { LocalStorageService } from './shared/storage/localStorage.service';
+import { SessionStorageService } from './shared/storage/sessionStorage.service';
+
 //spin
 import { SpinComponent} from './shared/spin/spin.component';
 import { SpinService } from './shared/spin/spin.service';
@@ -29,6 +33,7 @@ import  { AppRoutingModule } from './app-routing.module';
 
 //strategy
 import {SelectivePreloadingStrategy} from "./selective-preloading-strategy";
+
 
 
 
@@ -53,8 +58,19 @@ import {SelectivePreloadingStrategy} from "./selective-preloading-strategy";
     SpinComponent,
     PageNotFoundComponent
   ],
-  providers: [AppService,ToastService,HttpService,SpinService,SelectivePreloadingStrategy],
-  exports:[ToastBoxComponent,SpinComponent],
+  providers: [
+    AppService,
+    ToastService,
+    HttpService,
+    SpinService,
+    LocalStorageService,
+    SessionStorageService,
+    SelectivePreloadingStrategy
+  ],
+  exports:[
+    ToastBoxComponent,
+    SpinComponent
+  ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {}

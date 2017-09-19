@@ -24,6 +24,7 @@ import { ImageViewerDemoComponent } from './image-viewer-demo.component';
 import { SpinDemoComponent } from './spin-demo.component';
 import { NgBootstrapComponent } from './ng-bootstrap-demo.component';
 import { BootstrapComponent } from './bootstrap-demo.component';
+import { StorageDemoComponent } from './storage-demo.component';
 
 /**
  * demo路由
@@ -116,6 +117,10 @@ const demoRoutes: Routes = [
             {
                 path: 'bootstrapDemo',
                 component: BootstrapComponent
+            },
+            {
+                path: 'storageDemo',
+                component: StorageDemoComponent
             }
         ]
     }

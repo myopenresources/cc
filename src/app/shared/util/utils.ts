@@ -3,7 +3,6 @@ import { Injectable } from '@angular/core';
 /**
  * 工具
  */
-@Injectable()
 export class Utils {
     constructor() { }
 
@@ -135,7 +134,7 @@ export class Utils {
     }
 
   
-
+    
 
 
 

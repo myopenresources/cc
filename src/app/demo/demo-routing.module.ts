@@ -25,6 +25,7 @@ import { SpinDemoComponent } from './spin-demo.component';
 import { NgBootstrapComponent } from './ng-bootstrap-demo.component';
 import { BootstrapComponent } from './bootstrap-demo.component';
 import { StorageDemoComponent } from './storage-demo.component';
+import { PageBrowserDemoComponent } from './page-browser-demo.component';
 
 /**
  * demo路由
@@ -121,7 +122,13 @@ const demoRoutes: Routes = [
             {
                 path: 'storageDemo',
                 component: StorageDemoComponent
+            },
+            {
+                path: 'pageBrowserDemo',
+                component: PageBrowserDemoComponent
             }
+
+            
         ]
     }
 ]

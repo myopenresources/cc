@@ -45,6 +45,10 @@ import {CustomScrollbarDirective} from './custom-scrollbar/custom-scrollbar.dire
 import {ImageViewerDirective} from './image-viewer/image-viewer.directive';
 
 
+//pageBrowser
+import {PageBrowserComponent} from './page-browser/page-browser.component';
+
+
 
 /**
  * 公共模块
@@ -72,7 +76,8 @@ import {ImageViewerDirective} from './image-viewer/image-viewer.directive';
      ImgSelectToBaseDirective,
      SwitchComponent,
      CustomScrollbarDirective,
-     ImageViewerDirective
+     ImageViewerDirective,
+     PageBrowserComponent
   ],
   providers:    [ModalService,DatepickerI18n,DatepickerI18nType],
   entryComponents : [ConfirmComponent,AlertComponent],
@@ -89,7 +94,8 @@ import {ImageViewerDirective} from './image-viewer/image-viewer.directive';
      ImgSelectToBaseDirective,
      SwitchComponent,
      CustomScrollbarDirective,
-     ImageViewerDirective
+     ImageViewerDirective,
+     PageBrowserComponent
   ]
 })
 export class SharedModule { }

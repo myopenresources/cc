@@ -119,6 +119,8 @@
 39. 添加localStorage.service与sessionStorage.service服务<br/>
     39.1 src/app/shared/storage/localStorage.service.ts<br/>
     39.2 src/app/shared/storage/sessionStorage.service.ts
+40. 添加page-browser.component组件<br/>
+    40.1 src/app/shared/page-browser/page-browser.component.ts
 
 
 

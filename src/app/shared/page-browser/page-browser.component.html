@@ -1,0 +1,9 @@
+<div class="c-page-browser">
+    <div class="c-page-browser-header">
+         <span [hidden]="options.title===''">当前访问：{{options.title}}</span>
+         <button class="btn btn-light c-not-shadow pull-right" title="刷新" type="button" (click)="reloadPage();">
+            <i class="fa fa-refresh"></i>
+        </button>
+    </div>
+    <iframe  class="c-page-browser-iframe" [src]="options.secUrl" ></iframe>
+</div>

@@ -1,0 +1,36 @@
+.c-page-browser {
+  background-color: $c-color-white;
+  border: 0px;
+  border-radius: 1px;
+  -webkit-box-shadow: $c-box-shadow;
+  box-shadow: $c-box-shadow;
+  -moz-box-shadow: $c-box-shadow;
+  height: calc(100vh-91px);
+  height: -moz-calc(100vh - 91px);
+  height: -webkit-calc(100vh - 91px);
+  height: calc(100vh - 91px);
+}
+.c-page-browser-header {
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px solid $c-color-gray-deep;
+  color: $c-color-black-secondary;
+  padding-bottom: 8px;
+  span {
+    color: 14px;
+    padding-left: 15px;
+  }
+  button {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+}
+.c-page-browser-iframe {
+  width: 100%;
+  height: calc(100% - 45px);
+  height: -moz-calc(100% - 45px);
+  height: -webkit-calc(100% - 45px);
+  height: calc(100% - 45px);
+  overflow: hidden;
+  border: none;
+}

@@ -192,6 +192,13 @@ export class MainComponent implements OnInit {
         "keyWord":"storageDemo",
         "icon": 'fa-database',
         "url": '/app/demo/storageDemo'
+      }, {
+        "id": "20",
+        "parentId": "1",
+        "name": "页面浏览器",
+        "keyWord":"pageBrowserDemo",
+        "icon": 'fa-circle-thin',
+        "url": '/app/demo/pageBrowserDemo'
       }]
 
      },  /*{

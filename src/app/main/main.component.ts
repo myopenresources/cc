@@ -193,12 +193,19 @@ export class MainComponent implements OnInit {
         "icon": 'fa-database',
         "url": '/app/demo/storageDemo'
       }, {
-        "id": "20",
+        "id": "21",
         "parentId": "1",
         "name": "页面浏览器",
         "keyWord":"pageBrowserDemo",
         "icon": 'fa-circle-thin',
         "url": '/app/demo/pageBrowserDemo'
+      }, {
+        "id": "22",
+        "parentId": "1",
+        "name": "富文本编辑器",
+        "keyWord":"editorDemo",
+        "icon": 'fa-file-o',
+        "url": '/app/demo/editorDemo'
       }]
 
      },  /*{

@@ -48,6 +48,12 @@ import {ImageViewerDirective} from './image-viewer/image-viewer.directive';
 //pageBrowser
 import {PageBrowserComponent} from './page-browser/page-browser.component';
 
+// 
+import {HeaderTpl} from './common-tpl/common-tpl';
+
+import {EditorComponent} from './editor/editor.component';
+
+
 
 
 /**
@@ -77,7 +83,9 @@ import {PageBrowserComponent} from './page-browser/page-browser.component';
      SwitchComponent,
      CustomScrollbarDirective,
      ImageViewerDirective,
-     PageBrowserComponent
+     PageBrowserComponent,
+     HeaderTpl,
+     EditorComponent
   ],
   providers:    [ModalService,DatepickerI18n,DatepickerI18nType],
   entryComponents : [ConfirmComponent,AlertComponent],
@@ -95,7 +103,9 @@ import {PageBrowserComponent} from './page-browser/page-browser.component';
      SwitchComponent,
      CustomScrollbarDirective,
      ImageViewerDirective,
-     PageBrowserComponent
+     PageBrowserComponent,
+     HeaderTpl,
+     EditorComponent
   ]
 })
 export class SharedModule { }

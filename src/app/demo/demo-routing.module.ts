@@ -26,6 +26,7 @@ import { NgBootstrapComponent } from './ng-bootstrap-demo.component';
 import { BootstrapComponent } from './bootstrap-demo.component';
 import { StorageDemoComponent } from './storage-demo.component';
 import { PageBrowserDemoComponent } from './page-browser-demo.component';
+import { EditorDemoComponent } from './editor-demo.component';
 
 /**
  * demo路由
@@ -126,9 +127,11 @@ const demoRoutes: Routes = [
             {
                 path: 'pageBrowserDemo',
                 component: PageBrowserDemoComponent
-            }
-
-            
+            },
+            {
+                path: 'editorDemo',
+                component: EditorDemoComponent
+            }            
         ]
     }
 ]

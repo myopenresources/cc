@@ -5,6 +5,7 @@ import { AppService } from '../app.service';
 import { SwitchTheme } from '../shared/switch/switch-model';
 
 
+
 @Component({
   selector: 'c-switch-demo',
   template: `

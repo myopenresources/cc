@@ -36,6 +36,7 @@ import { NgBootstrapComponent } from './ng-bootstrap-demo.component';
 import { BootstrapComponent } from './bootstrap-demo.component';
 import { StorageDemoComponent } from './storage-demo.component';
 import { PageBrowserDemoComponent } from './page-browser-demo.component';
+import { EditorDemoComponent } from './editor-demo.component';
 
 import { DemoRoutingModule  } from './demo-routing.module';
 
@@ -85,7 +86,8 @@ import { DemoRoutingModule  } from './demo-routing.module';
      NgBootstrapComponent,
      BootstrapComponent,
      StorageDemoComponent,
-     PageBrowserDemoComponent
+     PageBrowserDemoComponent,
+     EditorDemoComponent
   ],
   exports:      [ 
   ],

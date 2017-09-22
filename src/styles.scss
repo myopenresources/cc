@@ -7,6 +7,9 @@
 @import '../node_modules/ztree/css/metroStyle/metroStyle.css';
 @import '../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css';
 @import '../node_modules/imageviewer/dist/viewer.min.css';
+@import '../node_modules/quill/dist/quill.core.css';
+@import '../node_modules/quill/dist/quill.snow.css';
+
 //bootstrap
 @import "./assets/scss/base/bootstrap-variables.scss";
 @import '../node_modules/bootstrap/scss/bootstrap.scss'; 
@@ -27,6 +30,7 @@
 @import './assets/scss/base/mCustomScrollbar.scss';
 @import './assets/scss/base/viewer.scss';
 @import './assets/scss/base/_ng2-date-picker.scss';
+@import './assets/scss/base/quill.scss';
 
 //模块样式
 @import './assets/scss/login/login.scss';

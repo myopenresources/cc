@@ -1,0 +1,47 @@
+<div  [class]="styleClass">
+    <div class="c-editor-toolbar" *ngIf="toolbar">
+        <ng-content select="c-header-tpl"></ng-content>
+    </div>
+    <div class="c-editor-toolbar" *ngIf="!toolbar">
+        <span class="ql-formats">
+            <select class="ql-header">
+                <option value="1">标题</option>
+                <option value="2">副标题</option>
+                <option selected>正常</option>
+            </select>
+            <select class="ql-font">
+                <option selected>Sans Serif</option>
+                <option value="serif">Serif</option>
+                <option value="monospace">Monospace</option>
+            </select>
+        </span>
+        <span class="ql-formats">
+            <button class="ql-bold" aria-label="Bold"></button>
+            <button class="ql-italic" aria-label="Italic"></button>
+            <button class="ql-underline" aria-label="Underline"></button>
+        </span>
+        <span class="ql-formats">
+            <select class="ql-color"></select>
+            <select class="ql-background"></select>
+        </span>
+        <span class="ql-formats">
+            <button class="ql-list" value="ordered" aria-label="Ordered List"></button>
+            <button class="ql-list" value="bullet" aria-label="Unordered List"></button>
+            <select class="ql-align">
+                <option selected></option>
+                <option value="center"></option>
+                <option value="right"></option>
+                <option value="justify"></option>
+            </select>
+        </span>
+        <span class="ql-formats">
+            <button class="ql-link" aria-label="Insert Link"></button>
+            <button class="ql-image" aria-label="Insert Image"></button>
+            <button class="ql-code-block" aria-label="Insert Code Block"></button>
+        </span>
+        <span class="ql-formats">
+            <button class="ql-clean" aria-label="Remove Styles"></button>
+        </span>
+    </div>
+    <div class="c-editor-content" [ngStyle]="style"></div>
+</div>

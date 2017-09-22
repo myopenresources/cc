@@ -121,6 +121,8 @@
     39.2 src/app/shared/storage/sessionStorage.service.ts
 40. 添加page-browser.component组件<br/>
     40.1 src/app/shared/page-browser/page-browser.component.ts
+41. 添加editor.component组件<br/>
+    41.1 src/app/shared/editor/editor.component.ts
 
 
 

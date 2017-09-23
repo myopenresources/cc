@@ -124,6 +124,8 @@
 41. 添加editor.component组件<br/>
     41.1 src/app/shared/editor/editor.component.ts<br/>
     41.2 配置参考：https://quilljs.com/docs/modules/toolbar/
+42. 将shared目录中的共享模块按具体模块拆分，升级cc版本为0.0.6<br/>
+
 
 
 

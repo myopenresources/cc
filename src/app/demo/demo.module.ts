@@ -5,12 +5,27 @@ import { HttpModule }    from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {NgxChartsModule} from '@swimlane/ngx-charts';
 import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
-import  { SharedModule }       from '../shared/shared.module';
 import { ImageCropperModule } from 'ng2-img-cropper';
 import { SelectModule } from 'angular2-select';
 import { Select2Module } from 'ng2-select2';
 import {FileUploadModule } from 'ng2-file-upload';
 import {DpDatePickerModule} from 'ng2-date-picker';
+
+import  { EditorModule }       from '../shared/editor/editor.module'; //富文本
+import  { CommonTplModule}       from '../shared/common-tpl/common-tpl.module'; //公共模版
+import  { HierarchyViewModule}       from '../shared/hierarchy-view/hierarchy-view.module'; //层次图
+import  { CustomScrollbarModule}       from '../shared/custom-scrollbar/custom-scrollbar.module';//滚动条
+import  { PaginationModule}       from '../shared/pagination/pagination.module';//分页
+import  { DatepickerI18nModule}       from '../shared/datepickerI18n/datepickerI18n.module';//日期i18n
+import  { ImgCropperSelectModule}       from '../shared/img-cropper-select/img-cropper-select.module';//图片裁剪模块
+import  { TreeModule}            from '../shared/tree/tree.module';//树
+import  { ZtreeModule}            from '../shared/ztree/ztree.module';//ztree
+import  { ImgSelectModule}            from '../shared/img-select/img-select.module';//图片选择
+import  { SwitchModule}            from '../shared/switch/switch.module';//开关
+import  { PageBrowserModule}            from '../shared/page-browser/page-browser.module';//页面浏览器
+import  { ImageViewerModule}            from '../shared/image-viewer/image-viewer.module';//图片查看器
+import  { ModalModule}            from '../shared/modal/modal.module';//模态框
+
 
 import {DemoComponent} from './demo.component';
 import {ToastDemoComponent} from './toast-demo.component';
@@ -54,13 +69,26 @@ import { DemoRoutingModule  } from './demo-routing.module';
      NgbModule,
      NgxChartsModule,
      MultiselectDropdownModule,
-     SharedModule,
      ImageCropperModule,
      SelectModule,
      Select2Module,
      FileUploadModule,
      DemoRoutingModule,
-     DpDatePickerModule
+     DpDatePickerModule,
+     EditorModule,
+     CommonTplModule,
+     HierarchyViewModule,
+     CustomScrollbarModule,
+     PaginationModule,
+     DatepickerI18nModule,
+     ImgCropperSelectModule,
+     TreeModule,
+     ZtreeModule,
+     ImgSelectModule,
+     SwitchModule,
+     PageBrowserModule,
+     ImageViewerModule,
+     ModalModule
   ],
   declarations: [
      DemoComponent,

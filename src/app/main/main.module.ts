@@ -3,8 +3,9 @@ import { CommonModule }       from '@angular/common';
 import { FormsModule }        from '@angular/forms';
 import { Routes, RouterModule} from "@angular/router";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import  { SharedModule }       from '../shared/shared.module';
 import  { UserSharedModule }       from '../business-shared/user/user-shared.module';
+import  { CustomScrollbarModule}       from '../shared/custom-scrollbar/custom-scrollbar.module';
+import  { ModalModule}            from '../shared/modal/modal.module';
 
 import { MainComponent }   from './main.component';
 import { SidebarMenuComponent }   from './sidebar-menu.component';
@@ -24,8 +25,9 @@ import { MainRoutingModule } from './main-routing.module';
      FormsModule,
      NgbModule,
      MainRoutingModule,
-     SharedModule,
-     UserSharedModule
+     UserSharedModule,
+     CustomScrollbarModule,
+     ModalModule
   ],
   declarations: [
      MainComponent,

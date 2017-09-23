@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule }       from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import  { SharedModule }       from '../shared/shared.module';
+import  { PaginationModule}       from '../shared/pagination/pagination.module';
 
 import { UserRoutingModule } from './user-routing.module';
 import { UserComponent } from './user.component';
@@ -16,7 +16,7 @@ import { UserInfoComponent} from './user-info.component';
     CommonModule,
     FormsModule,
     UserRoutingModule,
-    SharedModule
+    PaginationModule
   ],
   declarations: [
     UserComponent,

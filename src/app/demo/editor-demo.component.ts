@@ -43,6 +43,7 @@ import { AppService } from '../app.service';
 })
 export class EditorDemoComponent {
   text: string='这里面是内容..';
+  text2:string='这里面是内容..';
 
    constructor(private appService: AppService) {
     

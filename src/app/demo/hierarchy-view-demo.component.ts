@@ -279,7 +279,7 @@ export class HierarchyViewDemoComponent {
           }, {
             id: '8',
             name: '其它省份略',
-            cls: 'bg-inverse text-white',
+            cls: 'bg-info text-white',
             clickEnable: false
           }
         ]

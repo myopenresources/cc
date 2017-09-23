@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule }       from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import  { SharedModule }       from '../shared/shared.module';
+import  { PaginationModule}       from '../shared/pagination/pagination.module';
 
 import { RoleRoutingModule } from './role-routing.module';
 import { RoleComponent } from './role.component';
@@ -15,7 +15,7 @@ import { RoleListComponent } from './role-list.component';
     CommonModule,
     FormsModule,
     RoleRoutingModule,
-    SharedModule
+    PaginationModule
   ],
   declarations: [
     RoleComponent,

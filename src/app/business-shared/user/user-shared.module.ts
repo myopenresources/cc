@@ -2,7 +2,7 @@ import { NgModule }   from '@angular/core';
 import { CommonModule }       from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ImageCropperModule } from 'ng2-img-cropper';
-import  { SharedModule }       from '../../shared/shared.module';
+import  { ImgCropperSelectModule}       from '../../shared/img-cropper-select/img-cropper-select.module';
 
 import { AvatarCropperComponent} from './avatar-cropper.component';
 import { PasswordEditComponent} from './password-edit.component';
@@ -17,7 +17,7 @@ import { PasswordEditComponent} from './password-edit.component';
      NgbModule,
      CommonModule,
      ImageCropperModule,
-     SharedModule
+     ImgCropperSelectModule
   ],
   declarations: [
      AvatarCropperComponent,

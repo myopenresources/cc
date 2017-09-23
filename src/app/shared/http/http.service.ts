@@ -15,7 +15,6 @@ export class HttpService {
     constructor(private http: Http,private spinService:SpinService) {}
 
     public request(url: string, options: RequestOptionsArgs, success: Function, error: Function): any {
-        url = Utils.replaceUrl(url);
         this.spinService.spin(true);
         this.http.request(url, options).subscribe(res => {
             this.spinService.spin(false);

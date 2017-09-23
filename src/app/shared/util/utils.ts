@@ -44,7 +44,13 @@ export class Utils {
     * @returns {string}
     */
     static replaceUrl(url) {
-        return 'http://' + url.substring(7).replace(/\/\//g, '/');
+        if(-1!=url.indexOf('http://')){
+            return 'http://' + url.substring(7).replace(/\/\//g, '/');
+        }else if(-1!=url.indexOf('https://')){
+            return 'https://' + url.substring(8).replace(/\/\//g, '/');
+        }else{
+            return url;
+        }
     }
 
     /**
@@ -116,7 +122,7 @@ export class Utils {
      *  @returns {string}
      */
     static UUID(): string {
-        return 'xxxxxxxx-xxxx-6xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+        return 'xxxxxxxx-xxxx-6xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,  (c)=> {
             var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
             return v.toString(16);
         });
@@ -127,7 +133,7 @@ export class Utils {
      *  @returns {string}
      */
     static shortUUID(): string {
-        return 'xx-6xy'.replace(/[xy]/g, function (c) {
+        return 'xx-6xy'.replace(/[xy]/g, (c)=> {
             var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
             return v.toString(6);
         });

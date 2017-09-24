@@ -206,6 +206,13 @@ export class MainComponent implements OnInit {
         "keyWord":"editorDemo",
         "icon": 'fa-file-o',
         "url": '/app/demo/editorDemo'
+      }, {
+        "id": "23",
+        "parentId": "1",
+        "name": "ag-grid",
+        "keyWord":"agGridDemo",
+        "icon": 'fa-table',
+        "url": '/app/demo/agGridDemo'
       }]
 
      },  /*{

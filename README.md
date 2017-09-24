@@ -125,6 +125,8 @@
     41.1 src/app/shared/editor/editor.component.ts<br/>
     41.2 配置参考：https://quilljs.com/docs/modules/toolbar/
 42. 将shared目录中的共享模块按具体模块拆分，升级cc版本为0.0.6<br/>
+43. 添加第三方ag-grid组件<br/>
+    43.1 配置参考:https://www.ag-grid.com/angular-getting-started/?framework=angular
 
 
 

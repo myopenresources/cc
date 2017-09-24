@@ -32,11 +32,14 @@ import  { AppService }   from '../app.service';
 })
 export class ModalDemoComponent {
 
-
   constructor(private modalService: ModalService,private appService:AppService) {
       this.appService.titleEventEmitter.emit("模态框");
   }
 
+
+  onGridReady(params) {
+    params.api.sizeColumnsToFit();
+}
 
 
   openInfo() {

@@ -22,11 +22,12 @@ import { FileUploadDemoComponent } from './file-upload-demo.component';
 import { CustomScrollbarDemoComponent } from './custom-scrollbar-demo.component';
 import { ImageViewerDemoComponent } from './image-viewer-demo.component';
 import { SpinDemoComponent } from './spin-demo.component';
-import { NgBootstrapComponent } from './ng-bootstrap-demo.component';
-import { BootstrapComponent } from './bootstrap-demo.component';
+import { NgBootstrapDemoComponent } from './ng-bootstrap-demo.component';
+import { BootstrapDemoComponent } from './bootstrap-demo.component';
 import { StorageDemoComponent } from './storage-demo.component';
 import { PageBrowserDemoComponent } from './page-browser-demo.component';
 import { EditorDemoComponent } from './editor-demo.component';
+import { AgGridDemoComponent } from './ag-grid-demo.component';
 
 /**
  * demo路由
@@ -114,11 +115,11 @@ const demoRoutes: Routes = [
             },
             {
                 path: 'ngBootstrapDemo',
-                component: NgBootstrapComponent
+                component: NgBootstrapDemoComponent
             },
             {
                 path: 'bootstrapDemo',
-                component: BootstrapComponent
+                component: BootstrapDemoComponent
             },
             {
                 path: 'storageDemo',
@@ -131,6 +132,10 @@ const demoRoutes: Routes = [
             {
                 path: 'editorDemo',
                 component: EditorDemoComponent
+            },
+            {
+                path: 'agGridDemo',
+                component: AgGridDemoComponent
             }            
         ]
     }

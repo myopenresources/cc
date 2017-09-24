@@ -2,6 +2,8 @@ import { NgModule }   from '@angular/core';
 import { CommonModule }       from '@angular/common';
 import { FormsModule,ReactiveFormsModule }        from '@angular/forms';
 import { HttpModule }    from '@angular/http';
+
+//第三方
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {NgxChartsModule} from '@swimlane/ngx-charts';
 import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
@@ -10,7 +12,9 @@ import { SelectModule } from 'angular2-select';
 import { Select2Module } from 'ng2-select2';
 import {FileUploadModule } from 'ng2-file-upload';
 import {DpDatePickerModule} from 'ng2-date-picker';
+import {AgGridModule} from "ag-grid-angular/main";
 
+//自定义
 import  { EditorModule }       from '../shared/editor/editor.module'; //富文本
 import  { CommonTplModule}       from '../shared/common-tpl/common-tpl.module'; //公共模版
 import  { HierarchyViewModule}       from '../shared/hierarchy-view/hierarchy-view.module'; //层次图
@@ -25,6 +29,9 @@ import  { SwitchModule}            from '../shared/switch/switch.module';//开�
 import  { PageBrowserModule}            from '../shared/page-browser/page-browser.module';//页面浏览器
 import  { ImageViewerModule}            from '../shared/image-viewer/image-viewer.module';//图片查看器
 import  { ModalModule}            from '../shared/modal/modal.module';//模态框
+
+//路由
+import { DemoRoutingModule  } from './demo-routing.module';
 
 
 import {DemoComponent} from './demo.component';
@@ -47,13 +54,13 @@ import {FileUploadDemoComponent} from './file-upload-demo.component';
 import { CustomScrollbarDemoComponent } from './custom-scrollbar-demo.component';
 import { ImageViewerDemoComponent } from './image-viewer-demo.component';
 import { SpinDemoComponent } from './spin-demo.component';
-import { NgBootstrapComponent } from './ng-bootstrap-demo.component';
-import { BootstrapComponent } from './bootstrap-demo.component';
+import { NgBootstrapDemoComponent } from './ng-bootstrap-demo.component';
+import { BootstrapDemoComponent } from './bootstrap-demo.component';
 import { StorageDemoComponent } from './storage-demo.component';
 import { PageBrowserDemoComponent } from './page-browser-demo.component';
 import { EditorDemoComponent } from './editor-demo.component';
+import { AgGridDemoComponent } from './ag-grid-demo.component';
 
-import { DemoRoutingModule  } from './demo-routing.module';
 
 
 
@@ -88,7 +95,8 @@ import { DemoRoutingModule  } from './demo-routing.module';
      SwitchModule,
      PageBrowserModule,
      ImageViewerModule,
-     ModalModule
+     ModalModule,
+     AgGridModule.withComponents([])
   ],
   declarations: [
      DemoComponent,
@@ -111,11 +119,12 @@ import { DemoRoutingModule  } from './demo-routing.module';
      CustomScrollbarDemoComponent,
      ImageViewerDemoComponent,
      SpinDemoComponent,
-     NgBootstrapComponent,
-     BootstrapComponent,
+     NgBootstrapDemoComponent,
+     BootstrapDemoComponent,
      StorageDemoComponent,
      PageBrowserDemoComponent,
-     EditorDemoComponent
+     EditorDemoComponent,
+     AgGridDemoComponent
   ],
   exports:      [ 
   ],

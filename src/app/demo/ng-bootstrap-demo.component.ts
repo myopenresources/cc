@@ -7,7 +7,7 @@ import  { AppService }   from '../app.service';
   selector: 'c-ng-bootstrap-demo',
   templateUrl:'./ng-bootstrap-demo.component.html'
 })
-export class NgBootstrapComponent {
+export class NgBootstrapDemoComponent {
   model = {
     left: true,
     middle: false,

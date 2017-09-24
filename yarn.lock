@@ -263,6 +263,14 @@ after@0.8.2:
   version "0.8.2"
   resolved "http://registry.npm.taobao.org/after/download/after-0.8.2.tgz#fedb394f9f0e02aa9768e702bda23b505fae7e1f"
 
+ag-grid-angular@^13.2.0:
+  version "13.2.0"
+  resolved "http://registry.npm.taobao.org/ag-grid-angular/download/ag-grid-angular-13.2.0.tgz#f90b906c6195ed4ed9cc5336829c801c2b77c639"
+
+ag-grid@^13.2.0:
+  version "13.2.0"
+  resolved "http://registry.npm.taobao.org/ag-grid/download/ag-grid-13.2.0.tgz#575f61de166dae71bbd76994189a8b415a4df4c8"
+
 agent-base@2:
   version "2.1.1"
   resolved "http://registry.npm.taobao.org/agent-base/download/agent-base-2.1.1.tgz#d6de10d5af6132d5bd692427d46fc538539094c7"

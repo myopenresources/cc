@@ -1,0 +1,51 @@
+.ag-theme-material {
+	border: 1px solid $c-color-gary;
+    
+	.ag-header-cell-label{
+		color:$c-color-black-primary;
+	}
+	.ag-header-cell{
+		line-height: 40px;
+		height:40px;
+		
+	}
+	.ag-row{
+		line-height: 40px;
+		height:40px;
+	}
+
+	.ag-header-row{
+		line-height: 40px;
+		height:40px;
+	}
+
+	.ag-header-cell-resize::after{
+		height: 40px;
+		margin-top: 0px;
+	}
+	.ag-header-group-cell{
+		line-height: 40px;
+	}
+
+	.ag-header-cell-menu-button{
+		 .ag-icon-menu{
+            height: 40px;
+		 }
+	}
+	.ag-dnd-ghost {
+		line-height: 40px;
+		height: 40px;
+	}
+	.ag-tool-panel{ 
+		.ag-pivot-mode {
+			line-height: 40px;
+			height: 40px;
+	    }
+    }
+	.ag-paging-panel {
+		height: 40px;
+	}
+	.ag-cell:focus {
+		border: 1px solid $c-color-secondary;
+	}
+}

@@ -3710,9 +3710,9 @@ ng2-file-upload@1.2.1:
   version "1.2.1"
   resolved "http://registry.npm.taobao.org/ng2-file-upload/download/ng2-file-upload-1.2.1.tgz#5563c5dfd6f43fbfbe815c206e343464a0a6a197"
 
-ng2-img-cropper@0.7.7:
-  version "0.7.7"
-  resolved "http://registry.npm.taobao.org/ng2-img-cropper/download/ng2-img-cropper-0.7.7.tgz#159b4f2d7d70472f5aced628280115700bf6b24f"
+ng2-img-cropper@0.8.6:
+  version "0.8.6"
+  resolved "http://registry.npm.taobao.org/ng2-img-cropper/download/ng2-img-cropper-0.8.6.tgz#e709e8831e9ad847043b0ef52a1864a27243101d"
 
 ng2-select2@1.0.0-beta.10:
   version "1.0.0-beta.10"

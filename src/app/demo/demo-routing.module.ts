@@ -28,6 +28,7 @@ import { StorageDemoComponent } from './storage-demo.component';
 import { PageBrowserDemoComponent } from './page-browser-demo.component';
 import { EditorDemoComponent } from './editor-demo.component';
 import { AgGridDemoComponent } from './ag-grid-demo.component';
+import { SimpleDataTableDemoComponent } from './simple-data-table-demo.component';
 
 /**
  * demo路由
@@ -136,7 +137,12 @@ const demoRoutes: Routes = [
             {
                 path: 'agGridDemo',
                 component: AgGridDemoComponent
-            }            
+            },
+            {
+                path: 'simpleDataTableDemo',
+                component: SimpleDataTableDemoComponent
+            }  
+            
         ]
     }
 ]

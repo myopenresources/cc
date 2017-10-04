@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild } from '@angular/core';
 
 import { AppService } from '../app.service';
+
+import {SimpleDataHttpPageComponent} from '../shared/simple-data-table/simple-data-http-page.component';
 
 
 @Component({
@@ -8,8 +10,13 @@ import { AppService } from '../app.service';
   templateUrl: './ag-grid-demo.component.html'
 })
 export class AgGridDemoComponent {
-   rowData: any[];
-   columnDefs: any[];
+  rowData: any[];
+  columnDefs: any[];
+
+ 
+
+
+ 
 
 
   constructor(private appService: AppService) {
@@ -24,11 +31,15 @@ export class AgGridDemoComponent {
     ];
 
     this.rowData = [
-      { make: "Toyota", model: "Celica", price: 35000,aaa:'789456' },
-      { make: "Ford", model: "Mondeo", price: 32000,aaa:'0123456' },
-      { make: "Porsche", model: "Boxter", price: 72000,aaa:'123456' }
+      { make: "Toyota", model: "Celica", price: 35000, aaa: '789456' },
+      { make: "Ford", model: "Mondeo", price: 32000, aaa: '0123456' },
+      { make: "Porsche", model: "Boxter", price: 72000, aaa: '123456' }
     ]
   }
+
+
+  
+
 
 
 

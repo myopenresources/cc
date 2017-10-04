@@ -127,6 +127,10 @@
 42. 将shared目录中的共享模块按具体模块拆分，升级cc版本为0.0.6<br/>
 43. 添加第三方ag-grid组件<br/>
     43.1 配置参考:https://www.ag-grid.com/angular-getting-started/?framework=angular
+44. 添加simple-data-table.directive指令以及相关组件<br/>
+    44.1 src/app/shared/simple-data-table/simple-data-http-page.component<br/>
+    44.2 src/app/shared/simple-data-table/simple-data-sort.component<br/>
+    44.3 src/app/shared/simple-data-table/simple-data-table.directive
 
 
 

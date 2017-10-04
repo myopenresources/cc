@@ -29,6 +29,7 @@ import  { SwitchModule}            from '../shared/switch/switch.module';//开�
 import  { PageBrowserModule}            from '../shared/page-browser/page-browser.module';//页面浏览器
 import  { ImageViewerModule}            from '../shared/image-viewer/image-viewer.module';//图片查看器
 import  { ModalModule}            from '../shared/modal/modal.module';//模态框
+import  { SimpleDataTableModule}            from '../shared/simple-data-table/simple-data-table.module';//模态框
 
 //路由
 import { DemoRoutingModule  } from './demo-routing.module';
@@ -60,6 +61,7 @@ import { StorageDemoComponent } from './storage-demo.component';
 import { PageBrowserDemoComponent } from './page-browser-demo.component';
 import { EditorDemoComponent } from './editor-demo.component';
 import { AgGridDemoComponent } from './ag-grid-demo.component';
+import { SimpleDataTableDemoComponent } from './simple-data-table-demo.component';
 
 
 
@@ -96,7 +98,8 @@ import { AgGridDemoComponent } from './ag-grid-demo.component';
      PageBrowserModule,
      ImageViewerModule,
      ModalModule,
-     AgGridModule.withComponents([])
+     AgGridModule.withComponents([]),
+     SimpleDataTableModule
   ],
   declarations: [
      DemoComponent,
@@ -124,7 +127,8 @@ import { AgGridDemoComponent } from './ag-grid-demo.component';
      StorageDemoComponent,
      PageBrowserDemoComponent,
      EditorDemoComponent,
-     AgGridDemoComponent
+     AgGridDemoComponent,
+     SimpleDataTableDemoComponent
   ],
   exports:      [ 
   ],

@@ -93,7 +93,7 @@
         </div>
         <div class="col-md-4">
             <div class="form-group">
-                <button class="btn btn-primary" (click)="search();"><i class="fa fa-search fa-fw"></i> 查询</button>
+                <button class="btn btn-primary" (click)="search2();"><i class="fa fa-search fa-fw"></i> 查询</button>
             </div>
         </div>
     </div>
@@ -105,14 +105,14 @@
     <div class="row">
         <div class="col-md-12">
 
-            <div #sdt="simpleDataTable" c-simple-data-table>
+            <div #sdt2="simpleDataTable" c-simple-data-table>
                 <ul class="list-group">
-                    <li class="list-group-item" *ngFor="let item of sdt.data;let i = index">
+                    <li class="list-group-item" *ngFor="let item of sdt2.data;let i = index">
                         {{i+1}}，姓名：{{item.name}}，邮箱：{{item.email}}，年龄：{{item.age}}
                     </li>
                 </ul>
                 <div class="c-mt15">
-                    <c-simple-data-http-page #hp [url]="url" method="'post'" [param]="param" [pageList]="pageList" [btnCls]="btnCls"></c-simple-data-http-page>
+                    <c-simple-data-http-page #hp2 [url]="url2" method="'post'" [param]="param2" [pageList]="pageList2" [btnCls]="btnCls2"></c-simple-data-http-page>
                 </div>
 
             </div>

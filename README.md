@@ -6,25 +6,17 @@
 
 
 ## 界面展示
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-0.png =960x515)
+<img src="(https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-0.png" height="960" width="515" />
+<img src="(https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-1.png" height="960" width="515" />
+<img src="(https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-2.png" height="960" width="515" />
+<img src="(https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-3.png" height="960" width="515" />
+<img src="(https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-4.png" height="960" width="515" />
+<img src="(https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-5.png" height="960" width="515" />
+<img src="(https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-6.png" height="960" width="515" />
+<img src="(https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-7.png" height="960" width="515" />
+<img src="(https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-8.png" height="960" width="515" />
+<img src="(https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-9.png" height="960" width="515" />
 
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-1.png =960x515)
-
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-2.png =960x515)
-
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-3.png =960x515)
-
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-4.png =960x515)
-
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-5.png =960x515)
-
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-6.png =960x515)
-
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-7.png =960x515)
-
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-8.png =960x515)
-
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-9.png =960x515)
 <br/>
 <a href='https://github.com/332557712/cc/blob/master/src/assets/img/cc'>点击查看更多</a>
 

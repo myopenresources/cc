@@ -6,35 +6,27 @@
 
 
 ## 界面展示
-1. 登录界面<br/>
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-1.png)
+![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-0.png =960x515)
 
-2. 主页界面<br/>
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-2.png)
+![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-1.png =960x515)
 
-3. 头像更换<br/>
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-3.png)
+![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-2.png =960x515)
 
-4. 消息框<br/>
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-4.png)
+![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-3.png =960x515)
 
-5. 确认框<br/>
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-5.png)
+![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-4.png =960x515)
 
-6. 层次图<br/>
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-6.png)
+![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-5.png =960x515)
 
-7. 时间轴<br/>
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-7.png)
+![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-6.png =960x515)
 
-8. http分页<br/>
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-8.png)
+![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-7.png =960x515)
 
-9. 树与下拉树<br/>
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-9.png)
+![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-8.png =960x515)
 
-10. 更多略...
-
+![image](https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-9.png =960x515)
+<br/>
+<a href='https://github.com/332557712/cc/blob/master/src/assets/img/cc'>点击查看更多</a>
 
 ## 鼓励
 1. 您的鼓励是我最大的动力，欢迎您的鼓励，谢谢！<br/>

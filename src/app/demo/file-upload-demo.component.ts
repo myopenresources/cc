@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { AppService } from '../app.service';
 
 import { FileUploader } from 'ng2-file-upload';
- 
+
 // const URL = '/api/';
 const URL = 'https://evening-anchorage-3159.herokuapp.com/api/';
 
@@ -136,13 +136,17 @@ const URL = 'https://evening-anchorage-3159.herokuapp.com/api/';
         </div>
     </div>
   `,
-  styles:[`
+    styles: [`
     .my-drop-zone { border: dotted 3px lightgray; }
     .nv-file-over { border: dotted 3px red; }
     .another-file-over-class { border: dotted 3px green; }
   `]
 })
 export class FileUploadDemoComponent {
+
+    constructor(private appService: AppService) {
+        this.appService.titleEventEmitter.emit("文件上传");
+    }
 
     public uploader: FileUploader = new FileUploader({ url: URL });
     public hasBaseDropZoneOver: boolean = false;

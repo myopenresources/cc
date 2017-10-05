@@ -38,7 +38,7 @@ export class StorageDemoComponent {
 
   constructor(private appService: AppService,private lgs:LocalStorageService) {
     
-    this.appService.titleEventEmitter.emit("开关按钮");
+    this.appService.titleEventEmitter.emit("本地存储");
   }
 
   setVal(){

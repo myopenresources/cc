@@ -25,7 +25,7 @@ import  { AppService }   from '../app.service';
           <div  class="col-md-12">
             <div class="c-mt15">
                  <p class="c-line-title">说明</p>
-                 第三方组件:ng2-img-cropper
+                 组件目录:src/app/modules/shared/img-select
             </div>
           </div>
          </div>
@@ -39,6 +39,10 @@ export class ImgSelectToBaseDemoComponent {
       console.info(img);
       this.img=img;
   } 
+
+  constructor(private appService: AppService) {
+    this.appService.titleEventEmitter.emit("图片转换成base64");
+  }
  
 
     

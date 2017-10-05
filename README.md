@@ -131,6 +131,7 @@
     44.1 src/app/shared/simple-data-table/simple-data-http-page.component<br/>
     44.2 src/app/shared/simple-data-table/simple-data-sort.component<br/>
     44.3 src/app/shared/simple-data-table/simple-data-table.directive
+45. 补全各组件、指令、服务spec文件
 
 
 

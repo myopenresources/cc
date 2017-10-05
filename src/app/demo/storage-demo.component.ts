@@ -2,8 +2,8 @@ import { Component, OnInit,ViewChild } from '@angular/core';
 
 import { AppService } from '../app.service';
 
-import { LocalStorageService } from '../shared/storage/localStorage.service';
-import { SessionStorageService } from '../shared/storage/sessionStorage.service';
+import { LocalStorageService } from '../shared/storage/local-storage.service';
+import { SessionStorageService } from '../shared/storage/session-storage.service';
 
 @Component({
   selector: 'c-storage-demo',

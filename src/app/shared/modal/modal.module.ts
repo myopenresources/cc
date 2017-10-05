@@ -19,7 +19,7 @@ import { ModalService } from './modal.service';
      AlertComponent,
      ConfirmComponent
   ],
-  providers:    [ModalService],
+  providers:[ModalService],
   entryComponents:[
      AlertComponent,
      ConfirmComponent

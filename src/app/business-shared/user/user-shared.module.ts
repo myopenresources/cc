@@ -23,8 +23,8 @@ import { PasswordEditComponent} from './password-edit.component';
      AvatarCropperComponent,
      PasswordEditComponent
   ],
-  exports:      [],
   entryComponents:[AvatarCropperComponent,PasswordEditComponent],
+  exports:      [],
   providers:    []
 })
 export class UserSharedModule {

@@ -9,7 +9,7 @@ import  { MenuData }    from '../main/main-model';
   template: `
   <div class="c-nav-search">
       <div class="input-group">
-            <input type="text" class="form-control" placeholder="搜索菜单..." [(ngModel)]="searchTxt">
+            <input type="text" class="form-control" placeholder="搜索菜单..."  (input)="inputSearchTxt($event);">
             <span class="input-group-btn">
                <button class="btn btn-info c-not-shadow" type="button"  (click)="searchMenu();">
                    <i class="fa  fa-search fa-fw"></i>
@@ -159,6 +159,14 @@ export class SidebarMenuComponent implements OnInit {
       }
 
       return false;
+  }
+
+  /**
+   * 查询输入
+   * @param event 
+   */
+  inputSearchTxt(event){
+      this.searchTxt=event.target.value;
   }
 
   

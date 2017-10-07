@@ -124,7 +124,7 @@
     46.5 login：登录模块目录<br/>
     46.6 main：主体模块目录<br/>
     46.7 shared：公共组件共享目录
-47. 添加color-picker.component组件
+47. 添加color-picker.component组件<br/>
     47.1 src/app/shared/color-picker/color-picker.component.ts
     
 

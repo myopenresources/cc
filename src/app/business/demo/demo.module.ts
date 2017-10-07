@@ -30,6 +30,7 @@ import  { PageBrowserModule}            from '../../shared/page-browser/page-bro
 import  { ImageViewerModule}            from '../../shared/image-viewer/image-viewer.module';//图片查看器
 import  { ModalModule}            from '../../shared/modal/modal.module';//模态框
 import  { SimpleDataTableModule}            from '../../shared/simple-data-table/simple-data-table.module';//模态框
+import  { ColorPickerModule}            from '../../shared/color-picker/color-picker.module';//颜色选择器
 
 //路由
 import { DemoRoutingModule  } from './demo-routing.module';
@@ -62,6 +63,7 @@ import { PageBrowserDemoComponent } from './page-browser-demo.component';
 import { EditorDemoComponent } from './editor-demo.component';
 import { AgGridDemoComponent } from './ag-grid-demo.component';
 import { SimpleDataTableDemoComponent } from './simple-data-table-demo.component';
+import { ColorPickerDemoComponent } from './color-picker-demo.component';
 
 
 
@@ -99,7 +101,8 @@ import { SimpleDataTableDemoComponent } from './simple-data-table-demo.component
      ImageViewerModule,
      ModalModule,
      AgGridModule.withComponents([]),
-     SimpleDataTableModule
+     SimpleDataTableModule,
+     ColorPickerModule
   ],
   declarations: [
      DemoComponent,
@@ -128,7 +131,8 @@ import { SimpleDataTableDemoComponent } from './simple-data-table-demo.component
      PageBrowserDemoComponent,
      EditorDemoComponent,
      AgGridDemoComponent,
-     SimpleDataTableDemoComponent
+     SimpleDataTableDemoComponent,
+     ColorPickerDemoComponent
   ],
   exports:      [ 
   ],

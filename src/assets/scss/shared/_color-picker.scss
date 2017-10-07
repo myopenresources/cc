@@ -1,0 +1,94 @@
+.c-colorpicker {
+    display: inline-block;
+    box-sizing: border-box;
+    .c-inputtext {
+      background: $c-color-white;
+      color: $c-color-black-primary;
+      -webkit-transition: 0.2s;
+      -moz-transition: 0.2s;
+      transition: 0.2s;
+    }
+    .c-corner-all {
+      -moz-border-radius: 0px;
+      -webkit-border-radius: 0px;
+      border-radius: 0px;
+    }
+    .c-state-default {
+      border: 1px solid $c-color-gary;
+      background: $c-color-white;
+      color: $c-color-black-secondary;
+    }
+  }
+  .c-colorpicker-dragging {
+    cursor: pointer;
+  }
+  .c-colorpicker-overlay {
+    position: relative;
+  }
+  .c-colorpicker-panel {
+    position: relative;
+    width: 193px;
+    height: 166px;
+    background-color: $c-color-black-primary;
+    border-color: $c-color-gary;
+    .c-colorpicker-content {
+      position: relative;
+    }
+    .c-colorpicker-color-selector {
+      width: 150px;
+      height: 150px;
+      top: 8px;
+      left: 8px;
+      position: absolute;
+    }
+    .c-colorpicker-color {
+      width: 150px;
+      height: 150px;
+      background: transparent url("./assets/img/shared/color-picker/color.png") no-repeat left top;
+    }
+    .c-colorpicker-color-handle {
+      position: absolute;
+      top: 0px;
+      left: 150px;
+      border-radius: 100%;
+      width: 10px;
+      height: 10px;
+      border: 1px solid $c-color-white;
+      margin: -5px 0 0 -5px;
+      cursor: pointer;
+    }
+    .c-colorpicker-hue {
+      background: transparent url("./assets/img/shared/color-picker/hue.png") no-repeat left top;
+      width: 17px;
+      height: 150px;
+      top: 8px;
+      left: 167px;
+      position: absolute;
+      opacity: 0.85;
+    }
+    .c-colorpicker-hue-handle {
+      position: absolute;
+      top: 150px;
+      left: 0px;
+      width: 21px;
+      margin-left: -2px;
+      margin-top: -5px;
+      height: 10px;
+      border: 2px solid $c-color-white;
+      opacity: 0.85;
+      cursor: pointer;
+    }
+  }
+  .c-colorpicker-overlay-panel {
+    display: none;
+    position: absolute;
+  }
+  .c-colorpicker-preview {
+    width: 2em;
+    cursor: pointer;
+  }
+  .c-colorpicker-panel.c-state-disabled .c-colorpicker-hue-handle,
+   .c-colorpicker-panel.c-state-disabled .c-colorpicker-color-handle {
+    opacity: 0.5;
+  }
+  

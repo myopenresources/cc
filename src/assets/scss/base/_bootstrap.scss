@@ -172,6 +172,36 @@
 	color:$c-color-white;
 }
 
+.input-group-btn > .btn-primary {
+	border-color: $c-bootstrap-primary
+}
+
+.input-group-btn > .btn-success {
+	border-color: $c-bootstrap-success
+}
+
+.input-group-btn > .btn-warning {
+	border-color: $c-bootstrap-warning
+}
+
+.input-group-btn > .btn-danger {
+	border-color: $c-bootstrap-danger
+}
+
+.input-group-btn > .btn-info {
+	border-color: $c-bootstrap-info
+}
+
+.input-group-btn > .btn-secondary {
+	border-color: $c-bootstrap-secondary
+}
+
+
+.input-group-btn > .btn-dark {
+	border-color: $c-bootstrap-dark
+}
+
+
 //=================table=======================
 
 .table> thead>tr> th {

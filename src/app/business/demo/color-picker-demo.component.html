@@ -2,10 +2,30 @@
     <div class="row">
         <div class="col-md-12">
             <p class="c-line-title">示例</p>
-            <c-color-picker [(ngModel)]="color" inline="true"></c-color-picker><br/>
-            <c-color-picker [(ngModel)]="color"></c-color-picker><br/>
-            <c-color-picker [(ngModel)]="color2" format="rgb"></c-color-picker><br/>
-            <c-color-picker [(ngModel)]="color3" format="hsb"></c-color-picker><br/>
+
+            <div class="row c-mt15">
+                <div class="col-md-6">
+                    <c-color-picker [(ngModel)]="color" inline="true"></c-color-picker>
+                </div>
+                <div class="col-md-6">
+                    <c-color-picker [(ngModel)]="color"></c-color-picker><br/>
+                </div>
+            </div>
+
+            <div class="row c-mt15">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="请选择颜色..." [ngModel]="selectColor" readonly="readonly">
+                        <span class="input-group-addon">
+                            <c-color-picker [(ngModel)]="selectColor"></c-color-picker>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <c-color-picker [(ngModel)]="color3" format="hsb"></c-color-picker>
+                    <c-color-picker [(ngModel)]="color2" format="rgb"></c-color-picker>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row">

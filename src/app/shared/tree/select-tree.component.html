@@ -1,6 +1,5 @@
 <div class="input-group" [ngClass]="direction">
-    <input type="text" class="form-control" [ngModel]="names" placeholder="{{placeholder}}" readonly="readonly" style="background:#fff"
-    />
+    <input type="text" class="form-control" [ngModel]="names" placeholder="{{placeholder}}" readonly="readonly" style="background:#fff"/>
     <span class="input-group-btn">
         <button class="btn btn-info c-not-shadow" type="button"  (click)="isCollapsed = !isCollapsed">
             <i class="fa  fa-fw" [ngClass]="{'fa-chevron-left':isCollapsed,'fa-chevron-down':!isCollapsed}"></i>

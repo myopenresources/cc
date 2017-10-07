@@ -132,7 +132,7 @@
 1. 为避免冲突，应用css使用c-为前缀
 2. 为避免冲突，应用组件selector使用c-为前缀
 3. 目录、文件名命名使用小写字母，多个单词使用-间隔
-4. module结尾的为模块、component结尾的为组件、service结尾的为服务、directive结尾的为指令     
+4. module结尾的为模块、component结尾的为组件、service结尾的为服务、directive结尾的为指令、pipe结尾的为管道   
 5. 所有模块放在app目录下、所有资源文件放在assets目录下，所有scss文件按模块区分，放在assets/scss/modules下
 
 

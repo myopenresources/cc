@@ -305,7 +305,7 @@ export class MainComponent implements OnInit {
           "name": "角色分配",
           "keyWord":"jsfp",
           "icon": "fa-cogs",
-          "url": "userList"
+          "url": "/app/role/roleDis"
         }]
       }, {
         "id": "28",

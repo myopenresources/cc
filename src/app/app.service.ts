@@ -12,8 +12,4 @@ export class AppService {
     constructor() {
         this.titleEventEmitter = new EventEmitter();
     }
-
-    
-
-
 }

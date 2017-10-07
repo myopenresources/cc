@@ -116,11 +116,15 @@
     44.2 src/app/shared/simple-data-table/simple-data-sort.component<br/>
     44.3 src/app/shared/simple-data-table/simple-data-table.directive
 45. 补全各组件、指令、服务spec文件
-
-
-
-
-
+46. 整理目录，升级cc版本为0.0.7<br/>
+    46.1 business：业务功能目录<br/>
+    46.2 business-service：业务功能服务目录<br/>
+    46.3 business-shared：业务功能共享目录<br/>
+    46.4 error-page：错误页面目录<br/>
+    46.5 login：登录模块目录<br/>
+    46.6 main：主体模块目录<br/>
+    46.7 shared：公共组件共享目录<br/>
+    
 
 ## 规范
 1. 为避免冲突，应用css使用c-为前缀

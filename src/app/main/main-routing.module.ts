@@ -10,10 +10,10 @@ const mainRoutes: Routes = [
     path: '',
     component: MainComponent,
     children: [
-      { path: 'home', loadChildren: 'app/home/home.module#HomeModule' },
-      { path: 'demo', loadChildren: 'app/demo/demo.module#DemoModule' },
-      { path: 'user', loadChildren: 'app/user/user.module#UserModule' },
-      { path: 'role', loadChildren: 'app/role/role.module#RoleModule' }
+      { path: 'home', loadChildren: 'app/business/home/home.module#HomeModule' },
+      { path: 'demo', loadChildren: 'app/business/demo/demo.module#DemoModule' },
+      { path: 'user', loadChildren: 'app/business/user/user.module#UserModule' },
+      { path: 'role', loadChildren: 'app/business/role/role.module#RoleModule' }
     ]
   }
 ];

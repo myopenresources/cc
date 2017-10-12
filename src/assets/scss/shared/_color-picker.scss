@@ -29,8 +29,8 @@
     position: relative;
     width: 193px;
     height: 166px;
-    background-color: $c-color-black-primary;
-    border-color: $c-color-gary;
+    background-color: $c-color-gray-secondary;
+    border: 1px solid $c-color-gary;
     .c-colorpicker-content {
       position: relative;
     }
@@ -51,11 +51,15 @@
       top: 0px;
       left: 150px;
       border-radius: 100%;
-      width: 10px;
-      height: 10px;
+      width: 11px;
+      height: 11px;
       border: 1px solid $c-color-white;
       margin: -5px 0 0 -5px;
       cursor: pointer;
+      -webkit-box-shadow:1px 1px 1px $c-color-black-light inset;
+      -moz-box-shadow:1px 1px 1px $c-color-black-light inset;
+      box-shadow:1px 1px 1px $c-color-black-light inset;
+      opacity: 0.9;
     }
     .c-colorpicker-hue {
       background: transparent url("./assets/img/shared/color-picker/hue.png") no-repeat left top;
@@ -74,7 +78,7 @@
       margin-left: -2px;
       margin-top: -5px;
       height: 10px;
-      border: 2px solid $c-color-white;
+      border: 2px solid $c-color-black-primary;
       opacity: 0.85;
       cursor: pointer;
     }

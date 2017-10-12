@@ -1,0 +1,29 @@
+@import '../../../assets/scss/base/app-base.scss';
+
+.c-avatar-cut-box{
+    background: $c-color-gary;
+    width:600px;
+    height:380px;
+    float: left;
+ }
+ 
+ .c-avatar-preview-box{
+       width:150px;
+       height:380px;
+       float: left;
+     .c-avatar-title{
+       font-style: 16px;
+     }
+     .c-avatar-desc{
+       font-size: 14px;
+       color:$c-color-black-secondary
+     }
+     .c-avatar-img-lg{
+         width:90px;
+         height:90px;
+     }
+     .c-avatar-img-xs{
+         width:36px;
+         height:36px;
+      }
+ }

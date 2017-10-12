@@ -29,7 +29,8 @@ import  { MenuData }    from '../main/main-model';
         </li>
     </ul>
   </div>
-  `
+  `,
+  styleUrls:['./sidebar-menu.component.scss']
 })
 
 export class SidebarMenuComponent implements OnInit {

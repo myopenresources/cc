@@ -9,7 +9,8 @@ import {HierarchyViewNode} from './hierarchy-view-model'
  */
 @Component({
     selector : 'c-hierarchy-view-node',
-    templateUrl : './hierarchy-view-node.component.html'
+    templateUrl : './hierarchy-view-node.component.html',
+    styleUrls:['./hierarchy-view-node.component.scss']
 })
 export class HierarchyViewNodeComponent {
    

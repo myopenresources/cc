@@ -9,7 +9,8 @@ import {AlertConfig,AlertType} from './modal-model';
 @Component({
     selector : 'c-alert',
     templateUrl : './alert.component.html',
-    encapsulation : ViewEncapsulation.None
+    encapsulation : ViewEncapsulation.None,
+    styleUrls:['./alert.component.scss']
 })
 export class AlertComponent {
     @Input()

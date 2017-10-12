@@ -8,7 +8,8 @@ declare var $: any;
     template: `
        <div [hidden]="searchMsgHidden" class="c-ztree-search-box">搜索的数据不存在...</div>
        <div #ztree [hidden]="!searchMsgHidden"></div>
-  `
+  `,
+  styleUrls:['./ztree.component.scss']
 })
 export class ZtreeComponent implements AfterViewInit, OnDestroy, OnInit {
 

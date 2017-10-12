@@ -1,0 +1,18 @@
+@import '../../../assets/scss/base/app-base.scss';
+.c-tree-search-box {
+    padding: 10px;
+    color: $c-color-black-secondary;
+  }
+.c-tree {
+    font-size: 15px;
+    li {
+      list-style-type: none;
+      margin-left: -25px;
+      margin-top: 12px;
+      ul {
+        margin-left: 0px;
+      }
+    }
+    
+  }
+  

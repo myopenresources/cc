@@ -13,6 +13,7 @@ export const COLORPICKER_VALUE_ACCESSOR: any = {
 @Component({
   selector: 'c-color-picker',
   templateUrl: './color-picker.component.html',
+  styleUrls:['color-picker.component.scss'],
   animations: [
     trigger('panelState', [
       state('hidden', style({

@@ -9,7 +9,8 @@ import  { PasswordEditComponent} from '../../business-shared/user/password-edit.
 
 @Component({
   selector: 'c-home',
-  templateUrl: './home.component.html'
+  templateUrl: './home.component.html',
+  styleUrls:['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
 

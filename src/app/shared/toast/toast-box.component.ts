@@ -8,6 +8,7 @@ import {ToastConfig} from './toast-model';
 @Component({
   selector: 'c-toast-box',
   templateUrl : './toast-box.component.html',
+  styleUrls:['./toast-box.component.scss'],
   animations: [
     trigger('animation', [
       state('none', style({})),

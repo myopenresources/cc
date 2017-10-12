@@ -24,7 +24,8 @@ const C_SWITCH_CONTROL_VALUE_ACCESSOR: any = {
                 <span class="off" [hidden]="!offLabel">{{offLabel}}</span>
             </span>
           </span>
-       `,
+    `,
+    styleUrls:['./switch.component.scss'],
     providers: [C_SWITCH_CONTROL_VALUE_ACCESSOR]
 })
 export class SwitchComponent implements ControlValueAccessor {

@@ -1,0 +1,108 @@
+
+@import '../../assets/scss/base/app-base.scss';
+
+.c-nav-search {
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    input {
+      background-color: $c-color-secondary;
+      border: 1px solid $c-color-secondary;
+      color: $c-color-gray-deep;
+      font-size: 15px;
+      &:focus{
+         border: 1px solid $c-color-light;
+      }
+      &::-webkit-input-placeholder {
+        color: $c-color-gray-deep !important;
+      }
+      &:-moz-placeholder {
+        color: $c-color-gray-deep !important;
+      }
+      &::-moz-placeholder {
+        color: $c-color-gray-deep !important;
+      }
+      &:-ms-input-placeholder {
+        color: $c-color-gray-deep !important;
+      }
+    }
+    button {
+      color: $c-color-gray-deep;
+      background-color: $c-color-secondary;
+      font-size: 15px;
+      border: 1px solid $c-color-secondary;
+      -webkit-box-shadow:none;
+      -moz-box-shadow:none;
+      box-shadow: none;
+      &:focus{
+         border: 1px solid $c-color-light;
+      }
+    }
+  }
+
+  .c-nav {
+    margin-left: 0px;
+    height: -moz-calc(100vh - 265px);
+    height: -webkit-calc(100vh - 265px);
+    height: calc(100vh - 265px);
+    padding-left: 8px;
+    padding-right: 5px;
+    font-size: 15px;
+    .c-search-msg {
+      color: $c-color-gray-deep;
+      margin-left: 13px;
+    }
+    .c-sidebar-menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      a {
+        color: $c-color-gray-deep;
+        text-decoration: none;
+        border: 0px;
+      }
+      & > li {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        &:hover{
+          & >a{
+            color: $c-color-gray-deep;
+            border: 0px;
+          }
+        }
+        &.active{
+          & >a{
+            color: $c-color-gray-deep;
+            border: 0px;
+          }
+        }
+        & > a {
+          padding: 8px 5px 8px 15px;
+          display: block;
+          border-left: 3px solid transparent;
+          color: $c-color-gray-deep;
+          border: 0px;
+          &:hover {
+            color: $c-color-white;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            -moz-transition: 0.3s;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            cursor: pointer;
+            filter: alpha(opacity=35);
+            -moz-opacity: 0.35;
+            opacity: 0.35;
+            margin-left: 5px;
+          }
+          & > .fa {
+            width: 20px;
+          }
+        }
+       
+    }
+    }
+  }
+

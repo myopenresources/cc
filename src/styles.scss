@@ -19,44 +19,22 @@
 @import '../node_modules/bootstrap/scss/bootstrap-reboot.scss'; 
 
 
-
-
-
-/* ======以下是scss引入======*/
+/* ======以下是自定义scss引入======*/
 //公共样式
 @import './assets/scss/base/app-base.scss';
 @import './assets/scss/base/common.scss';
 
 //样式重写
-@import './assets/scss/base/bootstrap.scss';
-@import './assets/scss/base/ztree.scss';
-@import './assets/scss/base/select2-bootstrap.scss';
-@import './assets/scss/base/mCustomScrollbar.scss';
-@import './assets/scss/base/viewer.scss';
-@import './assets/scss/base/_ng2-date-picker.scss';
-@import './assets/scss/base/quill.scss';
-@import './assets/scss/base/ag-grid.scss';
-
-//模块样式
-@import './assets/scss/login/login.scss';
-@import './assets/scss/main/main.scss';
-@import './assets/scss/home/home.scss';
-@import './assets/scss/error-page/errorpage.scss';
-
-@import './assets/scss/shared/modal.scss';
-@import './assets/scss/shared/toast.scss';
-@import './assets/scss/shared/hierarchy-view.scss';
-@import './assets/scss/shared/spin.scss';
-@import './assets/scss/shared/tree.scss';
-@import './assets/scss/shared/ztree.scss';
-@import './assets/scss/shared/switch.scss';
-@import './assets/scss/shared/page-browser.scss';
-@import './assets/scss/shared/color-picker.scss';
+@import './assets/scss/overwrite/bootstrap.scss';
+@import './assets/scss/overwrite/ztree.scss';
+@import './assets/scss/overwrite/select2-bootstrap.scss';
+@import './assets/scss/overwrite/mCustomScrollbar.scss';
+@import './assets/scss/overwrite/viewer.scss';
+@import './assets/scss/overwrite/_ng2-date-picker.scss';
+@import './assets/scss/overwrite/quill.scss';
+@import './assets/scss/overwrite/ag-grid.scss';
 
 
-
-//示例样式
-@import './assets/scss/demo/demo.scss';
 
 
 

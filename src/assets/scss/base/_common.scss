@@ -223,6 +223,23 @@
 	font-weight: bold;
 }
 
+/*内容*/
+.c-content-inner{
+  background-color: $c-color-white;
+  border: 0px;
+  border-radius: 1px;
+  -webkit-box-shadow: $c-box-shadow;
+  box-shadow: $c-box-shadow;
+  -moz-box-shadow:  $c-box-shadow;
+  padding:15px;
+}
+.c-content-inner-not-bg{
+    border: 0px;
+    padding:0px;
+    width:100%;
+    height: 100%;
+}
+
 /*时间轴*/
 .c-timeline {
   position: relative;
@@ -304,5 +321,9 @@
     padding: 2px 0;
   }
 }
+
+
+
+
 
 

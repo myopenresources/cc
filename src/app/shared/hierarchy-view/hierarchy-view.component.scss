@@ -1,0 +1,61 @@
+@import '../../../assets/scss/base/app-base.scss';
+
+.c-hierarchy-view-box {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    .c-hierarchy-view {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+       .c-block {
+        float: left;
+        .c-part {
+            text-align: center;
+            float: inherit;
+            position: relative;
+            .c-line-v {
+                position: relative;
+                height: 50px;
+                width: 100%;
+                span {
+                    display: block;
+                    background: $c-color-gary;
+                    position: absolute;
+                    top: 0;
+                    font-size: 0;
+                    line-height: 1px;
+                    width: 1px;
+                    height: 50px;
+                    left: 50%;
+                }
+            }
+            .c-name {
+                display: inline-block;
+                padding: 5px;
+                width: 30px;
+                height: auto;
+                line-height: 20px;
+                margin: 0 6px;
+                border-radius: 2px;
+                background: $c-color-gray-secondary;
+                -webkit-box-shadow: $c-hierarchy-box;
+                -moz-box-shadow: $c-hierarchy-box;
+                box-shadow:$c-hierarchy-box;
+                color: $c-hierarchy-box;
+                &:hover {
+                  -webkit-transition: 0.2s;
+                  transition: 0.2s;
+                  -moz-transition: 0.2s;
+                  -webkit-transition: 0.2s;
+                  -o-transition: 0.2s;
+                  filter: alpha(opacity=55);
+                  -moz-opacity: 0.55;
+                  opacity: 0.55;
+                }
+              }
+          }
+      }
+    }
+  }
+  

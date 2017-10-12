@@ -11,7 +11,8 @@ import { ToastConfig, ToastType } from '../../shared/toast/toast-model';
 @Component({
     selector: 'c-avatar-cropper',
     templateUrl: './avatar-cropper.component.html',
-    encapsulation: ViewEncapsulation.None
+    encapsulation: ViewEncapsulation.None,
+    styleUrls:['./avatar-cropper.component.scss']
 })
 export class AvatarCropperComponent {
 

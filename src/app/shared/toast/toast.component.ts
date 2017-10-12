@@ -7,6 +7,7 @@ import {ToastConfig,ToastType} from './toast-model';
 @Component({
   selector: 'c-toast',
   templateUrl : './toast.component.html',
+  styleUrls:['./toast.component.scss']
  })
 export class ToastComponent implements OnInit {
 

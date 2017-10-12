@@ -7,7 +7,8 @@ import { PageBrowserConfig } from './page-browser-model'
  */
 @Component({
     selector: 'c-page-browser',
-    templateUrl: './page-browser.component.html'
+    templateUrl: './page-browser.component.html',
+    styleUrls:['./page-browser.component.scss']
 })
 
 export class PageBrowserComponent implements OnInit {

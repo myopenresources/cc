@@ -3,7 +3,8 @@ import { ZtreeComponent } from './ztree.component';
 declare var $: any;
 @Component({
     selector: 'c-select-ztree',
-    templateUrl: './select-ztree.component.html'
+    templateUrl: './select-ztree.component.html',
+    styleUrls:['./select-ztree.component.scss']
 })
 export class SelectZtreeComponent implements AfterViewInit, OnDestroy, OnInit {
 

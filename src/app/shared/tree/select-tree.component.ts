@@ -6,7 +6,8 @@ import { TreeComponent } from './tree.component';
  */
 @Component({
     selector: 'c-seelct-tree',
-    templateUrl: './select-tree.component.html'
+    templateUrl: './select-tree.component.html',
+    styleUrls:['./select-tree.component.scss']
 })
 
 export class SelectTreeComponent implements OnInit {

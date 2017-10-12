@@ -5,7 +5,8 @@ import { TreeData } from './tree-model'
  */
 @Component({
   selector: 'c-tree-node',
-  templateUrl: './tree-node.component.html'
+  templateUrl: './tree-node.component.html',
+  styleUrls:['./tree-node.component.scss']
 })
 
 export class TreeNodeComponent implements OnInit {

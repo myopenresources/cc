@@ -9,7 +9,8 @@ import { ToastConfig, ToastType } from '../shared/toast/toast-model';
 
 @Component({
   selector: 'c-login',
-  templateUrl: './login.component.html'
+  templateUrl: './login.component.html',
+  styleUrls:['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
 

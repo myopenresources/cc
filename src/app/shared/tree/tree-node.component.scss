@@ -1,6 +1,4 @@
-.c-tree {
-  font-size: 15px;
-  li {
+li {
     list-style-type: none;
     margin-left: -25px;
     margin-top: 12px;
@@ -8,7 +6,8 @@
       margin-left: 0px;
     }
   }
-  .c-icon {
+  
+ .c-icon {
     margin-right: 5px;
     cursor: pointer;
   }
@@ -29,13 +28,3 @@
       opacity: 0.5;
     }
   }
-}
-.c-tree-search-box {
-  padding: 10px;
-  color: $c-color-black-secondary;
-}
-.c-select-tree-dropdown {
-  width: 100%;
-  max-height: 200px;
-  overflow-y: auto;
-}

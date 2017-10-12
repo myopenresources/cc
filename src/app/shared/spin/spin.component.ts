@@ -6,7 +6,8 @@ import { SpinService } from './spin.service';
  */
 @Component({
     selector: 'c-spin',
-    templateUrl: './spin.component.html'
+    templateUrl: './spin.component.html',
+    styleUrls:['./spin.component.scss']
 })
 export class SpinComponent {
 

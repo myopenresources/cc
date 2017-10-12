@@ -16,7 +16,8 @@ import  { MenuData }    from '../main/main-model';
               <c-treeview-menu [data]="item"></c-treeview-menu>
           </li>
     </ul>
-  `
+  `,
+  styleUrls:['./treeview-menu.component.scss']
 })
 
 export class TreeviewMenuComponent {

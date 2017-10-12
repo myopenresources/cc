@@ -11,7 +11,8 @@ import {HierarchyViewData} from './hierarchy-view-model'
  */
 @Component({
     selector : 'c-hierarchy-view',
-    templateUrl : './hierarchy-view.component.html'
+    templateUrl : './hierarchy-view.component.html',
+    styleUrls:['./hierarchy-view.component.scss']
 })
 export class HierarchyViewComponent implements OnChanges  {
 

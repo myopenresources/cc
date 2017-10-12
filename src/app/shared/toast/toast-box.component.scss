@@ -3,39 +3,34 @@
     z-index: 22222;
     margin-top:10px;
     width:450px;
-    .c-toast{
-       border:0px;
-       -webkit-box-shadow: $c-toast-box;
-       box-shadow: $c-toast-box;
-       -moz-box-shadow: $c-toast-box;
-       border-radius: 20px;
-    }
-}
+  }
 
-.c-toast-top-left{
+  .c-toast-top-left{
     left: 10px;
     top:0;
-}
-
-.c-toast-top-center{
+  }
+  
+  .c-toast-top-center{
     top:0;
     left: -moz-calc( 50% - 225px);
     left: -webkit-calc( 50% - 225px);
     left: calc( 50% - 225px);
-}
-
-.c-toast-top-right{
+  }
+  
+  .c-toast-top-right{
     top:0;
     right: 10px
-}
-
-
-.c-toast-bottom-right{
+  }
+  
+  
+  .c-toast-bottom-right{
     right: 10px;
     bottom:0;
-}
-
-.c-toast-bottom-left{
+  }
+  
+  .c-toast-bottom-left{
     left: 10px;
     bottom:0;
-}
+  }
+  
+  

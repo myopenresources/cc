@@ -1,3 +1,4 @@
+@import '../../../assets/scss/base/app-base.scss';
 .c-colorpicker {
     display: inline-block;
     box-sizing: border-box;
@@ -44,7 +45,7 @@
     .c-colorpicker-color {
       width: 150px;
       height: 150px;
-      background: transparent url("./assets/img/shared/color-picker/color.png") no-repeat left top;
+      background: transparent url("../../../assets/img/shared/color-picker/color.png") no-repeat left top;
     }
     .c-colorpicker-color-handle {
       position: absolute;
@@ -62,7 +63,7 @@
       opacity: 0.9;
     }
     .c-colorpicker-hue {
-      background: transparent url("./assets/img/shared/color-picker/hue.png") no-repeat left top;
+      background: transparent url("../../../assets/img/shared/color-picker/hue.png") no-repeat left top;
       width: 17px;
       height: 150px;
       top: 8px;

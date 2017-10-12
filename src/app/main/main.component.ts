@@ -16,7 +16,8 @@ import { AppService } from '../app.service';
  */
 @Component({
   selector: 'c-main',
-  templateUrl: './main.component.html'
+  templateUrl: './main.component.html',
+  styleUrls:['.//main.component.scss']
 })
 export class MainComponent implements OnInit {
 

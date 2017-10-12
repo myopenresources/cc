@@ -8,7 +8,8 @@ import {ConfirmConfig} from './modal-model';
 @Component({
     selector : 'c-confirm',
     templateUrl : './confirm.component.html',
-    encapsulation : ViewEncapsulation.None
+    encapsulation : ViewEncapsulation.None,
+    styleUrls:['./confirm.component.scss']
 })
 export class ConfirmComponent {
     @Input()

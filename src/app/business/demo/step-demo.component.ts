@@ -41,6 +41,8 @@ export class StepDemoComponent {
 
   actionable: boolean = true;
 
+  itemWidth:string='300px';
+
   stepData2: StepData = {
     currentIndex: 1,
     rows: [{

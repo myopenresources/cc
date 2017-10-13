@@ -1,6 +1,6 @@
 <div class="c-step">
     <div *ngFor="let item of data.rows;let i = index" (click)="stepClick(i+1,item);">
-        <div class="c-step-item" [ngClass]="stepItemCls" *ngIf="(i+1)<=data.currentIndex">
+        <div class="c-step-item" [ngClass]="stepItemCls" *ngIf="(i+1)<=data.currentIndex" [style.width]="itemWidth">
             <span class="c-step-index">{{(i+1)}}</span>{{item.title}}
             <div class="c-step-dir c-step-bg" *ngIf="(i+1)==data.currentIndex && (data.rows.length)!=data.currentIndex">
                 <span class="c-step-outside"></span>
@@ -17,7 +17,7 @@
             </div>
 
         </div>
-        <div class="c-step-item" *ngIf="!((i+1)<=data.currentIndex)">
+        <div class="c-step-item" *ngIf="!((i+1)<=data.currentIndex)"  [style.width]="itemWidth">
             <span class="c-step-index">{{(i+1)}}</span>{{item.title}}
             <div class="c-step-dir c-step-bg" *ngIf="(i+1)==data.currentIndex && (data.rows.length)!=data.currentIndex">
                 <span class="c-step-outside"></span>

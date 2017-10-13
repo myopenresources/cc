@@ -17,6 +17,9 @@ export class StepComponent implements OnInit {
   @Input()
   stepType: string=StepType.PRIMARY;
 
+  @Input()
+  itemWidth:string='250px';
+
   @Output()
   onClick = new EventEmitter<StepObj>();
 
@@ -29,6 +32,7 @@ export class StepComponent implements OnInit {
   stepItemCls:string;
   stepBgCls:string;
   currentIndex:number=0;
+ 
 
   constructor() { }
 

@@ -234,7 +234,7 @@ export class MainComponent implements OnInit {
         "parentId": "1",
         "name": "步骤条",
         "keyWord": "stepDemoComponent",
-        "icon": 'fa-life-ring',
+        "icon": 'fa-list',
         "url": '/app/demo/stepDemoComponent'
       }
       ]

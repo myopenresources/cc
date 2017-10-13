@@ -228,6 +228,14 @@ export class MainComponent implements OnInit {
         "keyWord": "colorPickerDemo",
         "icon": 'fa-life-ring',
         "url": '/app/demo/colorPickerDemo'
+      },
+      {
+        "id": "26",
+        "parentId": "1",
+        "name": "步骤条",
+        "keyWord": "stepDemoComponent",
+        "icon": 'fa-life-ring',
+        "url": '/app/demo/stepDemoComponent'
       }
       ]
 

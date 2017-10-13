@@ -1,0 +1,31 @@
+<div class="c-content-inner">
+    <div class="row">
+        <div class="col-md-12">
+            <p class="c-line-title">示例</p>
+        </div>
+    </div>
+
+    <div class="row c-mt15">
+        <div class="col-md-12">
+            <c-step #step [data]='stepData' [stepType]='stepType' [actionable]='actionable' (onClick)="onClick($event)" (onNext)='onNext($event)'
+                (onPrevious)='onPrevious($event)'></c-step>
+            <br/>
+            <div>
+                <button type="button" class="btn btn-success" (click)="next()">下一步</button>
+                <button type="button" class="btn btn-primary" (click)="previous()">上一步</button>
+                <button type="button" class="btn btn-danger" (click)="setIndex()">修改currentIndex</button>
+            </div>
+            <br/>
+            <c-step #step [data]='stepData2' ></c-step>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="c-mt15">
+                <p class="c-line-title">说明</p>
+                组件目录:src/app/modules/shared/step
+            </div>
+        </div>
+    </div>
+</div>

@@ -30,6 +30,7 @@ import { EditorDemoComponent } from './editor-demo.component';
 import { AgGridDemoComponent } from './ag-grid-demo.component';
 import { SimpleDataTableDemoComponent } from './simple-data-table-demo.component';
 import { ColorPickerDemoComponent } from './color-picker-demo.component';
+import { StepDemoComponent } from './step-demo.component';
 
 /**
  * demo路由
@@ -146,7 +147,11 @@ const demoRoutes: Routes = [
             {
                 path: 'colorPickerDemo',
                 component: ColorPickerDemoComponent
-            }    
+            },
+            {
+                path: 'stepDemoComponent',
+                component: StepDemoComponent
+            }     
            
         ]
     }

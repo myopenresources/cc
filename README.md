@@ -126,7 +126,9 @@
     46.7 shared：公共组件共享目录
 47. 添加color-picker.component组件<br/>
     47.1 src/app/shared/color-picker/color-picker.component.ts
-48. 整理组件样式，将原来外部直接引入样式移动到组件内部引入，升级cc版本为0.0.8
+48. 整理组件样式，将原来外部直接引入样式移动到组件内部引入，升级cc版本为0.0.8<br/>
+49. 添加step.component组件<br/>
+    49.1 src/app/shared/添加step/添加step.component.ts
     
 
 ## 规范

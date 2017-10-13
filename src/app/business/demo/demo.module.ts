@@ -31,6 +31,7 @@ import  { ImageViewerModule}            from '../../shared/image-viewer/image-vi
 import  { ModalModule}            from '../../shared/modal/modal.module';//模态框
 import  { SimpleDataTableModule}            from '../../shared/simple-data-table/simple-data-table.module';//模态框
 import  { ColorPickerModule}            from '../../shared/color-picker/color-picker.module';//颜色选择器
+import  { StepModule}            from '../../shared/step/step.module';//步骤条
 
 //路由
 import { DemoRoutingModule  } from './demo-routing.module';
@@ -64,6 +65,7 @@ import { EditorDemoComponent } from './editor-demo.component';
 import { AgGridDemoComponent } from './ag-grid-demo.component';
 import { SimpleDataTableDemoComponent } from './simple-data-table-demo.component';
 import { ColorPickerDemoComponent } from './color-picker-demo.component';
+import { StepDemoComponent } from './step-demo.component';
 
 
 
@@ -102,7 +104,8 @@ import { ColorPickerDemoComponent } from './color-picker-demo.component';
      ModalModule,
      AgGridModule.withComponents([]),
      SimpleDataTableModule,
-     ColorPickerModule
+     ColorPickerModule,
+     StepModule
   ],
   declarations: [
      DemoComponent,
@@ -132,7 +135,8 @@ import { ColorPickerDemoComponent } from './color-picker-demo.component';
      EditorDemoComponent,
      AgGridDemoComponent,
      SimpleDataTableDemoComponent,
-     ColorPickerDemoComponent
+     ColorPickerDemoComponent,
+     StepDemoComponent
   ],
   exports:      [ 
   ],

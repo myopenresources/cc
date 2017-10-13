@@ -28,119 +28,72 @@
           margin-right: 10px;
       }
       .c-step-dir {
-        background: $c-color-gary;
+        background: $c-color-gray-secondary;
         position: absolute;
-        top: -17px;
-        right: -19px;
-        .c-step-outside{
-          width: 0;
-          height: 0;
-          border-style: solid;
-          border-width: 35px 19px;
-          border-color: transparent transparent transparent $c-color-gray-secondary;
-          display: inline-block;
-        }
-        .c-step-inside{
-          width: 0;
-          height: 0;
-          border-style: solid;
-          border-width: 35px 19px;
-          border-color: transparent transparent transparent $c-color-gary;
-          margin-left: -47px;
-          display: inline-block;
-        }
+        top: 0px;
+        right: 0px;
+        width:2px;
+        height:35px;
       }
-      .c-step-bg {
-        background: $c-color-gary;
-      }
-    
     }
   
     .c-step-item-danger{
       background: $c-bootstrap-danger;
       color: $c-color-white;
+      &:hover{
+          background: $c-bootstrap-danger-deep;
+        .c-step-index {
+          color:$c-bootstrap-danger-deep;
+        }
+      }
       .c-step-index {
         background: $c-color-white;
         color:$c-bootstrap-danger;
-      }
-      .c-step-dir {
-        .c-step-outside{
-          border-color: transparent transparent transparent $c-color-gray-secondary;
-       
-        }
-        .c-step-inside{
-          border-color: transparent transparent transparent $c-bootstrap-danger;
-     
-        }
-      }
-      .c-step-bg-danger{
-        background: $c-bootstrap-danger;
       }
     }
   
     .c-step-item-warning{
       background: $c-bootstrap-warning;
       color: $c-color-white;
+      &:hover{
+        background: $c-bootstrap-warning-deep;
+        .c-step-index {
+          color:$c-bootstrap-warning-deep;
+        }
+      }
       .c-step-index {
         background: $c-color-white;
         color:$c-bootstrap-warning;
-      }
-      .c-step-dir {
-        .c-step-outside{
-          border-color: transparent transparent transparent $c-color-gray-secondary;
-       
-        }
-        .c-step-inside{
-          border-color: transparent transparent transparent $c-bootstrap-warning;
-     
-        }
-      }
-      .c-step-bg-warning{
-        background: $c-bootstrap-warning;
       }
     }
   
     .c-step-item-info{
       background: $c-bootstrap-info;
       color: $c-color-white;
+      &:hover{
+        background: $c-bootstrap-info-deep;
+        .c-step-index {
+          color:$c-bootstrap-info-deep;
+        }
+      }
       .c-step-index {
         background: $c-color-white;
         color:$c-bootstrap-info;
-      }
-      .c-step-dir {
-        .c-step-outside{
-          border-color: transparent transparent transparent $c-color-gray-secondary;
-       
-        }
-        .c-step-inside{
-          border-color: transparent transparent transparent $c-bootstrap-info;
-     
-        }
-      }
-      .c-step-bg-info{
-        background: $c-bootstrap-info;
       }
     }
   
     .c-step-item-success{
       background: $c-bootstrap-success;
       color: $c-color-white;
+      &:hover{
+        background: $c-bootstrap-success-deep;
+        .c-step-index {
+          color:$c-bootstrap-success-deep;
+        }
+      }
       .c-step-index {
         background: $c-color-white;
         color:$c-bootstrap-success;
-      }
-      .c-step-dir {
-        .c-step-outside{
-          border-color: transparent transparent transparent $c-color-gray-secondary;
-       
-        }
-        .c-step-inside{
-          border-color: transparent transparent transparent $c-bootstrap-success;
-     
-        }
-      }
-      .c-step-bg-success{
-        background: $c-bootstrap-success;
       }
     }
   
@@ -148,66 +101,45 @@
     .c-step-item-primary{
       background: $c-bootstrap-primary;
       color: $c-color-white;
+      &:hover{
+        background: $c-bootstrap-primary-deep;
+        .c-step-index {
+          color:$c-bootstrap-primary-deep;
+        }
+      }
       .c-step-index {
         background: $c-color-white;
         color:$c-bootstrap-primary;
-      }
-      .c-step-dir {
-        .c-step-outside{
-          border-color: transparent transparent transparent $c-color-gray-secondary;
-       
-        }
-        .c-step-inside{
-          border-color: transparent transparent transparent $c-bootstrap-primary;
-     
-        }
-      }
-      .c-step-bg-primary{
-        background: $c-bootstrap-primary;
       }
     }
   
     .c-step-item-dark{
       background: $c-bootstrap-dark;
       color: $c-color-white;
+      &:hover{
+        background: $c-bootstrap-dark-deep;
+        .c-step-index {
+          color:$c-bootstrap-dark-deep;
+        }
+      }
       .c-step-index {
         background: $c-color-white;
         color:$c-bootstrap-dark;
-      }
-      .c-step-dir {
-        .c-step-outside{
-          border-color: transparent transparent transparent $c-color-gray-secondary;
-       
-        }
-        .c-step-inside{
-          border-color: transparent transparent transparent $c-bootstrap-dark;
-     
-        }
-      }
-      .c-step-bg-dark{
-        background: $c-bootstrap-dark;
       }
     }
   
     .c-step-item-secondary{
       background: $c-bootstrap-secondary;
       color: $c-color-white;
+      &:hover{
+        background: $c-bootstrap-secondary-deep;
+        .c-step-index {
+          color:$c-bootstrap-secondary-deep;
+        }
+      }
       .c-step-index {
         background: $c-color-white;
         color:$c-bootstrap-secondary;
-      }
-      .c-step-dir {
-        .c-step-outside{
-          border-color: transparent transparent transparent $c-color-gray-secondary;
-       
-        }
-        .c-step-inside{
-          border-color: transparent transparent transparent $c-bootstrap-secondary;
-     
-        }
-      }
-      .c-step-bg-secondary{
-        background: $c-bootstrap-secondary;
       }
     }
   

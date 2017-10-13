@@ -30,7 +30,6 @@ export class StepComponent implements OnInit {
   onPrevious = new EventEmitter<number>();
 
   stepItemCls:string;
-  stepBgCls:string;
   currentIndex:number=0;
  
 
@@ -38,7 +37,6 @@ export class StepComponent implements OnInit {
 
   ngOnInit() {
     this.stepItemCls='c-step-item-'+this.stepType;
-    this.stepBgCls='c-step-bg-'+this.stepType;
     this.currentIndex=this.data.currentIndex;
   }
 

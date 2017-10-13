@@ -38,6 +38,12 @@ export class StepDemoComponent {
   }
 
   stepType:string=StepType.WARNING;
+  stepType2:string=StepType.DANGER;
+  stepType3:string=StepType.DARK;
+  stepType4:string=StepType.INFO;
+  stepType5:string=StepType.SECONDARY;
+  stepType6:string=StepType.SUCCESS;
+  stepType7:string=StepType.PRIMARY;
 
   actionable: boolean = true;
 

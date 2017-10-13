@@ -7,8 +7,26 @@
 
     <div class="row c-mt15">
         <div class="col-md-12">
-            <c-step #step [data]='stepData' [stepType]='stepType' [actionable]='actionable' [itemWidth]='itemWidth' (onClick)="onClick($event)" (onNext)='onNext($event)'
-                (onPrevious)='onPrevious($event)'></c-step>
+            <c-step #step [data]='stepData' [stepType]='stepType' [actionable]='actionable' [itemWidth]='itemWidth' (onClick)="onClick($event)"
+                (onNext)='onNext($event)' (onPrevious)='onPrevious($event)'></c-step>
+            <br/>
+            <c-step #step [data]='stepData' [stepType]='stepType2' [actionable]='actionable' [itemWidth]='itemWidth' (onClick)="onClick($event)"
+                (onNext)='onNext($event)' (onPrevious)='onPrevious($event)'></c-step>
+            <br/>
+            <c-step #step [data]='stepData' [stepType]='stepType3' [actionable]='actionable' [itemWidth]='itemWidth' (onClick)="onClick($event)"
+                (onNext)='onNext($event)' (onPrevious)='onPrevious($event)'></c-step>
+            <br/>
+            <c-step #step [data]='stepData' [stepType]='stepType4' [actionable]='actionable' [itemWidth]='itemWidth' (onClick)="onClick($event)"
+                (onNext)='onNext($event)' (onPrevious)='onPrevious($event)'></c-step>
+            <br/>
+            <c-step #step [data]='stepData' [stepType]='stepType5' [actionable]='actionable' [itemWidth]='itemWidth' (onClick)="onClick($event)"
+                (onNext)='onNext($event)' (onPrevious)='onPrevious($event)'></c-step>
+            <br/>
+            <c-step #step [data]='stepData' [stepType]='stepType6' [actionable]='actionable' [itemWidth]='itemWidth' (onClick)="onClick($event)"
+                (onNext)='onNext($event)' (onPrevious)='onPrevious($event)'></c-step>
+            <br/>
+            <c-step #step [data]='stepData' [stepType]='stepType7' [actionable]='actionable' [itemWidth]='itemWidth' (onClick)="onClick($event)"
+                (onNext)='onNext($event)' (onPrevious)='onPrevious($event)'></c-step>
             <br/>
             <div>
                 <button type="button" class="btn btn-success" (click)="next()">下一步</button>
@@ -16,7 +34,7 @@
                 <button type="button" class="btn btn-danger" (click)="setIndex()">修改currentIndex</button>
             </div>
             <br/>
-            <c-step #step [data]='stepData2' ></c-step>
+            <c-step #step [data]='stepData2'></c-step>
         </div>
     </div>
 

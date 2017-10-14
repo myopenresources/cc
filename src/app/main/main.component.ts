@@ -235,7 +235,15 @@ export class MainComponent implements OnInit {
         "name": "步骤条",
         "keyWord": "stepDemoComponent",
         "icon": 'fa-list',
-        "url": '/app/demo/stepDemoComponent'
+        "url": '/app/demo/stepDemo'
+      },
+      {
+        "id": "27",
+        "parentId": "1",
+        "name": "验证器",
+        "keyWord": "validatorDemo",
+        "icon": 'fa-life-ring',
+        "url": '/app/demo/validatorDemo'
       }
       ]
 

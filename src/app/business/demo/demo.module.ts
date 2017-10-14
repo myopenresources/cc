@@ -66,6 +66,7 @@ import { AgGridDemoComponent } from './ag-grid-demo.component';
 import { SimpleDataTableDemoComponent } from './simple-data-table-demo.component';
 import { ColorPickerDemoComponent } from './color-picker-demo.component';
 import { StepDemoComponent } from './step-demo.component';
+import { ValidatorDemoComponent } from './validator-demo.component';
 
 
 
@@ -136,7 +137,8 @@ import { StepDemoComponent } from './step-demo.component';
      AgGridDemoComponent,
      SimpleDataTableDemoComponent,
      ColorPickerDemoComponent,
-     StepDemoComponent
+     StepDemoComponent,
+     ValidatorDemoComponent
   ],
   exports:      [ 
   ],

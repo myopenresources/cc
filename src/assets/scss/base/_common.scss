@@ -322,7 +322,15 @@
   }
 }
 
-
+/*验证*/
+.c-validator-invalid{
+  color:$c-color-white;
+  background: $c-bootstrap-danger;
+  padding-left:5px;
+  padding-right:5px;
+  padding-top:3px;
+  padding-bottom: 3px;
+}
 
 
 

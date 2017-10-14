@@ -31,6 +31,7 @@ import { AgGridDemoComponent } from './ag-grid-demo.component';
 import { SimpleDataTableDemoComponent } from './simple-data-table-demo.component';
 import { ColorPickerDemoComponent } from './color-picker-demo.component';
 import { StepDemoComponent } from './step-demo.component';
+import { ValidatorDemoComponent } from './validator-demo.component';
 
 /**
  * demo路由
@@ -149,9 +150,13 @@ const demoRoutes: Routes = [
                 component: ColorPickerDemoComponent
             },
             {
-                path: 'stepDemoComponent',
+                path: 'stepDemo',
                 component: StepDemoComponent
-            }     
+            },
+            {
+                path: 'validatorDemo',
+                component: ValidatorDemoComponent
+            }        
            
         ]
     }

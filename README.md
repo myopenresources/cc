@@ -128,7 +128,9 @@
     47.1 src/app/shared/color-picker/color-picker.component.ts
 48. 整理组件样式，将原来外部直接引入样式移动到组件内部引入，升级cc版本为0.0.8<br/>
 49. 添加step.component组件<br/>
-    49.1 src/app/shared/添加step/添加step.component.ts
+    49.1 src/app/shared/step/step.component.ts
+50. 添加自定义验证器，正在完善中，目前示例参考修改密码功能<br/>
+    50.1 src/app/shared/custom-validator/custom-validator.ts
     
 
 ## 规范

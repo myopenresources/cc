@@ -131,6 +131,8 @@
     49.1 src/app/shared/step/step.component.ts
 50. 添加自定义验证器，正在完善中，目前示例参考修改密码功能<br/>
     50.1 src/app/shared/custom-validator/custom-validator.ts
+51. 添加qrcode.component组件<br/>
+    51.1 src/app/shared/添加qrcode/qrcode.component.ts
     
 
 ## 规范

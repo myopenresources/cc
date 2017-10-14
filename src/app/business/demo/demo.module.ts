@@ -32,6 +32,7 @@ import  { ModalModule}            from '../../shared/modal/modal.module';//模�
 import  { SimpleDataTableModule}            from '../../shared/simple-data-table/simple-data-table.module';//模态框
 import  { ColorPickerModule}            from '../../shared/color-picker/color-picker.module';//颜色选择器
 import  { StepModule}            from '../../shared/step/step.module';//步骤条
+import  { QrcodeModule}            from '../../shared/qrcode/qrcode.module';//二维码
 
 //路由
 import { DemoRoutingModule  } from './demo-routing.module';
@@ -67,6 +68,7 @@ import { SimpleDataTableDemoComponent } from './simple-data-table-demo.component
 import { ColorPickerDemoComponent } from './color-picker-demo.component';
 import { StepDemoComponent } from './step-demo.component';
 import { ValidatorDemoComponent } from './validator-demo.component';
+import { QrcodeDemoComponent } from './qrcode-demo.component';
 
 
 
@@ -106,7 +108,8 @@ import { ValidatorDemoComponent } from './validator-demo.component';
      AgGridModule.withComponents([]),
      SimpleDataTableModule,
      ColorPickerModule,
-     StepModule
+     StepModule,
+     QrcodeModule
   ],
   declarations: [
      DemoComponent,
@@ -138,7 +141,8 @@ import { ValidatorDemoComponent } from './validator-demo.component';
      SimpleDataTableDemoComponent,
      ColorPickerDemoComponent,
      StepDemoComponent,
-     ValidatorDemoComponent
+     ValidatorDemoComponent,
+     QrcodeDemoComponent
   ],
   exports:      [ 
   ],

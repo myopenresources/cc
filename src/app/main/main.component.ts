@@ -244,6 +244,14 @@ export class MainComponent implements OnInit {
         "keyWord": "validatorDemo",
         "icon": 'fa-life-ring',
         "url": '/app/demo/validatorDemo'
+      },
+      {
+        "id": "28",
+        "parentId": "1",
+        "name": "二维码",
+        "keyWord": "qrcodeDemo",
+        "icon": 'fa-qrcode',
+        "url": '/app/demo/qrcodeDemo'
       }
       ]
 

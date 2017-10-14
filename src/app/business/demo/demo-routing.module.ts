@@ -32,6 +32,7 @@ import { SimpleDataTableDemoComponent } from './simple-data-table-demo.component
 import { ColorPickerDemoComponent } from './color-picker-demo.component';
 import { StepDemoComponent } from './step-demo.component';
 import { ValidatorDemoComponent } from './validator-demo.component';
+import { QrcodeDemoComponent } from './qrcode-demo.component';
 
 /**
  * demo路由
@@ -156,8 +157,11 @@ const demoRoutes: Routes = [
             {
                 path: 'validatorDemo',
                 component: ValidatorDemoComponent
-            }        
-           
+            },
+            {
+                path: 'qrcodeDemo',
+                component: QrcodeDemoComponent
+            } 
         ]
     }
 ]

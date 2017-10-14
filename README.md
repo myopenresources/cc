@@ -132,7 +132,8 @@
 50. 添加自定义验证器，正在完善中，目前示例参考修改密码功能<br/>
     50.1 src/app/shared/custom-validator/custom-validator.ts
 51. 添加qrcode.component组件<br/>
-    51.1 src/app/shared/添加qrcode/qrcode.component.ts
+    51.1 src/app/shared/添加qrcode/qrcode.component.ts<br/>
+    51.2 配置参考https://github.com/neocotic/qrious
     
 
 ## 规范

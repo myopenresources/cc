@@ -1,6 +1,7 @@
 import { Component, OnInit,ViewChild } from '@angular/core';
 
 import { AppService } from '../../app.service';
+import { QrcodeComponent } from '../../shared/qrcode/qrcode.component'
 
 
 
@@ -9,6 +10,7 @@ import { AppService } from '../../app.service';
   templateUrl: './qrcode-demo.component.html'
 })
 export class QrcodeDemoComponent {
+  @ViewChild('qr') qr: QrcodeComponent;
 
   val:string='https://github.com/332557712/cc';
  
@@ -17,6 +19,9 @@ export class QrcodeDemoComponent {
     this.appService.titleEventEmitter.emit("二维码生成示例");
   }
 
+  getData(){
+    console.info(this.qr.toDataURL());
+  }
 
 }
 

@@ -4,7 +4,9 @@
             <p class="c-line-title">示例</p>
         </div>
         <div class="col-md-12">
-            <c-qrcode [value]="val" [size]="300" [padding]="15"></c-qrcode>
+            <c-qrcode #qr [value]="val" [size]="300" [padding]="20"></c-qrcode>
+            <br/>
+            <button type="button" class="btn btn-danger" (click)="getData()">获得图片</button>
         </div>
     </div>
 

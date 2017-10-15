@@ -134,6 +134,8 @@
 51. 添加qrcode.component组件<br/>
     51.1 src/app/shared/添加qrcode/qrcode.component.ts<br/>
     51.2 配置参考https://github.com/neocotic/qrious
+52. environments配置文件添加domain（域名）属性，根据不同环境的配置请求后端api<br/>
+53. 添加proxy.config.json配置文件，有需要代理的自行在package.json的start中添加--proxy-config proxy.config.json<br/>
     
 
 ## 规范

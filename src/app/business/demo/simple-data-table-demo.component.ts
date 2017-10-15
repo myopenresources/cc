@@ -3,6 +3,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { AppService } from '../../app.service';
 
 import { SimpleDataHttpPageComponent } from '../../shared/simple-data-table/simple-data-http-page.component';
+import { environment } from '../../../environments/environment';
 
 
 @Component({
@@ -15,7 +16,7 @@ export class SimpleDataTableDemoComponent {
 
   @ViewChild('hp2', undefined) hp2: SimpleDataHttpPageComponent;
 
-  url: string = "http://127.0.0.1:8080/cjhme/user/login.jhtml";
+  url: string = environment.domain+"/user/login.jhtml";
 
   param: any = {
     name: 'admin',
@@ -28,7 +29,7 @@ export class SimpleDataTableDemoComponent {
 
 
 
-  url2: string = "http://127.0.0.1:8080/cjhme/user/login.jhtml";
+  url2: string = environment.domain+"/user/login.jhtml";
 
   param2: any = {
     name: 'admin',

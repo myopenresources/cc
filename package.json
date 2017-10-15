@@ -2,10 +2,15 @@
   "name": "cc",
   "version": "0.0.8",
   "license": "MIT",
+  "author":{
+    "name" : "cjh",
+    "email": "332557712@qq.com",
+    "url": ""
+  },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build --prod --aot  --base-href /cc-client/",
+    "start": "ng serve --env=dev",
+    "build": "ng build --env=prod --prod --aot  --base-href /cc-client/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

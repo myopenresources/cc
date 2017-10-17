@@ -3,25 +3,34 @@
         <div class="card c-login-box">
             <div class="card-body">
                 <div class="text-center c-login-header">
-                      <img src="assets/img/logo.png"  class="rounded-circle"/>
-                      <h3 class="card-title"  style="display:inline">后台管理系统登录</h3>
+                    <img src="assets/img/logo.png" class="rounded-circle" />
+                    <h3 class="card-title" style="display:inline">后台管理系统登录</h3>
                 </div>
                 <hr/>
-                <div class="form-group row">
-                    <div class="col-12">
-                        <input class="form-control " type="text" placeholder="请输入用户名...">
+                <form [formGroup]="loginForm">
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <input class="form-control " type="text" formControlName="userName" placeholder="请输入用户名...">
+                            <div class="c-validator-invalid" [hidden]="!(loginForm.controls['userName'].errors && loginForm.controls['userName'].dirty)">
+                                用户名必填，6-15位！
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-12">
-                        <input class="form-control" type="password" placeholder="请输入密码...">
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <input class="form-control" type="password" formControlName="password" placeholder="请输入密码...">
+                            <div class="c-validator-invalid" [hidden]="!(loginForm.controls['password'].errors && loginForm.controls['password'].dirty)">
+                                密码必填，6-15位！
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary c-not-shadow" (click)="login();">登  录</button>
+
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary c-not-shadow" [disabled]="!loginForm.valid" (click)="login();">登 录</button>
+                        </div>
                     </div>
-                </div>
+                </form>
                 <div class=" row">
                     <div class="col-12 text-right">
                         <a href="#">忘记密码？</a>
@@ -36,6 +45,6 @@
         </div>
     </div>
     <div class="c-login-desc">
-       系统仅支持Edge、Google Chrome、Mozilla Firefox以及其它主流的浏览器，如您的浏览器无法使用本系统，请更换其它浏览器！
+        系统仅支持Edge、Google Chrome、Mozilla Firefox以及其它主流的浏览器，如您的浏览器无法使用本系统，请更换其它浏览器！
     </div>
 </div>

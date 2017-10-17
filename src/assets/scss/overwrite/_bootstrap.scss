@@ -17,8 +17,8 @@
 	border:1px solid $c-color-gary
 }
 
+
 .btn-light:active {
-	border-color: $c-bootstrap-light-deep;
 	border-color: $c-bootstrap-light-deep;
 	background-image: -webkit-radial-gradient(circle, $c-bootstrap-light-deep 10%, $c-bootstrap-light 11%);
 	background-image: -o-radial-gradient(circle, $c-bootstrap-light-deep 10%, $c-bootstrap-light 11%);
@@ -30,8 +30,8 @@
 
 .btn-light.disabled, .btn-light:disabled {
    border-color: $c-bootstrap-light-deep;
-   border-color: $c-bootstrap-light-deep;
 }
+
 
 .btn-primary {
 	-webkit-background-size: 200% 200%;
@@ -172,6 +172,26 @@
 	color:$c-color-white;
 }
 
+.btn-outline-light {
+	border:1px solid $c-bootstrap-light-deep;
+	color: $c-color-black-deep;
+  }
+  
+  .btn-outline-light:hover {
+	color: $c-color-black-primary;
+	border-color: $c-bootstrap-light-deep;
+	background: $c-bootstrap-light-deep
+  }
+  
+
+  
+  .btn-outline-light.disabled, .btn-outline-light:disabled {
+	color:$c-color-black-secondary;
+	background-color: transparent;
+  }
+
+
+
 .input-group-btn > .btn-primary {
 	border-color: $c-bootstrap-primary
 }
@@ -201,6 +221,12 @@
 	border-color: $c-bootstrap-dark
 }
 
+//=================badge=======================
+.badge-pill {
+	padding-right: 0.6em;
+	padding-left: 0.6em;
+	border-radius: 10rem;
+}
 
 //=================table=======================
 

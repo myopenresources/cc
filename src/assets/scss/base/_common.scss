@@ -322,6 +322,34 @@
   }
 }
 
+/*圆角按钮*/
+.c-circle-btn{
+   border-radius: 1.25em
+}
+
+.btn-lg.c-circle-btn, .btn-group-lg.c-circle-btn{
+  border-radius: 1.5em
+}
+
+.btn-sm.c-circle-btn, .btn-group-sm.c-circle-btn{
+  border-radius: 1.15em
+}
+
+
+/*圆角按钮*/
+.c-circle-btn{
+  border-radius: 1.25em
+}
+
+.btn-lg.c-circle-btn, .btn-group-lg.c-circle-btn{
+ border-radius: 1.5em
+}
+
+.btn-sm.c-circle-btn, .btn-group-sm.c-circle-btn{
+ border-radius: 1.15em
+}
+
+
 /*验证*/
 .c-validator-invalid{
   color:$c-color-white;
@@ -331,6 +359,8 @@
   padding-top:3px;
   padding-bottom: 3px;
 }
+
+
 
 
 

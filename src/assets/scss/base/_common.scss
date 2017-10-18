@@ -322,32 +322,44 @@
   }
 }
 
-/*圆角按钮*/
-.c-circle-btn{
-   border-radius: 1.25em
-}
-
-.btn-lg.c-circle-btn, .btn-group-lg.c-circle-btn{
-  border-radius: 1.5em
-}
-
-.btn-sm.c-circle-btn, .btn-group-sm.c-circle-btn{
-  border-radius: 1.15em
-}
-
 
 /*圆角按钮*/
-.c-circle-btn{
+.c-pill-btn{
   border-radius: 1.25em
 }
 
-.btn-lg.c-circle-btn, .btn-group-lg.c-circle-btn{
+.btn-lg.c-pill-btn, .btn-group-lg.c-pill-btn{
  border-radius: 1.5em
 }
 
-.btn-sm.c-circle-btn, .btn-group-sm.c-circle-btn{
+.btn-sm.c-pill-btn, .btn-group-sm.c-pill-btn{
  border-radius: 1.15em
 }
+
+
+/*圆形按钮*/
+.c-circle-btn{
+  border-radius: 100%;
+  width:38px;
+  height: 38px;
+}
+
+.c-circle-btn.disabled, .c-circle-btn:disabled {
+	background-color: transparent;
+}
+
+
+.btn-lg.c-circle-btn, .btn-group-lg.c-circle-btn{
+  border-radius: 100%;
+  width:50px;
+  height: 50px;
+ }
+ 
+ .btn-sm.c-circle-btn, .btn-group-sm.c-circle-btn{
+  border-radius: 100%;
+  width:32px;
+  height: 32px;
+ }
 
 
 /*验证*/

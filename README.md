@@ -138,6 +138,7 @@
 53. 添加proxy.config.json配置文件，有需要代理的自行在package.json的start中添加--proxy-config proxy.config.json<br/>
 54. 添加email验证器<br/>
 55. 添加url与number验证器<br/>
+56. 添加圆角、圆形按钮样式<br/>
     
 
 ## 规范

@@ -4,6 +4,9 @@
 ## 使用前必读
  关于环境、安装、启动、构建以及更新等相关问题，请您阅读以下所有内容，请勿上来就直接问，好好珍惜别人的时间，也珍惜自己的时间，谢谢！
 
+## 在线预览
+http://www.myopenresources.top/cc-client/#/login
+
 
 ## 界面展示
 <img src="https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-0.png" width="960" height="515" />
@@ -24,7 +27,7 @@
 1. 您的鼓励是我最大的动力，欢迎您的鼓励，谢谢！<br/>
 ![image](https://github.com/332557712/cc/blob/master/src/assets/img/zf/zf.png)
 
-## 重大更新
+## 更新记录
 1. 搭建环境，分别加入ng-bootstrap1.0.0-alpha.25、bootstrap4.1.3、font-awesome4.7.0、animate.css3.5.2等，cc版本为0.0.1<br/>
    1.1 https://ng-bootstrap.github.io/#/home<br/>
    1.2 https://v4-alpha.getbootstrap.com/<br/>

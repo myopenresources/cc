@@ -41,7 +41,7 @@ export class SimpleDataTableDirective implements OnChanges {
 
             this.sortByChange.emit(this.sortBy);
             this.sortOrderChange.emit(this.sortOrder);
-            this.computeDatta();
+            this.computeData();
         }
 
     }
@@ -51,7 +51,7 @@ export class SimpleDataTableDirective implements OnChanges {
         this.data=this.refData;
     }
 
-    private computeDatta(): void {
+    private computeData(): void {
         let data = this.refData;
         var sortBy = this.sortBy;
         if (typeof sortBy === 'string' || sortBy instanceof String) {

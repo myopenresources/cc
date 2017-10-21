@@ -56,7 +56,7 @@
                     <tbody>
                         <tr *ngFor="let item of sdt.data;let i = index">
                             <td class="text-center">{{i+1}}</td>
-                            <td class="text-center">{{item.name}}</td>
+                            <td class="text-center">{{item.userName}}</td>
                             <td class="text-center">{{item.email}}</td>
                             <td class="text-center">{{item.age}}</td>
                         </tr>
@@ -108,7 +108,7 @@
             <div #sdt2="simpleDataTable" c-simple-data-table>
                 <ul class="list-group">
                     <li class="list-group-item" *ngFor="let item of sdt2.data;let i = index">
-                        {{i+1}}，姓名：{{item.name}}，邮箱：{{item.email}}，年龄：{{item.age}}
+                        {{i+1}}，姓名：{{item.userName}}，邮箱：{{item.email}}，年龄：{{item.age}}
                     </li>
                 </ul>
                 <div class="c-mt15">

@@ -16,7 +16,7 @@ export class SimpleDataTableDemoComponent {
 
   @ViewChild('hp2', undefined) hp2: SimpleDataHttpPageComponent;
 
-  url: string = environment.domain+"/user/login.jhtml";
+  url: string = environment.domain+"/system/user/findList";
 
   param: any = {
     name: 'admin',
@@ -29,7 +29,7 @@ export class SimpleDataTableDemoComponent {
 
 
 
-  url2: string = environment.domain+"/user/login.jhtml";
+  url2: string = environment.domain+"/system/user/findList";
 
   param2: any = {
     name: 'admin',

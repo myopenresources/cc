@@ -161,7 +161,7 @@ const demoRoutes: Routes = [
             {
                 path: 'qrcodeDemo',
                 component: QrcodeDemoComponent
-            } 
+            }
         ]
     }
 ]

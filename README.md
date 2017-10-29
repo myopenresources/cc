@@ -13,23 +13,23 @@ https://github.com/332557712/cc-s
 
 
 ## 界面展示
-<img src="https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-0.png" width="960" height="515" />
-<img src="https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-1.png" width="960" height="515" />
-<img src="https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-2.png" width="960" height="515" />
-<img src="https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-3.png" width="960" height="515" />
-<img src="https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-4.png" width="960" height="515" />
-<img src="https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-5.png" width="960" height="515" />
-<img src="https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-6.png" width="960" height="515" />
-<img src="https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-7.png" width="960" height="515" />
-<img src="https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-8.png" width="960" height="515" />
-<img src="https://github.com/332557712/cc/blob/master/src/assets/img/cc/cc-9.png" width="960" height="515" />
+<img src="https://github.com/332557712/cc/blob/master/src/assets/img/demo/cc/cc-0.png" width="960" height="515" />
+<img src="https://github.com/332557712/cc/blob/master/src/assets/img/demo/cc/cc-1.png" width="960" height="515" />
+<img src="https://github.com/332557712/cc/blob/master/src/assets/img/demo/cc/cc-2.png" width="960" height="515" />
+<img src="https://github.com/332557712/cc/blob/master/src/assets/img/demo/cc/cc-3.png" width="960" height="515" />
+<img src="https://github.com/332557712/cc/blob/master/src/assets/img/demo/cc/cc-4.png" width="960" height="515" />
+<img src="https://github.com/332557712/cc/blob/master/src/assets/img/demo/cc/cc-5.png" width="960" height="515" />
+<img src="https://github.com/332557712/cc/blob/master/src/assets/img/demo/cc/cc-6.png" width="960" height="515" />
+<img src="https://github.com/332557712/cc/blob/master/src/assets/img/demo/cc/cc-7.png" width="960" height="515" />
+<img src="https://github.com/332557712/cc/blob/master/src/assets/img/demo/cc/cc-8.png" width="960" height="515" />
+<img src="https://github.com/332557712/cc/blob/master/src/assets/img/demo/cc/cc-9.png" width="960" height="515" />
 
 <br/>
-<a href='https://github.com/332557712/cc/blob/master/src/assets/img/cc'>点击查看更多</a>
+<a href='https://github.com/332557712/cc/blob/master/src/assets/img/demo/cc'>点击查看更多</a>
 
 ## 鼓励
 1. 您的鼓励是我最大的动力，欢迎您的鼓励，谢谢！<br/>
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/zf/zf.png)
+![image](https://github.com/332557712/cc/blob/master/src/assets/img/demo/zf/zf.png)
 
 ## 更新记录
 1. 搭建环境，分别加入ng-bootstrap1.0.0-alpha.25、bootstrap4.1.3、font-awesome4.7.0、animate.css3.5.2等，cc版本为0.0.1<br/>

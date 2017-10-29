@@ -17,7 +17,7 @@ import { AppService } from '../app.service';
 @Component({
   selector: 'c-main',
   templateUrl: './main.component.html',
-  styleUrls:['.//main.component.scss']
+  styleUrls: ['.//main.component.scss']
 })
 export class MainComponent implements OnInit {
 
@@ -42,7 +42,7 @@ export class MainComponent implements OnInit {
     menuData: [{
       "id": "1",
       "parentId": "0",
-      "name": "经典示例",
+      "name": "组件示例",
       "keyWord": "demo",
       "icon": 'fa-wrench',
       "isExpend": false,
@@ -110,13 +110,6 @@ export class MainComponent implements OnInit {
         "icon": 'fa-toggle-on',
         "url": '/app/demo/switchDemo'
       }, {
-        "id": "11",
-        "parentId": "1",
-        "name": "时间轴样式",
-        "keyWord": "timeline",
-        "icon": 'fa-clock-o',
-        "url": '/app/demo/timelineDemo'
-      }, {
         "id": "12",
         "parentId": "1",
         "name": "日期选择",
@@ -172,20 +165,6 @@ export class MainComponent implements OnInit {
         "keyWord": "spinDemo",
         "icon": 'fa-spinner',
         "url": '/app/demo/spinDemo'
-      }, {
-        "id": "18",
-        "parentId": "1",
-        "name": "ng-bootstrap示例",
-        "keyWord": "ngBootstrapDemo",
-        "icon": 'fa-cubes',
-        "url": '/app/demo/ngBootstrapDemo'
-      }, {
-        "id": "19",
-        "parentId": "1",
-        "name": "bootstrap示例",
-        "keyWord": "bootstrapDemo",
-        "icon": 'fa-cubes',
-        "url": '/app/demo/bootstrapDemo'
       }, {
         "id": "20",
         "parentId": "1",
@@ -255,35 +234,41 @@ export class MainComponent implements OnInit {
       }
       ]
 
-    },  /*{
-      "id": "16",
+    },
+    {
+      "id": "020",
       "parentId": "0",
-      "name": "个人中心",
-      "keyWord":"whzx",
-      "icon": "fa-flag",
-      "children": [{
-        "id": "17",
-        "parentId": "16",
-        "name": "待办信息",
-        "keyWord":"dbxx",
-        "icon": "fa-bell-o",
-        "url": "task"
-      }, {
-        "id": "18",
-        "parentId": "16",
-        "name": "通知信息",
-        "keyWord":"tzxx",
-        "icon": "fa-bullhorn",
-        "url": "task"
-      }, {
-        "id": "19",
-        "parentId": "16",
-        "name": "备忘信息",
-        "keyWord":"bwxx",
-        "icon": "fa-tag",
-        "url": "task"
-      }]
-    },*/ {
+      "name": "样式示例",
+      "keyWord": "yssl",
+      "icon": 'fa-cubes',
+      "isExpend": false,
+      "children": [
+        {
+          "id": "021",
+          "parentId": "020",
+          "name": "ng-bootstrap样式",
+          "keyWord": "ngBootstrapDemo",
+          "icon": 'fa-cubes',
+          "url": '/app/demo/ngBootstrapDemo'
+        }, {
+          "id": "022",
+          "parentId": "020",
+          "name": "bootstrap样式",
+          "keyWord": "bootstrapDemo",
+          "icon": 'fa-cubes',
+          "url": '/app/demo/bootstrapDemo'
+        },
+        {
+          "id": "023",
+          "parentId": "020",
+          "name": "时间轴样式",
+          "keyWord": "timeline",
+          "icon": 'fa-clock-o',
+          "url": '/app/demo/timelineDemo'
+        }
+      ]
+    },
+    {
       "id": "20",
       "parentId": "0",
       "name": "权限管理",

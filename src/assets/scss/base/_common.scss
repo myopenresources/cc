@@ -216,11 +216,11 @@
 /*行标题*/
 .c-line-title {
 	margin-bottom: 15px;
-	padding-bottom: 8px;
 	font-size: 15px;
-	border-bottom: 1px dashed $c-color-gray-deep;
-	color: $c-color-black-secondary;
-	font-weight: bold;
+	border-left: 3px solid $c-color-secondary;
+  color: $c-color-black-secondary;
+  padding-left:8px;
+  font-weight: bold;
 }
 
 /*内容*/

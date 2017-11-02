@@ -3,7 +3,7 @@
 
 ## 使用前必读
 1. <font color=red size=14>本后台管理系统界面不适合没有html、js、bootstrap、css或scss以及ng2相关基本的人，与本界面无关或是基础问题概不回答，请自行学习，请勿浪费他人时间，谢谢！</font>
-2. <font color=#00ffff size=14>关于环境、安装、启动、构建以及更新等相关问题，请您阅读以下所有内容，请勿上来就直接问，好好珍惜别人的时间，也珍惜自己的时间，谢谢！</font>
+2. <font color=red size=14>关于环境、安装、启动、构建以及更新等相关问题，请您阅读以下所有内容，请勿上来就直接问，好好珍惜别人的时间，也珍惜自己的时间，谢谢！</font>
 
 ## 在线预览
 http://www.myopenresources.top/cc-client/#/login

@@ -2,12 +2,12 @@
  一个基于angular4.2.4+ng-bootstrap1.0.0-beta.4+bootstrap4.0.0-beta+scss的后台管理系统界面
 
 ## *使用前必读
-1. 具备能力
+1. 具备能力（很重要）<br/>
   1.1 需要有html、js或typescript、bootstrap、css或scss、ng4以及懂得面向对象基础<br/>
   1.2 懂得使用nodejs、npm、yarn以及前端开发工具<br/>
   1.3 懂得阅读第三方组件文档以及使用百度、google搜索问题<br/>
   1.4 没有基础的同学请先自学基础，与本界面无关或是基础问题概不回答，请勿浪费他人时间，谢谢！<br/>
-2. 关于环境、安装、启动、构建以及更新等相关问题，请您阅读以下所有内容，谢谢！
+2. 关于环境、安装、启动、构建以及更新等相关问题，请阅读以下所有内容，谢谢！
 
 ## 在线预览
 http://www.myopenresources.top/cc-client/#/login

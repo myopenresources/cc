@@ -11,8 +11,8 @@ export class PageBrowserDemoComponent {
     
 
     config:PageBrowserConfig={
-        title:'作者博客',
-        url:'http://blog.csdn.net/rotating_windmill/article/details/53207451'
+        title:'http://www.baidu.com/',
+        url:'http://www.baidu.com/'
     }
 
      constructor(private appService:AppService) {

@@ -9,7 +9,7 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --env=dev",
+    "start": "ng serve --env=dev --base-href /",
     "build": "ng build --env=prod --prod --aot  --base-href /cc-client/",
     "test": "ng test",
     "lint": "ng lint",

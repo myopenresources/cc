@@ -14,7 +14,7 @@ http://www.myopenresources.top/cc-client/#/login
 
 
 ## java后端项目
-https://github.com/332557712/cc-s
+https://github.com/myopenresources/cc-s
 
 
 ## 界面展示
@@ -32,9 +32,6 @@ https://github.com/332557712/cc-s
 <br/>
 <a href='https://github.com/332557712/cc/blob/master/src/assets/img/demo/cc'>点击查看更多</a>
 
-## 鼓励
-1. 您的鼓励是我最大的动力，欢迎您的鼓励，谢谢！<br/>
-![image](https://github.com/332557712/cc/blob/master/src/assets/img/demo/zf/zf.png)
 
 ## 更新记录
 1. 搭建环境，分别加入ng-bootstrap1.0.0-alpha.25、bootstrap4.1.3、font-awesome4.7.0、animate.css3.5.2等，cc版本为0.0.1<br/>

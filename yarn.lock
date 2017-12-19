@@ -2974,9 +2974,11 @@ image-size@~0.5.0:
   version "0.5.5"
   resolved "http://registry.npm.taobao.org/image-size/download/image-size-0.5.5.tgz#09dfd4ab9d20e29eb1c3e80b8990378df9e3cb9c"
 
-imageviewer@^0.6.0:
-  version "0.6.0"
-  resolved "http://registry.npm.taobao.org/imageviewer/download/imageviewer-0.6.0.tgz#257d7147ad7322e8061a3a92f79b1ff5e9cc0d5a"
+imageviewer@0.5.1:
+  version "0.5.1"
+  resolved "http://registry.npm.taobao.org/imageviewer/download/imageviewer-0.5.1.tgz#6746603288df3933ce71461a1e9bf68bd00e3ba6"
+  dependencies:
+    jquery ">= 1.9.1"
 
 import-local@^0.1.1:
   version "0.1.1"
@@ -3395,7 +3397,7 @@ jquery-mousewheel@>=3.0.6, jquery-mousewheel@~3.1.13:
   version "3.1.13"
   resolved "http://registry.npm.taobao.org/jquery-mousewheel/download/jquery-mousewheel-3.1.13.tgz#06f0335f16e353a695e7206bf50503cb523a6ee5"
 
-jquery@3.2.1, jquery@>=1.4.4:
+jquery@3.2.1, "jquery@>= 1.9.1", jquery@>=1.4.4:
   version "3.2.1"
   resolved "http://registry.npm.taobao.org/jquery/download/jquery-3.2.1.tgz#5c4d9de652af6cd0a770154a631bba12b015c787"
 

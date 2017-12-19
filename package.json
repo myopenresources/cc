@@ -32,7 +32,7 @@
     "core-js": "^2.4.1",
     "d3": "^4.12.0",
     "font-awesome": "^4.7.0",
-    "imageviewer": "^0.6.0",
+    "imageviewer": "0.5.1",
     "jquery": "3.2.1",
     "malihu-custom-scrollbar-plugin": "^3.1.5",
     "ng2-date-picker": "^2.6.2",

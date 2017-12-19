@@ -41,7 +41,6 @@ export class LoginComponent implements OnInit {
    * 登录
    */
   login() {
-    console.info(this.loginForm);
     if (this.loginForm.valid) {
       let that = this;
       /*this.httpService.post("http://192.168.1.107:8080/cjhme/user/login.jhtml", {

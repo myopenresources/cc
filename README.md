@@ -1,9 +1,9 @@
 ## CC admin 
- 一个基于angular4.2.4+ng-bootstrap1.0.0-beta.4+bootstrap4.0.0-beta+scss的后台管理系统界面
+ 一个基于angular5.0.0+ng-bootstrap1.0.0-beta.8+bootstrap4.0.0-beta.2+scss的后台管理系统界面
 
 ## *使用前必读
 1. 具备能力（很重要）<br/>
-  1.1 需要有html、js或typescript、bootstrap、css或scss、ng4以及懂得面向对象基础<br/>
+  1.1 需要有html、js或typescript、bootstrap、css或scss、ng5以及懂得面向对象基础<br/>
   1.2 懂得使用nodejs、npm、yarn以及前端开发工具<br/>
   1.3 懂得阅读第三方组件文档以及使用百度、google搜索问题<br/>
   1.4 没有基础的同学请先自学基础，与本界面无关或是基础问题概不回答，请勿浪费他人时间，谢谢！<br/>
@@ -149,6 +149,7 @@ https://github.com/myopenresources/cc-s
 54. 添加email验证器<br/>
 55. 添加url与number验证器<br/>
 56. 添加圆角、圆形按钮样式<br/>
+57. angular5.0.0、ng-bootstrap1.0.0-beta.8、bootstrap4.0.0-beta.2以及第三方组件的升级<br/>
     
 
 ## 规范

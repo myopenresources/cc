@@ -150,6 +150,7 @@ https://github.com/myopenresources/cc-s
 55. 添加url与number验证器<br/>
 56. 添加圆角、圆形按钮样式<br/>
 57. angular5.0.0、ng-bootstrap1.0.0-beta.8、bootstrap4.0.0-beta.2以及第三方组件的升级<br/>
+58. 升级cc版本为0.0.9
     
 
 ## 规范

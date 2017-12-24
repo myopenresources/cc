@@ -18,9 +18,7 @@ import { ToastConfig, ToastType } from '../../shared/toast/toast-model';
               <div  class="c-mt15">
                    <c-pagination [total]="options.total" [pageList]="options.pageList" [btnCls]="btnCls" (onPageChanged)="onPageChanged($event)"></c-pagination>
               </div>
-              <div  class="c-mt15">
-                  <c-pagination [total]="options.total"  (onPageChanged)="onPageChanged($event)"></c-pagination>
-              </div>
+           
           </div>
         </div>
         <div class="row">

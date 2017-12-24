@@ -351,15 +351,22 @@ export class MainComponent implements OnInit {
       "id": "31",
       "parentId": "0",
       "name": "系统管理",
-      "keyWord": "txgl",
+      "keyWord": "xtgl",
       "icon": "fa-cube",
       "children": [{
         "id": "32",
-        "parentId": "32",
+        "parentId": "31",
+        "name": "系统监控",
+        "keyWord": "txjk",
+        "icon": "fa-dashboard",
+        "url": "/app/sysMonitor"
+      },{
+        "id": "33",
+        "parentId": "31",
         "name": "系统日志",
-        "keyWord": "xtrz",
-        "icon": "fa-file",
-        "url": "systemLog"
+        "keyWord": "txrz",
+        "icon": "fa-sticky-note",
+        "url": "/app/sysLog"
       }]
     }]
   }

@@ -8,6 +8,8 @@ import { LoginComponent }   from './login.component';
 
 import { LoginRoutingModule } from './login-routing.module';
 
+import { UserBusinessService} from '../business-service/user/user-business.service';
+
 
 
 @NgModule({
@@ -22,6 +24,8 @@ import { LoginRoutingModule } from './login-routing.module';
      LoginComponent
   ],
   exports:      [],
-  providers:    []
+  providers:    [
+    UserBusinessService
+  ]
 })
 export class LoginModule { }

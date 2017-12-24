@@ -6,7 +6,11 @@ import { HttpService } from '../shared/http/http.service';
 
 import { ToastService } from '../shared/toast/toast.service';
 import { ToastConfig, ToastType } from '../shared/toast/toast-model';
-import { CustomValidators } from '../shared/custom-validator/custom-validator'
+import { CustomValidators } from '../shared/custom-validator/custom-validator';
+import { UserBusinessService} from '../business-service/user/user-business.service';
+import { Utils } from "../shared/util/utils";
+
+
 
 
 @Component({
@@ -18,7 +22,12 @@ export class LoginComponent implements OnInit {
 
   loginForm: FormGroup;
 
-  constructor(private router: Router, private toastService: ToastService, private httpService: HttpService, private formBuilder: FormBuilder) {
+  constructor(
+    private router: Router, 
+    private toastService: ToastService, 
+    private httpService: HttpService,
+    private userBusinessService:UserBusinessService,
+    private formBuilder: FormBuilder) {
     let userNameFc = new FormControl('sysadmin', Validators.compose([Validators.required, Validators.minLength(6), Validators.maxLength(15)]));
     let passwordFc = new FormControl('sysadmin', Validators.compose([Validators.required, Validators.minLength(6), Validators.maxLength(15)]));
 
@@ -36,36 +45,37 @@ export class LoginComponent implements OnInit {
   }
 
 
-
   /**
    * 登录
    */
   login() {
-    if (this.loginForm.valid) {
+   /* if (this.loginForm.valid) {
       let that = this;
-      /*this.httpService.post("http://192.168.1.107:8080/cjhme/user/login.jhtml", {
-        userName: 'admin',
-        password: '123456'
+      this.httpService.post(this.userBusinessService.login(), {
+        userName:  this.loginForm.controls['userName'].value,
+        password:  this.loginForm.controls['password'].value
       }, function (successful, data, res) {
-        console.info(successful);
-        console.info(data);
-        console.info(res);
-        if (successful) {
-          const toastCfg = new ToastConfig(ToastType.SUCCESS, '', '百变小咖，登录成功!', 3000);
+        if (successful && Utils.resultSuccess(data.resultType)) {
+          const toastCfg = new ToastConfig(ToastType.SUCCESS, '', data.resultMsg, 3000);
           that.toastService.toast(toastCfg);
           that.router.navigate(['/app/home']);
+        }else if(successful && Utils.resultFailure(data.resultType)){
+          const toastCfg = new ToastConfig(ToastType.WARNING, '', data.resultMsg, 3000);
+          that.toastService.toast(toastCfg);
+        }else{
+          const toastCfg = new ToastConfig(ToastType.ERROR, '', data.resultMsg, 3000);
+          that.toastService.toast(toastCfg);
         }
       }, function (successful, msg, err) {
          const toastCfg = new ToastConfig(ToastType.ERROR, '', msg, 3000);
          that.toastService.toast(toastCfg);
-      });*/
+      });
 
-
-      const toastCfg = new ToastConfig(ToastType.SUCCESS, '', '百变小咖，登录成功!', 2000);
-      this.toastService.toast(toastCfg);
-      this.router.navigate(['/app/home']);
-
-    }
+    }*/
+    
+    const toastCfg = new ToastConfig(ToastType.SUCCESS, '', '登录成功！', 3000);
+    this.toastService.toast(toastCfg);
+    this.router.navigate(['/app/home']);
   }
 
 

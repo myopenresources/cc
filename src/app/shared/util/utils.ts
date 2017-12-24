@@ -257,6 +257,30 @@ export class Utils {
     }
 
 
+    /**
+     * 是否成功
+     * @param val 
+     */
+    static  resultSuccess(val:string):boolean{
+         return val==='success';
+    }
+
+    /**
+     * 是否失败
+     * @param val 
+     */
+   static  resultFailure(val:string):boolean{
+        return val==='failure';
+   }
+
+
+     /**
+     * 是否错误
+     * @param val 
+     */
+    static  resultError(val:string):boolean{
+        return val==='error';
+   }
   
     
 

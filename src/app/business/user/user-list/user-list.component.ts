@@ -1,7 +1,7 @@
 import { Component, OnInit,ViewChild} from '@angular/core';
-import { AppService } from '../../app.service';
+import { AppService } from '../../../app.service';
 
-import {HttpPaginationComponent} from '../../shared/pagination/http-pagination.component';
+import {HttpPaginationComponent} from '../../../shared/pagination/http-pagination.component';
 
 @Component({
   selector: 'c-user-list',

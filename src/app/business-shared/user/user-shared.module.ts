@@ -5,8 +5,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ImageCropperModule } from 'ng2-img-cropper';
 import  { ImgCropperSelectModule}       from '../../shared/img-cropper-select/img-cropper-select.module';
 
-import { AvatarCropperComponent} from './avatar-cropper.component';
-import { PasswordEditComponent} from './password-edit.component';
+import { AvatarCropperComponent} from './avatar-cropper/avatar-cropper.component';
+import { PasswordEditComponent} from './password-edit/password-edit.component';
 
 
 

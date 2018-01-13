@@ -7,8 +7,8 @@ import { MainData } from '../main/main-model';
 import { ModalService } from '../shared/modal/modal.service';
 import { ConfirmConfig } from '../shared/modal/modal-model';
 
-import { AvatarCropperComponent } from '../business-shared/user/avatar-cropper.component';
-import { PasswordEditComponent } from '../business-shared/user/password-edit.component';
+import { AvatarCropperComponent } from '../business-shared/user/avatar-cropper/avatar-cropper.component';
+import { PasswordEditComponent } from '../business-shared/user/password-edit/password-edit.component';
 import { AppService } from '../app.service';
 
 /**
@@ -323,7 +323,7 @@ export class MainComponent implements OnInit {
           "name": "角色分配",
           "keyWord": "jsfp",
           "icon": "fa-cogs",
-          "url": "/app/role/roleDis"
+          "url": "/app/role/roleDistribute"
         }]
       }, {
         "id": "28",
@@ -337,14 +337,14 @@ export class MainComponent implements OnInit {
           "name": "菜单添加",
           "keyWord": "cdtj",
           "icon": "fa-plus-circle",
-          "url": "menuAdd"
+          "url": "/app/menu/menuAdd"
         }, {
           "id": "30",
           "parentId": "28",
           "name": "菜单查询",
           "keyWord": "cdcx",
           "icon": "fa-search",
-          "url": "menuList"
+          "url": "/app/menu/menuList"
         }]
       }]
     }, {

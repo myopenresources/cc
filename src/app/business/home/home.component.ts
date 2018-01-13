@@ -4,7 +4,7 @@ import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import  { ModalService } from '../../shared/modal/modal.service';
 import { TodoObjData, NeedReadObjData, NoticeObjData, CommonFuncData } from '../home/home-model';
 
-import  { PasswordEditComponent} from '../../business-shared/user/password-edit.component';
+import  { PasswordEditComponent} from '../../business-shared/user/password-edit/password-edit.component';
 
 
 @Component({

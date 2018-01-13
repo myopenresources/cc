@@ -14,6 +14,7 @@ const mainRoutes: Routes = [
       { path: 'demo', loadChildren: 'app/business/demo/demo.module#DemoModule' },
       { path: 'user', loadChildren: 'app/business/user/user.module#UserModule' },
       { path: 'role', loadChildren: 'app/business/role/role.module#RoleModule' },
+      { path: 'menu', loadChildren: 'app/business/menu/menu.module#MenuModule' },
       { path: 'sysLog', loadChildren: 'app/business/sys-log/sys-log.module#SysLogModule' },
       { path: 'sysMonitor', loadChildren: 'app/business/sys-monitor/sys-monitor.module#SysMonitorModule' }
     ]

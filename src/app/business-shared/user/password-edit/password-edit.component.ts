@@ -2,9 +2,9 @@ import { Component, Input, ViewEncapsulation, ViewChild } from '@angular/core';
 import {Validators,FormControl,FormGroup,FormBuilder} from '@angular/forms';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
-import { ToastService } from '../../shared/toast/toast.service';
-import { ToastConfig, ToastType } from '../../shared/toast/toast-model';
-import { CustomValidators } from '../../shared/custom-validator/custom-validator'
+import { ToastService } from '../../../shared/toast/toast.service';
+import { ToastConfig, ToastType } from '../../../shared/toast/toast-model';
+import { CustomValidators } from '../../../shared/custom-validator/custom-validator'
 
 /**
  * 修改密码组件

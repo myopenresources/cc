@@ -20,8 +20,8 @@ https://github.com/myopenresources/cc-s
 
 ## 界面展示
 <img src="https://github.com/332557712/cc/blob/master/src/assets/img/demo/cc/cc-0.png" width="960" height="515" />
-<img src="https://github.com/332557712/cc/blob/master/src/assets/img/demo/cc/theme-green.png" width="960" height="515" />
 <img src="https://github.com/332557712/cc/blob/master/src/assets/img/demo/cc/cc-1.png" width="960" height="515" />
+<img src="https://github.com/332557712/cc/blob/master/src/assets/img/demo/cc/theme-green.png" width="960" height="515" />
 <img src="https://github.com/332557712/cc/blob/master/src/assets/img/demo/cc/cc-2.png" width="960" height="515" />
 <img src="https://github.com/332557712/cc/blob/master/src/assets/img/demo/cc/cc-3.png" width="960" height="515" />
 <img src="https://github.com/332557712/cc/blob/master/src/assets/img/demo/cc/cc-4.png" width="960" height="515" />

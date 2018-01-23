@@ -1,7 +1,7 @@
 @import '../../assets/scss/base/app-base.scss';
 /*登录*/
 .c-login-wrapper {
-    background: url("../../assets/img/login/login-bg.png");
+    background: $c-color-primary;
     background-size:  100vw 100vh;
     width: 100vw;
     height: 100vh;
@@ -53,7 +53,21 @@
             width: 100%;
             padding: 10px;
             cursor: pointer;
+            background: $c-color-secondary;
+            border: 1px solid $c-color-secondary;
+            color:$c-color-white;
+            font-size: 13px;
+            &:hover{
+              background: $c-color-primary;
+              border: 1px solid $c-color-primary;
+            }
+            &:active{
+              background: $c-color-deep;
+              border: 1px solid $c-color-deep;
+            }
+            
           }
+          
         }
         .c-copy-right {
           margin-top: 10px;

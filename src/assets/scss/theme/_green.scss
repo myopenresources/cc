@@ -1,0 +1,88 @@
+//主要颜色
+$c-color-primary:#09b892 !default;
+//次要颜色
+$c-color-secondary:#0acba2 !default;
+//深色
+$c-color-deep:#06ab88 !default;
+//浅色
+$c-color-light:#0cdfb2 !default;
+
+//主要黑色
+$c-color-black-primary:#333333 !default;
+//次要黑色
+$c-color-black-secondary:#555555 !default;
+//深黑色
+$c-color-black-deep:#000000 !default;
+//浅黑色
+$c-color-black-light:#888888 !default;
+
+//主要灰色
+$c-color-gray-primary:#f2f2f2 !default;
+//次要灰色
+$c-color-gray-secondary:#fafafa !default;
+//深灰色
+$c-color-gray-deep:#eeeeee !default;
+//浅灰色
+$c-color-gray-light:#fefefe !default;
+
+//白色
+$c-color-white:#ffffff !default;
+//灰色
+$c-color-gary:#dddddd !default;
+
+//白灰色
+$c-color-white-gray:#f6f7f8 !default;
+
+//深白灰色
+$c-color-white-gray-deep:#f5f5f5 !default;
+
+//盒子阴影
+$c-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03) !default;
+
+//头部阴影
+$c-header-shadow: 1px 2px 6px rgba(0, 0, 0, 0.03) !default;
+
+//图片阴影
+$c-img-shadow: 1px 2px 6px rgba(0, 0, 0, 0.05) !default;
+
+//层次图盒子阴影
+$c-hierarchy-box:1px 1px 3px rgba(100, 100, 100, 0.6) !default;
+
+//toast
+$c-toast-box:1px 1px 3px rgba(100, 100, 100, 0.3) !default;
+
+//switch
+$c-switch-small: 0 1px 3px rgba(0,0,0,0.3) !default;
+
+//按钮阴影
+$c-btn-shadow: 1px 2px 5px rgba(0, 0, 0, 0.05) !default;
+
+//spin
+$c-spin-color-red:#f95372;
+$c-spin-color-blue:#00abff;
+$c-spin-color-yellow:#e7ba08;
+
+//bootstrap
+$c-bootstrap-light:#ffffff;
+$c-bootstrap-light-deep:#e6e6e6;
+
+$c-bootstrap-primary:#20a8d8;
+$c-bootstrap-primary-deep:#1985ac;
+
+$c-bootstrap-success:#4dbd74;
+$c-bootstrap-success-deep:#369759;
+
+$c-bootstrap-info:#6acae6;
+$c-bootstrap-info-deep:#32add3;
+
+$c-bootstrap-warning:#f0bd0a;
+$c-bootstrap-warning-deep:#bf9608;
+
+$c-bootstrap-danger:#f86c6b;
+$c-bootstrap-danger-deep:#e23533;
+
+$c-bootstrap-secondary:#868e96;
+$c-bootstrap-secondary-deep:#66696d;
+
+$c-bootstrap-dark:#343a40;
+$c-bootstrap-dark-deep:#111111;

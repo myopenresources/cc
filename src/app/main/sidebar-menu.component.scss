@@ -38,6 +38,9 @@
       &:focus{
          border: 1px solid $c-color-light;
       }
+      &:active{
+        background-color: $c-color-primary;
+      }
     }
   }
 

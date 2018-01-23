@@ -20,6 +20,7 @@ https://github.com/myopenresources/cc-s
 
 ## 界面展示
 <img src="https://github.com/332557712/cc/blob/master/src/assets/img/demo/cc/cc-0.png" width="960" height="515" />
+<img src="https://github.com/332557712/cc/blob/master/src/assets/img/demo/cc/theme-green.png" width="960" height="515" />
 <img src="https://github.com/332557712/cc/blob/master/src/assets/img/demo/cc/cc-1.png" width="960" height="515" />
 <img src="https://github.com/332557712/cc/blob/master/src/assets/img/demo/cc/cc-2.png" width="960" height="515" />
 <img src="https://github.com/332557712/cc/blob/master/src/assets/img/demo/cc/cc-3.png" width="960" height="515" />
@@ -152,6 +153,10 @@ https://github.com/myopenresources/cc-s
 57. angular5.0.0、ng-bootstrap1.0.0-beta.8、bootstrap4.0.0-beta.2以及第三方组件的升级<br/>
 58. 升级cc版本为0.0.9
 59. 细化业务功能目录以及完善页面
+60. 添加绿色主题，使用方式如下：<br/>
+    60.1 index.html页面中将link的样式文件./assets/scss/theme/_default.css修改成./assets/scss/theme/_green.css<br/>
+    60.2 assets/scss/base/_app-base.scss文件中将import的样式文件./theme/_default.scss修改成./theme/_green.scss <br/>
+    
     
 
 ## 规范

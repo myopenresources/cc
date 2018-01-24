@@ -15,7 +15,9 @@ http://www.myopenresources.top/cc-client/#/login
 
 
 ## java后端项目
-https://github.com/myopenresources/cc-s
+免费版：https://github.com/myopenresources/cc-s
+
+收费版：https://github.com/myopenresources/cjhmeframework
 
 
 ## 界面展示

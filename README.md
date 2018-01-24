@@ -17,7 +17,7 @@ http://www.myopenresources.top/cc-client/#/login
 ## java后端项目
 免费版：https://github.com/myopenresources/cc-s
 
-收费版：https://github.com/myopenresources/cjhmeframework
+收费版：http://blog.csdn.net/rotating_windmill/article/details/53207451
 
 
 ## 界面展示

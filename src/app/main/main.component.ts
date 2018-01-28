@@ -237,7 +237,7 @@ export class MainComponent implements OnInit {
         "parentId": "1",
         "name": "简单导图",
         "keyWord": "simpleMindDemo",
-        "icon": 'fa-qrcode',
+        "icon": 'fa-tree',
         "url": '/app/demo/simpleMindDemo'
       }
       ]

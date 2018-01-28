@@ -231,6 +231,14 @@ export class MainComponent implements OnInit {
         "keyWord": "qrcodeDemo",
         "icon": 'fa-qrcode',
         "url": '/app/demo/qrcodeDemo'
+      },
+      {
+        "id": "29",
+        "parentId": "1",
+        "name": "简单导图",
+        "keyWord": "simpleMindDemo",
+        "icon": 'fa-qrcode',
+        "url": '/app/demo/simpleMindDemo'
       }
       ]
 

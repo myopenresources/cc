@@ -1,0 +1,96 @@
+@import '../../../assets/scss/base/app-base.scss';
+.c-mind-strategy-container {
+	overflow-x: auto;
+	position: relative;
+	overflow-y: hidden;
+	padding:1.25em;
+	.c-mind-tree {
+		width: auto;
+		padding: 0.5em 0;
+		.c-mind-treenode {
+			background-attachment: scroll;
+			background-color: transparent;
+			background-image: none;
+			background-position: 0 0;
+			background-repeat: repeat-y;
+			list-style: none outside none;
+			margin: 0;
+			padding: 0.125em 0 0 0;
+			background: url('img/line.svg') repeat-x scroll center center transparent;
+			padding: 0em;
+			padding-right: 2.2em;
+			.c-mind-treenode-collapsed {
+				padding-right: 0;
+			}
+			.c-mind-treenode-content {
+				font-weight: normal;
+				padding-top: 0.2em;
+				padding-bottom: 0.35em;
+				padding-right: 0.3em;
+				padding-left: 0.3em;
+				font-size: 13px;
+				-webkit-box-shadow: 2px 2px 5px rgba(100, 100, 100, 0.25);
+				-moz-box-shadow: 2px 2px 5px rgba(100, 100, 100, 0.25);
+				box-shadow: 2px 2px 5px rgba(100, 100, 100, 0.25);
+				max-width: 15em;
+				text-align: center;
+				margin-top:0.66em;
+				margin-bottom: 0.66em;
+				border: 1px solid $c-color-secondary;
+				background: $c-color-white;
+				color: $c-color-black-secondary;
+				border-radius: 3px;
+				&:hover {
+					border: 1px solid $c-color-deep;
+					cursor: pointer;
+				}
+				.c-mind-tree-node-tools {
+					background: $c-color-secondary;
+					margin-bottom: 2px;
+					text-align: center;
+					padding-top: 2px;
+					padding-bottom: 3px;
+					border-radius: 2px;
+					height: 25px;
+					& i {
+						margin-left: 3px;
+						margin-right: 3px;
+						color: $c-color-white;
+						cursor: pointer;
+						&:hover {
+							color: $c-color-gary;
+						}
+					}
+					
+					
+				}
+				.c-mind-treenode-label {
+					display: inline-block;
+					padding: 5px;
+					vertical-align: middle;
+				}
+			}
+		}
+		.c-mind-treenode-children {
+			padding: 0;
+			margin: 0;
+		}
+		
+	}
+}
+
+table {
+	height: 0;
+}
+
+table, tr, td {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	border: 0px
+}
+
+
+
+

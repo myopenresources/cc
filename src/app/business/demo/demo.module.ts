@@ -33,6 +33,7 @@ import  { SimpleDataTableModule}            from '../../shared/simple-data-table
 import  { ColorPickerModule}            from '../../shared/color-picker/color-picker.module';//颜色选择器
 import  { StepModule}            from '../../shared/step/step.module';//步骤条
 import  { QrcodeModule}            from '../../shared/qrcode/qrcode.module';//二维码
+import  { SimpleMindModule}            from '../../shared/simple-mind/simple-mind.module';//简单导图
 
 //路由
 import { DemoRoutingModule  } from './demo-routing.module';
@@ -69,6 +70,7 @@ import { ColorPickerDemoComponent } from './color-picker-demo.component';
 import { StepDemoComponent } from './step-demo.component';
 import { ValidatorDemoComponent } from './validator-demo.component';
 import { QrcodeDemoComponent } from './qrcode-demo.component';
+import { SimpleMindDemoComponent } from './simple-mind-demo.compont';
 
 
 
@@ -109,7 +111,8 @@ import { QrcodeDemoComponent } from './qrcode-demo.component';
      SimpleDataTableModule,
      ColorPickerModule,
      StepModule,
-     QrcodeModule
+     QrcodeModule,
+     SimpleMindModule
   ],
   declarations: [
      DemoComponent,
@@ -142,7 +145,8 @@ import { QrcodeDemoComponent } from './qrcode-demo.component';
      ColorPickerDemoComponent,
      StepDemoComponent,
      ValidatorDemoComponent,
-     QrcodeDemoComponent
+     QrcodeDemoComponent,
+     SimpleMindDemoComponent
   ],
   exports:      [ 
   ],

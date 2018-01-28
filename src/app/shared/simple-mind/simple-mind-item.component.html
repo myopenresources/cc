@@ -1,0 +1,96 @@
+<div>
+  <div *ngIf="node.childern && node.childern.length==1">
+    <table> 
+      <tbody>
+        <tr>
+          <td class="c-mind-treenode-connector c-mind-treenode-connector-empty">
+          </td>
+          <td class="c-mind-treenode" (click)="viewNode(node.childern[0])" [ngClass]="{'':(node.childern[0].childern && node.childern[0].childern.length>0),'c-mind-treenode-collapsed':!(node.childern[0].childern && node.childern[0].childern.length>0)}">
+            <div class="c-mind-treenode-content  ">
+              <div class="c-mind-tree-node-tools ">
+                  <i class="fa fa-plus-circle" title="添加" (click)="addNode($event,node.childern[0])" ></i>
+                  <i class="fa fa-minus-circle" title="删除" (click)="delNode($event,node.childern[0])"></i>
+              </div>
+              <div class="c-mind-treenode-label ">
+                <span style="line-height: 22px;">
+									 {{node.childern[0].nodeName}}
+								</span>
+              </div>
+            </div>
+
+          </td>
+          <td  style="display: table-cell;" *ngIf="node.childern[0].childern && node.childern[0].childern.length>0">
+            <div class="c-mind-treenode-children">
+              <c-simple-mind-item [node]="node.childern[0]"></c-simple-mind-item>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div *ngIf="node.childern && node.childern.length>1">
+    <table *ngFor="let node of node.childern;let isFirst=first; let isLast=last;">
+      <tbody>
+        <tr>
+          <td class="c-mind-treenode-connector">
+
+            <table class="c-mind-treenode-connector-table c-mind-treenode-connector-empty" *ngIf="isFirst">
+              <tbody>
+                <tr>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="c-mind-treenode-connector-line"></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="c-mind-treenode-connector-table  c-mind-treenode-connector-empty" *ngIf="isLast">
+              <tbody>
+                <tr>
+                  <td class="c-mind-treenode-connector-line"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="c-mind-treenode-connector-table" *ngIf="!isLast && !isFirst">
+              <tbody>
+                <tr>
+                  <td class="c-mind-treenode-connector-line"></td>
+                </tr>
+                <tr>
+                  <td class="c-mind-treenode-connector-line"></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </td>
+          <td class="c-mind-treenode" (click)="viewNode(node)" [ngClass]="{'':(node.childern && node.childern.length>0),'c-mind-treenode-collapsed':!(node.childern && node.childern.length>0)}">
+            <div class="c-mind-treenode-content ">
+              <div class="c-mind-tree-node-tools" >
+                  <i class="fa fa-plus-circle" title="添加" (click)="addNode($event,node)" ></i>
+                  <i class="fa fa-minus-circle" title="删除" (click)="delNode($event,node)"></i>
+              </div>
+
+              <div class="c-mind-treenode-label ">
+                <span style="line-height: 22px;">
+								      {{node.nodeName}}
+                </span>
+              </div>
+            </div>
+          </td>
+          <td  style="display: table-cell;" *ngIf="node.childern && node.childern.length>0">
+            <div class="c-mind-treenode-children">
+              <c-simple-mind-item [node]="node"></c-simple-mind-item>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>

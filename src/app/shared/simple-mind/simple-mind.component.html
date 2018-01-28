@@ -1,0 +1,30 @@
+<div class="c-mind-strategy-container">
+  <div class="c-mind-tree">
+
+    <table *ngFor="let node of data">
+      <tbody>
+        <tr>
+          <td class="c-mind-treenode" [ngClass]="{true:'',false:'c-mind-treenode-collapsed'}[node.childern.length>0]">
+
+            <div class="c-mind-treenode-content" (click)="viewNode(node)">
+              <div class="c-mind-tree-node-tools">
+                  <i class="fa fa-plus-circle" title="添加" (click)="addNode($event,node)" ></i>
+                  <i class="fa fa-minus-circle" title="删除" (click)="delNode($event,node)"></i>
+              </div>
+              <div class="c-mind-treenode-label ">
+                <span style="line-height: 22px;">{{node.nodeName}}</span>
+              </div>
+            </div>
+
+          </td>
+          <td style="display: table-cell;" *ngIf="node.childern && node.childern.length>0">
+            <div class="c-mind-treenode-children">
+              <c-simple-mind-item [node]="node"></c-simple-mind-item>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>

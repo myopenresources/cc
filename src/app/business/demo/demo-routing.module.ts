@@ -33,6 +33,7 @@ import { ColorPickerDemoComponent } from './color-picker-demo.component';
 import { StepDemoComponent } from './step-demo.component';
 import { ValidatorDemoComponent } from './validator-demo.component';
 import { QrcodeDemoComponent } from './qrcode-demo.component';
+import { SimpleMindDemoComponent } from './simple-mind-demo.compont';
 
 /**
  * demo路由
@@ -161,6 +162,10 @@ const demoRoutes: Routes = [
             {
                 path: 'qrcodeDemo',
                 component: QrcodeDemoComponent
+            },
+            {
+                path: 'simpleMindDemo',
+                component: SimpleMindDemoComponent
             }
         ]
     }

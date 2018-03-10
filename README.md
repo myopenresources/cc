@@ -157,6 +157,7 @@ http://www.myopenresources.top/cc-client/#/login
 60. 添加绿色主题，使用方式如下：<br/>
     60.1 index.html页面中将link的样式文件./assets/scss/theme/_default.css修改成./assets/scss/theme/_green.css<br/>
     60.2 assets/scss/base/_app-base.scss文件中将import的样式文件./theme/_default.scss修改成./theme/_green.scss <br/>
+61. 添加http-client-service，需要使用的自己在模块加添加<br/>
     
     
 

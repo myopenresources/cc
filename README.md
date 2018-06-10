@@ -14,9 +14,7 @@ http://www.myopenresources.top/cc-client/#/login
 
 
 ## java后端项目
-免费版：https://github.com/myopenresources/cc-s
-
-收费版：http://blog.csdn.net/rotating_windmill/article/details/53207451
+收费版1（基于本界面开发）：https://blog.csdn.net/rotating_windmill/article/details/80640301
 
 
 ## 界面展示

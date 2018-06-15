@@ -14,7 +14,8 @@ http://www.myopenresources.top/cc-client/#/login
 
 
 ## java后端项目
-收费版1（基于本界面开发）：https://blog.csdn.net/rotating_windmill/article/details/80640301
+收费版1（基于本界面与Spring mvc 开发）：https://blog.csdn.net/rotating_windmill/article/details/80640301
+收费版2（基于本界面与Spring boot开发）：https://blog.csdn.net/rotating_windmill/article/details/80700660
 
 
 ## 界面展示
